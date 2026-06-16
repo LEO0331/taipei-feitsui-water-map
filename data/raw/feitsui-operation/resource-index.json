@@ -1,0 +1,1175 @@
+{
+  "resources": [
+    {
+      "id": "bef04be5-9ff1-4e66-9b42-cf5d50174558",
+      "title": "115年4月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bef04be5-9ff1-4e66-9b42-cf5d50174558?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:07.043Z",
+      "file": "bef04be5-9ff1-4e66-9b42-cf5d50174558.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "66009413-4271-4355-b02b-fa9e7898220b",
+      "title": "115年3月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/66009413-4271-4355-b02b-fa9e7898220b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:07.207Z",
+      "file": "66009413-4271-4355-b02b-fa9e7898220b.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "c6b5188b-ae9f-49b2-aaf4-0852438101b0",
+      "title": "111年6月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c6b5188b-ae9f-49b2-aaf4-0852438101b0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:07.403Z",
+      "file": "c6b5188b-ae9f-49b2-aaf4-0852438101b0.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "683bc654-7d4c-47f1-8259-fca09be35413",
+      "title": "111年6月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/683bc654-7d4c-47f1-8259-fca09be35413?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:07.537Z",
+      "file": "683bc654-7d4c-47f1-8259-fca09be35413.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "b03bda30-3ac2-409a-b7c2-6a34699a100f",
+      "title": "115年2月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b03bda30-3ac2-409a-b7c2-6a34699a100f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:07.664Z",
+      "file": "b03bda30-3ac2-409a-b7c2-6a34699a100f.json",
+      "recordCount": 28,
+      "status": "fetched"
+    },
+    {
+      "id": "d1d505fd-9055-4c02-9305-414c6335d207",
+      "title": "115年1月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d1d505fd-9055-4c02-9305-414c6335d207?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:07.803Z",
+      "file": "d1d505fd-9055-4c02-9305-414c6335d207.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "9afceeec-dfa6-447c-a312-2f1e3eb3caa0",
+      "title": "114年12月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9afceeec-dfa6-447c-a312-2f1e3eb3caa0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:07.940Z",
+      "file": "9afceeec-dfa6-447c-a312-2f1e3eb3caa0.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "bc20321b-34e1-4637-a48f-06e8507eacc2",
+      "title": "114年11月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bc20321b-34e1-4637-a48f-06e8507eacc2?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:08.084Z",
+      "file": "bc20321b-34e1-4637-a48f-06e8507eacc2.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "511bcb68-c396-4075-abef-6939d814b3c9",
+      "title": "114年10月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/511bcb68-c396-4075-abef-6939d814b3c9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:08.226Z",
+      "file": "511bcb68-c396-4075-abef-6939d814b3c9.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "821b25ff-a6a4-4a69-a452-c1619529ed29",
+      "title": "114年9月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/821b25ff-a6a4-4a69-a452-c1619529ed29?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:08.356Z",
+      "file": "821b25ff-a6a4-4a69-a452-c1619529ed29.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "9f8cb86f-d933-4f88-8d18-177d377ec82b",
+      "title": "114年8月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9f8cb86f-d933-4f88-8d18-177d377ec82b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:08.496Z",
+      "file": "9f8cb86f-d933-4f88-8d18-177d377ec82b.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "cfcd8a75-f248-4e0b-8d79-a795dac20254",
+      "title": "114年7月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cfcd8a75-f248-4e0b-8d79-a795dac20254?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:08.634Z",
+      "file": "cfcd8a75-f248-4e0b-8d79-a795dac20254.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "c159ff26-f63a-4c94-81f7-460e8b2b0c95",
+      "title": " 114年6月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c159ff26-f63a-4c94-81f7-460e8b2b0c95?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:08.769Z",
+      "file": "c159ff26-f63a-4c94-81f7-460e8b2b0c95.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "cf0a8c26-784e-4940-be80-f6789567458b",
+      "title": "114年5月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cf0a8c26-784e-4940-be80-f6789567458b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:08.920Z",
+      "file": "cf0a8c26-784e-4940-be80-f6789567458b.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "bbff9263-be5b-445a-9ff6-8196030dfe05",
+      "title": "114年4月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bbff9263-be5b-445a-9ff6-8196030dfe05?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:09.065Z",
+      "file": "bbff9263-be5b-445a-9ff6-8196030dfe05.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "efe692fd-6c4f-47e9-b531-3b38cc821ec9",
+      "title": "114年3月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/efe692fd-6c4f-47e9-b531-3b38cc821ec9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:09.288Z",
+      "file": "efe692fd-6c4f-47e9-b531-3b38cc821ec9.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "ddf5d3ec-a4cc-414a-9366-72db097a5f78",
+      "title": "114年2月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/ddf5d3ec-a4cc-414a-9366-72db097a5f78?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:09.454Z",
+      "file": "ddf5d3ec-a4cc-414a-9366-72db097a5f78.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "e1cd115f-13b6-4982-87a1-e9d40787a164",
+      "title": "114年1月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e1cd115f-13b6-4982-87a1-e9d40787a164?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:09.588Z",
+      "file": "e1cd115f-13b6-4982-87a1-e9d40787a164.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "68dbaaca-f3b6-4af8-b9b4-dd10097dafa0",
+      "title": "113年12月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/68dbaaca-f3b6-4af8-b9b4-dd10097dafa0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:09.736Z",
+      "file": "68dbaaca-f3b6-4af8-b9b4-dd10097dafa0.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "dabc2913-5337-4a68-a021-45d2d2e58b60",
+      "title": "113年11月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/dabc2913-5337-4a68-a021-45d2d2e58b60?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:09.882Z",
+      "file": "dabc2913-5337-4a68-a021-45d2d2e58b60.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "82d892f3-a71f-493d-9e58-b6f03b94a802",
+      "title": "113年10月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/82d892f3-a71f-493d-9e58-b6f03b94a802?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:10.020Z",
+      "file": "82d892f3-a71f-493d-9e58-b6f03b94a802.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "c6007422-996d-467b-9694-4344ef9bc3eb",
+      "title": "113年9月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c6007422-996d-467b-9694-4344ef9bc3eb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:10.179Z",
+      "file": "c6007422-996d-467b-9694-4344ef9bc3eb.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "70a5feb7-d0f0-4708-9899-829cefddc9bb",
+      "title": "113年8月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/70a5feb7-d0f0-4708-9899-829cefddc9bb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:10.320Z",
+      "file": "70a5feb7-d0f0-4708-9899-829cefddc9bb.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "90874e9f-7274-4c25-8bcc-c8da2b83bb7b",
+      "title": "113年7月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/90874e9f-7274-4c25-8bcc-c8da2b83bb7b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:10.459Z",
+      "file": "90874e9f-7274-4c25-8bcc-c8da2b83bb7b.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "991e77ae-c550-4cda-9bcc-20fa21f868af",
+      "title": "113年6月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/991e77ae-c550-4cda-9bcc-20fa21f868af?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:10.606Z",
+      "file": "991e77ae-c550-4cda-9bcc-20fa21f868af.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "984d353c-bc34-4081-a8de-72d0d893ec52",
+      "title": "113年5月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/984d353c-bc34-4081-a8de-72d0d893ec52?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:10.786Z",
+      "file": "984d353c-bc34-4081-a8de-72d0d893ec52.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "5a21d021-2eba-4a51-abbc-f900e010b1ee",
+      "title": "113年4月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5a21d021-2eba-4a51-abbc-f900e010b1ee?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:10.928Z",
+      "file": "5a21d021-2eba-4a51-abbc-f900e010b1ee.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "b8628b64-d4da-41a1-831f-2ae4431908ec",
+      "title": "113年3月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b8628b64-d4da-41a1-831f-2ae4431908ec?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:11.074Z",
+      "file": "b8628b64-d4da-41a1-831f-2ae4431908ec.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "b881869d-0627-474e-96b2-1a6a94e945cb",
+      "title": "113年2月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b881869d-0627-474e-96b2-1a6a94e945cb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:11.306Z",
+      "file": "b881869d-0627-474e-96b2-1a6a94e945cb.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "aefde592-4133-49a8-be5d-75e57dc7a966",
+      "title": "113年1月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/aefde592-4133-49a8-be5d-75e57dc7a966?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:11.497Z",
+      "file": "aefde592-4133-49a8-be5d-75e57dc7a966.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "e174e04e-7deb-43aa-ac58-b1e8d864962c",
+      "title": "112年12月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e174e04e-7deb-43aa-ac58-b1e8d864962c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:11.637Z",
+      "file": "e174e04e-7deb-43aa-ac58-b1e8d864962c.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "bd44313f-fa6f-4d15-a76d-1b82189b921c",
+      "title": "112年11月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bd44313f-fa6f-4d15-a76d-1b82189b921c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:11.772Z",
+      "file": "bd44313f-fa6f-4d15-a76d-1b82189b921c.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "29b05a55-f62c-4f8f-baca-fa1035f1ea4a",
+      "title": "112年10月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/29b05a55-f62c-4f8f-baca-fa1035f1ea4a?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:11.905Z",
+      "file": "29b05a55-f62c-4f8f-baca-fa1035f1ea4a.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "81197f48-1cc4-4fd6-b68d-9393e85eddf9",
+      "title": "112年9月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/81197f48-1cc4-4fd6-b68d-9393e85eddf9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:12.053Z",
+      "file": "81197f48-1cc4-4fd6-b68d-9393e85eddf9.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "4f714005-df22-444c-81d1-4858bba9d84c",
+      "title": "112年8月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4f714005-df22-444c-81d1-4858bba9d84c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:12.197Z",
+      "file": "4f714005-df22-444c-81d1-4858bba9d84c.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "281a8758-6755-48a9-9b6f-bceb07978c76",
+      "title": "112年7月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/281a8758-6755-48a9-9b6f-bceb07978c76?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:12.337Z",
+      "file": "281a8758-6755-48a9-9b6f-bceb07978c76.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "9b02b8d9-eb11-4ee6-a22a-60132a9919f5",
+      "title": "112年6月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9b02b8d9-eb11-4ee6-a22a-60132a9919f5?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:12.479Z",
+      "file": "9b02b8d9-eb11-4ee6-a22a-60132a9919f5.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "00f22c07-6781-4ea4-8bf6-650b95765e18",
+      "title": "112年5月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/00f22c07-6781-4ea4-8bf6-650b95765e18?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:12.623Z",
+      "file": "00f22c07-6781-4ea4-8bf6-650b95765e18.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "31733a26-8760-4267-800f-230b0ba17748",
+      "title": "112年4月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/31733a26-8760-4267-800f-230b0ba17748?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:12.906Z",
+      "file": "31733a26-8760-4267-800f-230b0ba17748.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "b5195a6d-1e20-464a-ad58-cf741eff5199",
+      "title": "112年3月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b5195a6d-1e20-464a-ad58-cf741eff5199?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:13.044Z",
+      "file": "b5195a6d-1e20-464a-ad58-cf741eff5199.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "740aedae-9621-4526-b18d-fec88ff23237",
+      "title": "112年2月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/740aedae-9621-4526-b18d-fec88ff23237?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:13.186Z",
+      "file": "740aedae-9621-4526-b18d-fec88ff23237.json",
+      "recordCount": 29,
+      "status": "fetched"
+    },
+    {
+      "id": "ea01cdda-3c81-480c-ab8b-d21b4cad001c",
+      "title": "112年1月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/ea01cdda-3c81-480c-ab8b-d21b4cad001c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:13.332Z",
+      "file": "ea01cdda-3c81-480c-ab8b-d21b4cad001c.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "000a018f-d964-487d-8edd-defb1219817c",
+      "title": "111年12月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/000a018f-d964-487d-8edd-defb1219817c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:13.487Z",
+      "file": "000a018f-d964-487d-8edd-defb1219817c.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "e5bacd6a-a895-45b0-9ae0-a2b781209fbf",
+      "title": "111年11月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e5bacd6a-a895-45b0-9ae0-a2b781209fbf?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:13.628Z",
+      "file": "e5bacd6a-a895-45b0-9ae0-a2b781209fbf.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "5e191e7c-efdc-493c-b116-1f9160b96dee",
+      "title": "111年10月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5e191e7c-efdc-493c-b116-1f9160b96dee?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:13.766Z",
+      "file": "5e191e7c-efdc-493c-b116-1f9160b96dee.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "fb574b52-c8d6-40f8-a4c4-9bbc1f1d7da9",
+      "title": "111年9月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/fb574b52-c8d6-40f8-a4c4-9bbc1f1d7da9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:13.943Z",
+      "file": "fb574b52-c8d6-40f8-a4c4-9bbc1f1d7da9.json",
+      "recordCount": 32,
+      "status": "fetched"
+    },
+    {
+      "id": "a57631d4-d5e1-4898-9ec6-fae114e31ccc",
+      "title": "111年8月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a57631d4-d5e1-4898-9ec6-fae114e31ccc?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:14.170Z",
+      "file": "a57631d4-d5e1-4898-9ec6-fae114e31ccc.json",
+      "recordCount": 33,
+      "status": "fetched"
+    },
+    {
+      "id": "e76bc443-f506-498b-b6f6-209035be65fd",
+      "title": "111年7月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e76bc443-f506-498b-b6f6-209035be65fd?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:14.392Z",
+      "file": "e76bc443-f506-498b-b6f6-209035be65fd.json",
+      "recordCount": 32,
+      "status": "fetched"
+    },
+    {
+      "id": "73f60b4a-e835-4125-953d-b15340bb397b",
+      "title": "111年5月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/73f60b4a-e835-4125-953d-b15340bb397b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:14.684Z",
+      "file": "73f60b4a-e835-4125-953d-b15340bb397b.json",
+      "recordCount": 32,
+      "status": "fetched"
+    },
+    {
+      "id": "4cf9b061-8d3c-4000-b77c-992ea547518b",
+      "title": "111年3月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4cf9b061-8d3c-4000-b77c-992ea547518b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:14.994Z",
+      "file": "4cf9b061-8d3c-4000-b77c-992ea547518b.json",
+      "recordCount": 32,
+      "status": "fetched"
+    },
+    {
+      "id": "9d21a187-22bc-4995-8336-b850fbb3e4d6",
+      "title": "110年10月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9d21a187-22bc-4995-8336-b850fbb3e4d6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:15.296Z",
+      "file": "9d21a187-22bc-4995-8336-b850fbb3e4d6.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "a395d492-4839-42ad-8dd4-3f7f375cc131",
+      "title": "110年8月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a395d492-4839-42ad-8dd4-3f7f375cc131?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:15.557Z",
+      "file": "a395d492-4839-42ad-8dd4-3f7f375cc131.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "a7ba1068-d800-468a-80bf-d555ff725f32",
+      "title": "111年2月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a7ba1068-d800-468a-80bf-d555ff725f32?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:15.758Z",
+      "file": "a7ba1068-d800-468a-80bf-d555ff725f32.json",
+      "recordCount": 28,
+      "status": "fetched"
+    },
+    {
+      "id": "c1424aa2-1185-4d6b-8776-d90ab6328d60",
+      "title": "111年1月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c1424aa2-1185-4d6b-8776-d90ab6328d60?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:15.989Z",
+      "file": "c1424aa2-1185-4d6b-8776-d90ab6328d60.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "7ff0ae7b-515f-461d-a4a3-fd61e0ff5c45",
+      "title": "110年12月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7ff0ae7b-515f-461d-a4a3-fd61e0ff5c45?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:16.139Z",
+      "file": "7ff0ae7b-515f-461d-a4a3-fd61e0ff5c45.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "e416f2ef-f35b-4bc4-96c8-9be229f88f80",
+      "title": "110年11月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e416f2ef-f35b-4bc4-96c8-9be229f88f80?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:16.277Z",
+      "file": "e416f2ef-f35b-4bc4-96c8-9be229f88f80.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "6f777bb4-8745-4c4b-bdee-4f67cb284150",
+      "title": "110年9月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/6f777bb4-8745-4c4b-bdee-4f67cb284150?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:16.425Z",
+      "file": "6f777bb4-8745-4c4b-bdee-4f67cb284150.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "199851d7-5b42-48fd-844c-4a2b9650b3c7",
+      "title": "110年7月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/199851d7-5b42-48fd-844c-4a2b9650b3c7?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:16.570Z",
+      "file": "199851d7-5b42-48fd-844c-4a2b9650b3c7.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "bfd6fc60-3514-460c-b82c-a5d35b5393d6",
+      "title": "110年6月翡翠水庫運轉資料 ",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bfd6fc60-3514-460c-b82c-a5d35b5393d6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:16.721Z",
+      "file": "bfd6fc60-3514-460c-b82c-a5d35b5393d6.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "93fd84e9-c728-4c85-8fe6-86782ca55fdb",
+      "title": "110年5月翡翠水庫運轉資料 ",
+      "apiUrl": "https://data.taipei/api/v1/dataset/93fd84e9-c728-4c85-8fe6-86782ca55fdb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:16.872Z",
+      "file": "93fd84e9-c728-4c85-8fe6-86782ca55fdb.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "451b0b86-dd78-4c14-928b-c1a56acb7d45",
+      "title": "110年4月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/451b0b86-dd78-4c14-928b-c1a56acb7d45?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:17.014Z",
+      "file": "451b0b86-dd78-4c14-928b-c1a56acb7d45.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "3733a16a-b306-4540-a28f-a03e8f9ae21d",
+      "title": "110年3月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3733a16a-b306-4540-a28f-a03e8f9ae21d?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:17.189Z",
+      "file": "3733a16a-b306-4540-a28f-a03e8f9ae21d.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "7954ec46-fab3-44af-9a8e-bba2f1b74216",
+      "title": "108年8月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7954ec46-fab3-44af-9a8e-bba2f1b74216?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:17.408Z",
+      "file": "7954ec46-fab3-44af-9a8e-bba2f1b74216.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "b3716640-2fbe-4b78-802f-62ebdb9ab488",
+      "title": "108年6月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b3716640-2fbe-4b78-802f-62ebdb9ab488?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:17.546Z",
+      "file": "b3716640-2fbe-4b78-802f-62ebdb9ab488.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "35781b3f-93b7-44b2-a912-6b1702ac65d6",
+      "title": "107年10月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/35781b3f-93b7-44b2-a912-6b1702ac65d6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:17.678Z",
+      "file": "35781b3f-93b7-44b2-a912-6b1702ac65d6.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "e3a4e0a5-68e0-4aaf-a566-42e3609ba6e4",
+      "title": " 翡翠水庫104年12月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e3a4e0a5-68e0-4aaf-a566-42e3609ba6e4?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:17.808Z",
+      "file": "e3a4e0a5-68e0-4aaf-a566-42e3609ba6e4.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "e2a96fbe-8fac-450e-b64b-877474f708af",
+      "title": " 109年4月翡翠水庫運轉資料  ",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e2a96fbe-8fac-450e-b64b-877474f708af?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:17.963Z",
+      "file": "e2a96fbe-8fac-450e-b64b-877474f708af.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "f3754987-9443-497d-be02-c9872a8f1de8",
+      "title": " 109年5月翡翠水庫運轉資料 ",
+      "apiUrl": "https://data.taipei/api/v1/dataset/f3754987-9443-497d-be02-c9872a8f1de8?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:18.111Z",
+      "file": "f3754987-9443-497d-be02-c9872a8f1de8.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "42425e7a-ca69-40c5-83bd-33ba36722cbd",
+      "title": "109年6月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/42425e7a-ca69-40c5-83bd-33ba36722cbd?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:18.248Z",
+      "file": "42425e7a-ca69-40c5-83bd-33ba36722cbd.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "96b26a91-8611-4f49-8e16-1471d102c742",
+      "title": "109年7月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/96b26a91-8611-4f49-8e16-1471d102c742?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:18.382Z",
+      "file": "96b26a91-8611-4f49-8e16-1471d102c742.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "48cb4179-1d5d-4566-9880-80408b2f4bbf",
+      "title": "109年8月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/48cb4179-1d5d-4566-9880-80408b2f4bbf?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:18.529Z",
+      "file": "48cb4179-1d5d-4566-9880-80408b2f4bbf.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "a9a6f5fb-ff8f-4cc5-87dc-4334279b0322",
+      "title": "109年9月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a9a6f5fb-ff8f-4cc5-87dc-4334279b0322?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:18.664Z",
+      "file": "a9a6f5fb-ff8f-4cc5-87dc-4334279b0322.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "9fb99f02-11af-425a-9beb-f12d6ea3a37b",
+      "title": "109年10月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9fb99f02-11af-425a-9beb-f12d6ea3a37b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:18.804Z",
+      "file": "9fb99f02-11af-425a-9beb-f12d6ea3a37b.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "7f3f422e-13d9-443f-81de-2bd75775ab15",
+      "title": "109年11月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7f3f422e-13d9-443f-81de-2bd75775ab15?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:18.943Z",
+      "file": "7f3f422e-13d9-443f-81de-2bd75775ab15.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "6e076a50-a120-4a8a-9107-410800a0f007",
+      "title": "109年12月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/6e076a50-a120-4a8a-9107-410800a0f007?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:19.081Z",
+      "file": "6e076a50-a120-4a8a-9107-410800a0f007.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "c0f4648b-0f9c-4657-be8a-ab76c13bb230",
+      "title": "110年1月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c0f4648b-0f9c-4657-be8a-ab76c13bb230?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:19.267Z",
+      "file": "c0f4648b-0f9c-4657-be8a-ab76c13bb230.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "11476c03-1428-4458-bfa0-78c932d3d647",
+      "title": "110年2月翡翠水庫運轉資料統計",
+      "apiUrl": "https://data.taipei/api/v1/dataset/11476c03-1428-4458-bfa0-78c932d3d647?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:19.421Z",
+      "file": "11476c03-1428-4458-bfa0-78c932d3d647.json",
+      "recordCount": 28,
+      "status": "fetched"
+    },
+    {
+      "id": "1d59b037-3478-4cbb-af84-6badc9643cf6",
+      "title": "109年3月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/1d59b037-3478-4cbb-af84-6badc9643cf6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:19.579Z",
+      "file": "1d59b037-3478-4cbb-af84-6badc9643cf6.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "148a0ef2-9916-496e-950b-6bc9b0cfa517",
+      "title": "109年2月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/148a0ef2-9916-496e-950b-6bc9b0cfa517?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:19.740Z",
+      "file": "148a0ef2-9916-496e-950b-6bc9b0cfa517.json",
+      "recordCount": 29,
+      "status": "fetched"
+    },
+    {
+      "id": "4e43de35-f90e-47df-9227-4208000a3c2e",
+      "title": "109年1月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4e43de35-f90e-47df-9227-4208000a3c2e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:19.933Z",
+      "file": "4e43de35-f90e-47df-9227-4208000a3c2e.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "4240f6f2-8d86-4b93-a26f-b7a1ae7bc5e1",
+      "title": "108年12月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4240f6f2-8d86-4b93-a26f-b7a1ae7bc5e1?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:20.324Z",
+      "file": "4240f6f2-8d86-4b93-a26f-b7a1ae7bc5e1.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "0057107f-8229-4554-b8cf-a7eef79c2be1",
+      "title": " 108年11月翡翠水庫運轉資料  ",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0057107f-8229-4554-b8cf-a7eef79c2be1?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:20.488Z",
+      "file": "0057107f-8229-4554-b8cf-a7eef79c2be1.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "e78bf0e5-358c-469f-ac5e-9809579b4509",
+      "title": "108年10月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e78bf0e5-358c-469f-ac5e-9809579b4509?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:20.637Z",
+      "file": "e78bf0e5-358c-469f-ac5e-9809579b4509.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "ff009247-b148-494e-9b3b-ce36c02d5185",
+      "title": "108年9月翡翠水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/ff009247-b148-494e-9b3b-ce36c02d5185?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:20.786Z",
+      "file": "ff009247-b148-494e-9b3b-ce36c02d5185.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "f84ce00e-89e6-4d58-a75d-44f85e50dc0c",
+      "title": "108年7月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/f84ce00e-89e6-4d58-a75d-44f85e50dc0c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:20.969Z",
+      "file": "f84ce00e-89e6-4d58-a75d-44f85e50dc0c.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "9ff56d54-0c3d-4f43-ac56-d1ebb9ce40fd",
+      "title": "108年5月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9ff56d54-0c3d-4f43-ac56-d1ebb9ce40fd?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:21.164Z",
+      "file": "9ff56d54-0c3d-4f43-ac56-d1ebb9ce40fd.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "fa997441-8590-4467-a0ab-28d5c3a58418",
+      "title": "108年4月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/fa997441-8590-4467-a0ab-28d5c3a58418?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:21.354Z",
+      "file": "fa997441-8590-4467-a0ab-28d5c3a58418.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "0ff8aebb-d9ff-401f-8ffd-6beb53f7455a",
+      "title": "108年3月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0ff8aebb-d9ff-401f-8ffd-6beb53f7455a?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:21.492Z",
+      "file": "0ff8aebb-d9ff-401f-8ffd-6beb53f7455a.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "7ef98af6-5454-4d08-8d44-be332b7ca02a",
+      "title": "108年2月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7ef98af6-5454-4d08-8d44-be332b7ca02a?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:21.637Z",
+      "file": "7ef98af6-5454-4d08-8d44-be332b7ca02a.json",
+      "recordCount": 28,
+      "status": "fetched"
+    },
+    {
+      "id": "389af972-2dbf-4768-bf0e-a5288a199934",
+      "title": "108年1月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/389af972-2dbf-4768-bf0e-a5288a199934?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:21.785Z",
+      "file": "389af972-2dbf-4768-bf0e-a5288a199934.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "43ec021c-4f06-4025-973c-02045bd07b07",
+      "title": "107年12月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/43ec021c-4f06-4025-973c-02045bd07b07?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:21.924Z",
+      "file": "43ec021c-4f06-4025-973c-02045bd07b07.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "ab8560da-eb76-4d49-aec8-12703b19bc75",
+      "title": "107年11月水庫運轉資料  ",
+      "apiUrl": "https://data.taipei/api/v1/dataset/ab8560da-eb76-4d49-aec8-12703b19bc75?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:22.074Z",
+      "file": "ab8560da-eb76-4d49-aec8-12703b19bc75.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "9bad41d0-be6d-46f7-b507-bc89dd864ac6",
+      "title": "107年9月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9bad41d0-be6d-46f7-b507-bc89dd864ac6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:22.229Z",
+      "file": "9bad41d0-be6d-46f7-b507-bc89dd864ac6.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "946d8d9e-e1f8-44a9-bad9-80cf47f96fac",
+      "title": "107年8月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/946d8d9e-e1f8-44a9-bad9-80cf47f96fac?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:22.372Z",
+      "file": "946d8d9e-e1f8-44a9-bad9-80cf47f96fac.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "8f45c58b-e96e-497b-8892-dab554944a2e",
+      "title": "107年7月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/8f45c58b-e96e-497b-8892-dab554944a2e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:22.506Z",
+      "file": "8f45c58b-e96e-497b-8892-dab554944a2e.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "3c0ae578-7458-44e2-bb7a-9d79d95a7b42",
+      "title": "107年6月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3c0ae578-7458-44e2-bb7a-9d79d95a7b42?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:22.644Z",
+      "file": "3c0ae578-7458-44e2-bb7a-9d79d95a7b42.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "a9fcb951-e259-4943-9c44-b4087c80f0e9",
+      "title": "107年5月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a9fcb951-e259-4943-9c44-b4087c80f0e9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:22.792Z",
+      "file": "a9fcb951-e259-4943-9c44-b4087c80f0e9.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "a3807c0b-0f7c-4394-b126-edd70ee91dc8",
+      "title": "107年4月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a3807c0b-0f7c-4394-b126-edd70ee91dc8?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:22.937Z",
+      "file": "a3807c0b-0f7c-4394-b126-edd70ee91dc8.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "aa22d8f1-6442-4604-afa4-01c575d7d8e4",
+      "title": "107年3月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/aa22d8f1-6442-4604-afa4-01c575d7d8e4?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:23.075Z",
+      "file": "aa22d8f1-6442-4604-afa4-01c575d7d8e4.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "040c0a75-1d10-466e-8b2e-def139d9dc9e",
+      "title": "107年2月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/040c0a75-1d10-466e-8b2e-def139d9dc9e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:23.265Z",
+      "file": "040c0a75-1d10-466e-8b2e-def139d9dc9e.json",
+      "recordCount": 28,
+      "status": "fetched"
+    },
+    {
+      "id": "46350516-f782-42e2-b7ab-078accefe8fe",
+      "title": "107年1月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/46350516-f782-42e2-b7ab-078accefe8fe?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:23.537Z",
+      "file": "46350516-f782-42e2-b7ab-078accefe8fe.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "7267c780-0d19-4df7-9177-f26db3db7e90",
+      "title": "106年12月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7267c780-0d19-4df7-9177-f26db3db7e90?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:23.736Z",
+      "file": "7267c780-0d19-4df7-9177-f26db3db7e90.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "2e99ed97-c39c-45b7-a649-5357ebf12a73",
+      "title": "106年11月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/2e99ed97-c39c-45b7-a649-5357ebf12a73?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:23.896Z",
+      "file": "2e99ed97-c39c-45b7-a649-5357ebf12a73.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "f31113ca-14e9-417d-9801-343ee672be3e",
+      "title": "106年10月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/f31113ca-14e9-417d-9801-343ee672be3e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:24.044Z",
+      "file": "f31113ca-14e9-417d-9801-343ee672be3e.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "01043ff8-b466-4a5e-9293-cdbbaa4adf37",
+      "title": "106年9月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/01043ff8-b466-4a5e-9293-cdbbaa4adf37?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:24.204Z",
+      "file": "01043ff8-b466-4a5e-9293-cdbbaa4adf37.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "cc5543a7-9b1b-4dd3-998b-f310488c3b13",
+      "title": "106年8月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cc5543a7-9b1b-4dd3-998b-f310488c3b13?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:24.354Z",
+      "file": "cc5543a7-9b1b-4dd3-998b-f310488c3b13.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "0f456293-0db2-4a7b-9746-13bd4e4844aa",
+      "title": "106年7月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0f456293-0db2-4a7b-9746-13bd4e4844aa?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:24.516Z",
+      "file": "0f456293-0db2-4a7b-9746-13bd4e4844aa.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "4949373f-c96f-450e-8d2f-13e4a70e6aae",
+      "title": "106年6月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4949373f-c96f-450e-8d2f-13e4a70e6aae?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:24.685Z",
+      "file": "4949373f-c96f-450e-8d2f-13e4a70e6aae.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "9c671f3c-0d40-4fd6-afb4-4ab2c3866e38",
+      "title": "106年5月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9c671f3c-0d40-4fd6-afb4-4ab2c3866e38?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:24.838Z",
+      "file": "9c671f3c-0d40-4fd6-afb4-4ab2c3866e38.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "d68e0370-e4bb-4c51-886d-d0ba4dce992a",
+      "title": "106年4月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d68e0370-e4bb-4c51-886d-d0ba4dce992a?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:26.111Z",
+      "file": "d68e0370-e4bb-4c51-886d-d0ba4dce992a.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "f9721981-4a2f-424e-9a0a-915d868e6f38",
+      "title": "106年3月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/f9721981-4a2f-424e-9a0a-915d868e6f38?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:26.433Z",
+      "file": "f9721981-4a2f-424e-9a0a-915d868e6f38.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "666f3c09-dd6e-426d-a257-1eda6356db49",
+      "title": "106年2月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/666f3c09-dd6e-426d-a257-1eda6356db49?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:26.661Z",
+      "file": "666f3c09-dd6e-426d-a257-1eda6356db49.json",
+      "recordCount": 28,
+      "status": "fetched"
+    },
+    {
+      "id": "cabb1187-ee28-4a32-b680-fb0576a82ea1",
+      "title": "106年1月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cabb1187-ee28-4a32-b680-fb0576a82ea1?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:26.837Z",
+      "file": "cabb1187-ee28-4a32-b680-fb0576a82ea1.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "2a9409bf-8c12-45db-ab8a-e2bf2bbdf052",
+      "title": "翡翠水庫105年12月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/2a9409bf-8c12-45db-ab8a-e2bf2bbdf052?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:26.982Z",
+      "file": "2a9409bf-8c12-45db-ab8a-e2bf2bbdf052.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "3d3d4fa3-d570-4018-a9e1-27b8b1f85196",
+      "title": "翡翠水庫105年11月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3d3d4fa3-d570-4018-a9e1-27b8b1f85196?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:27.148Z",
+      "file": "3d3d4fa3-d570-4018-a9e1-27b8b1f85196.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "118e6a17-35a9-40dc-934a-98f1c8868d4f",
+      "title": "翡翠水庫105年10月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/118e6a17-35a9-40dc-934a-98f1c8868d4f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:27.370Z",
+      "file": "118e6a17-35a9-40dc-934a-98f1c8868d4f.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "dba140c7-61d4-4cb5-8d82-fc5b892c28fc",
+      "title": "翡翠水庫105年9月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/dba140c7-61d4-4cb5-8d82-fc5b892c28fc?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:27.530Z",
+      "file": "dba140c7-61d4-4cb5-8d82-fc5b892c28fc.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "5849334d-6bd2-40ea-8223-564e40f95b07",
+      "title": "翡翠水庫105年8月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5849334d-6bd2-40ea-8223-564e40f95b07?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:27.669Z",
+      "file": "5849334d-6bd2-40ea-8223-564e40f95b07.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "f014c010-2cc6-44fd-a846-11de6b6e5c66",
+      "title": "翡翠水庫105年7月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/f014c010-2cc6-44fd-a846-11de6b6e5c66?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:27.815Z",
+      "file": "f014c010-2cc6-44fd-a846-11de6b6e5c66.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "fdbc1f7c-b3e6-4121-81aa-71a6582cbde0",
+      "title": "翡翠水庫105年6月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/fdbc1f7c-b3e6-4121-81aa-71a6582cbde0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:27.991Z",
+      "file": "fdbc1f7c-b3e6-4121-81aa-71a6582cbde0.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "ca0bd92c-5738-45d2-b035-ce738a20e5d5",
+      "title": "翡翠水庫105年5月水庫運轉資料 ",
+      "apiUrl": "https://data.taipei/api/v1/dataset/ca0bd92c-5738-45d2-b035-ce738a20e5d5?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:28.153Z",
+      "file": "ca0bd92c-5738-45d2-b035-ce738a20e5d5.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "271a0d25-c88d-42d1-bb2c-7bd9e34720f9",
+      "title": " 翡翠水庫105年4月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/271a0d25-c88d-42d1-bb2c-7bd9e34720f9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:28.287Z",
+      "file": "271a0d25-c88d-42d1-bb2c-7bd9e34720f9.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "6c4ea5f9-a953-4b9e-9937-819b39beaec0",
+      "title": "翡翠水庫105年3月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/6c4ea5f9-a953-4b9e-9937-819b39beaec0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:28.432Z",
+      "file": "6c4ea5f9-a953-4b9e-9937-819b39beaec0.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "3c88461a-dc74-4004-b37e-601b1aaf6af1",
+      "title": "翡翠水庫105年2月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3c88461a-dc74-4004-b37e-601b1aaf6af1?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:28.566Z",
+      "file": "3c88461a-dc74-4004-b37e-601b1aaf6af1.json",
+      "recordCount": 29,
+      "status": "fetched"
+    },
+    {
+      "id": "0b0dca55-9098-406c-bdb7-4e6e34831477",
+      "title": "翡翠水庫105年1月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0b0dca55-9098-406c-bdb7-4e6e34831477?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:28.717Z",
+      "file": "0b0dca55-9098-406c-bdb7-4e6e34831477.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "7aabe6a7-77d5-49b6-9bb1-6f425c7f5752",
+      "title": "翡翠水庫104年11月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7aabe6a7-77d5-49b6-9bb1-6f425c7f5752?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:28.854Z",
+      "file": "7aabe6a7-77d5-49b6-9bb1-6f425c7f5752.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "6a8984d8-ff22-4aa6-8d6e-3c8e2c0a3b87",
+      "title": "翡翠水庫104年10月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/6a8984d8-ff22-4aa6-8d6e-3c8e2c0a3b87?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:28.989Z",
+      "file": "6a8984d8-ff22-4aa6-8d6e-3c8e2c0a3b87.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "9cf93d32-9a4f-470f-b0f5-4c1c4cfb527e",
+      "title": "翡翠水庫104年9月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9cf93d32-9a4f-470f-b0f5-4c1c4cfb527e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:29.166Z",
+      "file": "9cf93d32-9a4f-470f-b0f5-4c1c4cfb527e.json",
+      "recordCount": 30,
+      "status": "fetched"
+    },
+    {
+      "id": "d3d6e518-b475-42ab-87bb-9945534642f1",
+      "title": "翡翠水庫104年8月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d3d6e518-b475-42ab-87bb-9945534642f1?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:29.407Z",
+      "file": "d3d6e518-b475-42ab-87bb-9945534642f1.json",
+      "recordCount": 31,
+      "status": "fetched"
+    },
+    {
+      "id": "005582a6-44f8-49cd-9379-37005f0c70b4",
+      "title": "翡翠水庫104年7月水庫運轉資料",
+      "apiUrl": "https://data.taipei/api/v1/dataset/005582a6-44f8-49cd-9379-37005f0c70b4?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T04:10:29.545Z",
+      "file": "005582a6-44f8-49cd-9379-37005f0c70b4.json",
+      "recordCount": 31,
+      "status": "fetched"
+    }
+  ],
+  "errors": []
+}

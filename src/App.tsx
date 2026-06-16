@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import L from 'leaflet';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import {
@@ -16,12 +16,15 @@ import {
   groupLabels,
   hydrometParameterLabels,
   hydrometParameterUnits,
+  operationParameterLabels,
+  operationParameterUnits,
   parameterLabels,
   parameterUnits,
   translations,
   type Language,
 } from './data/i18n';
 import type { HydrometDailyRecord, HydrometMonthlySummary, HydrometParameterKey } from './types/hydromet';
+import type { OperationDailyRecord, OperationMonthlySummary, OperationParameterKey } from './types/operation';
 import type {
   Filters,
   StationGroup,
@@ -41,11 +44,14 @@ import {
 import {
   averageWaterQualityParameter,
   hydrometParameterKeys,
-  joinWaterQualityAndHydrometByPeriod,
 } from './utils/hydromet';
+import {
+  joinMonitoringDataByPeriod,
+  operationParameterKeys,
+} from './utils/operation';
 
-type MonitoringTab = 'waterQuality' | 'hydromet' | 'combinedDashboard' | 'dataTable';
-type TableMode = 'waterRecords' | 'hydrometDaily' | 'waterSummary' | 'hydrometSummary';
+type MonitoringTab = 'waterQuality' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
 const mapCenter: [number, number] = [24.91, 121.58];
@@ -154,6 +160,7 @@ function MonitoringTabs({
   const tabs: Array<{ id: MonitoringTab; label: string }> = [
     { id: 'waterQuality', label: t.waterQuality },
     { id: 'hydromet', label: t.hydromet },
+    { id: 'operation', label: t.operation },
     { id: 'combinedDashboard', label: t.combinedDashboard },
     { id: 'dataTable', label: t.dataTable },
   ];
@@ -744,21 +751,219 @@ function HydrometDashboard({
   );
 }
 
-function WeatherWaterQualityComparisonChart({
+function OperationSummaryCards({
+  summaries,
+  records,
+  period,
+  language,
+}: {
+  summaries: OperationMonthlySummary[];
+  records: OperationDailyRecord[];
+  period: string;
+  language: Language;
+}) {
+  const t = translations[language];
+  const latest = summaries.at(-1);
+  const selected = summaries.find((summary) => summary.period === period) ?? latest;
+  const highestRainfall = records.reduce<number | null>((current, record) => {
+    const value = record.values.catchmentAverageRainfallMm.value;
+    if (value === null) return current;
+    return current === null ? value : Math.max(current, value);
+  }, null);
+  const cards = [
+    [t.latestMonth, latest?.period ?? '-'],
+    [t.avgWaterLevel, formatNumber(selected?.avgWaterLevelM, 'm')],
+    [t.effectiveStorage, formatNumber(selected?.avgEffectiveStorageMillionM3, 'million m3')],
+    [t.totalRainfall, formatNumber(selected?.totalCatchmentRainfallMm, 'mm')],
+    [t.totalInflow, formatNumber(selected?.totalReservoirInflowM3, 'm3', 0)],
+    [t.totalOutflow, formatNumber(selected?.totalReservoirOutflowM3, 'm3', 0)],
+    [t.netInflowOutflow, formatNumber(selected?.totalInflowMinusOutflowM3, 'm3', 0)],
+    [t.highestDailyRainfall, formatNumber(highestRainfall, 'mm')],
+    [t.lowestWaterLevel, formatNumber(selected?.lowestWaterLevelM, 'm')],
+  ];
+  return (
+    <div className="summary-grid">
+      {cards.map(([label, value]) => (
+        <div className="summary-card" key={label}>
+          <span>{label}</span>
+          <strong>{value}</strong>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function OperationParameterChart({
+  title,
+  records,
+  parameter,
+  language,
+  color = '#0f766e',
+}: {
+  title: string;
+  records: OperationDailyRecord[];
+  parameter: OperationParameterKey;
+  language: Language;
+  color?: string;
+}) {
+  const data = records.map((record) => ({
+    date: record.date.slice(5),
+    value: record.values[parameter].value,
+  }));
+  return (
+    <section className="chart-block">
+      <h3>{title}</h3>
+      <ResponsiveContainer width="100%" height={230}>
+        <LineChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="date" />
+          <YAxis />
+          <Tooltip />
+          <Line type="monotone" dataKey="value" stroke={color} strokeWidth={2} connectNulls name={operationParameterLabels[language][parameter]} />
+        </LineChart>
+      </ResponsiveContainer>
+    </section>
+  );
+}
+
+function RainfallTrendChart({ records, language }: { records: OperationDailyRecord[]; language: Language }) {
+  const data = records.map((record) => ({
+    date: record.date.slice(5),
+    rainfall: record.values.catchmentAverageRainfallMm.value,
+  }));
+  return (
+    <section className="chart-block">
+      <h3>{translations[language].dailyRainfallTrend}</h3>
+      <ResponsiveContainer width="100%" height={230}>
+        <BarChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="date" />
+          <YAxis />
+          <Tooltip />
+          <Bar dataKey="rainfall" fill="#2563eb" name={translations[language].catchmentAverageRainfall} />
+        </BarChart>
+      </ResponsiveContainer>
+    </section>
+  );
+}
+
+function InflowOutflowChart({ records, language }: { records: OperationDailyRecord[]; language: Language }) {
+  const data = records.map((record) => ({
+    date: record.date.slice(5),
+    inflow: record.values.reservoirInflowM3.value,
+    outflow: record.values.reservoirOutflowM3.value,
+  }));
+  return (
+    <section className="chart-block">
+      <h3>{translations[language].inflowOutflowTrend}</h3>
+      <ResponsiveContainer width="100%" height={230}>
+        <LineChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="date" />
+          <YAxis />
+          <Tooltip />
+          <Line type="monotone" dataKey="inflow" stroke="#0f766e" strokeWidth={2} connectNulls name={translations[language].reservoirInflow} />
+          <Line type="monotone" dataKey="outflow" stroke="#b7791f" strokeWidth={2} connectNulls name={translations[language].reservoirOutflow} />
+        </LineChart>
+      </ResponsiveContainer>
+    </section>
+  );
+}
+
+function MonthlyOperationTrend({
+  summaries,
+  language,
+  title,
+  children,
+}: {
+  summaries: OperationMonthlySummary[];
+  language: Language;
+  title: string;
+  children: ReactNode;
+}) {
+  if (summaries.length <= 1) return <p className="notice">{translations[language].oneMonthTrendNotice}</p>;
+  return (
+    <section className="chart-block">
+      <h3>{title}</h3>
+      <ResponsiveContainer width="100%" height={230}>
+        <LineChart data={summaries}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="period" />
+          <YAxis />
+          <Tooltip />
+          {children}
+        </LineChart>
+      </ResponsiveContainer>
+    </section>
+  );
+}
+
+function OperationDashboard({
+  records,
+  summaries,
+  period,
+  language,
+}: {
+  records: OperationDailyRecord[];
+  summaries: OperationMonthlySummary[];
+  period: string;
+  language: Language;
+}) {
+  const t = translations[language];
+  const dailyRecords = records.filter((record) => record.period === period);
+  return (
+    <section className="dashboard">
+      <div className="section-heading">
+        <h2>{t.operationDashboard}</h2>
+        <p>{t.dataDisclaimer}</p>
+      </div>
+      <OperationSummaryCards summaries={summaries} records={dailyRecords} period={period} language={language} />
+      <div className="charts">
+        <OperationParameterChart title={t.dailyWaterLevelTrend} records={dailyRecords} parameter="dailyAverageWaterLevelM" language={language} />
+        <OperationParameterChart title={t.effectiveStorageTrend} records={dailyRecords} parameter="effectiveStorageMillionM3" language={language} color="#2563eb" />
+        <RainfallTrendChart records={dailyRecords} language={language} />
+        <InflowOutflowChart records={dailyRecords} language={language} />
+        <OperationParameterChart title={t.netInflowTrend} records={dailyRecords} parameter="inflowMinusOutflowM3" language={language} color="#b7791f" />
+        <OperationParameterChart title={t.nanshiRiverFlow} records={dailyRecords} parameter="nanshiRiverFlowM3" language={language} />
+        <OperationParameterChart title={t.combinedRawWater} records={dailyRecords} parameter="combinedRawWaterM3" language={language} color="#2563eb" />
+        <MonthlyOperationTrend summaries={summaries} language={language} title={t.monthlyWaterLevelTrend}>
+          <Line type="monotone" dataKey="avgWaterLevelM" stroke="#0f766e" strokeWidth={2} connectNulls name={t.avgWaterLevel} />
+        </MonthlyOperationTrend>
+        <MonthlyOperationTrend summaries={summaries} language={language} title={t.monthlyStorageTrend}>
+          <Line type="monotone" dataKey="avgEffectiveStorageMillionM3" stroke="#2563eb" strokeWidth={2} connectNulls name={t.effectiveStorage} />
+        </MonthlyOperationTrend>
+        <MonthlyOperationTrend summaries={summaries} language={language} title={t.monthlyOperationTrend}>
+          <Line type="monotone" dataKey="totalCatchmentRainfallMm" stroke="#2563eb" strokeWidth={2} connectNulls name={t.totalRainfall} />
+          <Line type="monotone" dataKey="totalReservoirInflowM3" stroke="#0f766e" strokeWidth={2} connectNulls name={t.totalInflow} />
+          <Line type="monotone" dataKey="totalReservoirOutflowM3" stroke="#b7791f" strokeWidth={2} connectNulls name={t.totalOutflow} />
+        </MonthlyOperationTrend>
+      </div>
+    </section>
+  );
+}
+
+function CombinedReservoirContextDashboard({
   waterRecords,
   hydrometSummaries,
+  operationSummaries,
   language,
 }: {
   waterRecords: WaterQualityRecord[];
   hydrometSummaries: HydrometMonthlySummary[];
+  operationSummaries: OperationMonthlySummary[];
   language: Language;
 }) {
-  const joined = joinWaterQualityAndHydrometByPeriod(waterRecords, hydrometSummaries).map((entry) => ({
+  const joined = joinMonitoringDataByPeriod(waterRecords, hydrometSummaries, operationSummaries).map((entry) => ({
     period: entry.period,
-    airTemperature: entry.hydromet.avgTemperatureC,
-    solarRadiation: entry.hydromet.totalSolarRadiationCalCm2,
-    evaporation: entry.hydromet.totalEvaporationMm,
+    airTemperature: entry.hydromet?.avgTemperatureC ?? null,
+    solarRadiation: entry.hydromet?.totalSolarRadiationCalCm2 ?? null,
+    rainfall: entry.operation?.totalCatchmentRainfallMm ?? null,
+    inflow: entry.operation?.totalReservoirInflowM3 ?? null,
+    storage: entry.operation?.avgEffectiveStorageMillionM3 ?? null,
+    waterLevel: entry.operation?.avgWaterLevelM ?? null,
     waterTemperature: averageWaterQualityParameter(entry.waterRecords, 'waterTemperatureC'),
+    turbidity: averageWaterQualityParameter(entry.waterRecords, 'turbidityNTU'),
+    phosphorus: averageWaterQualityParameter(entry.waterRecords, 'totalPhosphorusUgL'),
     chlorophyll: averageWaterQualityParameter(entry.waterRecords, 'chlorophyllAUgL'),
     algae: averageWaterQualityParameter(entry.waterRecords, 'algaeCellsPerML'),
     transparency: averageWaterQualityParameter(entry.waterRecords, 'transparencyM'),
@@ -769,20 +974,24 @@ function WeatherWaterQualityComparisonChart({
   return (
     <section className="dashboard">
       <div className="section-heading">
-        <h2>{t.weatherWaterQualityComparison}</h2>
-        <p>{t.exploratoryComparisonNotice}</p>
+        <h2>{t.reservoirOperationComparison}</h2>
+        <p>{t.operationComparisonNotice}</p>
       </div>
       {!joined.length ? (
         <p className="notice">{t.oneMonthTrendNotice}</p>
       ) : (
       <div className="charts">
         {[
-          ['airTemperature', 'waterTemperature', language === 'zh' ? '氣溫 vs 水溫' : 'Air temperature vs water temperature'],
+          ['rainfall', 'turbidity', language === 'zh' ? '集水區雨量 vs 濁度' : 'Catchment rainfall vs turbidity'],
+          ['rainfall', 'phosphorus', language === 'zh' ? '集水區雨量 vs 總磷' : 'Catchment rainfall vs total phosphorus'],
+          ['inflow', 'turbidity', language === 'zh' ? '進流量 vs 濁度' : 'Inflow vs turbidity'],
+          ['inflow', 'algae', language === 'zh' ? '進流量 vs 藻類數' : 'Inflow vs algae count'],
+          ['storage', 'transparency', language === 'zh' ? '有效蓄水量 vs 透明度' : 'Effective storage vs transparency'],
+          ['waterLevel', 'waterTemperature', language === 'zh' ? '水位 vs 水溫' : 'Water level vs water temperature'],
           ['solarRadiation', 'chlorophyll', language === 'zh' ? '日輻射量 vs 葉綠素a' : 'Solar radiation vs chlorophyll-a'],
+          ['airTemperature', 'waterTemperature', language === 'zh' ? '氣溫 vs 水溫' : 'Air temperature vs water temperature'],
           ['airTemperature', 'algae', language === 'zh' ? '平均溫度 vs 藻類數' : 'Average temperature vs algae count'],
-          ['evaporation', 'transparency', language === 'zh' ? '蒸發量 vs 透明度' : 'Evaporation vs transparency'],
-          ['airTemperature', 'dissolvedOxygen', language === 'zh' ? '溶氧量與溫度對照' : 'Dissolved oxygen with temperature context'],
-          ['airTemperature', 'pH', language === 'zh' ? '酸鹼值與溫度對照' : 'pH with temperature context'],
+          ['storage', 'dissolvedOxygen', language === 'zh' ? '溶氧量與蓄水量對照' : 'Dissolved oxygen with storage context'],
         ].map(([leftKey, rightKey, title]) => (
           <section className="chart-block" key={title}>
             <h3>{title}</h3>
@@ -825,18 +1034,24 @@ function downloadCsv(filename: string, rows: Array<Record<string, unknown>>) {
 function MonitoringDataTable({
   waterRecords,
   hydrometRecords,
+  operationRecords,
   waterSummary,
   hydrometSummaries,
+  operationSummaries,
   waterParameter,
   hydrometParameter,
+  operationParameter,
   language,
 }: {
   waterRecords: WaterQualityRecord[];
   hydrometRecords: HydrometDailyRecord[];
+  operationRecords: OperationDailyRecord[];
   waterSummary: WaterQualitySummary;
   hydrometSummaries: HydrometMonthlySummary[];
+  operationSummaries: OperationMonthlySummary[];
   waterParameter: WaterQualityParameterKey;
   hydrometParameter: HydrometParameterKey;
+  operationParameter: OperationParameterKey;
   language: Language;
 }) {
   const t = translations[language];
@@ -861,15 +1076,33 @@ function MonitoringDataTable({
             : formatNumber(record.values[hydrometParameter].value, hydrometParameterUnits[hydrometParameter]),
           windDirection: record.windDirection ?? '-',
         }))
+      : mode === 'operationDaily'
+        ? operationRecords.map((record) => ({
+            date: record.date,
+            period: record.period,
+            dayType: record.weekday === 0 || record.weekday === 6 ? translations[language].weekends : translations[language].weekdays,
+            parameter: operationParameterLabels[language][operationParameter],
+            value: formatNumber(record.values[operationParameter].value, operationParameterUnits[operationParameter], operationParameter === 'dailyAverageWaterLevelM' || operationParameter === 'effectiveStorageMillionM3' ? 1 : 0),
+            raw: record.values[operationParameter].raw,
+          }))
       : mode === 'waterSummary'
         ? waterSummary.periods.map((period) => ({ period, source: t.waterQuality }))
-        : hydrometSummaries.map((summary) => ({
-            period: summary.period,
-            days: summary.dayCount,
-            avgTemperature: formatNumber(summary.avgTemperatureC, '℃'),
-            totalEvaporation: formatNumber(summary.totalEvaporationMm, 'mm'),
-            dominantWindDirection: summary.dominantWindDirection ?? '-',
-          }));
+        : mode === 'hydrometSummary'
+          ? hydrometSummaries.map((summary) => ({
+              period: summary.period,
+              days: summary.dayCount,
+              avgTemperature: formatNumber(summary.avgTemperatureC, '℃'),
+              totalEvaporation: formatNumber(summary.totalEvaporationMm, 'mm'),
+              dominantWindDirection: summary.dominantWindDirection ?? '-',
+            }))
+          : operationSummaries.map((summary) => ({
+              period: summary.period,
+              days: summary.dayCount,
+              avgWaterLevel: formatNumber(summary.avgWaterLevelM, 'm'),
+              totalRainfall: formatNumber(summary.totalCatchmentRainfallMm, 'mm'),
+              totalInflow: formatNumber(summary.totalReservoirInflowM3, 'm3', 0),
+              totalOutflow: formatNumber(summary.totalReservoirOutflowM3, 'm3', 0),
+            }));
   return (
     <section className="table-section">
       <div className="section-heading">
@@ -880,8 +1113,10 @@ function MonitoringDataTable({
         {[
           ['waterRecords', t.waterQualityRecords],
           ['hydrometDaily', t.hydrometDailyRecords],
+          ['operationDaily', t.operationDailyRecords],
           ['waterSummary', t.waterQualityMonthlySummaries],
           ['hydrometSummary', t.hydrometMonthlySummaries],
+          ['operationSummary', t.operationMonthlySummaries],
         ].map(([id, label]) => (
           <button key={id} className={mode === id ? 'active' : ''} onClick={() => setMode(id as TableMode)}>{label}</button>
         ))}
@@ -927,6 +1162,8 @@ export default function App() {
   const [stationLocations, setStationLocations] = useState<StationLocation[]>([]);
   const [hydrometRecords, setHydrometRecords] = useState<HydrometDailyRecord[]>([]);
   const [hydrometSummaries, setHydrometSummaries] = useState<HydrometMonthlySummary[]>([]);
+  const [operationRecords, setOperationRecords] = useState<OperationDailyRecord[]>([]);
+  const [operationSummaries, setOperationSummaries] = useState<OperationMonthlySummary[]>([]);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
@@ -934,12 +1171,17 @@ export default function App() {
   const [hydrometDayType, setHydrometDayType] = useState<DayTypeFilter>('all');
   const [hydrometStartDate, setHydrometStartDate] = useState('');
   const [hydrometEndDate, setHydrometEndDate] = useState('');
+  const [operationParameter, setOperationParameter] = useState<OperationParameterKey>('dailyAverageWaterLevelM');
+  const [operationDayType, setOperationDayType] = useState<DayTypeFilter>('all');
+  const [operationStartDate, setOperationStartDate] = useState('');
+  const [operationEndDate, setOperationEndDate] = useState('');
 
   const latestPeriod = useMemo(() => getLatestPeriod(records), [records]);
   const periods = useMemo(() => [...new Set([
     ...records.map((record) => record.period),
     ...hydrometSummaries.map((record) => record.period),
-  ])].sort(), [records, hydrometSummaries]);
+    ...operationSummaries.map((record) => record.period),
+  ])].sort(), [records, hydrometSummaries, operationSummaries]);
   const stations = useMemo(() => [...new Set(records.map((record) => record.stationName))].sort((a, b) => a.localeCompare(b, 'zh-Hant')), [records]);
   const [filters, setFilters] = useState<Filters>({
     period: '',
@@ -962,12 +1204,16 @@ export default function App() {
       fetchJson<StationLocation[]>('station-locations.json'),
       fetchJson<HydrometDailyRecord[]>('hydromet-daily-records.json'),
       fetchJson<HydrometMonthlySummary[]>('hydromet-monthly-summary.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData]) => {
+      fetchJson<OperationDailyRecord[]>('operation-daily-records.json'),
+      fetchJson<OperationMonthlySummary[]>('operation-monthly-summary.json'),
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
       setHydrometRecords(hydrometDailyData);
       setHydrometSummaries(hydrometMonthlyData);
+      setOperationRecords(operationDailyData);
+      setOperationSummaries(operationMonthlyData);
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
@@ -994,6 +1240,17 @@ export default function App() {
     if (hydrometEndDate && record.date > hydrometEndDate) return false;
     if (hydrometDayType === 'weekday') return record.weekday !== 0 && record.weekday !== 6;
     if (hydrometDayType === 'weekend') return record.weekday === 0 || record.weekday === 6;
+    return true;
+  });
+  const selectedOperationPeriod = operationRecords.some((record) => record.period === filters.period)
+    ? filters.period
+    : operationSummaries.at(-1)?.period ?? filters.period;
+  const filteredOperationRecords = operationRecords.filter((record) => {
+    if (record.period !== selectedOperationPeriod) return false;
+    if (operationStartDate && record.date < operationStartDate) return false;
+    if (operationEndDate && record.date > operationEndDate) return false;
+    if (operationDayType === 'weekday') return record.weekday !== 0 && record.weekday !== 6;
+    if (operationDayType === 'weekend') return record.weekday === 0 || record.weekday === 6;
     return true;
   });
   const t = translations[language];
@@ -1102,10 +1359,60 @@ export default function App() {
         </>
       )}
 
+      {activeTab === 'operation' && (
+        <>
+          <section className="filters hydromet-filters">
+            <label>
+              <span>{t.reservoirOperation}</span>
+              <select value={operationParameter} onChange={(event) => setOperationParameter(event.target.value as OperationParameterKey)}>
+                {operationParameterKeys.map((parameter) => (
+                  <option key={parameter} value={parameter}>{operationParameterLabels[language][parameter]}</option>
+                ))}
+              </select>
+            </label>
+            <label>
+              <span>{t.dayType}</span>
+              <select value={operationDayType} onChange={(event) => setOperationDayType(event.target.value as DayTypeFilter)}>
+                <option value="all">{t.allDays}</option>
+                <option value="weekday">{t.weekdays}</option>
+                <option value="weekend">{t.weekends}</option>
+              </select>
+            </label>
+            <label>
+              <span>{t.startDate}</span>
+              <input
+                value={operationStartDate}
+                onChange={(event) => setOperationStartDate(event.target.value)}
+                inputMode="numeric"
+                pattern="\\d{4}-\\d{2}-\\d{2}"
+                placeholder="YYYY-MM-DD"
+              />
+            </label>
+            <label>
+              <span>{t.endDate}</span>
+              <input
+                value={operationEndDate}
+                onChange={(event) => setOperationEndDate(event.target.value)}
+                inputMode="numeric"
+                pattern="\\d{4}-\\d{2}-\\d{2}"
+                placeholder="YYYY-MM-DD"
+              />
+            </label>
+          </section>
+          <OperationDashboard
+            records={filteredOperationRecords}
+            summaries={operationSummaries}
+            period={selectedOperationPeriod}
+            language={language}
+          />
+        </>
+      )}
+
       {activeTab === 'combinedDashboard' && (
-        <WeatherWaterQualityComparisonChart
+        <CombinedReservoirContextDashboard
           waterRecords={records}
           hydrometSummaries={hydrometSummaries}
+          operationSummaries={operationSummaries}
           language={language}
         />
       )}
@@ -1114,10 +1421,13 @@ export default function App() {
         <MonitoringDataTable
           waterRecords={filteredRecords}
           hydrometRecords={filteredHydrometRecords}
+          operationRecords={filteredOperationRecords}
           waterSummary={summary}
           hydrometSummaries={hydrometSummaries}
+          operationSummaries={operationSummaries}
           waterParameter={filters.parameter}
           hydrometParameter={hydrometParameter}
+          operationParameter={operationParameter}
           language={language}
         />
       )}

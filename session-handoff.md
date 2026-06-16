@@ -3,7 +3,7 @@
 ## Current Objective
 
 - Goal: Maintain a reviewed, restartable static water-quality map project.
-- Current status: Harness, code-review fixes, AI slop cleanup, hydromet context feature, and hydromet review follow-up are complete and verified.
+- Current status: Harness, code-review fixes, AI slop cleanup, hydromet context feature, hydromet review follow-up, and reservoir-operation context are complete and verified.
 - Branch / commit: Current working tree has uncommitted project files.
 
 ## Completed This Session
@@ -15,6 +15,7 @@
 - [x] Added regression tests and completed a bounded cleanup pass for utilities, dashboard duplication, and fetcher completion handling.
 - [x] Added hydrometeorological fetching, conversion, dashboard charts, combined context tab, table modes, translations, README updates, and PWA cache entries.
 - [x] Fixed hydromet review findings: added weekday/weekend and ISO date-range filters, shared those filters with charts and table rows, and removed obsolete table code.
+- [x] Added reservoir-operation resource fetching, conversion, models, tests, operation dashboard tab, combined context comparisons, data table modes, cache entries, and README updates.
 
 ## Verification Evidence
 
@@ -27,6 +28,9 @@
 | Local build | `npm run build` | Passed | Vite chunk-size warning remains. |
 | Pages build | `GITHUB_PAGES=true npm run build` | Passed | Verifies project subpath URLs. |
 | Production audit | `npm audit --omit=dev` | Passed | 0 production vulnerabilities. |
+| Operation fetch | `npm run fetch:operation` | Passed | Fetched or reused 130 operation resources. |
+| Operation conversion | `npm run convert:operation` | Passed | Generated 3,961 daily records across 130 periods. |
+| Operation tests/build | `npm test`; `npm run build` | Passed | 14 tests passed; build passed with existing large chunk warning. |
 | Browser smoke | In-app browser at `http://127.0.0.1:5173/` | Passed | 126 period options, no console errors, Chinese search checks passed. |
 | Hydromet fetch | `npm run fetch:hydromet` | Passed | Fetched/reused known resource `27adec48-2a1e-4897-a285-86a01e6c15ff`. |
 | Hydromet conversion | `npm run convert:hydromet` | Passed | 31 daily records across 1 period, 0 conversion issues. |
@@ -56,6 +60,16 @@
 - `public/sw.js`
 - `README.md`
 - `src/App.tsx` and `src/data/i18n.ts` for hydromet review filter fixes.
+- `src/types/operation.ts`
+- `src/utils/operation.ts`
+- `scripts/fetchFeitsuiOperationResources.ts`
+- `scripts/convertFeitsuiOperation.ts`
+- `tests/operation.test.ts`
+- `data/raw/feitsui-operation/`
+- `public/data/operation-daily-records.json`
+- `public/data/operation-monthly-summary.json`
+- `public/data/operation-parameter-series.json`
+- `public/data/operation-conversion-report.json`
 
 ## Decisions Made
 
@@ -68,6 +82,7 @@
 - Hydromet data is daily weather-station context; do not force it into water-quality station records or map markers without verified weather-station coordinates.
 - Combined dashboard is contextual comparison only and must not claim causation, prediction, drinking-water safety, or pollution status.
 - Hydromet daily filters live above the hydromet tab but apply to both hydromet charts and the data table so daily views stay consistent.
+- Operation data is daily reservoir-operation context and must not be used to make operational-quality, safety, prediction, pollution, or causation claims.
 
 ## Blockers / Risks
 

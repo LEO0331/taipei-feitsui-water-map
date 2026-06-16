@@ -71,6 +71,14 @@
       "dependencies": ["feat-008"],
       "status": "done",
       "evidence": "Removed the obsolete WaterQualityTable component and unused table prop surface. Added hydromet weekday/weekend and date-range filters shared by charts and the data table. Browser smoke verified weekend range 2026-01-10 through 2026-01-18 returns exactly 4 rows with no console errors. ./init.sh passed; npm audit --omit=dev found 0 vulnerabilities; harness validation remained 100/100."
+    },
+    {
+      "id": "feat-010",
+      "name": "Reservoir Operation Context",
+      "description": "Add Taipei Feitsui reservoir operation monthly report fetching, conversion, static JSON outputs, operation tab, combined reservoir context dashboard, and operation table modes.",
+      "dependencies": ["feat-001", "feat-008"],
+      "status": "done",
+      "evidence": "Fetched or reused 130 operation resources and converted 3961 daily operation records across 130 periods. Added operation models/utilities/tests, operation tab/cards/charts, combined dashboard join, table modes, translations, service-worker cache entries, and README documentation. npm test passed with 14 tests and npm run build passed with the existing chunk-size warning."
     }
   ]
 }

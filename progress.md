@@ -19,6 +19,7 @@
 - [x] AI slop cleanup pass completed with regression tests first.
 - [x] Hydrometeorological context feature completed while keeping the water-quality map as the main product.
 - [x] Hydromet code-review follow-up completed: removed obsolete table code and added weekday/weekend plus date-range filters.
+- [x] Reservoir operation context feature completed with static fetch/convert scripts, operation tab, combined dashboard, and table modes.
 
 ### What's In Progress
 
@@ -63,6 +64,9 @@
 - **Hydromet daily filters are shared**: The hydromet charts and table use the same period, weekday/weekend, and ISO date-range filter state.
   - Context: The request calls out hydromet date range and weekday/weekend filters; filtering only the table would make charts disagree.
   - Alternatives considered: Native `type=date`; rejected after browser verification because plain controlled ISO text inputs update reliably and remain mobile-friendly.
+- **Operation data stays contextual**: Operation records are shown in cards, charts, table rows, and combined comparisons, not on the station map.
+  - Context: Operation rows are daily reservoir-operation observations, not water-quality station records.
+  - Alternatives considered: Adding operation markers; rejected because the dataset has no station coordinates and the product remains a water-quality map.
 
 ## Files Modified This Session
 
@@ -84,6 +88,11 @@
 - `src/data/i18n.ts` - Hydromet and tab translations.
 - `src/App.tsx` - Hydromet weekday/weekend and date-range filters; obsolete table component removed.
 - `src/data/i18n.ts` - Hydromet filter label translations.
+- `src/types/operation.ts` and `src/utils/operation.ts` - Operation data models, parsing, aggregation, and period join utilities.
+- `scripts/fetchFeitsuiOperationResources.ts` and `scripts/convertFeitsuiOperation.ts` - Operation raw-data fetch and static JSON conversion.
+- `tests/operation.test.ts` - Regression tests for operation date/value parsing, aggregation, and combined joins.
+- `src/App.tsx` and `src/data/i18n.ts` - Operation tab, charts, combined dashboard labels, and table modes.
+- `public/sw.js` and `README.md` - Operation static-data cache and documentation.
 
 ## Evidence of Completion
 
@@ -101,6 +110,8 @@
 - [x] Browser smoke: hydromet tab showed 8 summary cards and daily charts; combined dashboard showed the non-causation notice; data table switched to 31 hydromet daily rows; English tab labels worked.
 - [x] Code-review follow-up verification: `npm test` passed with 10 tests; `npm run build` passed; final `./init.sh` passed; `npm audit --omit=dev` found 0 vulnerabilities; harness validation scored 100/100.
 - [x] Hydromet filter smoke: weekend range `2026-01-10` to `2026-01-18` returned exactly `2026-01-10`, `2026-01-11`, `2026-01-17`, and `2026-01-18` with 0 console errors.
+- [x] Operation conversion: `npm run fetch:operation` fetched or reused 130 resources; `npm run convert:operation` generated 3,961 daily records across 130 periods.
+- [x] Operation tests/build: `npm test` passed with 14 tests; `npm run build` passed with the known Vite chunk-size warning.
 
 ## Notes for Next Session
 

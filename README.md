@@ -1,8 +1,8 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Mobile-first bilingual web app for exploring Taipei Feitsui Reservoir water-quality monitoring data with hydrometeorological context.
+Mobile-first bilingual web app for exploring Taipei Feitsui Reservoir water-quality monitoring data with hydrometeorological and reservoir-operation context.
 
-The app is still primarily a water-quality station map. Hydrometeorological data is added as supporting context for dashboard comparison, not as a replacement product and not as a causal model.
+The app is still primarily a water-quality station map. Hydrometeorological and reservoir-operation data are supporting context for dashboard comparison, not a replacement product, operational model, prediction system, or causal model.
 
 ## Data Sources
 
@@ -19,7 +19,14 @@ Hydrometeorology:
 - Known API resource: `https://data.taipei/api/v1/dataset/27adec48-2a1e-4897-a285-86a01e6c15ff?scope=resourceAquire`
 - Raw JSON directory: `data/raw/feitsui-hydromet/`
 
-Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
+Reservoir operation:
+
+- Dataset: `臺北翡翠水庫操作運轉月報表`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=e6189636-9972-4c65-8a8b-5607a867c6be`
+- Recent known API resources are seeded in `data/raw/feitsui-operation/manual-resources.json`
+- Raw JSON directory: `data/raw/feitsui-operation/`
+
+Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 
 ## Parsing Rules
 
@@ -32,6 +39,8 @@ Water-quality values preserve the raw value and parse a separate numeric value:
 - numeric strings: measured values
 
 Hydrometeorological values preserve raw strings. Empty values, `null`, `undefined`, and `-` are missing. Wind direction is preserved as text and is not parsed as a numeric value.
+
+Reservoir-operation values preserve raw strings. Empty values, `null`, `undefined`, and `-` are missing. Numeric strings with commas, such as `1,341,116`, parse to numeric values while preserving the original raw value.
 
 ## Coordinates
 
@@ -61,7 +70,13 @@ Fetch hydrometeorological resources:
 npm run fetch:hydromet
 ```
 
-Fetch both:
+Fetch operation resources:
+
+```sh
+npm run fetch:operation
+```
+
+Fetch all:
 
 ```sh
 npm run fetch:data
@@ -77,6 +92,12 @@ Convert local hydrometeorological API JSON:
 
 ```sh
 npm run convert:hydromet
+```
+
+Convert local operation API JSON:
+
+```sh
+npm run convert:operation
 ```
 
 Convert all local raw data:
@@ -126,13 +147,20 @@ Hydrometeorology:
 - `public/data/hydromet-parameter-series.json`
 - `public/data/hydromet-conversion-report.json`
 
+Reservoir operation:
+
+- `public/data/operation-daily-records.json`
+- `public/data/operation-monthly-summary.json`
+- `public/data/operation-parameter-series.json`
+- `public/data/operation-conversion-report.json`
+
 Shared:
 
 - `public/data/station-locations.json`
 
 ## Dashboard Limits
 
-If only one month is loaded for a dataset, multi-month trend charts show a notice instead of implying a trend. The combined dashboard joins water-quality monthly records and hydrometeorological monthly summaries by `period` for contextual comparison only.
+If only one month is loaded for a dataset, multi-month trend charts show a notice instead of implying a trend. The combined dashboard joins water-quality monthly records, hydrometeorological monthly summaries, and reservoir-operation monthly summaries by `period` for contextual comparison only.
 
 ## Deployment
 
@@ -140,4 +168,4 @@ The browser app reads static JSON from `public/data` and does not call Taipei Op
 
 ## Disclaimer
 
-This app presents public water-quality and hydrometeorological monitoring values. It does not determine drinking-water safety, pollution status, predictions, or causation. Official interpretation and announcements should come from the responsible authorities.
+This app presents public water-quality, hydrometeorological, and reservoir-operation monitoring values. It does not determine drinking-water safety, pollution status, operational decision quality, predictions, or causation. Official interpretation and announcements should come from the responsible authorities.
