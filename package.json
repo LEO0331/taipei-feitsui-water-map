@@ -9,8 +9,12 @@
     "test:unit": "node --import tsx --test tests/*.test.ts",
     "build": "tsc && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "fetch:data": "tsx scripts/fetchFeitsuiWaterResources.ts",
-    "convert:data": "tsx scripts/convertFeitsuiWaterQuality.ts"
+    "fetch:water": "tsx scripts/fetchFeitsuiWaterResources.ts",
+    "fetch:hydromet": "tsx scripts/fetchFeitsuiHydrometResources.ts",
+    "fetch:data": "npm run fetch:water && npm run fetch:hydromet",
+    "convert:water": "tsx scripts/convertFeitsuiWaterQuality.ts",
+    "convert:hydromet": "tsx scripts/convertFeitsuiHydromet.ts",
+    "convert:data": "npm run convert:water && npm run convert:hydromet"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

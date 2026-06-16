@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "id": "27adec48-2a1e-4897-a285-86a01e6c15ff",
+      "title": "臺北翡翠水庫水文氣象月報表 sample resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/27adec48-2a1e-4897-a285-86a01e6c15ff?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T03:45:10.098Z",
+      "file": "27adec48-2a1e-4897-a285-86a01e6c15ff.json",
+      "recordCount": 31,
+      "status": "fetched"
+    }
+  ],
+  "errors": []
+}

@@ -3,7 +3,7 @@
 ## Current State
 
 **Last Updated:** 2026-06-16
-**Session ID:** ai-slop-cleanup
+**Session ID:** hydromet-context
 **Active Feature:** none
 
 ## Status
@@ -17,6 +17,7 @@
 - [x] Initial harness files were generated: `AGENTS.md`, `feature_list.json`, `progress.md`, `session-handoff.md`, `init.sh`.
 - [x] Code review fix pass completed for app runtime behavior, chart semantics, search, and fetcher robustness.
 - [x] AI slop cleanup pass completed with regression tests first.
+- [x] Hydrometeorological context feature completed while keeping the water-quality map as the main product.
 
 ### What's In Progress
 
@@ -52,6 +53,12 @@
 - **Cleanup stayed utility-focused**: The pass avoided splitting `src/App.tsx` into many files.
   - Context: The highest-risk slop was untested data behavior and duplicated utility/UI lists, not component boundaries.
   - Alternatives considered: Larger component extraction; deferred to avoid broad churn without design need.
+- **Hydromet remains supporting context**: The title stays `台北翡翠水庫水質地圖`; hydromet data is shown in charts/tables and combined context only.
+  - Context: Hydrometeorological rows are daily weather-station observations, not water-quality station records.
+  - Alternatives considered: Adding hydromet to the map by default; rejected because coordinates are not verified.
+- **Combined dashboard avoids causal claims**: It shows the comparison title and non-causation notice even when no shared period exists.
+  - Context: Current fetched hydromet sample is 2026-01; water-quality data may not have a matching month in local resources.
+  - Alternatives considered: Hiding the combined dashboard; rejected because the notice is required.
 
 ## Files Modified This Session
 
@@ -65,6 +72,12 @@
 - `scripts/fetchFeitsuiWaterResources.ts` - Per-resource fetch failure recording.
 - `tests/waterQuality.test.ts` - Regression coverage for parser, filters, summary, and comparison behavior.
 - `package.json` - Unit-test script added to `npm test`.
+- `scripts/fetchFeitsuiHydrometResources.ts` - Local hydromet API fetcher.
+- `scripts/convertFeitsuiHydromet.ts` - Hydromet conversion to static JSON.
+- `src/types/hydromet.ts` and `src/utils/hydromet.ts` - Hydromet models and utilities.
+- `tests/hydromet.test.ts` - Hydromet parser and aggregation regression tests.
+- `src/App.tsx` - Monitoring tabs, hydromet dashboard, combined dashboard, and table modes.
+- `src/data/i18n.ts` - Hydromet and tab translations.
 
 ## Evidence of Completion
 
@@ -77,6 +90,9 @@
 - [x] Browser runtime check: app loaded with 126 period options and no console errors; Chinese search for `水庫表水` returned 5 reservoir-surface rows; `濁度` returned 14 latest-month rows.
 - [x] Cleanup verification: `./init.sh` passed with 5 unit tests.
 - [x] Harness validation after cleanup: 100/100.
+- [x] Hydromet verification: `npm run fetch:hydromet` fetched/reused 1 resource; `npm run convert:data` produced 31 hydromet records and 1 hydromet period.
+- [x] Current full verification: `./init.sh` passed with 10 unit tests, local build, and Pages build.
+- [x] Browser smoke: hydromet tab showed 8 summary cards and daily charts; combined dashboard showed the non-causation notice; data table switched to 31 hydromet daily rows; English tab labels worked.
 
 ## Notes for Next Session
 

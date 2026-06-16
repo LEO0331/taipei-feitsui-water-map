@@ -1,0 +1,17 @@
+[
+  {
+    "period": "2026-01",
+    "year": 2026,
+    "month": 1,
+    "dayCount": 31,
+    "avgWindSpeedMS": 0.9290322580645162,
+    "dominantWindDirection": "東",
+    "avgAirPressureMb": 1011.0129032258066,
+    "totalSolarRadiationCalCm2": 14171.199999999999,
+    "totalEvaporationMm": 29.299999999999997,
+    "avgRelativeHumidityPercent": 87.09677419354838,
+    "avgMaxTemperatureC": 18.85483870967742,
+    "avgMinTemperatureC": 11.80967741935484,
+    "avgTemperatureC": 14.87096774193549
+  }
+]

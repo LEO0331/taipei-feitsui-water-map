@@ -55,6 +55,14 @@
       "dependencies": ["feat-006"],
       "status": "done",
       "evidence": "Added node:test regression coverage for value parsing, ROC date parsing, filtering, summary counts, and station comparison. Deleted unused utility exports/types, deduplicated latest-station-count and dashboard chart/card rendering, and made all-failed resource refreshes fail after writing diagnostics. ./init.sh passed with 5 unit tests; npm audit --omit=dev found 0 vulnerabilities; harness validation remained 100/100."
+    },
+    {
+      "id": "feat-008",
+      "name": "Hydrometeorological Context",
+      "description": "Add Taipei Feitsui hydrometeorological monthly report fetching, conversion, static JSON outputs, hydromet tab, combined dashboard, and monitoring data table modes while preserving the water-quality map as the main product.",
+      "dependencies": ["feat-001"],
+      "status": "done",
+      "evidence": "Fetched known hydromet resource 27adec48-2a1e-4897-a285-86a01e6c15ff and converted 31 daily records across 1 period with 0 issues. Added hydromet parser/aggregation tests; npm test passed with 10 tests. ./init.sh passed, npm audit --omit=dev found 0 vulnerabilities, and browser smoke verified Chinese/English tabs, hydromet charts/cards, non-causation combined dashboard notice, and 31-row hydromet daily table."
     }
   ]
 }

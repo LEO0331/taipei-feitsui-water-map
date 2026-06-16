@@ -1,0 +1,1645 @@
+[
+  {
+    "id": "2026-01-01-臺北翡翠水庫水文氣象月報表 sample resource-0",
+    "date": "2026-01-01",
+    "year": 2026,
+    "month": 1,
+    "day": 1,
+    "weekday": 4,
+    "period": "2026-01",
+    "windDirection": "西",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.3",
+        "value": 0.3,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1008.5",
+        "value": 1008.5,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "51.7",
+        "value": 51.7,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "97",
+        "value": 97,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "16.1",
+        "value": 16.1,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "13.1",
+        "value": 13.1,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "14.7",
+        "value": 14.7,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-02-臺北翡翠水庫水文氣象月報表 sample resource-1",
+    "date": "2026-01-02",
+    "year": 2026,
+    "month": 1,
+    "day": 2,
+    "weekday": 5,
+    "period": "2026-01",
+    "windDirection": "西北",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.1",
+        "value": 0.1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1015.5",
+        "value": 1015.5,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "18.7",
+        "value": 18.7,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "94",
+        "value": 94,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "13.2",
+        "value": 13.2,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "9.4",
+        "value": 9.4,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "10.9",
+        "value": 10.9,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-03-臺北翡翠水庫水文氣象月報表 sample resource-2",
+    "date": "2026-01-03",
+    "year": 2026,
+    "month": 1,
+    "day": 3,
+    "weekday": 6,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.6",
+        "value": 1.6,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1015.7",
+        "value": 1015.7,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "172",
+        "value": 172,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "82",
+        "value": 82,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "15.8",
+        "value": 15.8,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "8.9",
+        "value": 8.9,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "12.5",
+        "value": 12.5,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-04-臺北翡翠水庫水文氣象月報表 sample resource-3",
+    "date": "2026-01-04",
+    "year": 2026,
+    "month": 1,
+    "day": 4,
+    "weekday": 0,
+    "period": "2026-01",
+    "windDirection": "東南東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.3",
+        "value": 1.3,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1011.2",
+        "value": 1011.2,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "752.2",
+        "value": 752.2,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "81",
+        "value": 81,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "22.7",
+        "value": 22.7,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "11.1",
+        "value": 11.1,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "15.4",
+        "value": 15.4,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-05-臺北翡翠水庫水文氣象月報表 sample resource-4",
+    "date": "2026-01-05",
+    "year": 2026,
+    "month": 1,
+    "day": 5,
+    "weekday": 1,
+    "period": "2026-01",
+    "windDirection": "東南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.7",
+        "value": 0.7,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1010.8",
+        "value": 1010.8,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "202.3",
+        "value": 202.3,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "90",
+        "value": 90,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "19.6",
+        "value": 19.6,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "10.8",
+        "value": 10.8,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "14.9",
+        "value": 14.9,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-06-臺北翡翠水庫水文氣象月報表 sample resource-5",
+    "date": "2026-01-06",
+    "year": 2026,
+    "month": 1,
+    "day": 6,
+    "weekday": 2,
+    "period": "2026-01",
+    "windDirection": "西北西",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.6",
+        "value": 0.6,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1013.4",
+        "value": 1013.4,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "36.1",
+        "value": 36.1,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "94",
+        "value": 94,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "13.5",
+        "value": 13.5,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "9.4",
+        "value": 9.4,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "11.6",
+        "value": 11.6,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-07-臺北翡翠水庫水文氣象月報表 sample resource-6",
+    "date": "2026-01-07",
+    "year": 2026,
+    "month": 1,
+    "day": 7,
+    "weekday": 3,
+    "period": "2026-01",
+    "windDirection": "東北",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.2",
+        "value": 0.2,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1015.2",
+        "value": 1015.2,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "73.1",
+        "value": 73.1,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.3",
+        "value": 1.3,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "83",
+        "value": 83,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "11.7",
+        "value": 11.7,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "8.8",
+        "value": 8.8,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "10.2",
+        "value": 10.2,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-08-臺北翡翠水庫水文氣象月報表 sample resource-7",
+    "date": "2026-01-08",
+    "year": 2026,
+    "month": 1,
+    "day": 8,
+    "weekday": 4,
+    "period": "2026-01",
+    "windDirection": "東北",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1016",
+        "value": 1016,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "44.7",
+        "value": 44.7,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.3",
+        "value": 0.3,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "91",
+        "value": 91,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "12.6",
+        "value": 12.6,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "7.2",
+        "value": 7.2,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "10.1",
+        "value": 10.1,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-09-臺北翡翠水庫水文氣象月報表 sample resource-8",
+    "date": "2026-01-09",
+    "year": 2026,
+    "month": 1,
+    "day": 9,
+    "weekday": 5,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.9",
+        "value": 0.9,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1012.9",
+        "value": 1012.9,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "338.1",
+        "value": 338.1,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.1",
+        "value": 1.1,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "83",
+        "value": 83,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "17.9",
+        "value": 17.9,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "6.1",
+        "value": 6.1,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "10.9",
+        "value": 10.9,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-10-臺北翡翠水庫水文氣象月報表 sample resource-9",
+    "date": "2026-01-10",
+    "year": 2026,
+    "month": 1,
+    "day": 10,
+    "weekday": 6,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.5",
+        "value": 1.5,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1010.8",
+        "value": 1010.8,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "243.5",
+        "value": 243.5,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.7",
+        "value": 1.7,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "83",
+        "value": 83,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "20.3",
+        "value": 20.3,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "8",
+        "value": 8,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "13.4",
+        "value": 13.4,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-11-臺北翡翠水庫水文氣象月報表 sample resource-10",
+    "date": "2026-01-11",
+    "year": 2026,
+    "month": 1,
+    "day": 11,
+    "weekday": 0,
+    "period": "2026-01",
+    "windDirection": "東南東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.7",
+        "value": 1.7,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1015.5",
+        "value": 1015.5,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "109.5",
+        "value": 109.5,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.8",
+        "value": 1.8,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "80",
+        "value": 80,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "16.4",
+        "value": 16.4,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "10.7",
+        "value": 10.7,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "13.5",
+        "value": 13.5,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-12-臺北翡翠水庫水文氣象月報表 sample resource-11",
+    "date": "2026-01-12",
+    "year": 2026,
+    "month": 1,
+    "day": 12,
+    "weekday": 1,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.3",
+        "value": 1.3,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1010.8",
+        "value": 1010.8,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "182.2",
+        "value": 182.2,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "2.1",
+        "value": 2.1,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "78",
+        "value": 78,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "20.3",
+        "value": 20.3,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "12.1",
+        "value": 12.1,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "15.4",
+        "value": 15.4,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-13-臺北翡翠水庫水文氣象月報表 sample resource-12",
+    "date": "2026-01-13",
+    "year": 2026,
+    "month": 1,
+    "day": 13,
+    "weekday": 2,
+    "period": "2026-01",
+    "windDirection": "東南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.9",
+        "value": 0.9,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1009.7",
+        "value": 1009.7,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "352.9",
+        "value": 352.9,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.6",
+        "value": 1.6,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "81",
+        "value": 81,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "22.4",
+        "value": 22.4,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "8.9",
+        "value": 8.9,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "14.5",
+        "value": 14.5,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-14-臺北翡翠水庫水文氣象月報表 sample resource-13",
+    "date": "2026-01-14",
+    "year": 2026,
+    "month": 1,
+    "day": 14,
+    "weekday": 3,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "3.2",
+        "value": 3.2,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1008.4",
+        "value": 1008.4,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "382.1",
+        "value": 382.1,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "3",
+        "value": 3,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "75",
+        "value": 75,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "22.7",
+        "value": 22.7,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "12",
+        "value": 12,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "17.6",
+        "value": 17.6,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-15-臺北翡翠水庫水文氣象月報表 sample resource-14",
+    "date": "2026-01-15",
+    "year": 2026,
+    "month": 1,
+    "day": 15,
+    "weekday": 4,
+    "period": "2026-01",
+    "windDirection": "東南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.9",
+        "value": 0.9,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1006.3",
+        "value": 1006.3,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "323",
+        "value": 323,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.9",
+        "value": 1.9,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "81",
+        "value": 81,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "25.5",
+        "value": 25.5,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "12.4",
+        "value": 12.4,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "17.5",
+        "value": 17.5,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-16-臺北翡翠水庫水文氣象月報表 sample resource-15",
+    "date": "2026-01-16",
+    "year": 2026,
+    "month": 1,
+    "day": 16,
+    "weekday": 5,
+    "period": "2026-01",
+    "windDirection": "東南東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.5",
+        "value": 0.5,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1004.6",
+        "value": 1004.6,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "146.8",
+        "value": 146.8,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.9",
+        "value": 0.9,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "91",
+        "value": 91,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "20.6",
+        "value": 20.6,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "14.5",
+        "value": 14.5,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "17.5",
+        "value": 17.5,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-17-臺北翡翠水庫水文氣象月報表 sample resource-16",
+    "date": "2026-01-17",
+    "year": 2026,
+    "month": 1,
+    "day": 17,
+    "weekday": 6,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.1",
+        "value": 1.1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1003.8",
+        "value": 1003.8,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "310.3",
+        "value": 310.3,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "2.3",
+        "value": 2.3,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "84",
+        "value": 84,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "24.7",
+        "value": 24.7,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "13.9",
+        "value": 13.9,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "18",
+        "value": 18,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-18-臺北翡翠水庫水文氣象月報表 sample resource-17",
+    "date": "2026-01-18",
+    "year": 2026,
+    "month": 1,
+    "day": 18,
+    "weekday": 0,
+    "period": "2026-01",
+    "windDirection": "東南南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.7",
+        "value": 0.7,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1004",
+        "value": 1004,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "280",
+        "value": 280,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.9",
+        "value": 1.9,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "88",
+        "value": 88,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "23.6",
+        "value": 23.6,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "13.4",
+        "value": 13.4,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "17.6",
+        "value": 17.6,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-19-臺北翡翠水庫水文氣象月報表 sample resource-18",
+    "date": "2026-01-19",
+    "year": 2026,
+    "month": 1,
+    "day": 19,
+    "weekday": 1,
+    "period": "2026-01",
+    "windDirection": "南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.4",
+        "value": 0.4,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1005.7",
+        "value": 1005.7,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "214.3",
+        "value": 214.3,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.7",
+        "value": 0.7,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "92",
+        "value": 92,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "22.4",
+        "value": 22.4,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "15.2",
+        "value": 15.2,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "17.5",
+        "value": 17.5,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-20-臺北翡翠水庫水文氣象月報表 sample resource-19",
+    "date": "2026-01-20",
+    "year": 2026,
+    "month": 1,
+    "day": 20,
+    "weekday": 2,
+    "period": "2026-01",
+    "windDirection": "西",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.1",
+        "value": 0.1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1010.1",
+        "value": 1010.1,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "60.9",
+        "value": 60.9,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.1",
+        "value": 0.1,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "96",
+        "value": 96,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "16.1",
+        "value": 16.1,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "11.7",
+        "value": 11.7,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "13.6",
+        "value": 13.6,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-21-臺北翡翠水庫水文氣象月報表 sample resource-20",
+    "date": "2026-01-21",
+    "year": 2026,
+    "month": 1,
+    "day": 21,
+    "weekday": 3,
+    "period": "2026-01",
+    "windDirection": "西",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.2",
+        "value": 0.2,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1013.9",
+        "value": 1013.9,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "55.1",
+        "value": 55.1,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "97",
+        "value": 97,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "12",
+        "value": 12,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "10.3",
+        "value": 10.3,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "11.1",
+        "value": 11.1,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-22-臺北翡翠水庫水文氣象月報表 sample resource-21",
+    "date": "2026-01-22",
+    "year": 2026,
+    "month": 1,
+    "day": 22,
+    "weekday": 4,
+    "period": "2026-01",
+    "windDirection": "西南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.1",
+        "value": 0.1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1014.8",
+        "value": 1014.8,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "40.8",
+        "value": 40.8,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0",
+        "value": 0,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "97",
+        "value": 97,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "12.2",
+        "value": 12.2,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "10.1",
+        "value": 10.1,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "11.1",
+        "value": 11.1,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-23-臺北翡翠水庫水文氣象月報表 sample resource-22",
+    "date": "2026-01-23",
+    "year": 2026,
+    "month": 1,
+    "day": 23,
+    "weekday": 5,
+    "period": "2026-01",
+    "windDirection": "東南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.1",
+        "value": 1.1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1013.5",
+        "value": 1013.5,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "645.8",
+        "value": 645.8,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.4",
+        "value": 0.4,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "91",
+        "value": 91,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "19.6",
+        "value": 19.6,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "11.2",
+        "value": 11.2,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "14.6",
+        "value": 14.6,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-24-臺北翡翠水庫水文氣象月報表 sample resource-23",
+    "date": "2026-01-24",
+    "year": 2026,
+    "month": 1,
+    "day": 24,
+    "weekday": 6,
+    "period": "2026-01",
+    "windDirection": "東南南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1.5",
+        "value": 1.5,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1012.2",
+        "value": 1012.2,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "1018.6",
+        "value": 1018.6,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.3",
+        "value": 0.3,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "93",
+        "value": 93,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "19.2",
+        "value": 19.2,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "14",
+        "value": 14,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "15.9",
+        "value": 15.9,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-25-臺北翡翠水庫水文氣象月報表 sample resource-24",
+    "date": "2026-01-25",
+    "year": 2026,
+    "month": 1,
+    "day": 25,
+    "weekday": 0,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "2.1",
+        "value": 2.1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1010.5",
+        "value": 1010.5,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "1332.9",
+        "value": 1332.9,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "2.3",
+        "value": 2.3,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "87",
+        "value": 87,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "22.8",
+        "value": 22.8,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "14.8",
+        "value": 14.8,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "18.3",
+        "value": 18.3,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-26-臺北翡翠水庫水文氣象月報表 sample resource-25",
+    "date": "2026-01-26",
+    "year": 2026,
+    "month": 1,
+    "day": 26,
+    "weekday": 1,
+    "period": "2026-01",
+    "windDirection": "南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "1",
+        "value": 1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1009.4",
+        "value": 1009.4,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "1174.3",
+        "value": 1174.3,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.7",
+        "value": 0.7,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "90",
+        "value": 90,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "23.2",
+        "value": 23.2,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "16",
+        "value": 16,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "19",
+        "value": 19,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-27-臺北翡翠水庫水文氣象月報表 sample resource-26",
+    "date": "2026-01-27",
+    "year": 2026,
+    "month": 1,
+    "day": 27,
+    "weekday": 2,
+    "period": "2026-01",
+    "windDirection": "西南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.1",
+        "value": 0.1,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1011",
+        "value": 1011,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "1397",
+        "value": 1397,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.2",
+        "value": 0.2,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "92",
+        "value": 92,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "17.6",
+        "value": 17.6,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "14.3",
+        "value": 14.3,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "16",
+        "value": 16,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-28-臺北翡翠水庫水文氣象月報表 sample resource-27",
+    "date": "2026-01-28",
+    "year": 2026,
+    "month": 1,
+    "day": 28,
+    "weekday": 3,
+    "period": "2026-01",
+    "windDirection": "西南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.2",
+        "value": 0.2,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1012.9",
+        "value": 1012.9,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "1394.9",
+        "value": 1394.9,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.2",
+        "value": 0.2,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "89",
+        "value": 89,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "15",
+        "value": 15,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "13.6",
+        "value": 13.6,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "14.1",
+        "value": 14.1,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-29-臺北翡翠水庫水文氣象月報表 sample resource-28",
+    "date": "2026-01-29",
+    "year": 2026,
+    "month": 1,
+    "day": 29,
+    "weekday": 4,
+    "period": "2026-01",
+    "windDirection": "東",
+    "values": {
+      "windSpeedMS": {
+        "raw": "3.4",
+        "value": 3.4,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1011.8",
+        "value": 1011.8,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "874",
+        "value": 874,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "2.7",
+        "value": 2.7,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "70",
+        "value": 70,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "21.4",
+        "value": 21.4,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "14.1",
+        "value": 14.1,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "17.6",
+        "value": 17.6,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-30-臺北翡翠水庫水文氣象月報表 sample resource-29",
+    "date": "2026-01-30",
+    "year": 2026,
+    "month": 1,
+    "day": 30,
+    "weekday": 5,
+    "period": "2026-01",
+    "windDirection": "東南",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.9",
+        "value": 0.9,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1010.3",
+        "value": 1010.3,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "414.8",
+        "value": 414.8,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "1.6",
+        "value": 1.6,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "74",
+        "value": 74,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "25.1",
+        "value": 25.1,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "16.4",
+        "value": 16.4,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "19.7",
+        "value": 19.7,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  },
+  {
+    "id": "2026-01-31-臺北翡翠水庫水文氣象月報表 sample resource-30",
+    "date": "2026-01-31",
+    "year": 2026,
+    "month": 1,
+    "day": 31,
+    "weekday": 6,
+    "period": "2026-01",
+    "windDirection": "西",
+    "values": {
+      "windSpeedMS": {
+        "raw": "0.2",
+        "value": 0.2,
+        "qualifier": "measured"
+      },
+      "airPressureMb": {
+        "raw": "1012.2",
+        "value": 1012.2,
+        "qualifier": "measured"
+      },
+      "solarRadiationCalCm2": {
+        "raw": "1528.6",
+        "value": 1528.6,
+        "qualifier": "measured"
+      },
+      "evaporationMm": {
+        "raw": "0.2",
+        "value": 0.2,
+        "qualifier": "measured"
+      },
+      "relativeHumidityPercent": {
+        "raw": "96",
+        "value": 96,
+        "qualifier": "measured"
+      },
+      "maxTemperatureC": {
+        "raw": "18.3",
+        "value": 18.3,
+        "qualifier": "measured"
+      },
+      "minTemperatureC": {
+        "raw": "13.7",
+        "value": 13.7,
+        "qualifier": "measured"
+      },
+      "avgTemperatureC": {
+        "raw": "16.3",
+        "value": 16.3,
+        "qualifier": "measured"
+      }
+    },
+    "sourceResource": "臺北翡翠水庫水文氣象月報表 sample resource"
+  }
+]

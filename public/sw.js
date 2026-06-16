@@ -7,7 +7,10 @@ const STATIC_ASSETS = [
   'data/water-quality-summary.json',
   'data/water-quality-station-series.json',
   'data/water-quality-parameter-series.json',
-  'data/station-locations.json'
+  'data/station-locations.json',
+  'data/hydromet-daily-records.json',
+  'data/hydromet-monthly-summary.json',
+  'data/hydromet-parameter-series.json'
 ];
 
 self.addEventListener('install', (event) => {

@@ -71,6 +71,14 @@
     "coordinateStatus": "missing"
   },
   {
+    "stationName": "翡翠水庫氣象站",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "unknown",
+    "locationType": "weather_station",
+    "coordinateStatus": "missing"
+  },
+  {
     "stationName": "鷺鷥潭",
     "latitude": null,
     "longitude": null,

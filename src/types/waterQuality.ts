@@ -8,11 +8,17 @@ export type StationGroup =
 
 export type CoordinateStatus = 'verified' | 'approximate' | 'missing';
 
+export type MonitoringLocationType =
+  | 'water_quality_station'
+  | 'weather_station'
+  | 'summary';
+
 export type StationLocation = {
   stationName: string;
   latitude: number | null;
   longitude: number | null;
   stationGroup: StationGroup;
+  locationType?: MonitoringLocationType;
   isSummaryRow?: boolean;
   coordinateStatus: CoordinateStatus;
 };
