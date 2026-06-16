@@ -75,6 +75,12 @@ export const translations = {
     waterQualityMonthlySummaries: '水質月份摘要',
     hydrometMonthlySummaries: '水文氣象月份摘要',
     exportCsv: '匯出CSV',
+    dayType: '日期類型',
+    allDays: '全部日期',
+    weekdays: '平日',
+    weekends: '週末',
+    startDate: '開始日期',
+    endDate: '結束日期',
   },
   en: {
     appTitle: 'Taipei Feitsui Reservoir Water Quality Map',
@@ -147,6 +153,12 @@ export const translations = {
     waterQualityMonthlySummaries: 'Water-quality monthly summaries',
     hydrometMonthlySummaries: 'Hydrometeorological monthly summaries',
     exportCsv: 'Export CSV',
+    dayType: 'Day type',
+    allDays: 'All days',
+    weekdays: 'Weekdays',
+    weekends: 'Weekends',
+    startDate: 'Start date',
+    endDate: 'End date',
   },
 } as const;
 

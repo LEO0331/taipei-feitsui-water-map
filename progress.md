@@ -18,6 +18,7 @@
 - [x] Code review fix pass completed for app runtime behavior, chart semantics, search, and fetcher robustness.
 - [x] AI slop cleanup pass completed with regression tests first.
 - [x] Hydrometeorological context feature completed while keeping the water-quality map as the main product.
+- [x] Hydromet code-review follow-up completed: removed obsolete table code and added weekday/weekend plus date-range filters.
 
 ### What's In Progress
 
@@ -59,6 +60,9 @@
 - **Combined dashboard avoids causal claims**: It shows the comparison title and non-causation notice even when no shared period exists.
   - Context: Current fetched hydromet sample is 2026-01; water-quality data may not have a matching month in local resources.
   - Alternatives considered: Hiding the combined dashboard; rejected because the notice is required.
+- **Hydromet daily filters are shared**: The hydromet charts and table use the same period, weekday/weekend, and ISO date-range filter state.
+  - Context: The request calls out hydromet date range and weekday/weekend filters; filtering only the table would make charts disagree.
+  - Alternatives considered: Native `type=date`; rejected after browser verification because plain controlled ISO text inputs update reliably and remain mobile-friendly.
 
 ## Files Modified This Session
 
@@ -78,6 +82,8 @@
 - `tests/hydromet.test.ts` - Hydromet parser and aggregation regression tests.
 - `src/App.tsx` - Monitoring tabs, hydromet dashboard, combined dashboard, and table modes.
 - `src/data/i18n.ts` - Hydromet and tab translations.
+- `src/App.tsx` - Hydromet weekday/weekend and date-range filters; obsolete table component removed.
+- `src/data/i18n.ts` - Hydromet filter label translations.
 
 ## Evidence of Completion
 
@@ -93,6 +99,8 @@
 - [x] Hydromet verification: `npm run fetch:hydromet` fetched/reused 1 resource; `npm run convert:data` produced 31 hydromet records and 1 hydromet period.
 - [x] Current full verification: `./init.sh` passed with 10 unit tests, local build, and Pages build.
 - [x] Browser smoke: hydromet tab showed 8 summary cards and daily charts; combined dashboard showed the non-causation notice; data table switched to 31 hydromet daily rows; English tab labels worked.
+- [x] Code-review follow-up verification: `npm test` passed with 10 tests; `npm run build` passed; final `./init.sh` passed; `npm audit --omit=dev` found 0 vulnerabilities; harness validation scored 100/100.
+- [x] Hydromet filter smoke: weekend range `2026-01-10` to `2026-01-18` returned exactly `2026-01-10`, `2026-01-11`, `2026-01-17`, and `2026-01-18` with 0 console errors.
 
 ## Notes for Next Session
 

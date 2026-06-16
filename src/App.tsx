@@ -46,6 +46,7 @@ import {
 
 type MonitoringTab = 'waterQuality' | 'hydromet' | 'combinedDashboard' | 'dataTable';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'waterSummary' | 'hydrometSummary';
+type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
 const mapCenter: [number, number] = [24.91, 121.58];
 const importantParameters: WaterQualityParameterKey[] = [
@@ -853,6 +854,7 @@ function MonitoringDataTable({
       ? hydrometRecords.map((record) => ({
           date: record.date,
           period: record.period,
+          dayType: record.weekday === 0 || record.weekday === 6 ? translations[language].weekends : translations[language].weekdays,
           parameter: hydrometParameterLabels[language][hydrometParameter],
           value: hydrometParameter === 'windDirection'
             ? record.windDirection ?? '-'
@@ -904,42 +906,6 @@ function MonitoringDataTable({
   );
 }
 
-function WaterQualityTable({ records, parameter, language }: { records: WaterQualityRecord[]; parameter: WaterQualityParameterKey; language: Language }) {
-  const t = translations[language];
-  return (
-    <section className="table-section">
-      <div className="section-heading">
-        <h2>{t.dataTable}</h2>
-        <p>{t.ndNote}</p>
-      </div>
-      <div className="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>{t.period}</th>
-              <th>{t.station}</th>
-              <th>{t.stationGroup}</th>
-              <th>{parameterLabels[language][parameter]}</th>
-              <th>{language === 'zh' ? '原始值' : 'Raw value'}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {records.map((record) => (
-              <tr key={record.id}>
-                <td>{record.period}</td>
-                <td>{record.stationName}</td>
-                <td>{groupLabels[language][record.stationGroup]}</td>
-                <td>{formatValue(record.values[parameter], parameterUnits[parameter])}</td>
-                <td>{record.values[parameter].raw || '-'}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </section>
-  );
-}
-
 function DataQualityNotice({ language }: { language: Language }) {
   const t = translations[language];
   return (
@@ -965,6 +931,9 @@ export default function App() {
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
   const [hydrometParameter, setHydrometParameter] = useState<HydrometParameterKey>('avgTemperatureC');
+  const [hydrometDayType, setHydrometDayType] = useState<DayTypeFilter>('all');
+  const [hydrometStartDate, setHydrometStartDate] = useState('');
+  const [hydrometEndDate, setHydrometEndDate] = useState('');
 
   const latestPeriod = useMemo(() => getLatestPeriod(records), [records]);
   const periods = useMemo(() => [...new Set([
@@ -1019,7 +988,14 @@ export default function App() {
   const selectedHydrometPeriod = hydrometRecords.some((record) => record.period === filters.period)
     ? filters.period
     : hydrometSummaries.at(-1)?.period ?? filters.period;
-  const filteredHydrometRecords = hydrometRecords.filter((record) => record.period === selectedHydrometPeriod);
+  const filteredHydrometRecords = hydrometRecords.filter((record) => {
+    if (record.period !== selectedHydrometPeriod) return false;
+    if (hydrometStartDate && record.date < hydrometStartDate) return false;
+    if (hydrometEndDate && record.date > hydrometEndDate) return false;
+    if (hydrometDayType === 'weekday') return record.weekday !== 0 && record.weekday !== 6;
+    if (hydrometDayType === 'weekend') return record.weekday === 0 || record.weekday === 6;
+    return true;
+  });
   const t = translations[language];
 
   if (loadError) {
@@ -1088,9 +1064,37 @@ export default function App() {
                 ))}
               </select>
             </label>
+            <label>
+              <span>{t.dayType}</span>
+              <select value={hydrometDayType} onChange={(event) => setHydrometDayType(event.target.value as DayTypeFilter)}>
+                <option value="all">{t.allDays}</option>
+                <option value="weekday">{t.weekdays}</option>
+                <option value="weekend">{t.weekends}</option>
+              </select>
+            </label>
+            <label>
+              <span>{t.startDate}</span>
+              <input
+                value={hydrometStartDate}
+                onChange={(event) => setHydrometStartDate(event.target.value)}
+                inputMode="numeric"
+                pattern="\\d{4}-\\d{2}-\\d{2}"
+                placeholder="YYYY-MM-DD"
+              />
+            </label>
+            <label>
+              <span>{t.endDate}</span>
+              <input
+                value={hydrometEndDate}
+                onChange={(event) => setHydrometEndDate(event.target.value)}
+                inputMode="numeric"
+                pattern="\\d{4}-\\d{2}-\\d{2}"
+                placeholder="YYYY-MM-DD"
+              />
+            </label>
           </section>
           <HydrometDashboard
-            records={hydrometRecords}
+            records={filteredHydrometRecords}
             summaries={hydrometSummaries}
             period={selectedHydrometPeriod}
             language={language}

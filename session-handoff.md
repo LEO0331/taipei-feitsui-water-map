@@ -3,7 +3,7 @@
 ## Current Objective
 
 - Goal: Maintain a reviewed, restartable static water-quality map project.
-- Current status: Harness, code-review fixes, AI slop cleanup, and hydromet context feature are complete and verified.
+- Current status: Harness, code-review fixes, AI slop cleanup, hydromet context feature, and hydromet review follow-up are complete and verified.
 - Branch / commit: Current working tree has uncommitted project files.
 
 ## Completed This Session
@@ -14,6 +14,7 @@
 - [x] Fixed code-review findings in chart aggregation, language persistence, data-load errors, search, and fetcher robustness.
 - [x] Added regression tests and completed a bounded cleanup pass for utilities, dashboard duplication, and fetcher completion handling.
 - [x] Added hydrometeorological fetching, conversion, dashboard charts, combined context tab, table modes, translations, README updates, and PWA cache entries.
+- [x] Fixed hydromet review findings: added weekday/weekend and ISO date-range filters, shared those filters with charts and table rows, and removed obsolete table code.
 
 ## Verification Evidence
 
@@ -30,6 +31,9 @@
 | Hydromet fetch | `npm run fetch:hydromet` | Passed | Fetched/reused known resource `27adec48-2a1e-4897-a285-86a01e6c15ff`. |
 | Hydromet conversion | `npm run convert:hydromet` | Passed | 31 daily records across 1 period, 0 conversion issues. |
 | Hydromet UI smoke | In-app browser | Passed | Hydromet tab/cards/charts, combined notice, table mode, and English labels verified. |
+| Hydromet filter smoke | In-app browser | Passed | Weekend range `2026-01-10` to `2026-01-18` returned exactly 4 daily rows and 0 console errors. |
+| Code-review follow-up init | `./init.sh` | Passed | Re-ran after filter fixes; conversion, 10 tests, local build, and Pages build passed. |
+| Production audit | `npm audit --omit=dev` | Passed | 0 production vulnerabilities. |
 
 ## Files Changed
 
@@ -51,6 +55,7 @@
 - `src/data/i18n.ts`
 - `public/sw.js`
 - `README.md`
+- `src/App.tsx` and `src/data/i18n.ts` for hydromet review filter fixes.
 
 ## Decisions Made
 
@@ -62,6 +67,7 @@
 - Full resource refresh should now fail only when zero resources are fetched, after writing diagnostic errors.
 - Hydromet data is daily weather-station context; do not force it into water-quality station records or map markers without verified weather-station coordinates.
 - Combined dashboard is contextual comparison only and must not claim causation, prediction, drinking-water safety, or pollution status.
+- Hydromet daily filters live above the hydromet tab but apply to both hydromet charts and the data table so daily views stay consistent.
 
 ## Blockers / Risks
 

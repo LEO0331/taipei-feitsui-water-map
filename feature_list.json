@@ -63,6 +63,14 @@
       "dependencies": ["feat-001"],
       "status": "done",
       "evidence": "Fetched known hydromet resource 27adec48-2a1e-4897-a285-86a01e6c15ff and converted 31 daily records across 1 period with 0 issues. Added hydromet parser/aggregation tests; npm test passed with 10 tests. ./init.sh passed, npm audit --omit=dev found 0 vulnerabilities, and browser smoke verified Chinese/English tabs, hydromet charts/cards, non-causation combined dashboard notice, and 31-row hydromet daily table."
+    },
+    {
+      "id": "feat-009",
+      "name": "Hydromet Review Fixes",
+      "description": "Code-review follow-up for the hydromet UI, including missing daily filters and removal of unused legacy table code.",
+      "dependencies": ["feat-008"],
+      "status": "done",
+      "evidence": "Removed the obsolete WaterQualityTable component and unused table prop surface. Added hydromet weekday/weekend and date-range filters shared by charts and the data table. Browser smoke verified weekend range 2026-01-10 through 2026-01-18 returns exactly 4 rows with no console errors. ./init.sh passed; npm audit --omit=dev found 0 vulnerabilities; harness validation remained 100/100."
     }
   ]
 }
