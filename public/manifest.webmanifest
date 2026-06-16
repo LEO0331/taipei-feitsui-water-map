@@ -1,0 +1,16 @@
+{
+  "name": "台北翡翠水庫水質地圖",
+  "short_name": "翡翠水質地圖",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0f766e",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

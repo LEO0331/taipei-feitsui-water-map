@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Feitsui water map icon">
+  <rect width="128" height="128" rx="24" fill="#0f766e"/>
+  <path d="M20 76c14-19 26-27 40-24 9 2 13 8 22 9 10 1 18-5 26-15v44H20V76Z" fill="#b7f7e8"/>
+  <path d="M28 84c13-11 24-15 36-12 8 2 13 7 21 7 8 0 14-4 23-12v27H28V84Z" fill="#ffffff"/>
+  <circle cx="83" cy="41" r="9" fill="#f2c94c"/>
+</svg>

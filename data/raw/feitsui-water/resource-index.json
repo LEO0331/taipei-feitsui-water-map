@@ -1,0 +1,1085 @@
+{
+  "datasetDetailUrl": "https://data.taipei/dataset/detail?id=dd7001c8-7a87-4294-a52a-e2c14bc49d88",
+  "resources": [
+    {
+      "id": "4d71a495-d45f-4b28-a7c8-20f4acc55376",
+      "title": "臺北翡翠水庫水質月報表 sample resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4d71a495-d45f-4b28-a7c8-20f4acc55376?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:49.897Z",
+      "file": "4d71a495-d45f-4b28-a7c8-20f4acc55376.json",
+      "recordCount": 30
+    },
+    {
+      "id": "889e32c9-e2d3-4055-b67c-2cc86bbd90a8",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/889e32c9-e2d3-4055-b67c-2cc86bbd90a8?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.036Z",
+      "file": "889e32c9-e2d3-4055-b67c-2cc86bbd90a8.json",
+      "recordCount": 31
+    },
+    {
+      "id": "5ca9922c-ce53-442e-bce1-8dd78b1643e1",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5ca9922c-ce53-442e-bce1-8dd78b1643e1?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.186Z",
+      "file": "5ca9922c-ce53-442e-bce1-8dd78b1643e1.json",
+      "recordCount": 33
+    },
+    {
+      "id": "89d45cd6-4c59-4dda-a5e7-a83ebfe4cd44",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/89d45cd6-4c59-4dda-a5e7-a83ebfe4cd44?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.325Z",
+      "file": "89d45cd6-4c59-4dda-a5e7-a83ebfe4cd44.json",
+      "recordCount": 31
+    },
+    {
+      "id": "acff2dd4-b3a4-455c-972f-bd0735abb385",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/acff2dd4-b3a4-455c-972f-bd0735abb385?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.471Z",
+      "file": "acff2dd4-b3a4-455c-972f-bd0735abb385.json",
+      "recordCount": 30
+    },
+    {
+      "id": "e15ee255-b129-40d7-9de5-0cb29936feac",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e15ee255-b129-40d7-9de5-0cb29936feac?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.608Z",
+      "file": "e15ee255-b129-40d7-9de5-0cb29936feac.json",
+      "recordCount": 0
+    },
+    {
+      "id": "1060cdd0-e759-44c7-a0b0-1e10ff1428ed",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/1060cdd0-e759-44c7-a0b0-1e10ff1428ed?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.741Z",
+      "file": "1060cdd0-e759-44c7-a0b0-1e10ff1428ed.json",
+      "recordCount": 0
+    },
+    {
+      "id": "4550e68f-6812-4a15-a2e2-f954eee779c5",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4550e68f-6812-4a15-a2e2-f954eee779c5?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.855Z",
+      "file": "4550e68f-6812-4a15-a2e2-f954eee779c5.json",
+      "recordCount": 0
+    },
+    {
+      "id": "32fe643b-f623-4770-9aae-cb49ccb6dcb8",
+      "title": "115年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/32fe643b-f623-4770-9aae-cb49ccb6dcb8?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:50.980Z",
+      "file": "32fe643b-f623-4770-9aae-cb49ccb6dcb8.json",
+      "recordCount": 0
+    },
+    {
+      "id": "d6b9989d-d544-48b8-ab71-0173fe179ca4",
+      "title": "114年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d6b9989d-d544-48b8-ab71-0173fe179ca4?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:51.120Z",
+      "file": "d6b9989d-d544-48b8-ab71-0173fe179ca4.json",
+      "recordCount": 31
+    },
+    {
+      "id": "fcdd700a-285a-4d10-b434-8af9f5e4869f",
+      "title": "114年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/fcdd700a-285a-4d10-b434-8af9f5e4869f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:51.276Z",
+      "file": "fcdd700a-285a-4d10-b434-8af9f5e4869f.json",
+      "recordCount": 14
+    },
+    {
+      "id": "e91d03de-0f6f-40e8-a4d4-e0b3d3be635c",
+      "title": "114年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e91d03de-0f6f-40e8-a4d4-e0b3d3be635c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:51.408Z",
+      "file": "e91d03de-0f6f-40e8-a4d4-e0b3d3be635c.json",
+      "recordCount": 14
+    },
+    {
+      "id": "752bdd50-93ec-4b00-b8bd-9e8a3ea2bbff",
+      "title": "114年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/752bdd50-93ec-4b00-b8bd-9e8a3ea2bbff?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:51.537Z",
+      "file": "752bdd50-93ec-4b00-b8bd-9e8a3ea2bbff.json",
+      "recordCount": 14
+    },
+    {
+      "id": "d889cf66-c478-472e-a86e-fd146698976b",
+      "title": "114年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d889cf66-c478-472e-a86e-fd146698976b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:51.668Z",
+      "file": "d889cf66-c478-472e-a86e-fd146698976b.json",
+      "recordCount": 14
+    },
+    {
+      "id": "b14da09a-a372-475d-90ac-915c930c7c91",
+      "title": "114年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b14da09a-a372-475d-90ac-915c930c7c91?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:51.802Z",
+      "file": "b14da09a-a372-475d-90ac-915c930c7c91.json",
+      "recordCount": 14
+    },
+    {
+      "id": "136f49b7-725d-419f-a3d2-9315faa9665c",
+      "title": "113年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/136f49b7-725d-419f-a3d2-9315faa9665c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:51.936Z",
+      "file": "136f49b7-725d-419f-a3d2-9315faa9665c.json",
+      "recordCount": 14
+    },
+    {
+      "id": "643045f2-21dc-48e8-9033-d558b5052e07",
+      "title": "113年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/643045f2-21dc-48e8-9033-d558b5052e07?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.063Z",
+      "file": "643045f2-21dc-48e8-9033-d558b5052e07.json",
+      "recordCount": 14
+    },
+    {
+      "id": "5c13dfee-6aab-4bef-923c-87f6217786f9",
+      "title": "113年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5c13dfee-6aab-4bef-923c-87f6217786f9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.193Z",
+      "file": "5c13dfee-6aab-4bef-923c-87f6217786f9.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0fd62f8d-91f9-4229-95b1-0c2f16d09883",
+      "title": "113年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0fd62f8d-91f9-4229-95b1-0c2f16d09883?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.321Z",
+      "file": "0fd62f8d-91f9-4229-95b1-0c2f16d09883.json",
+      "recordCount": 15
+    },
+    {
+      "id": "084c44df-b593-453b-a8b5-8a483842a7d6",
+      "title": "113年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/084c44df-b593-453b-a8b5-8a483842a7d6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.443Z",
+      "file": "084c44df-b593-453b-a8b5-8a483842a7d6.json",
+      "recordCount": 14
+    },
+    {
+      "id": "f51f91c9-c7ba-4bb8-a30e-675d9808032c",
+      "title": "112年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/f51f91c9-c7ba-4bb8-a30e-675d9808032c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.587Z",
+      "file": "f51f91c9-c7ba-4bb8-a30e-675d9808032c.json",
+      "recordCount": 15
+    },
+    {
+      "id": "1fd69894-8c29-4ab2-a4c1-2947ff26ee43",
+      "title": "112年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/1fd69894-8c29-4ab2-a4c1-2947ff26ee43?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.718Z",
+      "file": "1fd69894-8c29-4ab2-a4c1-2947ff26ee43.json",
+      "recordCount": 14
+    },
+    {
+      "id": "bee6bc15-2cdc-4c14-83fa-ee9008c23133",
+      "title": "112年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bee6bc15-2cdc-4c14-83fa-ee9008c23133?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.843Z",
+      "file": "bee6bc15-2cdc-4c14-83fa-ee9008c23133.json",
+      "recordCount": 14
+    },
+    {
+      "id": "c0c552bf-5b88-4238-8f3b-925eaa260fc2",
+      "title": "112年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c0c552bf-5b88-4238-8f3b-925eaa260fc2?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:52.969Z",
+      "file": "c0c552bf-5b88-4238-8f3b-925eaa260fc2.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0fc748fd-4063-4108-b9e0-489ed2f913da",
+      "title": "111年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0fc748fd-4063-4108-b9e0-489ed2f913da?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:53.093Z",
+      "file": "0fc748fd-4063-4108-b9e0-489ed2f913da.json",
+      "recordCount": 14
+    },
+    {
+      "id": "304a4200-d96d-448b-a2c1-ef23b1e69ab4",
+      "title": "108年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/304a4200-d96d-448b-a2c1-ef23b1e69ab4?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:53.245Z",
+      "file": "304a4200-d96d-448b-a2c1-ef23b1e69ab4.json",
+      "recordCount": 14
+    },
+    {
+      "id": "9424b2c0-6b6d-44d4-a11a-58fec6cbc26e",
+      "title": "107年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9424b2c0-6b6d-44d4-a11a-58fec6cbc26e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:53.368Z",
+      "file": "9424b2c0-6b6d-44d4-a11a-58fec6cbc26e.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0c8799b3-825e-4f2d-a773-3f30e6ce02be",
+      "title": "107年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0c8799b3-825e-4f2d-a773-3f30e6ce02be?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:53.499Z",
+      "file": "0c8799b3-825e-4f2d-a773-3f30e6ce02be.json",
+      "recordCount": 14
+    },
+    {
+      "id": "2e648854-08ea-4237-98f3-54015a74b317",
+      "title": "106年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/2e648854-08ea-4237-98f3-54015a74b317?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:53.621Z",
+      "file": "2e648854-08ea-4237-98f3-54015a74b317.json",
+      "recordCount": 14
+    },
+    {
+      "id": "cf130a84-9a55-422d-a4c4-56a3ee9c7606",
+      "title": "106年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cf130a84-9a55-422d-a4c4-56a3ee9c7606?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:53.746Z",
+      "file": "cf130a84-9a55-422d-a4c4-56a3ee9c7606.json",
+      "recordCount": 14
+    },
+    {
+      "id": "d882672b-c3cb-4953-ab11-d36f570361fc",
+      "title": "106年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d882672b-c3cb-4953-ab11-d36f570361fc?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:53.882Z",
+      "file": "d882672b-c3cb-4953-ab11-d36f570361fc.json",
+      "recordCount": 14
+    },
+    {
+      "id": "b4e683f6-0b73-4597-add9-95929c24cd18",
+      "title": "106年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b4e683f6-0b73-4597-add9-95929c24cd18?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.010Z",
+      "file": "b4e683f6-0b73-4597-add9-95929c24cd18.json",
+      "recordCount": 14
+    },
+    {
+      "id": "939df69e-1637-42f3-b9ae-e2a9dd2b86db",
+      "title": "105年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/939df69e-1637-42f3-b9ae-e2a9dd2b86db?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.136Z",
+      "file": "939df69e-1637-42f3-b9ae-e2a9dd2b86db.json",
+      "recordCount": 14
+    },
+    {
+      "id": "233ec95e-0571-4467-b462-3b6b7efe3fdd",
+      "title": "114年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/233ec95e-0571-4467-b462-3b6b7efe3fdd?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.273Z",
+      "file": "233ec95e-0571-4467-b462-3b6b7efe3fdd.json",
+      "recordCount": 14
+    },
+    {
+      "id": "9494bfb8-5ded-4a32-8b0d-84d695829e89",
+      "title": "114年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9494bfb8-5ded-4a32-8b0d-84d695829e89?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.397Z",
+      "file": "9494bfb8-5ded-4a32-8b0d-84d695829e89.json",
+      "recordCount": 14
+    },
+    {
+      "id": "8a1f086f-0704-41f5-bb3b-846900ffdb7d",
+      "title": "105年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/8a1f086f-0704-41f5-bb3b-846900ffdb7d?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.534Z",
+      "file": "8a1f086f-0704-41f5-bb3b-846900ffdb7d.json",
+      "recordCount": 14
+    },
+    {
+      "id": "56b74e92-b019-4910-84cd-de9da8dad1fb",
+      "title": "114年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/56b74e92-b019-4910-84cd-de9da8dad1fb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.708Z",
+      "file": "56b74e92-b019-4910-84cd-de9da8dad1fb.json",
+      "recordCount": 14
+    },
+    {
+      "id": "3bb542bf-6dd7-4e91-a037-4f26a7dc0653",
+      "title": "114年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3bb542bf-6dd7-4e91-a037-4f26a7dc0653?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.863Z",
+      "file": "3bb542bf-6dd7-4e91-a037-4f26a7dc0653.json",
+      "recordCount": 14
+    },
+    {
+      "id": "c2e1593f-a1eb-4c7a-bc38-e103e09c0131",
+      "title": "114年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c2e1593f-a1eb-4c7a-bc38-e103e09c0131?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:54.995Z",
+      "file": "c2e1593f-a1eb-4c7a-bc38-e103e09c0131.json",
+      "recordCount": 14
+    },
+    {
+      "id": "088fed87-413d-48ca-941a-50e484e0dc33",
+      "title": "113年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/088fed87-413d-48ca-941a-50e484e0dc33?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:55.402Z",
+      "file": "088fed87-413d-48ca-941a-50e484e0dc33.json",
+      "recordCount": 14
+    },
+    {
+      "id": "a5dee5fe-8bc2-4fc1-a23b-d215ca968ebd",
+      "title": "113年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a5dee5fe-8bc2-4fc1-a23b-d215ca968ebd?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:55.564Z",
+      "file": "a5dee5fe-8bc2-4fc1-a23b-d215ca968ebd.json",
+      "recordCount": 14
+    },
+    {
+      "id": "de3a85cd-e0fc-4a78-a48b-43f0e6c9bb26",
+      "title": "113年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/de3a85cd-e0fc-4a78-a48b-43f0e6c9bb26?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:55.697Z",
+      "file": "de3a85cd-e0fc-4a78-a48b-43f0e6c9bb26.json",
+      "recordCount": 14
+    },
+    {
+      "id": "d07591c1-77c5-4650-a0c5-85aa0a3d0945",
+      "title": "113年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d07591c1-77c5-4650-a0c5-85aa0a3d0945?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:55.823Z",
+      "file": "d07591c1-77c5-4650-a0c5-85aa0a3d0945.json",
+      "recordCount": 14
+    },
+    {
+      "id": "116322bc-f0a7-483f-a975-d06522532f6c",
+      "title": "113年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/116322bc-f0a7-483f-a975-d06522532f6c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:55.943Z",
+      "file": "116322bc-f0a7-483f-a975-d06522532f6c.json",
+      "recordCount": 14
+    },
+    {
+      "id": "c21b9c76-1e75-4e53-8700-71f5d3ce0201",
+      "title": "113年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c21b9c76-1e75-4e53-8700-71f5d3ce0201?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.085Z",
+      "file": "c21b9c76-1e75-4e53-8700-71f5d3ce0201.json",
+      "recordCount": 14
+    },
+    {
+      "id": "1cee30be-202a-40e0-bbe0-9e155555f1a9",
+      "title": "113年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/1cee30be-202a-40e0-bbe0-9e155555f1a9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.214Z",
+      "file": "1cee30be-202a-40e0-bbe0-9e155555f1a9.json",
+      "recordCount": 15
+    },
+    {
+      "id": "bbef449c-07ae-440c-80a0-c0b2058f63fa",
+      "title": "112年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bbef449c-07ae-440c-80a0-c0b2058f63fa?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.338Z",
+      "file": "bbef449c-07ae-440c-80a0-c0b2058f63fa.json",
+      "recordCount": 14
+    },
+    {
+      "id": "63ffe3ef-06df-4e4c-b446-ece2e2dfa8c5",
+      "title": "112年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/63ffe3ef-06df-4e4c-b446-ece2e2dfa8c5?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.460Z",
+      "file": "63ffe3ef-06df-4e4c-b446-ece2e2dfa8c5.json",
+      "recordCount": 14
+    },
+    {
+      "id": "48dadcb3-998f-4a34-bffc-9cfd1646b9ae",
+      "title": "112年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/48dadcb3-998f-4a34-bffc-9cfd1646b9ae?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.604Z",
+      "file": "48dadcb3-998f-4a34-bffc-9cfd1646b9ae.json",
+      "recordCount": 14
+    },
+    {
+      "id": "353da955-1c5c-42a9-b475-6d7b522a21c9",
+      "title": "112年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/353da955-1c5c-42a9-b475-6d7b522a21c9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.726Z",
+      "file": "353da955-1c5c-42a9-b475-6d7b522a21c9.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0aee1529-aa90-4428-b36e-f18ed6c618cb",
+      "title": "112年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0aee1529-aa90-4428-b36e-f18ed6c618cb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.845Z",
+      "file": "0aee1529-aa90-4428-b36e-f18ed6c618cb.json",
+      "recordCount": 14
+    },
+    {
+      "id": "52b11cee-0f12-4253-b001-2d0abcf4326a",
+      "title": "112年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/52b11cee-0f12-4253-b001-2d0abcf4326a?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:56.973Z",
+      "file": "52b11cee-0f12-4253-b001-2d0abcf4326a.json",
+      "recordCount": 14
+    },
+    {
+      "id": "4a295b9b-32ee-4061-aba1-44c0f6085b2f",
+      "title": "112年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4a295b9b-32ee-4061-aba1-44c0f6085b2f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:57.097Z",
+      "file": "4a295b9b-32ee-4061-aba1-44c0f6085b2f.json",
+      "recordCount": 14
+    },
+    {
+      "id": "fa06c785-999f-4160-ac35-7c660d6a4c7b",
+      "title": "104年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/fa06c785-999f-4160-ac35-7c660d6a4c7b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:57.251Z",
+      "file": "fa06c785-999f-4160-ac35-7c660d6a4c7b.json",
+      "recordCount": 14
+    },
+    {
+      "id": "623c9493-2721-489b-8203-681273138880",
+      "title": "104年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/623c9493-2721-489b-8203-681273138880?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:57.371Z",
+      "file": "623c9493-2721-489b-8203-681273138880.json",
+      "recordCount": 14
+    },
+    {
+      "id": "cf006eb7-13c4-4ec1-80b9-2f983270ca90",
+      "title": "104年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cf006eb7-13c4-4ec1-80b9-2f983270ca90?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:57.499Z",
+      "file": "cf006eb7-13c4-4ec1-80b9-2f983270ca90.json",
+      "recordCount": 14
+    },
+    {
+      "id": "96067276-dd6f-42f4-870e-aee63f9e05da",
+      "title": "104年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/96067276-dd6f-42f4-870e-aee63f9e05da?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:57.633Z",
+      "file": "96067276-dd6f-42f4-870e-aee63f9e05da.json",
+      "recordCount": 14
+    },
+    {
+      "id": "1dc0fabe-2d05-45d1-bd49-20cadb5d13e0",
+      "title": "104年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/1dc0fabe-2d05-45d1-bd49-20cadb5d13e0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:57.766Z",
+      "file": "1dc0fabe-2d05-45d1-bd49-20cadb5d13e0.json",
+      "recordCount": 14
+    },
+    {
+      "id": "28830bab-02ea-43b2-a3dc-10c4e4d68590",
+      "title": "104年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/28830bab-02ea-43b2-a3dc-10c4e4d68590?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:57.891Z",
+      "file": "28830bab-02ea-43b2-a3dc-10c4e4d68590.json",
+      "recordCount": 14
+    },
+    {
+      "id": "2dc45e26-b684-4fdd-9190-8c7c6c469866",
+      "title": "105年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/2dc45e26-b684-4fdd-9190-8c7c6c469866?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:58.018Z",
+      "file": "2dc45e26-b684-4fdd-9190-8c7c6c469866.json",
+      "recordCount": 14
+    },
+    {
+      "id": "c4177069-f821-4ae1-aba7-820aba6629e2",
+      "title": "105年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c4177069-f821-4ae1-aba7-820aba6629e2?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:58.144Z",
+      "file": "c4177069-f821-4ae1-aba7-820aba6629e2.json",
+      "recordCount": 14
+    },
+    {
+      "id": "56fa2815-4e6e-4709-a1dd-4c4f006496a0",
+      "title": "105年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/56fa2815-4e6e-4709-a1dd-4c4f006496a0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:58.277Z",
+      "file": "56fa2815-4e6e-4709-a1dd-4c4f006496a0.json",
+      "recordCount": 14
+    },
+    {
+      "id": "f09e2dfd-1279-4e2b-a559-947efe779578",
+      "title": "105年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/f09e2dfd-1279-4e2b-a559-947efe779578?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:58.401Z",
+      "file": "f09e2dfd-1279-4e2b-a559-947efe779578.json",
+      "recordCount": 14
+    },
+    {
+      "id": "24460eec-8cc4-48cd-9dde-48fd00135c0f",
+      "title": "105年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/24460eec-8cc4-48cd-9dde-48fd00135c0f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:58.542Z",
+      "file": "24460eec-8cc4-48cd-9dde-48fd00135c0f.json",
+      "recordCount": 14
+    },
+    {
+      "id": "33b02028-b5f8-4e11-86c1-394eae1fb3d6",
+      "title": "105年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/33b02028-b5f8-4e11-86c1-394eae1fb3d6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:58.699Z",
+      "file": "33b02028-b5f8-4e11-86c1-394eae1fb3d6.json",
+      "recordCount": 14
+    },
+    {
+      "id": "d5c52eb3-f4c8-410c-b477-26bc1e65597b",
+      "title": "105年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d5c52eb3-f4c8-410c-b477-26bc1e65597b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:58.895Z",
+      "file": "d5c52eb3-f4c8-410c-b477-26bc1e65597b.json",
+      "recordCount": 14
+    },
+    {
+      "id": "3f47504a-f495-4db2-be52-0e893e75908f",
+      "title": "105年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3f47504a-f495-4db2-be52-0e893e75908f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.042Z",
+      "file": "3f47504a-f495-4db2-be52-0e893e75908f.json",
+      "recordCount": 15
+    },
+    {
+      "id": "9d5e92a9-e252-4c4e-9638-5932e483ddc5",
+      "title": "105年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9d5e92a9-e252-4c4e-9638-5932e483ddc5?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.166Z",
+      "file": "9d5e92a9-e252-4c4e-9638-5932e483ddc5.json",
+      "recordCount": 14
+    },
+    {
+      "id": "3d446fa2-5884-4544-af39-121a5f714064",
+      "title": "105年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3d446fa2-5884-4544-af39-121a5f714064?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.295Z",
+      "file": "3d446fa2-5884-4544-af39-121a5f714064.json",
+      "recordCount": 14
+    },
+    {
+      "id": "06044186-d5e1-4f5b-ab94-cc35f3e6d84c",
+      "title": "106年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/06044186-d5e1-4f5b-ab94-cc35f3e6d84c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.436Z",
+      "file": "06044186-d5e1-4f5b-ab94-cc35f3e6d84c.json",
+      "recordCount": 14
+    },
+    {
+      "id": "8f1a08ca-7f24-45c7-9f57-9c9a26a0b762",
+      "title": "106年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/8f1a08ca-7f24-45c7-9f57-9c9a26a0b762?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.562Z",
+      "file": "8f1a08ca-7f24-45c7-9f57-9c9a26a0b762.json",
+      "recordCount": 14
+    },
+    {
+      "id": "34a7d17c-92ea-48d4-bbf5-b40836fddfd6",
+      "title": "106年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/34a7d17c-92ea-48d4-bbf5-b40836fddfd6?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.689Z",
+      "file": "34a7d17c-92ea-48d4-bbf5-b40836fddfd6.json",
+      "recordCount": 14
+    },
+    {
+      "id": "e112b63a-de24-4aaf-8d98-bcbfbb570c65",
+      "title": "106年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e112b63a-de24-4aaf-8d98-bcbfbb570c65?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.813Z",
+      "file": "e112b63a-de24-4aaf-8d98-bcbfbb570c65.json",
+      "recordCount": 14
+    },
+    {
+      "id": "baf75096-51c4-4adc-8e71-434db776026c",
+      "title": "106年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/baf75096-51c4-4adc-8e71-434db776026c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:24:59.942Z",
+      "file": "baf75096-51c4-4adc-8e71-434db776026c.json",
+      "recordCount": 15
+    },
+    {
+      "id": "a642c8d2-3300-4575-b37e-4b785768253e",
+      "title": "106年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/a642c8d2-3300-4575-b37e-4b785768253e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:00.074Z",
+      "file": "a642c8d2-3300-4575-b37e-4b785768253e.json",
+      "recordCount": 14
+    },
+    {
+      "id": "3d537224-2872-4372-99fe-3b9c7129d394",
+      "title": "106年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3d537224-2872-4372-99fe-3b9c7129d394?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:00.213Z",
+      "file": "3d537224-2872-4372-99fe-3b9c7129d394.json",
+      "recordCount": 14
+    },
+    {
+      "id": "9cf4737a-3aa7-4541-9304-0a506cd0e8aa",
+      "title": "106年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9cf4737a-3aa7-4541-9304-0a506cd0e8aa?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:00.340Z",
+      "file": "9cf4737a-3aa7-4541-9304-0a506cd0e8aa.json",
+      "recordCount": 15
+    },
+    {
+      "id": "c539946b-6194-4d2d-b0ad-72afeab29940",
+      "title": "107年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c539946b-6194-4d2d-b0ad-72afeab29940?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:00.470Z",
+      "file": "c539946b-6194-4d2d-b0ad-72afeab29940.json",
+      "recordCount": 15
+    },
+    {
+      "id": "d3b61066-6446-48e9-94ba-ef6a3033a2fb",
+      "title": "107年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/d3b61066-6446-48e9-94ba-ef6a3033a2fb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:00.613Z",
+      "file": "d3b61066-6446-48e9-94ba-ef6a3033a2fb.json",
+      "recordCount": 14
+    },
+    {
+      "id": "6c87db7f-6b12-4c57-8081-b02611cd494f",
+      "title": "107年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/6c87db7f-6b12-4c57-8081-b02611cd494f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:00.769Z",
+      "file": "6c87db7f-6b12-4c57-8081-b02611cd494f.json",
+      "recordCount": 14
+    },
+    {
+      "id": "48302826-a38c-4f46-92b3-47a2517ae5fa",
+      "title": "107年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/48302826-a38c-4f46-92b3-47a2517ae5fa?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:00.910Z",
+      "file": "48302826-a38c-4f46-92b3-47a2517ae5fa.json",
+      "recordCount": 14
+    },
+    {
+      "id": "5f4ae8a3-0d69-4399-b7f4-ec85b80bba8f",
+      "title": "107年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5f4ae8a3-0d69-4399-b7f4-ec85b80bba8f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.055Z",
+      "file": "5f4ae8a3-0d69-4399-b7f4-ec85b80bba8f.json",
+      "recordCount": 14
+    },
+    {
+      "id": "8a0c08f1-019a-4b3a-973f-7694a03bc666",
+      "title": "107年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/8a0c08f1-019a-4b3a-973f-7694a03bc666?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.184Z",
+      "file": "8a0c08f1-019a-4b3a-973f-7694a03bc666.json",
+      "recordCount": 14
+    },
+    {
+      "id": "5c0949c0-5da8-44ee-9972-f28df5ab2926",
+      "title": "107年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5c0949c0-5da8-44ee-9972-f28df5ab2926?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.313Z",
+      "file": "5c0949c0-5da8-44ee-9972-f28df5ab2926.json",
+      "recordCount": 14
+    },
+    {
+      "id": "bdc6b2dd-f5c0-41ba-bc0c-d72fc5afb28c",
+      "title": "107年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bdc6b2dd-f5c0-41ba-bc0c-d72fc5afb28c?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.437Z",
+      "file": "bdc6b2dd-f5c0-41ba-bc0c-d72fc5afb28c.json",
+      "recordCount": 14
+    },
+    {
+      "id": "c683344c-7428-4fa9-bb63-ce8f1f7cdf15",
+      "title": "107年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c683344c-7428-4fa9-bb63-ce8f1f7cdf15?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.563Z",
+      "file": "c683344c-7428-4fa9-bb63-ce8f1f7cdf15.json",
+      "recordCount": 14
+    },
+    {
+      "id": "cb08578f-6143-45f0-8f00-d1803147ecbb",
+      "title": "107年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cb08578f-6143-45f0-8f00-d1803147ecbb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.698Z",
+      "file": "cb08578f-6143-45f0-8f00-d1803147ecbb.json",
+      "recordCount": 14
+    },
+    {
+      "id": "1ea3ded9-8c01-40de-8ee0-a0807b921c64",
+      "title": "108年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/1ea3ded9-8c01-40de-8ee0-a0807b921c64?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.827Z",
+      "file": "1ea3ded9-8c01-40de-8ee0-a0807b921c64.json",
+      "recordCount": 14
+    },
+    {
+      "id": "b83529e4-93f3-4500-921d-48c94a95fcb3",
+      "title": "108年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b83529e4-93f3-4500-921d-48c94a95fcb3?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:01.966Z",
+      "file": "b83529e4-93f3-4500-921d-48c94a95fcb3.json",
+      "recordCount": 14
+    },
+    {
+      "id": "ca5b4d23-9701-4dbb-a794-29dc5a8f0c50",
+      "title": "108年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/ca5b4d23-9701-4dbb-a794-29dc5a8f0c50?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:02.132Z",
+      "file": "ca5b4d23-9701-4dbb-a794-29dc5a8f0c50.json",
+      "recordCount": 14
+    },
+    {
+      "id": "e9d7b501-0a35-4943-ba9e-3d4b22c0cd22",
+      "title": "108年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e9d7b501-0a35-4943-ba9e-3d4b22c0cd22?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:02.307Z",
+      "file": "e9d7b501-0a35-4943-ba9e-3d4b22c0cd22.json",
+      "recordCount": 14
+    },
+    {
+      "id": "c498dc76-7572-401e-ba5d-88fe6770de04",
+      "title": "108年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/c498dc76-7572-401e-ba5d-88fe6770de04?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:02.434Z",
+      "file": "c498dc76-7572-401e-ba5d-88fe6770de04.json",
+      "recordCount": 14
+    },
+    {
+      "id": "676ccf6e-0901-41d8-ad70-63faebb50853",
+      "title": "108年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/676ccf6e-0901-41d8-ad70-63faebb50853?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:02.605Z",
+      "file": "676ccf6e-0901-41d8-ad70-63faebb50853.json",
+      "recordCount": 14
+    },
+    {
+      "id": "92d361ff-00e0-4202-859e-868b5f4308bf",
+      "title": "108年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/92d361ff-00e0-4202-859e-868b5f4308bf?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:02.796Z",
+      "file": "92d361ff-00e0-4202-859e-868b5f4308bf.json",
+      "recordCount": 14
+    },
+    {
+      "id": "89f51417-6971-44ab-a732-846240035008",
+      "title": "108年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/89f51417-6971-44ab-a732-846240035008?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:02.986Z",
+      "file": "89f51417-6971-44ab-a732-846240035008.json",
+      "recordCount": 14
+    },
+    {
+      "id": "8eab8e39-11cf-455d-807b-3a494a3b5af3",
+      "title": "108年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/8eab8e39-11cf-455d-807b-3a494a3b5af3?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:03.185Z",
+      "file": "8eab8e39-11cf-455d-807b-3a494a3b5af3.json",
+      "recordCount": 14
+    },
+    {
+      "id": "3e3cf39d-f489-4cb5-83d1-a3278e347c00",
+      "title": "108年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3e3cf39d-f489-4cb5-83d1-a3278e347c00?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:03.442Z",
+      "file": "3e3cf39d-f489-4cb5-83d1-a3278e347c00.json",
+      "recordCount": 14
+    },
+    {
+      "id": "9956e1f2-a313-433d-82d3-9c658995439f",
+      "title": "108年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9956e1f2-a313-433d-82d3-9c658995439f?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:03.656Z",
+      "file": "9956e1f2-a313-433d-82d3-9c658995439f.json",
+      "recordCount": 14
+    },
+    {
+      "id": "73909086-1ede-462a-b94d-c65e11283ceb",
+      "title": "109年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/73909086-1ede-462a-b94d-c65e11283ceb?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:03.876Z",
+      "file": "73909086-1ede-462a-b94d-c65e11283ceb.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0a5492b9-dab1-45bb-ae82-6c4dec14d3fc",
+      "title": "109年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0a5492b9-dab1-45bb-ae82-6c4dec14d3fc?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:04.121Z",
+      "file": "0a5492b9-dab1-45bb-ae82-6c4dec14d3fc.json",
+      "recordCount": 14
+    },
+    {
+      "id": "5890739d-8fbf-4a19-b1c2-062f6dd091e5",
+      "title": "109年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5890739d-8fbf-4a19-b1c2-062f6dd091e5?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:04.510Z",
+      "file": "5890739d-8fbf-4a19-b1c2-062f6dd091e5.json",
+      "recordCount": 14
+    },
+    {
+      "id": "04ab6b55-6c38-41f7-99c2-20712ee276da",
+      "title": "109年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/04ab6b55-6c38-41f7-99c2-20712ee276da?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:04.740Z",
+      "file": "04ab6b55-6c38-41f7-99c2-20712ee276da.json",
+      "recordCount": 14
+    },
+    {
+      "id": "e7a608ae-32c3-4035-b61c-e7d5b449eca7",
+      "title": "109年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e7a608ae-32c3-4035-b61c-e7d5b449eca7?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:04.896Z",
+      "file": "e7a608ae-32c3-4035-b61c-e7d5b449eca7.json",
+      "recordCount": 14
+    },
+    {
+      "id": "7006c7d0-5592-47f9-bac2-a89f108405e4",
+      "title": "109年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7006c7d0-5592-47f9-bac2-a89f108405e4?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.027Z",
+      "file": "7006c7d0-5592-47f9-bac2-a89f108405e4.json",
+      "recordCount": 14
+    },
+    {
+      "id": "62ac71c5-5578-47d2-85b5-b6d475562a8d",
+      "title": "109年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/62ac71c5-5578-47d2-85b5-b6d475562a8d?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.158Z",
+      "file": "62ac71c5-5578-47d2-85b5-b6d475562a8d.json",
+      "recordCount": 14
+    },
+    {
+      "id": "2b995686-9b28-405d-b694-0c043992f149",
+      "title": "109年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/2b995686-9b28-405d-b694-0c043992f149?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.306Z",
+      "file": "2b995686-9b28-405d-b694-0c043992f149.json",
+      "recordCount": 14
+    },
+    {
+      "id": "323d95fb-1b74-4bda-924c-f2b39967b209",
+      "title": "109年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/323d95fb-1b74-4bda-924c-f2b39967b209?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.430Z",
+      "file": "323d95fb-1b74-4bda-924c-f2b39967b209.json",
+      "recordCount": 14
+    },
+    {
+      "id": "6a4ede7b-3297-47e0-8927-534e67b5c60e",
+      "title": "109年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/6a4ede7b-3297-47e0-8927-534e67b5c60e?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.552Z",
+      "file": "6a4ede7b-3297-47e0-8927-534e67b5c60e.json",
+      "recordCount": 14
+    },
+    {
+      "id": "bfd0dd82-90e1-49b8-8215-0d5c2b54276d",
+      "title": "109年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/bfd0dd82-90e1-49b8-8215-0d5c2b54276d?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.693Z",
+      "file": "bfd0dd82-90e1-49b8-8215-0d5c2b54276d.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0c5bfe68-341d-4b73-af95-6601bc8d06ef",
+      "title": "109年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0c5bfe68-341d-4b73-af95-6601bc8d06ef?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.818Z",
+      "file": "0c5bfe68-341d-4b73-af95-6601bc8d06ef.json",
+      "recordCount": 14
+    },
+    {
+      "id": "3516f5f0-5016-421a-8115-5d49570e79d3",
+      "title": "110年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3516f5f0-5016-421a-8115-5d49570e79d3?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:05.965Z",
+      "file": "3516f5f0-5016-421a-8115-5d49570e79d3.json",
+      "recordCount": 14
+    },
+    {
+      "id": "3b3191ca-baef-4da4-bee2-a8d4992d79b9",
+      "title": "110年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/3b3191ca-baef-4da4-bee2-a8d4992d79b9?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:06.115Z",
+      "file": "3b3191ca-baef-4da4-bee2-a8d4992d79b9.json",
+      "recordCount": 14
+    },
+    {
+      "id": "9187e7e1-6d9b-4909-aaf9-5ea88ef287e2",
+      "title": "110年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9187e7e1-6d9b-4909-aaf9-5ea88ef287e2?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:06.272Z",
+      "file": "9187e7e1-6d9b-4909-aaf9-5ea88ef287e2.json",
+      "recordCount": 14
+    },
+    {
+      "id": "8c667471-f97f-4313-befc-51b65614ad5b",
+      "title": "110年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/8c667471-f97f-4313-befc-51b65614ad5b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:06.450Z",
+      "file": "8c667471-f97f-4313-befc-51b65614ad5b.json",
+      "recordCount": 14
+    },
+    {
+      "id": "cf1c4206-1dd3-488d-90c4-96aabd221797",
+      "title": "110年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cf1c4206-1dd3-488d-90c4-96aabd221797?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:06.831Z",
+      "file": "cf1c4206-1dd3-488d-90c4-96aabd221797.json",
+      "recordCount": 14
+    },
+    {
+      "id": "6c4c8332-fb2a-4271-ac01-030dfccb9409",
+      "title": "110年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/6c4c8332-fb2a-4271-ac01-030dfccb9409?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:07.063Z",
+      "file": "6c4c8332-fb2a-4271-ac01-030dfccb9409.json",
+      "recordCount": 14
+    },
+    {
+      "id": "9d6c52d9-a719-481c-9de6-b0fc06399cbf",
+      "title": "110年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/9d6c52d9-a719-481c-9de6-b0fc06399cbf?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:07.290Z",
+      "file": "9d6c52d9-a719-481c-9de6-b0fc06399cbf.json",
+      "recordCount": 14
+    },
+    {
+      "id": "409164e2-042d-48b5-a651-0db5dbbf7d62",
+      "title": "110年8月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/409164e2-042d-48b5-a651-0db5dbbf7d62?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:07.530Z",
+      "file": "409164e2-042d-48b5-a651-0db5dbbf7d62.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0d598136-1aaf-48ec-9725-610f280616e4",
+      "title": "110年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0d598136-1aaf-48ec-9725-610f280616e4?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:07.748Z",
+      "file": "0d598136-1aaf-48ec-9725-610f280616e4.json",
+      "recordCount": 14
+    },
+    {
+      "id": "eacb3853-3132-4774-8163-af53173da84a",
+      "title": "110年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/eacb3853-3132-4774-8163-af53173da84a?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:07.945Z",
+      "file": "eacb3853-3132-4774-8163-af53173da84a.json",
+      "recordCount": 14
+    },
+    {
+      "id": "67148a9a-265e-4d13-8d25-8811b1c2c983",
+      "title": "110年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/67148a9a-265e-4d13-8d25-8811b1c2c983?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:08.083Z",
+      "file": "67148a9a-265e-4d13-8d25-8811b1c2c983.json",
+      "recordCount": 14
+    },
+    {
+      "id": "2a8f3f3a-6bb8-4dc9-9bea-6db0897398d0",
+      "title": "110年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/2a8f3f3a-6bb8-4dc9-9bea-6db0897398d0?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:08.216Z",
+      "file": "2a8f3f3a-6bb8-4dc9-9bea-6db0897398d0.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0234b3a3-6351-4176-b07b-c4c7c4c7b0f8",
+      "title": "111年1月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0234b3a3-6351-4176-b07b-c4c7c4c7b0f8?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:08.352Z",
+      "file": "0234b3a3-6351-4176-b07b-c4c7c4c7b0f8.json",
+      "recordCount": 14
+    },
+    {
+      "id": "fdadb325-6306-4c91-ad06-a55739a3a058",
+      "title": "111年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/fdadb325-6306-4c91-ad06-a55739a3a058?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:08.476Z",
+      "file": "fdadb325-6306-4c91-ad06-a55739a3a058.json",
+      "recordCount": 14
+    },
+    {
+      "id": "8204cce6-6079-4320-a4fa-c6d9955e4705",
+      "title": "111年3月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/8204cce6-6079-4320-a4fa-c6d9955e4705?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:08.616Z",
+      "file": "8204cce6-6079-4320-a4fa-c6d9955e4705.json",
+      "recordCount": 14
+    },
+    {
+      "id": "cdc637ec-cc47-409a-8873-5b81f9e6186b",
+      "title": "111年4月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/cdc637ec-cc47-409a-8873-5b81f9e6186b?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:08.778Z",
+      "file": "cdc637ec-cc47-409a-8873-5b81f9e6186b.json",
+      "recordCount": 14
+    },
+    {
+      "id": "404ce1c9-48f0-47e5-8bd2-c51ccefd8405",
+      "title": "111年5月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/404ce1c9-48f0-47e5-8bd2-c51ccefd8405?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:08.913Z",
+      "file": "404ce1c9-48f0-47e5-8bd2-c51ccefd8405.json",
+      "recordCount": 14
+    },
+    {
+      "id": "5ed5b204-16e9-44aa-93b0-382613013436",
+      "title": "111年6月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/5ed5b204-16e9-44aa-93b0-382613013436?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.042Z",
+      "file": "5ed5b204-16e9-44aa-93b0-382613013436.json",
+      "recordCount": 14
+    },
+    {
+      "id": "7cc05f7a-9bda-4397-8940-a436bf700daf",
+      "title": "111年7月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/7cc05f7a-9bda-4397-8940-a436bf700daf?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.162Z",
+      "file": "7cc05f7a-9bda-4397-8940-a436bf700daf.json",
+      "recordCount": 14
+    },
+    {
+      "id": "e7af9f33-ffb7-4d3e-9eea-7f81750c9c5a",
+      "title": "111年9月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/e7af9f33-ffb7-4d3e-9eea-7f81750c9c5a?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.316Z",
+      "file": "e7af9f33-ffb7-4d3e-9eea-7f81750c9c5a.json",
+      "recordCount": 14
+    },
+    {
+      "id": "fe716cd4-c16f-497e-bdcb-e8334fb9c383",
+      "title": "111年10月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/fe716cd4-c16f-497e-bdcb-e8334fb9c383?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.446Z",
+      "file": "fe716cd4-c16f-497e-bdcb-e8334fb9c383.json",
+      "recordCount": 14
+    },
+    {
+      "id": "b9c16a70-20a1-44a5-b330-3d2a50a2cd77",
+      "title": "111年11月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/b9c16a70-20a1-44a5-b330-3d2a50a2cd77?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.567Z",
+      "file": "b9c16a70-20a1-44a5-b330-3d2a50a2cd77.json",
+      "recordCount": 14
+    },
+    {
+      "id": "4f7c7119-eef1-4e2e-81dd-082c967fec3d",
+      "title": "111年12月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/4f7c7119-eef1-4e2e-81dd-082c967fec3d?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.701Z",
+      "file": "4f7c7119-eef1-4e2e-81dd-082c967fec3d.json",
+      "recordCount": 14
+    },
+    {
+      "id": "0fb1cdda-425b-4c9b-a48c-1f6287ac0728",
+      "title": "112年2月翡翠水庫水質月報表",
+      "apiUrl": "https://data.taipei/api/v1/dataset/0fb1cdda-425b-4c9b-a48c-1f6287ac0728?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.836Z",
+      "file": "0fb1cdda-425b-4c9b-a48c-1f6287ac0728.json",
+      "recordCount": 14
+    },
+    {
+      "id": "11793066-f4ee-4ea2-a639-ceb01085587d",
+      "title": "Discovered Taipei Open Data resource",
+      "apiUrl": "https://data.taipei/api/v1/dataset/11793066-f4ee-4ea2-a639-ceb01085587d?scope=resourceAquire",
+      "fetchedAt": "2026-06-16T02:25:09.945Z",
+      "file": "11793066-f4ee-4ea2-a639-ceb01085587d.json",
+      "recordCount": 0
+    }
+  ]
+}

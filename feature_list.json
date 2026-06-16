@@ -1,0 +1,60 @@
+{
+  "features": [
+    {
+      "id": "feat-001",
+      "name": "Baseline Static Water Map",
+      "description": "Vite + React + TypeScript + Leaflet app with bilingual UI, static local JSON data, dashboard, station map, and data table.",
+      "dependencies": [],
+      "status": "done",
+      "evidence": "Verified before harness creation: npm run convert:data converted 1764 records across 126 periods; npm test passed; npm run build passed; GITHUB_PAGES=true npm run build passed."
+    },
+    {
+      "id": "feat-002",
+      "name": "GitHub Pages Deployment",
+      "description": "Deploy workflow builds with Node 22, npm ci, npm test, production build, Pages artifact upload, and deploy-pages action. App URLs respect the /taipei-feitsui-water-map/ base path.",
+      "dependencies": ["feat-001"],
+      "status": "done",
+      "evidence": "Added .github/workflows/deploy-pages.yml and verified npm test, npm run build, and GITHUB_PAGES=true npm run build."
+    },
+    {
+      "id": "feat-003",
+      "name": "Agent Harness",
+      "description": "Maintain lightweight restartable agent instructions, feature state, progress log, verification script, and session handoff.",
+      "dependencies": ["feat-002"],
+      "status": "done",
+      "evidence": "Harness files created and tailored on 2026-06-16. validate-harness scored 100/100. ./init.sh passed: npm ci, npm run convert:data (1764 records across 126 periods), npm test, npm run build, and GITHUB_PAGES=true npm run build. npm audit --omit=dev found 0 vulnerabilities."
+    },
+    {
+      "id": "feat-004",
+      "name": "Verified Station Coordinates",
+      "description": "Populate public/data/station-locations.json with source-backed verified coordinates for physical sampling stations, keeping summary rows unmapped.",
+      "dependencies": ["feat-001"],
+      "status": "not-started",
+      "evidence": "Current station-locations.json intentionally keeps coordinates missing; stations are shown in the unmapped list."
+    },
+    {
+      "id": "feat-005",
+      "name": "Performance Split",
+      "description": "Reduce the current Vite chunk-size warning by code-splitting heavy map/chart code without changing data behavior.",
+      "dependencies": ["feat-001"],
+      "status": "not-started",
+      "evidence": "Current build succeeds but warns that the main JS chunk exceeds 500 kB after minification."
+    },
+    {
+      "id": "feat-006",
+      "name": "Code Review Fixes",
+      "description": "Review and fix correctness, maintainability, and runtime-resilience findings in the app and data scripts.",
+      "dependencies": ["feat-003"],
+      "status": "done",
+      "evidence": "Fixed trend charts so they aggregate monthly values instead of connecting unrelated station rows; added safe localStorage access; added visible data-load errors; improved Chinese/English search terms; made data fetch refresh continue across per-resource failures. ./init.sh passed and npm audit --omit=dev found 0 vulnerabilities."
+    },
+    {
+      "id": "feat-007",
+      "name": "AI Slop Cleanup",
+      "description": "Regression-tests-first cleanup pass for duplicated utility logic, unused exports, fetcher failure handling, and missing behavior tests.",
+      "dependencies": ["feat-006"],
+      "status": "done",
+      "evidence": "Added node:test regression coverage for value parsing, ROC date parsing, filtering, summary counts, and station comparison. Deleted unused utility exports/types, deduplicated latest-station-count and dashboard chart/card rendering, and made all-failed resource refreshes fail after writing diagnostics. ./init.sh passed with 5 unit tests; npm audit --omit=dev found 0 vulnerabilities; harness validation remained 100/100."
+    }
+  ]
+}

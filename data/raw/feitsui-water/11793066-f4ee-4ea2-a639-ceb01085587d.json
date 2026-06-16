@@ -1,0 +1,13 @@
+{
+  "resource": {
+    "id": "11793066-f4ee-4ea2-a639-ceb01085587d",
+    "title": "Discovered Taipei Open Data resource"
+  },
+  "result": {
+    "limit": 1000,
+    "offset": 0,
+    "count": 0,
+    "results": []
+  },
+  "sourceEnvelope": []
+}

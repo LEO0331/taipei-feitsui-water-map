@@ -1,0 +1,101 @@
+[
+  {
+    "stationName": "大壩上",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "dam_profile",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "大壩下",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "dam_profile",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "大壩中",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "dam_profile",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "小格頭",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "reservoir_surface",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "火燒樟",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "reservoir_surface",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "永安",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "tributary_or_stream",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "表水平均值",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "summary",
+    "isSummaryRow": true,
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "後坑子",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "reservoir_surface",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "黃櫸皮寮",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "tributary_or_stream",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "媽祖林",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "reservoir_surface",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "鷺鷥潭",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "reservoir_surface",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "灣潭上",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "tributary_or_stream",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "灣潭下",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "tributary_or_stream",
+    "coordinateStatus": "missing"
+  },
+  {
+    "stationName": "灣潭中",
+    "latitude": null,
+    "longitude": null,
+    "stationGroup": "tributary_or_stream",
+    "coordinateStatus": "missing"
+  }
+]
