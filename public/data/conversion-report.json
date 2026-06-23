@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T04:15:37.956Z",
+  "generatedAt": "2026-06-23T01:16:53.146Z",
   "rawDirectory": "/Users/Leo/Documents/taipei-feitsui-water-map/data/raw/feitsui-water",
   "recordCount": 1764,
   "periods": [
@@ -282,5 +282,33 @@
     "表水平均值"
   ],
   "coordinatePolicy": "Only stations with verified coordinates in station-locations.json should render as map markers.",
-  "issues": []
+  "issues": [],
+  "riverWaterQuality": {
+    "generatedAt": "2026-06-23T01:16:56.965Z",
+    "recordCount": 768,
+    "sources": [
+      {
+        "file": "112河川水質檢測結果(Big5編碼).csv",
+        "recordCount": 192,
+        "encoding": "Big5/CP950 or UTF-8-SIG"
+      },
+      {
+        "file": "113河川水質檢測結果(Big5編碼).csv",
+        "recordCount": 192,
+        "encoding": "Big5/CP950 or UTF-8-SIG"
+      },
+      {
+        "file": "114河川水質檢測結果(Big5編碼).csv",
+        "recordCount": 192,
+        "encoding": "Big5/CP950 or UTF-8-SIG"
+      },
+      {
+        "file": "115河川水質檢測結果(Big5編碼).csv",
+        "recordCount": 192,
+        "encoding": "Big5/CP950 or UTF-8-SIG"
+      }
+    ],
+    "warnings": [],
+    "unparsed": []
+  }
 }

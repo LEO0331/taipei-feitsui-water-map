@@ -1,8 +1,8 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Mobile-first bilingual web app for exploring Taipei Feitsui Reservoir water-quality monitoring data with hydrometeorological and reservoir-operation context.
+Now includes Taipei River Water Quality Monitoring / 新增臺北市河川水質檢測模組.
 
-The app is still primarily a water-quality station map. Hydrometeorological and reservoir-operation data are supporting context for dashboard comparison, not a replacement product, operational model, prediction system, or causal model.
+Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
 ## Data Sources
 
@@ -26,6 +26,14 @@ Reservoir operation:
 - Recent known API resources are seeded in `data/raw/feitsui-operation/manual-resources.json`
 - Raw JSON directory: `data/raw/feitsui-operation/`
 
+River water quality:
+
+- Dataset: `臺北市河川水質檢測`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=759db528-77b5-4aa3-b6fa-2b857890214e`
+- Raw CSV directory: `data/raw/river-water-quality/`
+- Uploaded files: ROC years 112–115, decoded as Big5/CP950 with UTF-8-SIG fallback
+- ROC year is inferred from the leading year in each filename
+
 Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 
 ## Parsing Rules
@@ -42,6 +50,14 @@ Hydrometeorological values preserve raw strings. Empty values, `null`, `undefine
 
 Reservoir-operation values preserve raw strings. Empty values, `null`, `undefined`, and `-` are missing. Numeric strings with commas, such as `1,341,116`, parse to numeric values while preserving the original raw value.
 
+River-water values preserve raw strings and qualifiers:
+
+- `ND<0.02`: below detection limit; not treated as zero in averages
+- `---`: not measured
+- empty / `NaN`: missing
+- scientific notation such as `6.50E+03`: measured numeric value
+- other text: unparsed and recorded in the conversion report
+
 ## Coordinates
 
 Source data does not provide coordinates. Coordinates are manually maintained in:
@@ -49,6 +65,8 @@ Source data does not provide coordinates. Coordinates are manually maintained in
 `public/data/station-locations.json`
 
 Only entries with `coordinateStatus: "verified"` and numeric coordinates render as markers. `表水平均值` is a summary row and does not render as a marker. Weather-station coordinates are optional; when missing, weather data is shown in charts only.
+
+River station coordinates are optional in `public/data/river-station-locations.json`. The file is empty by default. No automatic geocoding or invented coordinates are used.
 
 ## Commands
 
@@ -76,6 +94,12 @@ Fetch operation resources:
 npm run fetch:operation
 ```
 
+Check/download river-water resources:
+
+```sh
+npm run data:fetch:river-water
+```
+
 Fetch all:
 
 ```sh
@@ -98,6 +122,12 @@ Convert local operation API JSON:
 
 ```sh
 npm run convert:operation
+```
+
+Convert local river-water CSV files and build summaries:
+
+```sh
+npm run data:convert:river-water
 ```
 
 Convert all local raw data:
@@ -154,6 +184,14 @@ Reservoir operation:
 - `public/data/operation-parameter-series.json`
 - `public/data/operation-conversion-report.json`
 
+River water quality:
+
+- `public/data/river-water-quality-records.json`
+- `public/data/river-water-quality-summary.json`
+- `public/data/river-water-quality-conversion-report.json`
+- `public/data/water-dashboard-summary.json`
+- `public/data/river-station-locations.json`
+
 Shared:
 
 - `public/data/station-locations.json`
@@ -168,4 +206,4 @@ The browser app reads static JSON from `public/data` and does not call Taipei Op
 
 ## Disclaimer
 
-This app presents public water-quality, hydrometeorological, and reservoir-operation monitoring values. It does not determine drinking-water safety, pollution status, operational decision quality, predictions, or causation. Official interpretation and announcements should come from the responsible authorities.
+This app presents public environmental monitoring data for exploration and trend comparison. It does not represent real-time water quality, drinking-water safety judgment, pollution source attribution, operational decision quality, prediction, causation, or official enforcement basis.

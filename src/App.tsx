@@ -49,8 +49,10 @@ import {
   joinMonitoringDataByPeriod,
   operationParameterKeys,
 } from './utils/operation';
+import RiverWaterQualityPanel from './RiverWaterQualityPanel';
+import type { RiverStationLocation, RiverWaterQualityRecord, RiverWaterQualitySummary } from './types/riverWaterQuality';
 
-type MonitoringTab = 'waterQuality' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -159,6 +161,7 @@ function MonitoringTabs({
   const t = translations[language];
   const tabs: Array<{ id: MonitoringTab; label: string }> = [
     { id: 'waterQuality', label: t.waterQuality },
+    { id: 'riverWaterQuality', label: t.riverWaterQuality },
     { id: 'hydromet', label: t.hydromet },
     { id: 'operation', label: t.operation },
     { id: 'combinedDashboard', label: t.combinedDashboard },
@@ -1164,6 +1167,9 @@ export default function App() {
   const [hydrometSummaries, setHydrometSummaries] = useState<HydrometMonthlySummary[]>([]);
   const [operationRecords, setOperationRecords] = useState<OperationDailyRecord[]>([]);
   const [operationSummaries, setOperationSummaries] = useState<OperationMonthlySummary[]>([]);
+  const [riverRecords, setRiverRecords] = useState<RiverWaterQualityRecord[]>([]);
+  const [riverSummary, setRiverSummary] = useState<RiverWaterQualitySummary | null>(null);
+  const [riverLocations, setRiverLocations] = useState<RiverStationLocation[]>([]);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
@@ -1206,7 +1212,10 @@ export default function App() {
       fetchJson<HydrometMonthlySummary[]>('hydromet-monthly-summary.json'),
       fetchJson<OperationDailyRecord[]>('operation-daily-records.json'),
       fetchJson<OperationMonthlySummary[]>('operation-monthly-summary.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData]) => {
+      fetchJson<RiverWaterQualityRecord[]>('river-water-quality-records.json'),
+      fetchJson<RiverWaterQualitySummary>('river-water-quality-summary.json'),
+      fetchJson<RiverStationLocation[]>('river-station-locations.json'),
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
@@ -1214,6 +1223,9 @@ export default function App() {
       setHydrometSummaries(hydrometMonthlyData);
       setOperationRecords(operationDailyData);
       setOperationSummaries(operationMonthlyData);
+      setRiverRecords(riverRecordData);
+      setRiverSummary(riverSummaryData);
+      setRiverLocations(riverLocationData);
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
@@ -1263,7 +1275,7 @@ export default function App() {
     );
   }
 
-  if (!summary) {
+  if (!summary || !riverSummary) {
     return <main className="loading">Loading</main>;
   }
 
@@ -1278,15 +1290,17 @@ export default function App() {
         <LanguageToggle language={language} setLanguage={setLanguage} />
       </header>
 
-      <FilterPanel
-        filters={filters}
-        setFilters={setFilters}
-        language={language}
-        periods={periods}
-        stations={stations}
-      />
-
       <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} />
+
+      {activeTab !== 'riverWaterQuality' && (
+        <FilterPanel
+          filters={filters}
+          setFilters={setFilters}
+          language={language}
+          periods={periods}
+          stations={stations}
+        />
+      )}
 
       {activeTab === 'waterQuality' && (
         <>
@@ -1357,6 +1371,10 @@ export default function App() {
             language={language}
           />
         </>
+      )}
+
+      {activeTab === 'riverWaterQuality' && (
+        <RiverWaterQualityPanel records={riverRecords} summary={riverSummary} locations={riverLocations} language={language} />
       )}
 
       {activeTab === 'operation' && (

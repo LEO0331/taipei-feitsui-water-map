@@ -79,6 +79,14 @@
       "dependencies": ["feat-001", "feat-008"],
       "status": "done",
       "evidence": "Fetched or reused 130 operation resources and converted 3961 daily operation records across 130 periods. Added operation models/utilities/tests, operation tab/cards/charts, combined dashboard join, table modes, translations, service-worker cache entries, and README documentation. npm test passed with 14 tests and npm run build passed with the existing chunk-size warning."
+    },
+    {
+      "id": "feat-011",
+      "name": "Taipei River Water Quality",
+      "description": "Add a separate Taipei citywide river-water module with Big5 CSV conversion, qualifier-aware summaries, filters, charts, records table, and optional verified station markers.",
+      "dependencies": ["feat-001"],
+      "status": "done",
+      "evidence": "Converted four ROC-year 112–115 Big5 CSV files into 768 records across 9 rivers, 16 stations, and 48 year-month periods. Added ND</---/scientific-notation parsing, summaries, combined dashboard summary, isolated bilingual river tab, filters, selector-driven charts, sortable table, optional verified coordinate file, PWA cache entries, and documentation. Plain ./init.sh passed with 16 tests plus local and Pages builds; browser smoke verified 768 rows, 2026 新店溪 filtering to 12 rows, ND raw display, English labels, mobile containment, and 0 console errors; npm audit --omit=dev found 0 vulnerabilities."
     }
   ]
 }

@@ -20,6 +20,7 @@
 - [x] Hydrometeorological context feature completed while keeping the water-quality map as the main product.
 - [x] Hydromet code-review follow-up completed: removed obsolete table code and added weekday/weekend plus date-range filters.
 - [x] Reservoir operation context feature completed with static fetch/convert scripts, operation tab, combined dashboard, and table modes.
+- [x] Taipei river-water module completed as a separate domain with four years of Big5 CSV data.
 
 ### What's In Progress
 
@@ -67,6 +68,9 @@
 - **Operation data stays contextual**: Operation records are shown in cards, charts, table rows, and combined comparisons, not on the station map.
   - Context: Operation rows are daily reservoir-operation observations, not water-quality station records.
   - Alternatives considered: Adding operation markers; rejected because the dataset has no station coordinates and the product remains a water-quality map.
+- **River water quality stays separate**: River records use their own tab, filters, summaries, table, and optional location file.
+  - Context: River and reservoir records have different sources, monitoring purposes, stations, fields, and value qualifiers.
+  - Alternatives considered: Merging river rows into the reservoir table; rejected because it would erase source/type boundaries.
 
 ## Files Modified This Session
 
@@ -93,6 +97,10 @@
 - `tests/operation.test.ts` - Regression tests for operation date/value parsing, aggregation, and combined joins.
 - `src/App.tsx` and `src/data/i18n.ts` - Operation tab, charts, combined dashboard labels, and table modes.
 - `public/sw.js` and `README.md` - Operation static-data cache and documentation.
+- `src/types/riverWaterQuality.ts` and `src/utils/riverWaterQuality.ts` - River value semantics, records, summaries, and parser.
+- `scripts/fetchRiverWaterQuality.ts`, `scripts/convertRiverWaterQuality.ts`, and `scripts/buildRiverWaterQualitySummary.ts` - River local source workflow and static outputs.
+- `src/RiverWaterQualityPanel.tsx` - Bilingual river filters, cards, charts, optional verified map, and records table.
+- `tests/riverWaterQuality.test.ts` - ND, missing, scientific notation, and ROC-year regression checks.
 
 ## Evidence of Completion
 
@@ -112,6 +120,10 @@
 - [x] Hydromet filter smoke: weekend range `2026-01-10` to `2026-01-18` returned exactly `2026-01-10`, `2026-01-11`, `2026-01-17`, and `2026-01-18` with 0 console errors.
 - [x] Operation conversion: `npm run fetch:operation` fetched or reused 130 resources; `npm run convert:operation` generated 3,961 daily records across 130 periods.
 - [x] Operation tests/build: `npm test` passed with 14 tests; `npm run build` passed with the known Vite chunk-size warning.
+- [x] River conversion: 768 records from four Big5 files; 9 rivers, 16 stations, 48 year-month periods, and 0 unparsed values.
+- [x] River tests/build: `npm test` passed with 16 tests; `npm run build` passed with the known Vite chunk-size warning.
+- [x] River browser smoke: Chinese tab loaded 13 cards and 768 rows; 2026 + 新店溪 filtered to 12 rows; ND values remained visible; English labels worked; mobile body width stayed within 390px; 0 console errors.
+- [x] Final river verification: plain `./init.sh` passed under the harness-selected Node 22; production audit found 0 vulnerabilities; harness validation remained 100/100.
 
 ## Notes for Next Session
 

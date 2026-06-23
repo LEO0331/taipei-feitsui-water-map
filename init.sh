@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+# ponytail: prefer the user's Homebrew Node; /usr/local Node 20.2 cannot run Vite 7.
+if [ -x "$HOME/homebrew/bin/node" ]; then
+  export PATH="$HOME/homebrew/bin:$PATH"
+fi
+
 echo "=== Harness Initialization ==="
 echo "Project: Taipei Feitsui Reservoir Water Quality Map"
 echo "Working directory: $(pwd)"

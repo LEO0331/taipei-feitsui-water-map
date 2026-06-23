@@ -12,11 +12,13 @@
     "fetch:water": "tsx scripts/fetchFeitsuiWaterResources.ts",
     "fetch:hydromet": "tsx scripts/fetchFeitsuiHydrometResources.ts",
     "fetch:operation": "tsx scripts/fetchFeitsuiOperationResources.ts",
-    "fetch:data": "npm run fetch:water && npm run fetch:hydromet && npm run fetch:operation",
+    "data:fetch:river-water": "tsx scripts/fetchRiverWaterQuality.ts",
+    "fetch:data": "npm run fetch:water && npm run fetch:hydromet && npm run fetch:operation && npm run data:fetch:river-water",
     "convert:water": "tsx scripts/convertFeitsuiWaterQuality.ts",
     "convert:hydromet": "tsx scripts/convertFeitsuiHydromet.ts",
     "convert:operation": "tsx scripts/convertFeitsuiOperation.ts",
-    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run convert:operation"
+    "data:convert:river-water": "tsx scripts/convertRiverWaterQuality.ts && tsx scripts/buildRiverWaterQualitySummary.ts",
+    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run convert:operation && npm run data:convert:river-water"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

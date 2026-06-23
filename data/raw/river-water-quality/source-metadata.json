@@ -1,0 +1,28 @@
+{
+  "datasetPage": "https://data.taipei/dataset/detail?id=759db528-77b5-4aa3-b6fa-2b857890214e",
+  "checkedAt": "2026-06-23T01:10:29.600Z",
+  "encoding": "Big5/CP950 with UTF-8-SIG fallback",
+  "files": [
+    {
+      "file": "112河川水質檢測結果(Big5編碼).csv",
+      "size": 28176,
+      "status": "local"
+    },
+    {
+      "file": "113河川水質檢測結果(Big5編碼).csv",
+      "size": 28731,
+      "status": "local"
+    },
+    {
+      "file": "114河川水質檢測結果(Big5編碼).csv",
+      "size": 28788,
+      "status": "local"
+    },
+    {
+      "file": "115河川水質檢測結果(Big5編碼).csv",
+      "size": 17651,
+      "status": "local"
+    }
+  ],
+  "notes": []
+}

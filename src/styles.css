@@ -283,6 +283,35 @@ input {
   margin-top: 14px;
 }
 
+.river-module {
+  margin-top: 14px;
+}
+
+.river-filters {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.check-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 10px;
+}
+
+.check-field input {
+  width: 18px;
+  min-height: 18px;
+}
+
+.river-table table {
+  min-width: 1800px;
+}
+
+.river-map-wrap {
+  margin-top: 12px;
+}
+
 .summary-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }

@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-06-23T01:16:56.965Z",
+  "recordCount": 768,
+  "sources": [
+    {
+      "file": "112河川水質檢測結果(Big5編碼).csv",
+      "recordCount": 192,
+      "encoding": "Big5/CP950 or UTF-8-SIG"
+    },
+    {
+      "file": "113河川水質檢測結果(Big5編碼).csv",
+      "recordCount": 192,
+      "encoding": "Big5/CP950 or UTF-8-SIG"
+    },
+    {
+      "file": "114河川水質檢測結果(Big5編碼).csv",
+      "recordCount": 192,
+      "encoding": "Big5/CP950 or UTF-8-SIG"
+    },
+    {
+      "file": "115河川水質檢測結果(Big5編碼).csv",
+      "recordCount": 192,
+      "encoding": "Big5/CP950 or UTF-8-SIG"
+    }
+  ],
+  "warnings": [],
+  "unparsed": []
+}
