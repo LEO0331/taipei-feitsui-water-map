@@ -1,6 +1,6 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Now includes Taipei River Water Quality Monitoring / 新增臺北市河川水質檢測模組.
+Now includes Taipei River Water Quality Monitoring and Taipei pumping stations / 新增臺北市河川水質檢測與水利設施抽水站模組.
 
 Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
@@ -33,6 +33,14 @@ River water quality:
 - Raw CSV directory: `data/raw/river-water-quality/`
 - Uploaded files: ROC years 112–115, decoded as Big5/CP950 with UTF-8-SIG fallback
 - ROC year is inferred from the leading year in each filename
+
+Water infrastructure:
+
+- Dataset: `臺北市水利處抽水站`
+- Uploaded CSV: `data/raw/pumping-stations/臺北市水利處抽水站TWD97.csv` (UTF-8-SIG)
+- TWD97-TM2(zone121) X/Y coordinates are converted to WGS84 for Leaflet markers
+- Gregorian `YYYYMMDD` establishment dates, river-system/district/management-unit filters, and nearby-station lookup are supported
+- The module does not represent real-time pumping status, flood-risk prediction, or emergency instruction
 
 Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 

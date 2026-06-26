@@ -2,8 +2,8 @@
 
 ## Current State
 
-**Last Updated:** 2026-06-16
-**Session ID:** hydromet-context
+**Last Updated:** 2026-06-26
+**Session ID:** pumping-stations
 **Active Feature:** none
 
 ## Status
@@ -21,6 +21,7 @@
 - [x] Hydromet code-review follow-up completed: removed obsolete table code and added weekday/weekend plus date-range filters.
 - [x] Reservoir operation context feature completed with static fetch/convert scripts, operation tab, combined dashboard, and table modes.
 - [x] Taipei river-water module completed as a separate domain with four years of Big5 CSV data.
+- [x] Taipei pumping-stations module completed with local UTF-8-SIG source, TWD97-to-WGS84 conversion, map markers, filters, nearby lookup, directory, charts, and interpretation limits.
 
 ### What's In Progress
 

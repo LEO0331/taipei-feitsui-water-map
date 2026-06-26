@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T01:16:53.146Z",
+  "generatedAt": "2026-06-26T05:47:50.400Z",
   "rawDirectory": "/Users/Leo/Documents/taipei-feitsui-water-map/data/raw/feitsui-water",
   "recordCount": 1764,
   "periods": [
@@ -284,7 +284,7 @@
   "coordinatePolicy": "Only stations with verified coordinates in station-locations.json should render as map markers.",
   "issues": [],
   "riverWaterQuality": {
-    "generatedAt": "2026-06-23T01:16:56.965Z",
+    "generatedAt": "2026-06-26T05:47:52.627Z",
     "recordCount": 768,
     "sources": [
       {
@@ -310,5 +310,18 @@
     ],
     "warnings": [],
     "unparsed": []
+  },
+  "pumpingStations": {
+    "generatedAt": "2026-06-26T05:47:53.131Z",
+    "source": {
+      "file": "臺北市水利處抽水站TWD97.csv",
+      "encoding": "UTF-8-SIG",
+      "recordCount": 88
+    },
+    "coordinateIssues": [],
+    "notes": [
+      "TWD97-TM2(zone121) converted to WGS84 with EPSG:3826.",
+      "建置日期 parsed as Gregorian YYYYMMDD."
+    ]
   }
 }

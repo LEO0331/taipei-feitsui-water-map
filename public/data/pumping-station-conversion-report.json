@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-06-26T05:48:56.437Z",
+  "source": {
+    "file": "臺北市水利處抽水站TWD97.csv",
+    "encoding": "UTF-8-SIG",
+    "recordCount": 88
+  },
+  "coordinateIssues": [],
+  "notes": [
+    "TWD97-TM2(zone121) converted to WGS84 with EPSG:3826.",
+    "建置日期 parsed as Gregorian YYYYMMDD."
+  ]
+}
