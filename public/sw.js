@@ -24,6 +24,8 @@ const STATIC_ASSETS = [
   'data/taipei-water-support-twc-monthly-records.json',
   'data/taipei-water-support-twc-summary.json',
   'data/taipei-water-support-twc-annual-summary.json',
+  'data/park-water-safety-equipment-records.json',
+  'data/park-water-safety-equipment-summary.json',
   'data/conversion-report.json'
 ];
 

@@ -1,6 +1,6 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, and Taipei Water support-to-Taiwan-Water statistics / 新增臺北市河川水質檢測、水利設施抽水站與北水處支援台水月統計模組.
+Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, and park water-safety facilities / 新增臺北市河川水質檢測、水利設施抽水站、北水處支援台水月統計與公園水域安全設施模組.
 
 Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
@@ -54,6 +54,19 @@ Water supply support statistics:
 - First District Office and Twelfth District Office support volumes are kept separate and summarized by month and year
 - This dataset has no coordinates; no map markers or geocoding are used
 - The module does not represent real-time dispatch, water-condition alerts, rationing status, water-quality status, future support forecasts, or emergency instructions
+
+Water safety facilities:
+
+- Dataset: `臺北市各公園水域安全告示牌及救生設備位置資訊`
+- Module key: `park_water_safety_equipment`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=cf0da6f2-4fd2-4fa0-b624-d703833ef2bc`
+- Raw CSV directory: `data/raw/park-water-safety-equipment/`
+- District/area CSV resources are fetched and combined into one static layer
+- Source coordinate fields are preserved; TWD97-like coordinates are converted to WGS84 and WGS84-like coordinates are accepted defensively before Leaflet rendering
+- Facility category parsing separates water-safety signs, lifebuoys, lifesaving equipment, rescue ropes/poles, combined records, and unknown/other records
+- Equipment codes are preserved and searchable
+- Valid converted coordinates render as map markers and support nearby lookup
+- The module does not represent emergency dispatch, rescue guarantee, current equipment condition, swimming safety advice, water-quality status, or emergency instruction
 
 Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 
@@ -163,6 +176,18 @@ Convert Taipei Water support-to-TWC CSV files and build summaries:
 npm run data:convert:twc-support
 ```
 
+Fetch park water-safety equipment CSV resources:
+
+```sh
+npm run data:fetch:park-water-safety
+```
+
+Convert park water-safety equipment CSV resources:
+
+```sh
+npm run data:convert:park-water-safety
+```
+
 Convert all local raw data:
 
 ```sh
@@ -231,6 +256,12 @@ Taipei Water support to Taiwan Water:
 - `public/data/taipei-water-support-twc-summary.json`
 - `public/data/taipei-water-support-twc-annual-summary.json`
 - `public/data/taipei-water-support-twc-conversion-report.json`
+
+Park water-safety equipment:
+
+- `public/data/park-water-safety-equipment-records.json`
+- `public/data/park-water-safety-equipment-summary.json`
+- `public/data/park-water-safety-equipment-conversion-report.json`
 
 Shared:
 

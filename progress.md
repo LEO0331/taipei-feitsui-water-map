@@ -75,6 +75,9 @@
 - **Support-to-TWC data is aggregated monthly**: The official annual CSVs contain daily `MM月DD日` rows, so conversion sums source water-volume values into monthly records for the requested statistics module.
   - Context: The dataset title and requested UI are monthly statistics, while source files are annual daily rows.
   - Alternatives considered: Rendering daily rows directly; rejected because it would contradict the module semantics and requested monthly/annual comparisons.
+- **Park water-safety coordinates are defensive**: The official description says TWD97, but current CSV resources mostly contain WGS84-like longitude/latitude values.
+  - Context: Leaflet must receive WGS84, and rendering raw TWD97 would put markers in the wrong place.
+  - Alternatives considered: Forcing all coordinates through TWD97 conversion; rejected because the current source values are already WGS84-like.
 
 ## Files Modified This Session
 
@@ -109,6 +112,10 @@
 - `scripts/fetchTaipeiWaterSupportTwcMonthlyStatistics.ts`, `scripts/convertTaipeiWaterSupportTwcMonthlyStatistics.ts`, and `scripts/buildTaipeiWaterSupportTwcSummary.ts` - Official annual CSV fetch, daily-to-monthly conversion, and static summary generation.
 - `src/TwcSupportPanel.tsx` - Bilingual support-to-TWC filters, cards, charts, data table, and no-coordinate/data-limit notices.
 - `tests/twcSupport.test.ts` - Date parser, missing value, share, rolling-total, and year-over-year regression coverage.
+- `src/types/parkWaterSafety.ts` and `src/utils/parkWaterSafety.ts` - Park water-safety models, classification, district/park parsing, coordinate handling, and summaries.
+- `scripts/fetchParkWaterSafetyEquipment.ts`, `scripts/convertParkWaterSafetyEquipment.ts`, and `scripts/buildParkWaterSafetyEquipmentSummary.ts` - Official district CSV fetch, static conversion, and summary/report updates.
+- `src/ParkWaterSafetyPanel.tsx` - Bilingual map layer, filters, nearby lookup, charts, directory, and safety disclaimers.
+- `tests/parkWaterSafety.test.ts` - Facility classification, district/park parsing, and coordinate regression checks.
 
 ## Evidence of Completion
 
@@ -135,6 +142,10 @@
 - [x] Support-to-TWC conversion: fetched 11 official Big5 annual CSV resources and generated 127 monthly records from daily source rows.
 - [x] Support-to-TWC verification: `npm test` passed with 22 tests, `npm run build` passed, full `./init.sh` passed including Pages build, `npm audit --omit=dev` found 0 vulnerabilities, and `git diff --check` passed.
 - [ ] Support-to-TWC browser smoke: not completed because Playwright browsers are not installed locally and system Chrome launch was blocked in this sandbox.
+- [x] Park water-safety conversion: fetched 11 official district/area CSV resources and generated 156 records, 155 valid-coordinate markers, 11 districts, and 48 parsed parks.
+- [x] Park water-safety tests/build: `npm test` passed with 25 tests; `npm run build` passed with the known Vite chunk-size warning.
+- [x] Park water-safety final verification: full `./init.sh` passed including conversion, 25 tests, local build, and Pages build; `npm audit --omit=dev` found 0 vulnerabilities; `git diff --check` passed.
+- [ ] Park water-safety browser smoke: not completed because this sandbox still has no usable local Playwright/Chrome browser.
 
 ## Notes for Next Session
 

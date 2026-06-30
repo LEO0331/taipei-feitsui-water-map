@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T01:13:52.903Z",
+  "generatedAt": "2026-06-30T02:15:56.203Z",
   "rawDirectory": "/Users/Leo/Documents/taipei-feitsui-water-map/data/raw/feitsui-water",
   "recordCount": 1764,
   "periods": [
@@ -284,7 +284,7 @@
   "coordinatePolicy": "Only stations with verified coordinates in station-locations.json should render as map markers.",
   "issues": [],
   "riverWaterQuality": {
-    "generatedAt": "2026-06-30T01:13:56.006Z",
+    "generatedAt": "2026-06-30T02:15:58.820Z",
     "recordCount": 768,
     "sources": [
       {
@@ -312,7 +312,7 @@
     "unparsed": []
   },
   "pumpingStations": {
-    "generatedAt": "2026-06-30T01:13:56.690Z",
+    "generatedAt": "2026-06-30T02:15:59.606Z",
     "source": {
       "file": "臺北市水利處抽水站TWD97.csv",
       "encoding": "UTF-8-SIG",
@@ -325,7 +325,7 @@
     ]
   },
   "taipeiWaterSupportTwcMonthlyStatistics": {
-    "generatedAt": "2026-06-30T01:13:58.140Z",
+    "generatedAt": "2026-06-30T02:16:00.948Z",
     "officialDataset": "臺北自來水事業處支援台水月統計表",
     "sourceAgency": "北水處",
     "supportVolumeUnit": "raw",
@@ -351,6 +351,128 @@
     "invalid": [],
     "notes": [
       "Source field names use 水量 but do not state a unit; values are preserved as raw water-volume numbers."
+    ]
+  },
+  "parkWaterSafetyEquipment": {
+    "generatedAt": "2026-06-30T02:16:01.829Z",
+    "officialDataset": "臺北市各公園水域安全告示牌及救生設備位置資訊",
+    "sourceAgency": "工務局公園處",
+    "sources": [
+      {
+        "file": "01-萬華區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "萬華區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/8a6f63d1-7096-4703-934d-ee01cff79759/download",
+        "encoding": "utf-8",
+        "status": "downloaded",
+        "fileSize": 720,
+        "downloadedAt": "2026-06-30T02:11:49.002Z"
+      },
+      {
+        "file": "02-士林區公園水域安全告示牌及救生設備位置.csv",
+        "resourceName": "士林區公園水域安全告示牌及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/74277b5c-7683-4c7b-b348-136bb1ba5d2e/download",
+        "encoding": "Big5",
+        "status": "downloaded",
+        "fileSize": 1782,
+        "downloadedAt": "2026-06-30T02:11:49.190Z"
+      },
+      {
+        "file": "03-文山區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "文山區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/ddcdb5ce-27fc-45d4-a772-3c817e2f99f7/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 1008,
+        "downloadedAt": "2026-06-30T02:11:49.369Z"
+      },
+      {
+        "file": "04-北投區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "北投區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/d78791c9-7a8b-4cc9-b64f-acbe70afa012/download",
+        "encoding": "UTF-8",
+        "status": "downloaded",
+        "fileSize": 2442,
+        "downloadedAt": "2026-06-30T02:11:49.543Z"
+      },
+      {
+        "file": "05-內湖區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "內湖區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/83dfe5b6-5aa5-4d48-9fdc-7927ad9e1e56/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 4371,
+        "downloadedAt": "2026-06-30T02:11:49.714Z"
+      },
+      {
+        "file": "06-南港區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "南港區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/d28b98dc-d708-4bd0-92dd-434df9de1462/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 1145,
+        "downloadedAt": "2026-06-30T02:11:49.888Z"
+      },
+      {
+        "file": "07-松山區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "松山區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/8eb4562e-2ffa-422b-968d-fc9d0d8f53f7/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 99,
+        "downloadedAt": "2026-06-30T02:11:50.096Z"
+      },
+      {
+        "file": "08-信義區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "信義區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/91e022e7-0835-47bf-9aee-d8a0bc270e92/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 509,
+        "downloadedAt": "2026-06-30T02:11:50.298Z"
+      },
+      {
+        "file": "09-中正區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "中正區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/ae6fe268-4eed-476e-bd4a-a4f88dce154c/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 468,
+        "downloadedAt": "2026-06-30T02:11:50.514Z"
+      },
+      {
+        "file": "10-中山區公園水域安全告示牌及救生設備位置.csv",
+        "resourceName": "中山區公園水域安全告示牌及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/a45a84b3-7431-40c2-a107-576eb5a25d05/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 101,
+        "downloadedAt": "2026-06-30T02:11:50.719Z"
+      },
+      {
+        "file": "11-大安區公園水域安全告示及救生設備位置.csv",
+        "resourceName": "大安區公園水域安全告示及救生設備位置",
+        "sourceUrl": "https://data.taipei/api/dataset/cf0da6f2-4fd2-4fa0-b624-d703833ef2bc/resource/769a0e59-1643-4a84-a647-1bbcb219bd63/download",
+        "encoding": "unknown",
+        "status": "downloaded",
+        "fileSize": 765,
+        "downloadedAt": "2026-06-30T02:11:50.914Z"
+      }
+    ],
+    "recordCount": 156,
+    "coordinateIssues": [
+      {
+        "file": "02-士林區公園水域安全告示牌及救生設備位置.csv",
+        "row": 9,
+        "issue": "Coordinate does not look like Taipei WGS84 or TWD97",
+        "value": "151.510997,25.100751"
+      }
+    ],
+    "duplicateEquipmentCodes": [],
+    "duplicateFallbackKeys": [
+      "南港區|新新公園生態池橋上|游泳圈1具|121.590332|25.051567"
+    ],
+    "notes": [
+      "Source says coordinates are TWD97; WGS84-like values are also accepted defensively before Leaflet rendering."
     ]
   }
 }

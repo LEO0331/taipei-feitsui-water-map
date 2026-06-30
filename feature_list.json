@@ -103,6 +103,14 @@
       "dependencies": ["feat-001"],
       "status": "done",
       "evidence": "Fetched 11 official Big5 annual CSV resources (ROC 104-114), aggregated daily MM月DD日 rows into 127 monthly records, preserved raw 水量 units, and added support-to-TWC records, summary, annual summary, conversion report, bilingual tab, filters, charts, table, no-coordinate notice, PWA cache entries, README notes, and parser regression tests."
+    },
+    {
+      "id": "feat-014",
+      "name": "Park Water Safety Equipment",
+      "description": "Add Taipei park water-safety signs and lifesaving equipment as a static map layer with district resources, coordinate validation, filters, nearby lookup, charts, directory, and emergency-use disclaimers.",
+      "dependencies": ["feat-001"],
+      "status": "done",
+      "evidence": "Fetched 11 official district/area CSV resources, converted 156 records with 155 valid WGS84/TWD97-handled coordinates and 1 outlier excluded from markers, preserved equipment codes and source coordinates, added summary JSON, conversion report, bilingual tab, Leaflet markers, nearby lookup, filters, charts, directory, PWA cache entries, README notes, and parser regression tests."
     }
   ]
 }

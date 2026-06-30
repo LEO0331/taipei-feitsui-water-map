@@ -101,6 +101,8 @@
 - River station markers must remain absent until manually verified coordinates are added to `public/data/river-station-locations.json`.
 - Support-to-TWC source CSVs are annual daily rows; keep monthly aggregation in conversion and do not invent units beyond the source `水量` wording.
 - Support-to-TWC verification passed through `./init.sh`; browser smoke was not completed because no usable local browser was available from the sandbox.
+- Park water-safety source metadata says TWD97, but current CSV values are WGS84-like. Keep defensive coordinate detection and only render valid WGS84 coordinates.
+- Park water-safety final verification passed through `./init.sh`; browser smoke was not completed because no usable local browser was available from the sandbox.
 
 ## Blockers / Risks
 

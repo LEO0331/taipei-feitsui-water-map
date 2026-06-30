@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T01:13:58.433Z",
+  "generatedAt": "2026-06-30T02:16:02.187Z",
   "feitsuiReservoir": {
     "latestPeriod": "2026-03",
     "periods": [
@@ -1863,6 +1863,495 @@
     "lowestMonthlySupportVolume": {
       "monthKey": "2015-09",
       "totalSupportVolume": 7420618
+    }
+  },
+  "parkWaterSafetyEquipment": {
+    "totalRecords": 156,
+    "districtCount": 11,
+    "parkCount": 48,
+    "equipmentCodeCount": 156,
+    "recordsWithValidCoordinates": 155,
+    "recordsWithMissingCoordinates": 0,
+    "recordsWithOutlierCoordinates": 1,
+    "recordsWithUnparsedCoordinates": 0,
+    "byDistrict": [
+      {
+        "district": "內湖區",
+        "recordCount": 42,
+        "validCoordinateCount": 42,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "combined_sign_and_equipment",
+            "count": 21
+          },
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 19
+          },
+          {
+            "facilityCategory": "lifebuoy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "district": "北投區",
+        "recordCount": 27,
+        "validCoordinateCount": 27,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "lifebuoy",
+            "count": 12
+          },
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 8
+          },
+          {
+            "facilityCategory": "combined_sign_and_equipment",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "district": "士林區",
+        "recordCount": 24,
+        "validCoordinateCount": 23,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "combined_sign_and_equipment",
+            "count": 13
+          },
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 8
+          },
+          {
+            "facilityCategory": "lifebuoy",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "district": "南港區",
+        "recordCount": 19,
+        "validCoordinateCount": 19,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 11
+          },
+          {
+            "facilityCategory": "lifebuoy",
+            "count": 4
+          },
+          {
+            "facilityCategory": "other",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "district": "文山區",
+        "recordCount": 15,
+        "validCoordinateCount": 15,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 9
+          },
+          {
+            "facilityCategory": "lifebuoy",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "district": "大安區",
+        "recordCount": 10,
+        "validCoordinateCount": 10,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 8
+          },
+          {
+            "facilityCategory": "combined_sign_and_equipment",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "district": "萬華區",
+        "recordCount": 7,
+        "validCoordinateCount": 7,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 4
+          },
+          {
+            "facilityCategory": "combined_sign_and_equipment",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "district": "中正區",
+        "recordCount": 5,
+        "validCoordinateCount": 5,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "district": "信義區",
+        "recordCount": 5,
+        "validCoordinateCount": 5,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "combined_sign_and_equipment",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "district": "中山區",
+        "recordCount": 1,
+        "validCoordinateCount": 1,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "district": "松山區",
+        "recordCount": 1,
+        "validCoordinateCount": 1,
+        "facilityCategoryBreakdown": [
+          {
+            "facilityCategory": "water_safety_sign",
+            "count": 1
+          }
+        ]
+      }
+    ],
+    "byFacilityCategory": [
+      {
+        "facilityCategory": "water_safety_sign",
+        "count": 74
+      },
+      {
+        "facilityCategory": "lifebuoy",
+        "count": 27
+      },
+      {
+        "facilityCategory": "combined_sign_and_equipment",
+        "count": 51
+      },
+      {
+        "facilityCategory": "other",
+        "count": 4
+      }
+    ],
+    "byParkName": [
+      {
+        "parkName": "南港公園",
+        "recordCount": 13,
+        "district": "南港區"
+      },
+      {
+        "parkName": "碧湖公園環湖",
+        "recordCount": 13,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "大湖公園",
+        "recordCount": 10,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "大安森林公園生態池",
+        "recordCount": 9,
+        "district": "大安區"
+      },
+      {
+        "parkName": "青年公園蓮花池",
+        "recordCount": 7,
+        "district": "萬華區"
+      },
+      {
+        "parkName": "新新公園生態池",
+        "recordCount": 6,
+        "district": "南港區"
+      },
+      {
+        "parkName": "公館公園",
+        "recordCount": 5,
+        "district": "北投區"
+      },
+      {
+        "parkName": "北投公園",
+        "recordCount": 5,
+        "district": "北投區"
+      },
+      {
+        "parkName": "永春陂濕地公園生態池",
+        "recordCount": 5,
+        "district": "信義區"
+      },
+      {
+        "parkName": "原住民文化主題公園水池",
+        "recordCount": 5,
+        "district": "士林區"
+      },
+      {
+        "parkName": "蜆仔港公園",
+        "recordCount": 5,
+        "district": "士林區"
+      },
+      {
+        "parkName": "大湖公園C池",
+        "recordCount": 4,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "文山森林公園",
+        "recordCount": 4,
+        "district": "文山區"
+      },
+      {
+        "parkName": "奇岩一號公園",
+        "recordCount": 4,
+        "district": "北投區"
+      },
+      {
+        "parkName": "碧湖公園環湖步道內湖",
+        "recordCount": 4,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "大湖公園A池",
+        "recordCount": 3,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "奇岩二號公園",
+        "recordCount": 3,
+        "district": "北投區"
+      },
+      {
+        "parkName": "保儀公園",
+        "recordCount": 3,
+        "district": "文山區"
+      },
+      {
+        "parkName": "景美運動公園",
+        "recordCount": 3,
+        "district": "文山區"
+      },
+      {
+        "parkName": "陽明公園湖",
+        "recordCount": 3,
+        "district": "北投區"
+      },
+      {
+        "parkName": "碧湖公園",
+        "recordCount": 3,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "興隆公園",
+        "recordCount": 3,
+        "district": "文山區"
+      },
+      {
+        "parkName": "二二八和平公園",
+        "recordCount": 2,
+        "district": "中正區"
+      },
+      {
+        "parkName": "大湖公園B池",
+        "recordCount": 2,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "木柵公園",
+        "recordCount": 2,
+        "district": "文山區"
+      },
+      {
+        "parkName": "至善公園水車生態池",
+        "recordCount": 2,
+        "district": "士林區"
+      },
+      {
+        "parkName": "至善公園鏡面水池",
+        "recordCount": 2,
+        "district": "士林區"
+      },
+      {
+        "parkName": "奇岩三號公園",
+        "recordCount": 2,
+        "district": "北投區"
+      },
+      {
+        "parkName": "美崙公園",
+        "recordCount": 2,
+        "district": "士林區"
+      },
+      {
+        "parkName": "逸仙公園景觀水池",
+        "recordCount": 2,
+        "district": "中正區"
+      },
+      {
+        "parkName": "陽明公園",
+        "recordCount": 2,
+        "district": "北投區"
+      },
+      {
+        "parkName": "雙溪公園水池",
+        "recordCount": 2,
+        "district": "士林區"
+      },
+      {
+        "parkName": "大安森林公園生態池東南向公園",
+        "recordCount": 1,
+        "district": "大安區"
+      },
+      {
+        "parkName": "大湖公園北側沉砂池",
+        "recordCount": 1,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "大湖公園西側C池",
+        "recordCount": 1,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "大湖公園錦帶橋往泳池",
+        "recordCount": 1,
+        "district": "內湖區"
+      },
+      {
+        "parkName": "介壽公園",
+        "recordCount": 1,
+        "district": "中正區"
+      },
+      {
+        "parkName": "天和公園",
+        "recordCount": 1,
+        "district": "士林區"
+      },
+      {
+        "parkName": "外雙溪公園",
+        "recordCount": 1,
+        "district": "士林區"
+      },
+      {
+        "parkName": "外雙溪公園生態池",
+        "recordCount": 1,
+        "district": "士林區"
+      },
+      {
+        "parkName": "至善公園荷花池",
+        "recordCount": 1,
+        "district": "士林區"
+      },
+      {
+        "parkName": "社子公園",
+        "recordCount": 1,
+        "district": "士林區"
+      },
+      {
+        "parkName": "芝山公園史蹟公園",
+        "recordCount": 1,
+        "district": "士林區"
+      },
+      {
+        "parkName": "前山公園",
+        "recordCount": 1,
+        "district": "北投區"
+      },
+      {
+        "parkName": "前山公園陽明湖",
+        "recordCount": 1,
+        "district": "北投區"
+      },
+      {
+        "parkName": "崇仰公園",
+        "recordCount": 1,
+        "district": "北投區"
+      },
+      {
+        "parkName": "富民公園生態池",
+        "recordCount": 1,
+        "district": "松山區"
+      },
+      {
+        "parkName": "榮星花園公園生態池",
+        "recordCount": 1,
+        "district": "中山區"
+      }
+    ],
+    "byResourceName": [
+      {
+        "resourceName": "內湖區公園水域安全告示及救生設備位置",
+        "count": 42
+      },
+      {
+        "resourceName": "北投區公園水域安全告示及救生設備位置",
+        "count": 27
+      },
+      {
+        "resourceName": "士林區公園水域安全告示牌及救生設備位置",
+        "count": 24
+      },
+      {
+        "resourceName": "南港區公園水域安全告示及救生設備位置",
+        "count": 19
+      },
+      {
+        "resourceName": "文山區公園水域安全告示及救生設備位置",
+        "count": 15
+      },
+      {
+        "resourceName": "大安區公園水域安全告示及救生設備位置",
+        "count": 10
+      },
+      {
+        "resourceName": "萬華區公園水域安全告示及救生設備位置",
+        "count": 7
+      },
+      {
+        "resourceName": "中正區公園水域安全告示及救生設備位置",
+        "count": 5
+      },
+      {
+        "resourceName": "信義區公園水域安全告示及救生設備位置",
+        "count": 5
+      },
+      {
+        "resourceName": "中山區公園水域安全告示牌及救生設備位置",
+        "count": 1
+      },
+      {
+        "resourceName": "松山區公園水域安全告示及救生設備位置",
+        "count": 1
+      }
+    ],
+    "coordinateQuality": {
+      "valid": 155,
+      "missing": 0,
+      "outlier": 1,
+      "unparsed": 0
     }
   }
 }

@@ -55,8 +55,10 @@ import PumpingStationsPanel from './PumpingStationsPanel';
 import type { PumpingStation, PumpingStationSummary } from './types/pumpingStations';
 import TwcSupportPanel from './TwcSupportPanel';
 import type { TaipeiWaterSupportTwcMonthlyRecord, TaipeiWaterSupportTwcSummary } from './types/twcSupport';
+import ParkWaterSafetyPanel from './ParkWaterSafetyPanel';
+import type { ParkWaterSafetyEquipmentRecord, ParkWaterSafetyEquipmentSummary } from './types/parkWaterSafety';
 
-type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'parkWaterSafety' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -167,6 +169,7 @@ function MonitoringTabs({
     { id: 'waterQuality', label: t.waterQuality },
     { id: 'riverWaterQuality', label: t.riverWaterQuality },
     { id: 'pumpingStations', label: t.pumpingStations },
+    { id: 'parkWaterSafety', label: t.waterSafetyEquipment },
     { id: 'twcSupport', label: t.twcSupport },
     { id: 'hydromet', label: t.hydromet },
     { id: 'operation', label: t.operation },
@@ -1180,6 +1183,8 @@ export default function App() {
   const [pumpingSummary, setPumpingSummary] = useState<PumpingStationSummary | null>(null);
   const [twcSupportRecords, setTwcSupportRecords] = useState<TaipeiWaterSupportTwcMonthlyRecord[]>([]);
   const [twcSupportSummary, setTwcSupportSummary] = useState<TaipeiWaterSupportTwcSummary | null>(null);
+  const [parkWaterSafetyRecords, setParkWaterSafetyRecords] = useState<ParkWaterSafetyEquipmentRecord[]>([]);
+  const [parkWaterSafetySummary, setParkWaterSafetySummary] = useState<ParkWaterSafetyEquipmentSummary | null>(null);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
@@ -1229,7 +1234,9 @@ export default function App() {
       fetchJson<PumpingStationSummary>('pumping-station-summary.json'),
       fetchJson<TaipeiWaterSupportTwcMonthlyRecord[]>('taipei-water-support-twc-monthly-records.json'),
       fetchJson<TaipeiWaterSupportTwcSummary>('taipei-water-support-twc-summary.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, twcSupportRecordData, twcSupportSummaryData]) => {
+      fetchJson<ParkWaterSafetyEquipmentRecord[]>('park-water-safety-equipment-records.json'),
+      fetchJson<ParkWaterSafetyEquipmentSummary>('park-water-safety-equipment-summary.json'),
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
@@ -1244,6 +1251,8 @@ export default function App() {
       setPumpingSummary(pumpingSummaryData);
       setTwcSupportRecords(twcSupportRecordData);
       setTwcSupportSummary(twcSupportSummaryData);
+      setParkWaterSafetyRecords(parkWaterSafetyRecordData);
+      setParkWaterSafetySummary(parkWaterSafetySummaryData);
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
@@ -1293,7 +1302,7 @@ export default function App() {
     );
   }
 
-  if (!summary || !riverSummary || !pumpingSummary || !twcSupportSummary) {
+  if (!summary || !riverSummary || !pumpingSummary || !twcSupportSummary || !parkWaterSafetySummary) {
     return <main className="loading">Loading</main>;
   }
 
@@ -1310,7 +1319,7 @@ export default function App() {
 
       <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} />
 
-      {activeTab !== 'riverWaterQuality' && activeTab !== 'pumpingStations' && activeTab !== 'twcSupport' && (
+      {activeTab !== 'riverWaterQuality' && activeTab !== 'pumpingStations' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && (
         <FilterPanel
           filters={filters}
           setFilters={setFilters}
@@ -1397,6 +1406,10 @@ export default function App() {
 
       {activeTab === 'pumpingStations' && (
         <PumpingStationsPanel records={pumpingStations} summary={pumpingSummary} language={language} />
+      )}
+
+      {activeTab === 'parkWaterSafety' && (
+        <ParkWaterSafetyPanel records={parkWaterSafetyRecords} summary={parkWaterSafetySummary} language={language} />
       )}
 
       {activeTab === 'twcSupport' && (
