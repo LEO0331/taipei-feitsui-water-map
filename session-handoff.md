@@ -99,6 +99,8 @@
 - Hydromet daily filters live above the hydromet tab but apply to both hydromet charts and the data table so daily views stay consistent.
 - Operation data is daily reservoir-operation context and must not be used to make operational-quality, safety, prediction, pollution, or causation claims.
 - River station markers must remain absent until manually verified coordinates are added to `public/data/river-station-locations.json`.
+- Support-to-TWC source CSVs are annual daily rows; keep monthly aggregation in conversion and do not invent units beyond the source `水量` wording.
+- Support-to-TWC verification passed through `./init.sh`; browser smoke was not completed because no usable local browser was available from the sandbox.
 
 ## Blockers / Risks
 

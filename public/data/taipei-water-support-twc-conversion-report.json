@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-06-30T01:13:58.140Z",
+  "officialDataset": "臺北自來水事業處支援台水月統計表",
+  "sourceAgency": "北水處",
+  "supportVolumeUnit": "raw",
+  "files": [
+    "104年度支援台水月統計.csv",
+    "105年度支援台水月統計.csv",
+    "106年度支援台水月統計.csv",
+    "107年度支援台水月統計.csv",
+    "108年度支援台水月統計.csv",
+    "109年度支援台水月統計.csv",
+    "110年度支援台水月統計.csv",
+    "111年度支援台水月統計.csv",
+    "112年度支援台水月統計.csv",
+    "113年度支援台水月統計.csv",
+    "114年度支援台水月統計.csv"
+  ],
+  "dailySourceRowCount": 3867,
+  "recordCount": 127,
+  "warnings": [
+    "105年度支援台水月統計.csv 2016-02: total differs from destination sum."
+  ],
+  "duplicateMonths": [],
+  "invalid": [],
+  "notes": [
+    "Source field names use 水量 but do not state a unit; values are preserved as raw water-volume numbers."
+  ]
+}

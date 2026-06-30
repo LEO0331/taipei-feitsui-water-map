@@ -95,6 +95,14 @@
       "dependencies": ["feat-001"],
       "status": "done",
       "evidence": "Converted 88 UTF-8-SIG records using EPSG:3826 TWD97-TM2(zone121) to WGS84; all coordinates are valid. Added a bilingual map, filters, nearby lookup, summaries, directory, PWA cache entries, and conversion regression tests. ./init.sh and Pages build passed on 2026-06-26."
+    },
+    {
+      "id": "feat-013",
+      "name": "Taipei Water Support to Taiwan Water Statistics",
+      "description": "Add Taipei Water Department support-to-Taiwan-Water monthly statistics with annual CSV fetch, daily-row monthly aggregation, summaries, charts, filters, table, and interpretation limits.",
+      "dependencies": ["feat-001"],
+      "status": "done",
+      "evidence": "Fetched 11 official Big5 annual CSV resources (ROC 104-114), aggregated daily MM月DD日 rows into 127 monthly records, preserved raw 水量 units, and added support-to-TWC records, summary, annual summary, conversion report, bilingual tab, filters, charts, table, no-coordinate notice, PWA cache entries, README notes, and parser regression tests."
     }
   ]
 }

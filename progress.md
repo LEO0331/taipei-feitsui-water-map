@@ -72,6 +72,9 @@
 - **River water quality stays separate**: River records use their own tab, filters, summaries, table, and optional location file.
   - Context: River and reservoir records have different sources, monitoring purposes, stations, fields, and value qualifiers.
   - Alternatives considered: Merging river rows into the reservoir table; rejected because it would erase source/type boundaries.
+- **Support-to-TWC data is aggregated monthly**: The official annual CSVs contain daily `MM月DD日` rows, so conversion sums source water-volume values into monthly records for the requested statistics module.
+  - Context: The dataset title and requested UI are monthly statistics, while source files are annual daily rows.
+  - Alternatives considered: Rendering daily rows directly; rejected because it would contradict the module semantics and requested monthly/annual comparisons.
 
 ## Files Modified This Session
 
@@ -102,6 +105,10 @@
 - `scripts/fetchRiverWaterQuality.ts`, `scripts/convertRiverWaterQuality.ts`, and `scripts/buildRiverWaterQualitySummary.ts` - River local source workflow and static outputs.
 - `src/RiverWaterQualityPanel.tsx` - Bilingual river filters, cards, charts, optional verified map, and records table.
 - `tests/riverWaterQuality.test.ts` - ND, missing, scientific notation, and ROC-year regression checks.
+- `src/types/twcSupport.ts` and `src/utils/twcSupport.ts` - Support-to-TWC models, date/volume parsing, derived metrics, and summaries.
+- `scripts/fetchTaipeiWaterSupportTwcMonthlyStatistics.ts`, `scripts/convertTaipeiWaterSupportTwcMonthlyStatistics.ts`, and `scripts/buildTaipeiWaterSupportTwcSummary.ts` - Official annual CSV fetch, daily-to-monthly conversion, and static summary generation.
+- `src/TwcSupportPanel.tsx` - Bilingual support-to-TWC filters, cards, charts, data table, and no-coordinate/data-limit notices.
+- `tests/twcSupport.test.ts` - Date parser, missing value, share, rolling-total, and year-over-year regression coverage.
 
 ## Evidence of Completion
 
@@ -125,6 +132,9 @@
 - [x] River tests/build: `npm test` passed with 16 tests; `npm run build` passed with the known Vite chunk-size warning.
 - [x] River browser smoke: Chinese tab loaded 13 cards and 768 rows; 2026 + 新店溪 filtered to 12 rows; ND values remained visible; English labels worked; mobile body width stayed within 390px; 0 console errors.
 - [x] Final river verification: plain `./init.sh` passed under the harness-selected Node 22; production audit found 0 vulnerabilities; harness validation remained 100/100.
+- [x] Support-to-TWC conversion: fetched 11 official Big5 annual CSV resources and generated 127 monthly records from daily source rows.
+- [x] Support-to-TWC verification: `npm test` passed with 22 tests, `npm run build` passed, full `./init.sh` passed including Pages build, `npm audit --omit=dev` found 0 vulnerabilities, and `git diff --check` passed.
+- [ ] Support-to-TWC browser smoke: not completed because Playwright browsers are not installed locally and system Chrome launch was blocked in this sandbox.
 
 ## Notes for Next Session
 

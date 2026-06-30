@@ -1,0 +1,97 @@
+{
+  "datasetPage": "https://data.taipei/dataset/detail?id=ab446f19-0f95-4e55-b593-0eea8e447c7d",
+  "officialDataset": "臺北自來水事業處支援台水月統計表",
+  "sourceAgency": "北水處",
+  "checkedAt": "2026-06-30T01:06:34.346Z",
+  "files": [
+    {
+      "file": "114年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/777f8628-b8ce-4dd6-b503-b52923a6e75a/download",
+      "resourceName": "114年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12418,
+      "encoding": "Big5"
+    },
+    {
+      "file": "113年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/e3d85d14-91e8-4546-8516-117920022250/download",
+      "resourceName": "113年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12454,
+      "encoding": "Big5"
+    },
+    {
+      "file": "112年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/070c74bf-9a60-403d-bb15-b5145230dbae/download",
+      "resourceName": "112年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12415,
+      "encoding": "Big5"
+    },
+    {
+      "file": "111年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/7e35ea39-5862-4a24-b5af-74d8fcb78d56/download",
+      "resourceName": "111年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12385,
+      "encoding": "Big5"
+    },
+    {
+      "file": "110年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/fdd70c0e-2e72-43a0-baa9-4d15b759151a/download",
+      "resourceName": "110年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12668,
+      "encoding": "Big5"
+    },
+    {
+      "file": "108年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/8e01601d-0d1c-4cf1-b1c2-0862b4ce58d2/download",
+      "resourceName": "108年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12653,
+      "encoding": "Big5"
+    },
+    {
+      "file": "107年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/f6c8006d-5966-4f95-882a-121911999ee8/download",
+      "resourceName": "107年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12664,
+      "encoding": "Big5"
+    },
+    {
+      "file": "106年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/832715ab-7f00-4059-a5a0-60229b9ff98a/download",
+      "resourceName": "106年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12702,
+      "encoding": "Big5"
+    },
+    {
+      "file": "105年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/49ca12b6-f8ff-41a1-ac59-9e542f8eaee3/download",
+      "resourceName": "105年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12386,
+      "encoding": "Big5"
+    },
+    {
+      "file": "104年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/da7f7ff2-da18-4205-8bfb-41c0e0cfb71a/download",
+      "resourceName": "104年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 7271,
+      "encoding": "Big5"
+    },
+    {
+      "file": "109年度支援台水月統計.csv",
+      "sourceUrl": "https://data.taipei/api/dataset/ab446f19-0f95-4e55-b593-0eea8e447c7d/resource/0422f841-26b6-47bd-b7b6-8ee0de4dd75a/download",
+      "resourceName": "109年度支援台灣自來水公司清水量月報表",
+      "status": "downloaded",
+      "fileSize": 12740,
+      "encoding": "Big5"
+    }
+  ],
+  "warnings": []
+}

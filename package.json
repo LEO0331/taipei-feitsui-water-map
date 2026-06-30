@@ -14,13 +14,15 @@
     "fetch:operation": "tsx scripts/fetchFeitsuiOperationResources.ts",
     "data:fetch:river-water": "tsx scripts/fetchRiverWaterQuality.ts",
     "data:fetch:pumping-stations": "tsx scripts/fetchPumpingStations.ts",
+    "data:fetch:twc-support": "tsx scripts/fetchTaipeiWaterSupportTwcMonthlyStatistics.ts",
     "data:convert:pumping-stations": "tsx scripts/convertPumpingStations.ts && tsx scripts/buildPumpingStationSummary.ts",
-    "fetch:data": "npm run fetch:water && npm run fetch:hydromet && npm run fetch:operation && npm run data:fetch:river-water",
+    "data:convert:twc-support": "tsx scripts/convertTaipeiWaterSupportTwcMonthlyStatistics.ts && tsx scripts/buildTaipeiWaterSupportTwcSummary.ts",
+    "fetch:data": "npm run fetch:water && npm run fetch:hydromet && npm run fetch:operation && npm run data:fetch:river-water && npm run data:fetch:twc-support",
     "convert:water": "tsx scripts/convertFeitsuiWaterQuality.ts",
     "convert:hydromet": "tsx scripts/convertFeitsuiHydromet.ts",
     "convert:operation": "tsx scripts/convertFeitsuiOperation.ts",
     "data:convert:river-water": "tsx scripts/convertRiverWaterQuality.ts && tsx scripts/buildRiverWaterQualitySummary.ts",
-    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run convert:operation && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts"
+    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run convert:operation && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts && npm run data:convert:twc-support"
   },
   "dependencies": {
     "@types/proj4": "^2.5.6",

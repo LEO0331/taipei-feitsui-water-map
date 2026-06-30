@@ -1,6 +1,6 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Now includes Taipei River Water Quality Monitoring and Taipei pumping stations / 新增臺北市河川水質檢測與水利設施抽水站模組.
+Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, and Taipei Water support-to-Taiwan-Water statistics / 新增臺北市河川水質檢測、水利設施抽水站與北水處支援台水月統計模組.
 
 Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
@@ -41,6 +41,19 @@ Water infrastructure:
 - TWD97-TM2(zone121) X/Y coordinates are converted to WGS84 for Leaflet markers
 - Gregorian `YYYYMMDD` establishment dates, river-system/district/management-unit filters, and nearby-station lookup are supported
 - The module does not represent real-time pumping status, flood-risk prediction, or emergency instruction
+
+Water supply support statistics:
+
+- Dataset: `臺北自來水事業處支援台水月統計表`
+- Module key: `taipei_water_support_twc_monthly_statistics`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=ab446f19-0f95-4e55-b593-0eea8e447c7d`
+- Raw CSV directory: `data/raw/taipei-water-support-twc-monthly-statistics/`
+- Annual Big5 CSV resources are combined and aggregated into monthly records
+- The source `日期` rows are daily `MM月DD日` entries; conversion infers the ROC year from each annual filename and sums source values by month
+- Source field names say `水量` but do not explicitly state a unit, so the app preserves raw water-volume values and displays `水量` instead of inventing cubic meters
+- First District Office and Twelfth District Office support volumes are kept separate and summarized by month and year
+- This dataset has no coordinates; no map markers or geocoding are used
+- The module does not represent real-time dispatch, water-condition alerts, rationing status, water-quality status, future support forecasts, or emergency instructions
 
 Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 
@@ -138,6 +151,18 @@ Convert local river-water CSV files and build summaries:
 npm run data:convert:river-water
 ```
 
+Fetch Taipei Water support-to-TWC annual CSV resources:
+
+```sh
+npm run data:fetch:twc-support
+```
+
+Convert Taipei Water support-to-TWC CSV files and build summaries:
+
+```sh
+npm run data:convert:twc-support
+```
+
 Convert all local raw data:
 
 ```sh
@@ -199,6 +224,13 @@ River water quality:
 - `public/data/river-water-quality-conversion-report.json`
 - `public/data/water-dashboard-summary.json`
 - `public/data/river-station-locations.json`
+
+Taipei Water support to Taiwan Water:
+
+- `public/data/taipei-water-support-twc-monthly-records.json`
+- `public/data/taipei-water-support-twc-summary.json`
+- `public/data/taipei-water-support-twc-annual-summary.json`
+- `public/data/taipei-water-support-twc-conversion-report.json`
 
 Shared:
 

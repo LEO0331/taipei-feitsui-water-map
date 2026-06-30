@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T05:47:53.480Z",
+  "generatedAt": "2026-06-30T01:13:58.433Z",
   "feitsuiReservoir": {
     "latestPeriod": "2026-03",
     "periods": [
@@ -1572,5 +1572,297 @@
         "count": 1
       }
     ]
+  },
+  "taipeiWaterSupportTwcMonthlyStatistics": {
+    "totalRecords": 127,
+    "minDate": "2015-06-01",
+    "maxDate": "2025-12-01",
+    "minYear": 2015,
+    "maxYear": 2025,
+    "latestMonth": "2025-12",
+    "supportVolumeUnit": "raw",
+    "totalSupportVolume": 2266346179,
+    "totalFirstDistrictOfficeSupportVolume": 445235539,
+    "totalTwelfthDistrictOfficeSupportVolume": 1821112552,
+    "latestRecord": {
+      "id": "2025-12",
+      "module": "taipei_water_support_twc_monthly_statistics",
+      "dateRaw": "2025-12",
+      "date": "2025-12-01",
+      "year": 2025,
+      "month": 12,
+      "monthKey": "2025-12",
+      "quarter": "2025-Q4",
+      "rocYear": 114,
+      "dataYear": 2025,
+      "totalSupportVolume": 20550109,
+      "firstDistrictOfficeSupportVolume": 4349626,
+      "twelfthDistrictOfficeSupportVolume": 16200483,
+      "supportVolumeUnit": "raw",
+      "isLatestMonth": true,
+      "source": "臺北自來水事業處支援台水月統計表",
+      "sourceAgency": "臺北自來水事業處",
+      "firstDistrictOfficeSharePercent": 21.16595099325264,
+      "twelfthDistrictOfficeSharePercent": 78.83404900674736,
+      "monthOverMonthTotalChange": 3154353,
+      "monthOverMonthTotalChangePercent": 18.132888274588353,
+      "yearOverYearTotalChange": 1649805,
+      "yearOverYearTotalChangePercent": 8.728986581379855,
+      "rolling12MonthTotalSupportVolume": 233205066
+    },
+    "byYear": [
+      {
+        "year": 2015,
+        "recordCount": 7,
+        "totalSupportVolume": 64261028,
+        "firstDistrictOfficeSupportVolume": 20688864,
+        "twelfthDistrictOfficeSupportVolume": 43572164,
+        "firstDistrictOfficeSharePercent": 32.19504051506926,
+        "twelfthDistrictOfficeSharePercent": 67.80495948493073,
+        "monthlyAverageTotalSupportVolume": 9180146.857142856,
+        "maxMonthlyTotalSupportVolume": 11353570,
+        "maxMonthlyTotalSupportVolumeMonth": "2015-12",
+        "minMonthlyTotalSupportVolume": 7420618,
+        "minMonthlyTotalSupportVolumeMonth": "2015-09"
+      },
+      {
+        "year": 2016,
+        "recordCount": 12,
+        "totalSupportVolume": 109190787,
+        "firstDistrictOfficeSupportVolume": 36228673,
+        "twelfthDistrictOfficeSupportVolume": 72964026,
+        "firstDistrictOfficeSharePercent": 33.179239746664706,
+        "twelfthDistrictOfficeSharePercent": 66.82251131682017,
+        "monthlyAverageTotalSupportVolume": 9099232.25,
+        "maxMonthlyTotalSupportVolume": 13604995,
+        "maxMonthlyTotalSupportVolumeMonth": "2016-08",
+        "minMonthlyTotalSupportVolume": 7572794,
+        "minMonthlyTotalSupportVolumeMonth": "2016-02"
+      },
+      {
+        "year": 2017,
+        "recordCount": 12,
+        "totalSupportVolume": 161876377,
+        "firstDistrictOfficeSupportVolume": 44063031,
+        "twelfthDistrictOfficeSupportVolume": 117813346,
+        "firstDistrictOfficeSharePercent": 27.220173700823562,
+        "twelfthDistrictOfficeSharePercent": 72.77982629917645,
+        "monthlyAverageTotalSupportVolume": 13489698.083333334,
+        "maxMonthlyTotalSupportVolume": 17163569,
+        "maxMonthlyTotalSupportVolumeMonth": "2017-03",
+        "minMonthlyTotalSupportVolume": 9610416,
+        "minMonthlyTotalSupportVolumeMonth": "2017-06"
+      },
+      {
+        "year": 2018,
+        "recordCount": 12,
+        "totalSupportVolume": 192325840,
+        "firstDistrictOfficeSupportVolume": 41249408,
+        "twelfthDistrictOfficeSupportVolume": 151076432,
+        "firstDistrictOfficeSharePercent": 21.44766818644858,
+        "twelfthDistrictOfficeSharePercent": 78.55233181355142,
+        "monthlyAverageTotalSupportVolume": 16027153.333333334,
+        "maxMonthlyTotalSupportVolume": 23615768,
+        "maxMonthlyTotalSupportVolumeMonth": "2018-05",
+        "minMonthlyTotalSupportVolume": 8493641,
+        "minMonthlyTotalSupportVolumeMonth": "2018-02"
+      },
+      {
+        "year": 2019,
+        "recordCount": 12,
+        "totalSupportVolume": 200092431,
+        "firstDistrictOfficeSupportVolume": 37807641,
+        "twelfthDistrictOfficeSupportVolume": 162284790,
+        "firstDistrictOfficeSharePercent": 18.895088040586604,
+        "twelfthDistrictOfficeSharePercent": 81.1049119594134,
+        "monthlyAverageTotalSupportVolume": 16674369.25,
+        "maxMonthlyTotalSupportVolume": 22437680,
+        "maxMonthlyTotalSupportVolumeMonth": "2019-12",
+        "minMonthlyTotalSupportVolume": 11572932,
+        "minMonthlyTotalSupportVolumeMonth": "2019-07"
+      },
+      {
+        "year": 2020,
+        "recordCount": 12,
+        "totalSupportVolume": 258825715,
+        "firstDistrictOfficeSupportVolume": 43439858,
+        "twelfthDistrictOfficeSupportVolume": 215385857,
+        "firstDistrictOfficeSharePercent": 16.78343977529435,
+        "twelfthDistrictOfficeSharePercent": 83.21656022470565,
+        "monthlyAverageTotalSupportVolume": 21568809.583333332,
+        "maxMonthlyTotalSupportVolume": 25916383,
+        "maxMonthlyTotalSupportVolumeMonth": "2020-12",
+        "minMonthlyTotalSupportVolume": 16015056,
+        "minMonthlyTotalSupportVolumeMonth": "2020-06"
+      },
+      {
+        "year": 2021,
+        "recordCount": 12,
+        "totalSupportVolume": 280093780,
+        "firstDistrictOfficeSupportVolume": 43004170,
+        "twelfthDistrictOfficeSupportVolume": 237089610,
+        "firstDistrictOfficeSharePercent": 15.353489820445137,
+        "twelfthDistrictOfficeSharePercent": 84.64651017955485,
+        "monthlyAverageTotalSupportVolume": 23341148.333333332,
+        "maxMonthlyTotalSupportVolume": 28276903,
+        "maxMonthlyTotalSupportVolumeMonth": "2021-05",
+        "minMonthlyTotalSupportVolume": 16695591,
+        "minMonthlyTotalSupportVolumeMonth": "2021-09"
+      },
+      {
+        "year": 2022,
+        "recordCount": 12,
+        "totalSupportVolume": 238027161,
+        "firstDistrictOfficeSupportVolume": 39543866,
+        "twelfthDistrictOfficeSupportVolume": 198483295,
+        "firstDistrictOfficeSharePercent": 16.613173821789186,
+        "twelfthDistrictOfficeSharePercent": 83.38682617821081,
+        "monthlyAverageTotalSupportVolume": 19835596.75,
+        "maxMonthlyTotalSupportVolume": 27070534,
+        "maxMonthlyTotalSupportVolumeMonth": "2022-08",
+        "minMonthlyTotalSupportVolume": 17217992,
+        "minMonthlyTotalSupportVolumeMonth": "2022-06"
+      },
+      {
+        "year": 2023,
+        "recordCount": 12,
+        "totalSupportVolume": 258929160,
+        "firstDistrictOfficeSupportVolume": 45761046,
+        "twelfthDistrictOfficeSupportVolume": 213168114,
+        "firstDistrictOfficeSharePercent": 17.67319138562841,
+        "twelfthDistrictOfficeSharePercent": 82.3268086143716,
+        "monthlyAverageTotalSupportVolume": 21577430,
+        "maxMonthlyTotalSupportVolume": 28480112,
+        "maxMonthlyTotalSupportVolumeMonth": "2023-03",
+        "minMonthlyTotalSupportVolume": 16107718,
+        "minMonthlyTotalSupportVolumeMonth": "2023-09"
+      },
+      {
+        "year": 2024,
+        "recordCount": 12,
+        "totalSupportVolume": 269518834,
+        "firstDistrictOfficeSupportVolume": 46383203,
+        "twelfthDistrictOfficeSupportVolume": 223135631,
+        "firstDistrictOfficeSharePercent": 17.209633297834763,
+        "twelfthDistrictOfficeSharePercent": 82.79036670216524,
+        "monthlyAverageTotalSupportVolume": 22459902.833333332,
+        "maxMonthlyTotalSupportVolume": 26733418,
+        "maxMonthlyTotalSupportVolumeMonth": "2024-03",
+        "minMonthlyTotalSupportVolume": 18900304,
+        "minMonthlyTotalSupportVolumeMonth": "2024-12"
+      },
+      {
+        "year": 2025,
+        "recordCount": 12,
+        "totalSupportVolume": 233205066,
+        "firstDistrictOfficeSupportVolume": 47065779,
+        "twelfthDistrictOfficeSupportVolume": 186139287,
+        "firstDistrictOfficeSharePercent": 20.182142612630894,
+        "twelfthDistrictOfficeSharePercent": 79.8178573873691,
+        "monthlyAverageTotalSupportVolume": 19433755.5,
+        "maxMonthlyTotalSupportVolume": 24184227,
+        "maxMonthlyTotalSupportVolumeMonth": "2025-09",
+        "minMonthlyTotalSupportVolume": 16505534,
+        "minMonthlyTotalSupportVolumeMonth": "2025-06"
+      }
+    ],
+    "byMonth": [
+      {
+        "month": 1,
+        "recordCount": 10,
+        "totalSupportVolume": 197026869,
+        "monthlyAverageTotalSupportVolume": 19702686.9
+      },
+      {
+        "month": 2,
+        "recordCount": 10,
+        "totalSupportVolume": 180183312,
+        "monthlyAverageTotalSupportVolume": 18018331.2
+      },
+      {
+        "month": 3,
+        "recordCount": 10,
+        "totalSupportVolume": 203578799,
+        "monthlyAverageTotalSupportVolume": 20357879.9
+      },
+      {
+        "month": 4,
+        "recordCount": 10,
+        "totalSupportVolume": 195474514,
+        "monthlyAverageTotalSupportVolume": 19547451.4
+      },
+      {
+        "month": 5,
+        "recordCount": 10,
+        "totalSupportVolume": 192931278,
+        "monthlyAverageTotalSupportVolume": 19293127.8
+      },
+      {
+        "month": 6,
+        "recordCount": 11,
+        "totalSupportVolume": 180476968,
+        "monthlyAverageTotalSupportVolume": 16406997.090909092
+      },
+      {
+        "month": 7,
+        "recordCount": 11,
+        "totalSupportVolume": 181822511,
+        "monthlyAverageTotalSupportVolume": 16529319.181818182
+      },
+      {
+        "month": 8,
+        "recordCount": 11,
+        "totalSupportVolume": 186326978,
+        "monthlyAverageTotalSupportVolume": 16938816.181818184
+      },
+      {
+        "month": 9,
+        "recordCount": 11,
+        "totalSupportVolume": 177627248,
+        "monthlyAverageTotalSupportVolume": 16147931.636363637
+      },
+      {
+        "month": 10,
+        "recordCount": 11,
+        "totalSupportVolume": 178651362,
+        "monthlyAverageTotalSupportVolume": 16241032.909090908
+      },
+      {
+        "month": 11,
+        "recordCount": 11,
+        "totalSupportVolume": 190396312,
+        "monthlyAverageTotalSupportVolume": 17308755.636363637
+      },
+      {
+        "month": 12,
+        "recordCount": 11,
+        "totalSupportVolume": 201850028,
+        "monthlyAverageTotalSupportVolume": 18350002.545454547
+      }
+    ],
+    "destinationBreakdown": [
+      {
+        "destination": "first_district_office",
+        "labelZh": "第一區處",
+        "labelEn": "First District Office",
+        "totalSupportVolume": 445235539,
+        "sharePercent": 19.645522079793444
+      },
+      {
+        "destination": "twelfth_district_office",
+        "labelZh": "第十二區處",
+        "labelEn": "Twelfth District Office",
+        "totalSupportVolume": 1821112552,
+        "sharePercent": 80.35456228507623
+      }
+    ],
+    "highestMonthlySupportVolume": {
+      "monthKey": "2023-03",
+      "totalSupportVolume": 28480112
+    },
+    "lowestMonthlySupportVolume": {
+      "monthKey": "2015-09",
+      "totalSupportVolume": 7420618
+    }
   }
 }

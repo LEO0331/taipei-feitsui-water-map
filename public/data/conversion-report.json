@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T05:47:50.400Z",
+  "generatedAt": "2026-06-30T01:13:52.903Z",
   "rawDirectory": "/Users/Leo/Documents/taipei-feitsui-water-map/data/raw/feitsui-water",
   "recordCount": 1764,
   "periods": [
@@ -284,7 +284,7 @@
   "coordinatePolicy": "Only stations with verified coordinates in station-locations.json should render as map markers.",
   "issues": [],
   "riverWaterQuality": {
-    "generatedAt": "2026-06-26T05:47:52.627Z",
+    "generatedAt": "2026-06-30T01:13:56.006Z",
     "recordCount": 768,
     "sources": [
       {
@@ -312,7 +312,7 @@
     "unparsed": []
   },
   "pumpingStations": {
-    "generatedAt": "2026-06-26T05:47:53.131Z",
+    "generatedAt": "2026-06-30T01:13:56.690Z",
     "source": {
       "file": "臺北市水利處抽水站TWD97.csv",
       "encoding": "UTF-8-SIG",
@@ -322,6 +322,35 @@
     "notes": [
       "TWD97-TM2(zone121) converted to WGS84 with EPSG:3826.",
       "建置日期 parsed as Gregorian YYYYMMDD."
+    ]
+  },
+  "taipeiWaterSupportTwcMonthlyStatistics": {
+    "generatedAt": "2026-06-30T01:13:58.140Z",
+    "officialDataset": "臺北自來水事業處支援台水月統計表",
+    "sourceAgency": "北水處",
+    "supportVolumeUnit": "raw",
+    "files": [
+      "104年度支援台水月統計.csv",
+      "105年度支援台水月統計.csv",
+      "106年度支援台水月統計.csv",
+      "107年度支援台水月統計.csv",
+      "108年度支援台水月統計.csv",
+      "109年度支援台水月統計.csv",
+      "110年度支援台水月統計.csv",
+      "111年度支援台水月統計.csv",
+      "112年度支援台水月統計.csv",
+      "113年度支援台水月統計.csv",
+      "114年度支援台水月統計.csv"
+    ],
+    "dailySourceRowCount": 3867,
+    "recordCount": 127,
+    "warnings": [
+      "105年度支援台水月統計.csv 2016-02: total differs from destination sum."
+    ],
+    "duplicateMonths": [],
+    "invalid": [],
+    "notes": [
+      "Source field names use 水量 but do not state a unit; values are preserved as raw water-volume numbers."
     ]
   }
 }
