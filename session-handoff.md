@@ -106,6 +106,9 @@
 - Treatment plant clear-water quality is a table/chart module because the CSV has no official coordinates. Do not geocode it, add near-me, or claim household tap-water or real-time drinking-water safety.
 - Clear-water official forced fetch could not parse a CSV URL from the Taipei Open Data page shape, so the fetch script records that warning and reuses the uploaded local CSV. Conversion produced 568 records from 71 test items across 8 site columns.
 - Clear-water final verification passed: local/forced fetch fallback, conversion, `npm test`, `./init.sh`, normal build, Pages build, `npm audit --omit=dev`, and `git diff --check`.
+- Taipei Water business key metrics are monthly department-wide operations KPIs, not water quality, outage, billing, finance advice, audit, or performance ranking data. Keep it charts/tables only; no map markers or near-me behavior.
+- Business KPI official forced fetch could not parse a CSV URL from the Taipei Open Data page shape, so the fetch script records that warning and reuses the uploaded Big5 local CSV. Conversion produced 48 monthly records covering `2022-05` through `2026-04`.
+- Business KPI final verification passed: local/forced fetch fallback, conversion, `npm test`, `./init.sh`, `npm audit --omit=dev`, and `git diff --check`.
 
 ## Blockers / Risks
 

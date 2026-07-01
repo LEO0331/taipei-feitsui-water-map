@@ -1,6 +1,6 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, treatment plant clear-water quality, and park water-safety facilities / 新增臺北市河川水質檢測、水利設施抽水站、北水處支援台水月統計、各淨水場清水水質與公園水域安全設施模組.
+Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, treatment plant clear-water quality, Taipei Water business key metrics, and park water-safety facilities / 新增臺北市河川水質檢測、水利設施抽水站、北水處支援台水月統計、各淨水場清水水質、北水業務關鍵數據與公園水域安全設施模組.
 
 Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
@@ -81,6 +81,19 @@ Tap water and treated-water quality:
 - Method detection limits, measured values, source-reported zeroes, and missing `-` / `--` values are preserved separately from parsed numbers
 - Standard comparisons are source-field comparisons only; they are not real-time safety, household tap-water, health-risk, or regulatory-enforcement conclusions
 - No official coordinates are provided, so this module does not geocode, render dataset-generated map markers, or provide nearby lookup
+
+Tap water operations and supply service:
+
+- Dataset: `臺北自來水事業處業務關鍵數據`
+- Module key: `tap_water_business_key_metrics`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=4487aa01-acc6-4c54-8bef-8d4d2dd6f1b2`
+- Raw CSV directory: `data/raw/tap-water-business-key-metrics/`
+- Big5/CP950 CSV rows are parsed as monthly utility operations records
+- ROC compact months such as `11105` and `11504` are converted to Gregorian month keys such as `2022-05` and `2026-04`
+- Metrics include water distribution, billed water, Taiwan Water support, direct drinking fountains, online water-quality monitoring stations, pressure, pipeline length, population, users, staffing, revenue, expense, surplus, assets, liabilities, and equity
+- Derived ratios and rolling 12-month totals are generated from source fields and labeled as data-organization outputs, not official audit, rating, forecast, or performance conclusions
+- No coordinates, addresses, districts, or facility points are provided, so this module does not geocode, render map markers, or provide nearby lookup
+- The module does not represent real-time supply status, outage information, household water-use records, bill estimates, drinking-water safety, financial advice, investment advice, credit rating, or operational performance ranking
 
 Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 
@@ -202,6 +215,12 @@ Fetch treatment plant clear-water quality CSV resources:
 npm run data:fetch:clear-water-quality
 ```
 
+Fetch Taipei Water business key metrics CSV resources:
+
+```sh
+npm run data:fetch:tap-water-business
+```
+
 Convert park water-safety equipment CSV resources:
 
 ```sh
@@ -212,6 +231,12 @@ Convert treatment plant clear-water quality CSV resources:
 
 ```sh
 npm run data:convert:clear-water-quality
+```
+
+Convert Taipei Water business key metrics CSV resources:
+
+```sh
+npm run data:convert:tap-water-business
 ```
 
 Convert all local raw data:

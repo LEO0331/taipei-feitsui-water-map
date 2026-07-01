@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T06:03:18.613Z",
+  "generatedAt": "2026-07-01T07:02:50.935Z",
   "rawDirectory": "/Users/Leo/Documents/taipei-feitsui-water-map/data/raw/feitsui-water",
   "recordCount": 1764,
   "periods": [
@@ -284,7 +284,7 @@
   "coordinatePolicy": "Only stations with verified coordinates in station-locations.json should render as map markers.",
   "issues": [],
   "riverWaterQuality": {
-    "generatedAt": "2026-07-01T06:03:20.411Z",
+    "generatedAt": "2026-07-01T07:02:53.159Z",
     "recordCount": 768,
     "sources": [
       {
@@ -312,7 +312,7 @@
     "unparsed": []
   },
   "pumpingStations": {
-    "generatedAt": "2026-07-01T06:03:20.939Z",
+    "generatedAt": "2026-07-01T07:02:53.743Z",
     "source": {
       "file": "臺北市水利處抽水站TWD97.csv",
       "encoding": "UTF-8-SIG",
@@ -325,7 +325,7 @@
     ]
   },
   "taipeiWaterSupportTwcMonthlyStatistics": {
-    "generatedAt": "2026-07-01T06:03:22.314Z",
+    "generatedAt": "2026-07-01T07:02:54.862Z",
     "officialDataset": "臺北自來水事業處支援台水月統計表",
     "sourceAgency": "北水處",
     "supportVolumeUnit": "raw",
@@ -354,7 +354,7 @@
     ]
   },
   "parkWaterSafetyEquipment": {
-    "generatedAt": "2026-07-01T06:03:23.237Z",
+    "generatedAt": "2026-07-01T07:02:55.633Z",
     "officialDataset": "臺北市各公園水域安全告示牌及救生設備位置資訊",
     "sourceAgency": "工務局公園處",
     "sources": [
@@ -476,7 +476,7 @@
     ]
   },
   "treatmentPlantClearWaterQuality": {
-    "generatedAt": "2026-07-01T06:04:21.103Z",
+    "generatedAt": "2026-07-01T07:02:56.340Z",
     "officialDataset": "臺北自來水事業處各淨水場清水水質",
     "sourceAgency": "北水處",
     "sources": [
@@ -494,6 +494,26 @@
     "notes": [
       "CSV has no official coordinates; no geocoding or source-generated map markers are produced.",
       "Standard comparisons are source-field comparisons, not safety or enforcement conclusions."
+    ]
+  },
+  "tapWaterBusinessKeyMetrics": {
+    "generatedAt": "2026-07-01T07:02:57.332Z",
+    "officialDataset": "臺北自來水事業處業務關鍵數據",
+    "sourceAgency": "北水處",
+    "sources": [
+      {
+        "file": "11504業務關鍵數據.csv",
+        "resourceName": "臺北自來水事業處業務關鍵數據",
+        "note": "Official resource URL was not found on the Taipei Open Data page; existing local CSV reused."
+      }
+    ],
+    "recordCount": 48,
+    "warningCount": 0,
+    "warnings": [],
+    "duplicateMonthKeys": [],
+    "notes": [
+      "CSV has no coordinates, address, district, or facility point fields; no geocoding or map markers are produced.",
+      "Derived ratios are source-field calculations, not official audit, rating, forecast, or performance conclusions."
     ]
   }
 }

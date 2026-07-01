@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T06:04:21.639Z",
+  "generatedAt": "2026-07-01T07:02:57.663Z",
   "feitsuiReservoir": {
     "latestPeriod": "2026-03",
     "periods": [
@@ -3766,6 +3766,335 @@
       "unparsedStandardLimitCount": 0,
       "unparsedDetectionLimitCount": 128,
       "unknownSiteColumnCount": 0
+    }
+  },
+  "tapWaterBusinessKeyMetrics": {
+    "totalRecords": 48,
+    "minMonthKey": "2022-05",
+    "maxMonthKey": "2026-04",
+    "latestMonthKey": "2026-04",
+    "latest": {
+      "id": "2026-04",
+      "module": "tap_water_business_key_metrics",
+      "periodRaw": "11504",
+      "rocYear": 115,
+      "year": 2026,
+      "month": 4,
+      "monthKey": "2026-04",
+      "periodDate": "2026-04-01",
+      "quarter": "2026-Q2",
+      "yearMonthLabel": "2026-04",
+      "isLatestMonth": true,
+      "distributedWaterVolumeM3": 71844705.4,
+      "directDrinkingFountainCount": 733,
+      "onlineWaterQualityMonitoringStationCount": 95,
+      "averageWaterPressureKgCm2": 1.57,
+      "transmissionDistributionPipelineLengthKm": 3977,
+      "billedWaterVolumeM3": 62534673,
+      "taiwanWaterSupportVolumeM3": 22571244,
+      "waterUseExcludingTaiwanWaterSupportM3": 39963429,
+      "supplyAreaTotalPopulation": 3658359,
+      "supplyAreaServedPopulation": 3649310,
+      "supplyCoverageRatePercent": 99.75,
+      "userCount": 1772695,
+      "perCapitaDailyWaterUseLiter": 332,
+      "employeeCount": 1075,
+      "staffCount": 708,
+      "workerCount": 367,
+      "usersPerEmployee": 1649,
+      "monthlyRevenueThousandNtd": 638114,
+      "salesRevenueThousandNtd": 567145,
+      "serviceRevenueThousandNtd": 14707,
+      "otherOperatingRevenueThousandNtd": 33621,
+      "nonOperatingRevenueThousandNtd": 22641,
+      "monthlyExpenseThousandNtd": 488201,
+      "salesCostThousandNtd": 468466,
+      "serviceCostThousandNtd": 6712,
+      "otherOperatingCostThousandNtd": 916,
+      "nonOperatingExpenseThousandNtd": 12107,
+      "monthlySurplusThousandNtd": 149913,
+      "assetsThousandNtd": 113307467,
+      "liabilitiesThousandNtd": 15695938,
+      "equityThousandNtd": 97611529,
+      "sourceRecordHash": "84fb213f0e816ad9",
+      "source": "臺北自來水事業處業務關鍵數據",
+      "sourceAgency": "臺北自來水事業處",
+      "distributedWaterVolumeMillionM3": 71.84470540000001,
+      "billedWaterVolumeMillionM3": 62.534673,
+      "taiwanWaterSupportVolumeMillionM3": 22.571244,
+      "waterUseExcludingSupportMillionM3": 39.963429,
+      "supportShareOfDistributedWaterPercent": 31.41671174560902,
+      "billedShareOfDistributedWaterPercent": 87.04144954291927,
+      "nonRevenueOrUnbilledWaterApproxM3": 9310032.400000006,
+      "nonRevenueOrUnbilledWaterApproxPercent": 12.958550457080731,
+      "populationServedSharePercent": 99.75264866023264,
+      "usersPerThousandPopulation": 484.5601538832028,
+      "monthlyRevenueMillionNtd": 638.114,
+      "monthlyExpenseMillionNtd": 488.201,
+      "monthlySurplusMillionNtd": 149.913,
+      "operatingRevenueThousandNtd": 615473,
+      "operatingExpenseThousandNtd": 476094,
+      "operatingMarginApproxPercent": 23.493137589835044,
+      "debtRatioPercent": 13.852518651749579,
+      "equityRatioPercent": 86.14748134825042,
+      "monthOverMonthChanges": {
+        "distributedWaterVolumeM3": {
+          "change": -6146358.449999988,
+          "percentChange": -7.880849608387523
+        },
+        "billedWaterVolumeM3": {
+          "change": -2641781,
+          "percentChange": -4.053275129082659
+        },
+        "taiwanWaterSupportVolumeM3": {
+          "change": -4297841,
+          "percentChange": -15.995487006721664
+        },
+        "waterUseExcludingTaiwanWaterSupportM3": {
+          "change": 1656060,
+          "percentChange": 4.323084678564064
+        },
+        "directDrinkingFountainCount": {
+          "change": 0,
+          "percentChange": 0
+        },
+        "averageWaterPressureKgCm2": {
+          "change": 0.020000000000000018,
+          "percentChange": 1.2903225806451624
+        },
+        "transmissionDistributionPipelineLengthKm": {
+          "change": -1,
+          "percentChange": -0.025138260432378077
+        },
+        "userCount": {
+          "change": 1203,
+          "percentChange": 0.06790885874731582
+        },
+        "perCapitaDailyWaterUseLiter": {
+          "change": 14,
+          "percentChange": 4.40251572327044
+        },
+        "employeeCount": {
+          "change": 2,
+          "percentChange": 0.1863932898415657
+        },
+        "usersPerEmployee": {
+          "change": -2,
+          "percentChange": -0.12113870381586916
+        },
+        "monthlyRevenueThousandNtd": {
+          "change": 11617,
+          "percentChange": 1.8542786318210622
+        },
+        "monthlyExpenseThousandNtd": {
+          "change": -17553,
+          "percentChange": -3.4706596487620462
+        },
+        "monthlySurplusThousandNtd": {
+          "change": 29170,
+          "percentChange": 24.158750403750116
+        },
+        "assetsThousandNtd": {
+          "change": 110715,
+          "percentChange": 0.097807576669691
+        },
+        "liabilitiesThousandNtd": {
+          "change": -39198,
+          "percentChange": -0.24911128826595463
+        },
+        "equityThousandNtd": {
+          "change": 149913,
+          "percentChange": 0.15381747825728645
+        }
+      },
+      "yearOverYearChanges": {
+        "distributedWaterVolumeM3": {
+          "change": 5406131.560000002,
+          "percentChange": 8.137037337705747
+        },
+        "billedWaterVolumeM3": {
+          "change": 8807673,
+          "percentChange": 16.393383215143224
+        },
+        "taiwanWaterSupportVolumeM3": {
+          "change": 5865285,
+          "percentChange": 35.10893927131031
+        },
+        "waterUseExcludingTaiwanWaterSupportM3": {
+          "change": 2942388,
+          "percentChange": 7.947880233837832
+        },
+        "directDrinkingFountainCount": {
+          "change": 25,
+          "percentChange": 3.531073446327684
+        },
+        "averageWaterPressureKgCm2": {
+          "change": 0.030000000000000027,
+          "percentChange": 1.9480519480519498
+        },
+        "transmissionDistributionPipelineLengthKm": {
+          "change": 14,
+          "percentChange": 0.35326772646984606
+        },
+        "userCount": {
+          "change": 13429,
+          "percentChange": 0.7633297068209128
+        },
+        "perCapitaDailyWaterUseLiter": {
+          "change": -2,
+          "percentChange": -0.5988023952095809
+        },
+        "employeeCount": {
+          "change": 17,
+          "percentChange": 1.606805293005671
+        },
+        "usersPerEmployee": {
+          "change": -14,
+          "percentChange": -0.841852074564041
+        },
+        "monthlyRevenueThousandNtd": {
+          "change": 41472,
+          "percentChange": 6.950901880859879
+        },
+        "monthlyExpenseThousandNtd": {
+          "change": -412,
+          "percentChange": -0.08432031075718412
+        },
+        "monthlySurplusThousandNtd": {
+          "change": 41884,
+          "percentChange": 38.77107073100741
+        },
+        "assetsThousandNtd": {
+          "change": 2844693,
+          "percentChange": 2.575250373487814
+        },
+        "liabilitiesThousandNtd": {
+          "change": 2128275,
+          "percentChange": 15.686378707961717
+        },
+        "equityThousandNtd": {
+          "change": 716418,
+          "percentChange": 0.739374765771206
+        }
+      },
+      "rolling12MonthSums": {
+        "distributedWaterVolumeM3": 863884829.01,
+        "billedWaterVolumeM3": 708704895,
+        "taiwanWaterSupportVolumeM3": 249227035,
+        "waterUseExcludingTaiwanWaterSupportM3": 459477860,
+        "monthlyRevenueThousandNtd": 7479868,
+        "monthlyExpenseThousandNtd": 6571526,
+        "monthlySurplusThousandNtd": 908343
+      }
+    },
+    "byYear": [
+      {
+        "year": 2022,
+        "monthCount": 8,
+        "distributedWaterVolumeM3Sum": 589170470,
+        "billedWaterVolumeM3Sum": 465445679,
+        "taiwanWaterSupportVolumeM3Sum": 158558713,
+        "waterUseExcludingTaiwanWaterSupportM3Sum": 306886966,
+        "monthlyRevenueThousandNtdSum": 4836633,
+        "monthlyExpenseThousandNtdSum": 4238433,
+        "monthlySurplusThousandNtdSum": 598200,
+        "averagePerCapitaDailyWaterUseLiter": 350.125,
+        "averageSupplyCoverageRatePercent": 99.69
+      },
+      {
+        "year": 2023,
+        "monthCount": 12,
+        "distributedWaterVolumeM3Sum": 891547251,
+        "billedWaterVolumeM3Sum": 718228637,
+        "taiwanWaterSupportVolumeM3Sum": 258929160,
+        "waterUseExcludingTaiwanWaterSupportM3Sum": 459299477,
+        "monthlyRevenueThousandNtdSum": 7429391,
+        "monthlyExpenseThousandNtdSum": 6382047,
+        "monthlySurplusThousandNtdSum": 1047344,
+        "averagePerCapitaDailyWaterUseLiter": 338.4166666666667,
+        "averageSupplyCoverageRatePercent": 99.69000000000001
+      },
+      {
+        "year": 2024,
+        "monthCount": 12,
+        "distributedWaterVolumeM3Sum": 900484767.44,
+        "billedWaterVolumeM3Sum": 732435115,
+        "taiwanWaterSupportVolumeM3Sum": 269519531,
+        "waterUseExcludingTaiwanWaterSupportM3Sum": 462915584,
+        "monthlyRevenueThousandNtdSum": 7598441,
+        "monthlyExpenseThousandNtdSum": 6617169,
+        "monthlySurplusThousandNtdSum": 981272,
+        "averagePerCapitaDailyWaterUseLiter": 339.5,
+        "averageSupplyCoverageRatePercent": 99.71000000000002
+      },
+      {
+        "year": 2025,
+        "monthCount": 12,
+        "distributedWaterVolumeM3Sum": 848977447.92,
+        "billedWaterVolumeM3Sum": 689982749,
+        "taiwanWaterSupportVolumeM3Sum": 233205066,
+        "waterUseExcludingTaiwanWaterSupportM3Sum": 456777683,
+        "monthlyRevenueThousandNtdSum": 7416955,
+        "monthlyExpenseThousandNtdSum": 6524447,
+        "monthlySurplusThousandNtdSum": 892509,
+        "averagePerCapitaDailyWaterUseLiter": 340.3333333333333,
+        "averageSupplyCoverageRatePercent": 99.71000000000002
+      },
+      {
+        "year": 2026,
+        "monthCount": 4,
+        "distributedWaterVolumeM3Sum": 290879752.55,
+        "billedWaterVolumeM3Sum": 247686338,
+        "taiwanWaterSupportVolumeM3Sum": 93642220,
+        "waterUseExcludingTaiwanWaterSupportM3Sum": 154044118,
+        "monthlyRevenueThousandNtdSum": 2498928,
+        "monthlyExpenseThousandNtdSum": 1851882,
+        "monthlySurplusThousandNtdSum": 647046,
+        "averagePerCapitaDailyWaterUseLiter": 332.25,
+        "averageSupplyCoverageRatePercent": 99.75
+      }
+    ],
+    "rolling12MonthLatest": {
+      "monthKey": "2026-04",
+      "distributedWaterVolumeM3": 863884829.01,
+      "billedWaterVolumeM3": 708704895,
+      "taiwanWaterSupportVolumeM3": 249227035,
+      "waterUseExcludingTaiwanWaterSupportM3": 459477860,
+      "monthlyRevenueThousandNtd": 7479868,
+      "monthlyExpenseThousandNtd": 6571526,
+      "monthlySurplusThousandNtd": 908343
+    },
+    "metricExtremes": {
+      "maxDistributedWaterVolume": {
+        "monthKey": "2022-08",
+        "value": 82738008
+      },
+      "minDistributedWaterVolume": {
+        "monthKey": "2025-02",
+        "value": 65202971
+      },
+      "maxPerCapitaDailyWaterUse": {
+        "monthKey": "2025-10",
+        "value": 362
+      },
+      "minPerCapitaDailyWaterUse": {
+        "monthKey": "2024-03",
+        "value": 315
+      },
+      "maxMonthlySurplus": {
+        "monthKey": "2025-01",
+        "value": 206763
+      },
+      "minMonthlySurplus": {
+        "monthKey": "2025-12",
+        "value": -403600
+      }
+    },
+    "dataQuality": {
+      "invalidPeriodCount": 0,
+      "missingMetricValueCount": 0,
+      "invalidNumericValueCount": 0,
+      "duplicateMonthKeyCount": 0
     }
   }
 }

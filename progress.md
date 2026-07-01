@@ -81,6 +81,9 @@
 - **Clear-water quality is table-first**: The treatment plant clear-water CSV has no official coordinates, so the module uses filters, charts, a quality matrix, and a long-format table instead of generated map points or nearby lookup.
   - Context: The source is a wide quality table by test item and site column.
   - Alternatives considered: Geocoding treatment plants or inferring site positions; rejected because it would create coordinates outside the dataset and blur source-field honesty.
+- **Business key metrics are operations KPIs, not water-quality or finance advice**: The business CSV has department-wide monthly supply, user, staffing, and financial fields with no location fields.
+  - Context: The module belongs beside water support and clear-water context, but it should not be merged into quality or map workflows.
+  - Alternatives considered: Adding map bubbles or performance rankings; rejected because the source has no spatial fields and the dataset is not an audit/rating source.
 
 ## Files Modified This Session
 
@@ -123,6 +126,10 @@
 - `scripts/fetchTreatmentPlantClearWaterQuality.ts`, `scripts/convertTreatmentPlantClearWaterQuality.ts`, and `scripts/buildTreatmentPlantClearWaterQualitySummary.ts` - Local/official CSV workflow, wide-to-long conversion, static outputs, and report/dashboard updates.
 - `src/ClearWaterQualityPanel.tsx` - Bilingual filters, cards, charts, quality matrix, table, and no-coordinate/data-limit notes.
 - `tests/clearWaterQuality.test.ts` - ROC period, standard-limit, numeric, test-item, comparison, and detection-status regression checks.
+- `src/types/tapWaterBusiness.ts` and `src/utils/tapWaterBusiness.ts` - Business KPI models, ROC month parser, numeric parser, derived ratios, change metrics, rolling sums, and summaries.
+- `scripts/fetchTapWaterBusinessKeyMetrics.ts`, `scripts/convertTapWaterBusinessKeyMetrics.ts`, and `scripts/buildTapWaterBusinessKeyMetricSummary.ts` - Local/official CSV workflow, Big5 conversion, static outputs, and report/dashboard updates.
+- `src/TapWaterBusinessPanel.tsx` - Bilingual operations KPI filters, cards, charts, table, and interpretation/no-map notes.
+- `tests/tapWaterBusiness.test.ts` - ROC month, numeric parsing, derived ratio, change, and rolling-window regression checks.
 
 ## Evidence of Completion
 
@@ -155,6 +162,8 @@
 - [ ] Park water-safety browser smoke: not completed because this sandbox still has no usable local Playwright/Chrome browser.
 - [x] Clear-water conversion: uploaded UTF-8-SIG 115年4月 CSV generated 568 normalized records from 71 test items across 8 treatment plant / water-source columns.
 - [x] Clear-water final verification: `npm run data:fetch:clear-water-quality -- --force` fell back to the local uploaded CSV when the Taipei page resource URL was not parseable; `npm run data:convert:clear-water-quality` generated 568 records; `npm test` passed with 30 tests; `./init.sh`, `npm run build`, `GITHUB_PAGES=true npm run build`, `npm audit --omit=dev`, and `git diff --check` passed.
+- [x] Business KPI conversion: uploaded Big5/CP950 `11504業務關鍵數據.csv` generated 48 monthly records covering `2022-05` through `2026-04` with 0 conversion warnings.
+- [x] Business KPI final verification: `npm run data:fetch:tap-water-business -- --force` fell back to the local uploaded CSV when the Taipei page resource URL was not parseable; `npm run data:convert:tap-water-business` generated 48 records; `npm test` passed with 34 tests; `./init.sh`, `npm audit --omit=dev`, and `git diff --check` passed.
 
 ## Notes for Next Session
 

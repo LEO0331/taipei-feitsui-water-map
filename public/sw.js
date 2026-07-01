@@ -29,6 +29,9 @@ const STATIC_ASSETS = [
   'data/tap-water-treatment-plant-clear-water-quality-records.json',
   'data/tap-water-treatment-plant-clear-water-quality-summary.json',
   'data/tap-water-treatment-plant-clear-water-quality-latest.json',
+  'data/tap-water-business-key-metrics.json',
+  'data/tap-water-business-key-metric-summary.json',
+  'data/tap-water-business-key-metric-latest.json',
   'data/conversion-report.json'
 ];
 

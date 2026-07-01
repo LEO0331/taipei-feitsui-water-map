@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-07-01T07:02:57.332Z",
+  "officialDataset": "臺北自來水事業處業務關鍵數據",
+  "sourceAgency": "北水處",
+  "sources": [
+    {
+      "file": "11504業務關鍵數據.csv",
+      "resourceName": "臺北自來水事業處業務關鍵數據",
+      "note": "Official resource URL was not found on the Taipei Open Data page; existing local CSV reused."
+    }
+  ],
+  "recordCount": 48,
+  "warningCount": 0,
+  "warnings": [],
+  "duplicateMonthKeys": [],
+  "notes": [
+    "CSV has no coordinates, address, district, or facility point fields; no geocoding or map markers are produced.",
+    "Derived ratios are source-field calculations, not official audit, rating, forecast, or performance conclusions."
+  ]
+}

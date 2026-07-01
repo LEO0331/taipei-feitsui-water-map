@@ -59,8 +59,10 @@ import ParkWaterSafetyPanel from './ParkWaterSafetyPanel';
 import type { ParkWaterSafetyEquipmentRecord, ParkWaterSafetyEquipmentSummary } from './types/parkWaterSafety';
 import ClearWaterQualityPanel from './ClearWaterQualityPanel';
 import type { TreatmentPlantClearWaterQualityRecord, TreatmentPlantClearWaterQualitySummary } from './types/clearWaterQuality';
+import TapWaterBusinessPanel from './TapWaterBusinessPanel';
+import type { TapWaterBusinessKeyMetricRecord, TapWaterBusinessKeyMetricSummary } from './types/tapWaterBusiness';
 
-type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'parkWaterSafety' | 'clearWaterQuality' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -173,6 +175,7 @@ function MonitoringTabs({
     { id: 'pumpingStations', label: t.pumpingStations },
     { id: 'parkWaterSafety', label: t.waterSafetyEquipment },
     { id: 'clearWaterQuality', label: t.clearWaterQuality },
+    { id: 'tapWaterBusiness', label: t.waterBusinessKpis },
     { id: 'twcSupport', label: t.twcSupport },
     { id: 'hydromet', label: t.hydromet },
     { id: 'operation', label: t.operation },
@@ -1190,6 +1193,8 @@ export default function App() {
   const [parkWaterSafetySummary, setParkWaterSafetySummary] = useState<ParkWaterSafetyEquipmentSummary | null>(null);
   const [clearWaterRecords, setClearWaterRecords] = useState<TreatmentPlantClearWaterQualityRecord[]>([]);
   const [clearWaterSummary, setClearWaterSummary] = useState<TreatmentPlantClearWaterQualitySummary | null>(null);
+  const [tapWaterBusinessRecords, setTapWaterBusinessRecords] = useState<TapWaterBusinessKeyMetricRecord[]>([]);
+  const [tapWaterBusinessSummary, setTapWaterBusinessSummary] = useState<TapWaterBusinessKeyMetricSummary | null>(null);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
@@ -1243,7 +1248,9 @@ export default function App() {
       fetchJson<ParkWaterSafetyEquipmentSummary>('park-water-safety-equipment-summary.json'),
       fetchJson<TreatmentPlantClearWaterQualityRecord[]>('tap-water-treatment-plant-clear-water-quality-records.json'),
       fetchJson<TreatmentPlantClearWaterQualitySummary>('tap-water-treatment-plant-clear-water-quality-summary.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData]) => {
+      fetchJson<TapWaterBusinessKeyMetricRecord[]>('tap-water-business-key-metrics.json'),
+      fetchJson<TapWaterBusinessKeyMetricSummary>('tap-water-business-key-metric-summary.json'),
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
@@ -1262,6 +1269,8 @@ export default function App() {
       setParkWaterSafetySummary(parkWaterSafetySummaryData);
       setClearWaterRecords(clearWaterRecordData);
       setClearWaterSummary(clearWaterSummaryData);
+      setTapWaterBusinessRecords(tapWaterBusinessRecordData);
+      setTapWaterBusinessSummary(tapWaterBusinessSummaryData);
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
@@ -1311,7 +1320,7 @@ export default function App() {
     );
   }
 
-  if (!summary || !riverSummary || !pumpingSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary) {
+  if (!summary || !riverSummary || !pumpingSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary) {
     return <main className="loading">Loading</main>;
   }
 
@@ -1328,7 +1337,7 @@ export default function App() {
 
       <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} />
 
-      {activeTab !== 'riverWaterQuality' && activeTab !== 'pumpingStations' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && (
+      {activeTab !== 'riverWaterQuality' && activeTab !== 'pumpingStations' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && (
         <FilterPanel
           filters={filters}
           setFilters={setFilters}
@@ -1423,6 +1432,10 @@ export default function App() {
 
       {activeTab === 'clearWaterQuality' && (
         <ClearWaterQualityPanel records={clearWaterRecords} summary={clearWaterSummary} language={language} />
+      )}
+
+      {activeTab === 'tapWaterBusiness' && (
+        <TapWaterBusinessPanel records={tapWaterBusinessRecords} summary={tapWaterBusinessSummary} language={language} />
       )}
 
       {activeTab === 'twcSupport' && (

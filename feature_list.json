@@ -119,6 +119,14 @@
       "dependencies": ["feat-001", "feat-011"],
       "status": "done",
       "evidence": "Converted the uploaded UTF-8-SIG 115年4月 CSV into 568 long records from 71 test items across 8 treatment plant / water-source columns; parsed ROC source period 2026-04 and coverage 2025-05-01 through 2026-04-30; preserved raw measured, standard, and detection-limit fields; added neutral source-standard comparison, static JSON outputs, bilingual tab, charts, quality matrix, data table, PWA cache entries, README notes, and parser regression tests."
+    },
+    {
+      "id": "feat-016",
+      "name": "Taipei Water Business Key Metrics",
+      "description": "Add Taipei Water Department monthly business key metrics as a static operations KPI module with Big5 CSV conversion, derived ratios, rolling 12-month summaries, filters, charts, table, and no-map disclaimers.",
+      "dependencies": ["feat-001", "feat-013", "feat-015"],
+      "status": "done",
+      "evidence": "Converted the uploaded Big5/CP950 11504業務關鍵數據 CSV into 48 monthly records covering 2022-05 through 2026-04; parsed water volume, service, population, staffing, revenue, expense, surplus, asset, liability, and equity fields; derived support share, billed share, approximate unbilled difference, financial ratios, month-over-month/year-over-year changes, and rolling 12-month sums; added static JSON outputs, bilingual KPI tab, filters, cards, charts, data table, no-coordinate notices, PWA cache entries, README notes, and parser regression tests."
     }
   ]
 }
