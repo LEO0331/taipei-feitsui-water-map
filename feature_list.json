@@ -111,6 +111,14 @@
       "dependencies": ["feat-001"],
       "status": "done",
       "evidence": "Fetched 11 official district/area CSV resources, converted 156 records with 155 valid WGS84/TWD97-handled coordinates and 1 outlier excluded from markers, preserved equipment codes and source coordinates, added summary JSON, conversion report, bilingual tab, Leaflet markers, nearby lookup, filters, charts, directory, PWA cache entries, README notes, and parser regression tests."
+    },
+    {
+      "id": "feat-015",
+      "name": "Treatment Plant Clear Water Quality",
+      "description": "Add Taipei Water Department treatment plant clear-water quality as a static wide-to-long quality module with source-standard comparisons, filters, charts, matrix, table, and no-coordinate disclaimers.",
+      "dependencies": ["feat-001", "feat-011"],
+      "status": "done",
+      "evidence": "Converted the uploaded UTF-8-SIG 115年4月 CSV into 568 long records from 71 test items across 8 treatment plant / water-source columns; parsed ROC source period 2026-04 and coverage 2025-05-01 through 2026-04-30; preserved raw measured, standard, and detection-limit fields; added neutral source-standard comparison, static JSON outputs, bilingual tab, charts, quality matrix, data table, PWA cache entries, README notes, and parser regression tests."
     }
   ]
 }

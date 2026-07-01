@@ -1,0 +1,1414 @@
+{
+  "totalRecords": 568,
+  "sourcePeriodMonthKey": "2026-04",
+  "resourceCoverageStart": "2025-05-01",
+  "resourceCoverageEnd": "2026-04-30",
+  "siteCount": 8,
+  "testItemCount": 71,
+  "testItemCategoryCount": 9,
+  "recordsWithMeasuredValue": 568,
+  "recordsWithStandardLimit": 520,
+  "recordsWithMethodDetectionLimit": 440,
+  "withinStandardCount": 520,
+  "aboveUpperLimitCount": 0,
+  "belowLowerLimitCount": 0,
+  "noStandardCount": 48,
+  "unparsedStandardComparisonCount": 0,
+  "bySite": [
+    {
+      "siteKey": "zhitan_treatment_plant",
+      "siteNameZh": "直潭淨水場",
+      "siteNameEn": "Zhitan Treatment Plant",
+      "siteType": "treatment_plant",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 23
+    },
+    {
+      "siteKey": "changxing_treatment_plant",
+      "siteNameZh": "長興淨水場",
+      "siteNameEn": "Changxing Treatment Plant",
+      "siteType": "treatment_plant",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 23
+    },
+    {
+      "siteKey": "gongguan_treatment_plant",
+      "siteNameZh": "公館淨水場",
+      "siteNameEn": "Gongguan Treatment Plant",
+      "siteType": "treatment_plant",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 22
+    },
+    {
+      "siteKey": "shuangxi_water_source",
+      "siteNameZh": "雙溪水源",
+      "siteNameEn": "Shuangxi Water Source",
+      "siteType": "water_source",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 22
+    },
+    {
+      "siteKey": "shilin_water_source",
+      "siteNameZh": "士林水源",
+      "siteNameEn": "Shilin Water Source",
+      "siteType": "water_source",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 27
+    },
+    {
+      "siteKey": "sanjiaopu",
+      "siteNameZh": "三角埔",
+      "siteNameEn": "Sanjiaopu",
+      "siteType": "water_source",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 25
+    },
+    {
+      "siteKey": "dingbeitou_water_source",
+      "siteNameZh": "頂北投水源",
+      "siteNameEn": "Dingbeitou Water Source",
+      "siteType": "water_source",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 26
+    },
+    {
+      "siteKey": "lujiaokeng_clear_water",
+      "siteNameZh": "鹿角坑清",
+      "siteNameEn": "Lujiaokeng Clear Water",
+      "siteType": "clear_water_source",
+      "recordCount": 71,
+      "withinStandardCount": 65,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0,
+      "noStandardCount": 6,
+      "detectedCount": 25
+    }
+  ],
+  "byTestItem": [
+    {
+      "testItemKey": "水溫",
+      "testItem": "水溫",
+      "testItemCategory": "physical",
+      "unit": "°C",
+      "standardLimitDisplay": "-",
+      "minMeasuredValue": 21,
+      "maxMeasuredValue": 23.9,
+      "averageMeasuredValue": 22.5,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "turbidity",
+      "testItem": "濁度",
+      "testItemCategory": "physical",
+      "unit": "NTU",
+      "standardLimitDisplay": "2",
+      "minMeasuredValue": 0.1,
+      "maxMeasuredValue": 0.75,
+      "averageMeasuredValue": 0.2875,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "色度",
+      "testItem": "色度",
+      "testItemCategory": "physical",
+      "unit": "鉑鈷單位",
+      "standardLimitDisplay": "5",
+      "minMeasuredValue": 1,
+      "maxMeasuredValue": 1,
+      "averageMeasuredValue": 1,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "臭度",
+      "testItem": "臭度",
+      "testItemCategory": "physical",
+      "unit": "初嗅數",
+      "standardLimitDisplay": "3",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 2,
+      "averageMeasuredValue": 1,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "總鹼度",
+      "testItem": "總鹼度",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "-",
+      "minMeasuredValue": 23.7,
+      "maxMeasuredValue": 69.8,
+      "averageMeasuredValue": 42.1625,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "ph",
+      "testItem": "pH值",
+      "testItemCategory": "chemical_general",
+      "unit": "---",
+      "standardLimitDisplay": "6.0~8.5",
+      "minMeasuredValue": 6.7,
+      "maxMeasuredValue": 7.9,
+      "averageMeasuredValue": 7.2625,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "氯鹽",
+      "testItem": "氯鹽",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "250",
+      "minMeasuredValue": 5.53,
+      "maxMeasuredValue": 37.2,
+      "averageMeasuredValue": 15.568750000000001,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "硫酸鹽",
+      "testItem": "硫酸鹽",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "250",
+      "minMeasuredValue": 5.92,
+      "maxMeasuredValue": 66.6,
+      "averageMeasuredValue": 23.595,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "氨氮",
+      "testItem": "氨氮",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.1",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "亞硝酸鹽氮",
+      "testItem": "亞硝酸鹽氮",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.1",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "硝酸鹽氮",
+      "testItem": "硝酸鹽氮",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "10",
+      "minMeasuredValue": 0.38,
+      "maxMeasuredValue": 2.78,
+      "averageMeasuredValue": 0.9162500000000001,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "total_dissolved_solids",
+      "testItem": "總溶解固體量",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "500",
+      "minMeasuredValue": 54,
+      "maxMeasuredValue": 257,
+      "averageMeasuredValue": 122.5,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "氟鹽",
+      "testItem": "氟鹽",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.8",
+      "minMeasuredValue": 0.03,
+      "maxMeasuredValue": 0.09,
+      "averageMeasuredValue": 0.04625,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "free_residual_chlorine",
+      "testItem": "自由有效餘氯",
+      "testItemCategory": "disinfection",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.2~1.0",
+      "minMeasuredValue": 0.52,
+      "maxMeasuredValue": 0.62,
+      "averageMeasuredValue": 0.555,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "total_hardness",
+      "testItem": "總硬度",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "300",
+      "minMeasuredValue": 27,
+      "maxMeasuredValue": 136,
+      "averageMeasuredValue": 60.1875,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鈣",
+      "testItem": "鈣",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "-",
+      "minMeasuredValue": 7.1,
+      "maxMeasuredValue": 39,
+      "averageMeasuredValue": 16.375,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鎂",
+      "testItem": "鎂",
+      "testItemCategory": "chemical_general",
+      "unit": "mg/L",
+      "standardLimitDisplay": "-",
+      "minMeasuredValue": 2.3,
+      "maxMeasuredValue": 9.6,
+      "averageMeasuredValue": 4.75,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鐵",
+      "testItem": "鐵",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.3",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.042,
+      "averageMeasuredValue": 0.007,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "錳",
+      "testItem": "錳",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.05",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.01,
+      "averageMeasuredValue": 0.00125,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "總菌落數",
+      "testItem": "總菌落數",
+      "testItemCategory": "microbiological",
+      "unit": "CFU/mL",
+      "standardLimitDisplay": "100",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 1,
+      "averageMeasuredValue": 0.375,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "coliform_group",
+      "testItem": "大腸桿菌群",
+      "testItemCategory": "microbiological",
+      "unit": "CFU/100mL",
+      "standardLimitDisplay": "6",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "總有機碳",
+      "testItem": "總有機碳",
+      "testItemCategory": "organic",
+      "unit": "mg/L",
+      "standardLimitDisplay": "-",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.4,
+      "averageMeasuredValue": 0.25,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "total_trihalomethanes",
+      "testItem": "總三鹵甲烷",
+      "testItemCategory": "organic",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.08",
+      "minMeasuredValue": 0.00017,
+      "maxMeasuredValue": 0.0146,
+      "averageMeasuredValue": 0.007381250000000001,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "uv_254",
+      "testItem": "UV_254",
+      "testItemCategory": "other",
+      "unit": "1/cm",
+      "standardLimitDisplay": "-",
+      "minMeasuredValue": 0.0028,
+      "maxMeasuredValue": 0.0089,
+      "averageMeasuredValue": 0.006225,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "陰離子界面活性劑",
+      "testItem": "陰離子界面活性劑",
+      "testItemCategory": "other",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.5",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鉛",
+      "testItem": "鉛",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.01",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.002,
+      "averageMeasuredValue": 0.0005,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鋁",
+      "testItem": "鋁",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.2",
+      "minMeasuredValue": 0.037,
+      "maxMeasuredValue": 0.085,
+      "averageMeasuredValue": 0.054625,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "砷",
+      "testItem": "砷",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.01",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.003,
+      "averageMeasuredValue": 0.0011250000000000001,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "汞",
+      "testItem": "汞",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.001",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鎘",
+      "testItem": "鎘",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鉻",
+      "testItem": "鉻",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.05",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "銀",
+      "testItem": "銀",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.05",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "銅",
+      "testItem": "銅",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "1",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鋅",
+      "testItem": "鋅",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "5",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.002,
+      "averageMeasuredValue": 0.0011250000000000001,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "硒",
+      "testItem": "硒",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.01",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.001,
+      "averageMeasuredValue": 0.0005,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "銻",
+      "testItem": "銻",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.01",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鋇",
+      "testItem": "鋇",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "2",
+      "minMeasuredValue": 0.002,
+      "maxMeasuredValue": 0.008,
+      "averageMeasuredValue": 0.0062499999999999995,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鎳",
+      "testItem": "鎳",
+      "testItemCategory": "metal",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.02",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.001,
+      "averageMeasuredValue": 0.000125,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鹵乙酸類",
+      "testItem": "鹵乙酸類",
+      "testItemCategory": "organic",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.06",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.0099,
+      "averageMeasuredValue": 0.00413375,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "氯乙烯",
+      "testItem": "氯乙烯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.0003",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "1_1_二氯乙烯",
+      "testItem": "1,1-二氯乙烯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.007",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "1_1_1_三氯乙烷",
+      "testItem": "1,1,1-三氯乙烷",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.2",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "四氯化碳",
+      "testItem": "四氯化碳",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "苯",
+      "testItem": "苯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "1_2_二氯乙烷",
+      "testItem": "1,2-二氯乙烷",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "三氯乙烯",
+      "testItem": "三氯乙烯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "1_4_二氯苯",
+      "testItem": "1,4-二氯苯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.075",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "二氯甲烷",
+      "testItem": "二氯甲烷",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.02",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "鄰_二氯苯",
+      "testItem": "鄰-二氯苯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.6",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "甲苯",
+      "testItem": "甲苯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.7",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0.00164,
+      "averageMeasuredValue": 0.00047625,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "二甲苯",
+      "testItem": "二甲苯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.5",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "順_1_2_二氯乙烯",
+      "testItem": "順-1,2-二氯乙烯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.07",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "反_1_2_二氯乙烯",
+      "testItem": "反-1,2-二氯乙烯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.1",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "四氯乙烯",
+      "testItem": "四氯乙烯",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "酚類",
+      "testItem": "酚類",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.001",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "氰鹽",
+      "testItem": "氰鹽",
+      "testItemCategory": "volatile_organic_compound",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.05",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "溴酸鹽",
+      "testItem": "溴酸鹽",
+      "testItemCategory": "disinfection",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.01",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "亞氯酸鹽",
+      "testItem": "亞氯酸鹽",
+      "testItemCategory": "disinfection",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.7",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "安殺番",
+      "testItem": "安殺番",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.003",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "靈丹",
+      "testItem": "靈丹",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.0002",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "丁基拉草",
+      "testItem": "丁基拉草",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.02",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "2_4_地",
+      "testItem": "2,4-地",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.07",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "巴拉刈",
+      "testItem": "巴拉刈",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.01",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "納乃得",
+      "testItem": "納乃得",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.01",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "加保扶",
+      "testItem": "加保扶",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.02",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "滅必蝨",
+      "testItem": "滅必蝨",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.02",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "達馬松",
+      "testItem": "達馬松",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.02",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "大利松",
+      "testItem": "大利松",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "巴拉松",
+      "testItem": "巴拉松",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.02",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "一品松",
+      "testItem": "一品松",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.005",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemKey": "亞素靈",
+      "testItem": "亞素靈",
+      "testItemCategory": "pesticide",
+      "unit": "mg/L",
+      "standardLimitDisplay": "0.003",
+      "minMeasuredValue": 0,
+      "maxMeasuredValue": 0,
+      "averageMeasuredValue": 0,
+      "siteCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    }
+  ],
+  "byCategory": [
+    {
+      "testItemCategory": "volatile_organic_compound",
+      "recordCount": 136,
+      "detectedCount": 3,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "metal",
+      "recordCount": 120,
+      "detectedCount": 39,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "pesticide",
+      "recordCount": 104,
+      "detectedCount": 0,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "chemical_general",
+      "recordCount": 96,
+      "detectedCount": 80,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "physical",
+      "recordCount": 32,
+      "detectedCount": 31,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "disinfection",
+      "recordCount": 24,
+      "detectedCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "organic",
+      "recordCount": 24,
+      "detectedCount": 21,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "microbiological",
+      "recordCount": 16,
+      "detectedCount": 3,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    },
+    {
+      "testItemCategory": "other",
+      "recordCount": 16,
+      "detectedCount": 8,
+      "aboveUpperLimitCount": 0,
+      "belowLowerLimitCount": 0
+    }
+  ],
+  "keyIndicators": {
+    "turbidity": [
+      {
+        "siteKey": "zhitan_treatment_plant",
+        "value": 0.1,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "changxing_treatment_plant",
+        "value": 0.2,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "gongguan_treatment_plant",
+        "value": 0.1,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shuangxi_water_source",
+        "value": 0.1,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shilin_water_source",
+        "value": 0.75,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "sanjiaopu",
+        "value": 0.25,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "dingbeitou_water_source",
+        "value": 0.2,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "lujiaokeng_clear_water",
+        "value": 0.6,
+        "unit": "NTU",
+        "comparisonToStandard": "within_standard"
+      }
+    ],
+    "ph": [
+      {
+        "siteKey": "zhitan_treatment_plant",
+        "value": 7.1,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "changxing_treatment_plant",
+        "value": 7.3,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "gongguan_treatment_plant",
+        "value": 7.3,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shuangxi_water_source",
+        "value": 7.5,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shilin_water_source",
+        "value": 6.8,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "sanjiaopu",
+        "value": 6.7,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "dingbeitou_water_source",
+        "value": 7.5,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "lujiaokeng_clear_water",
+        "value": 7.9,
+        "unit": "---",
+        "comparisonToStandard": "within_standard"
+      }
+    ],
+    "free_residual_chlorine": [
+      {
+        "siteKey": "zhitan_treatment_plant",
+        "value": 0.52,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "changxing_treatment_plant",
+        "value": 0.54,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "gongguan_treatment_plant",
+        "value": 0.56,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shuangxi_water_source",
+        "value": 0.55,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shilin_water_source",
+        "value": 0.53,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "sanjiaopu",
+        "value": 0.56,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "dingbeitou_water_source",
+        "value": 0.56,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "lujiaokeng_clear_water",
+        "value": 0.62,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      }
+    ],
+    "total_dissolved_solids": [
+      {
+        "siteKey": "zhitan_treatment_plant",
+        "value": 58,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "changxing_treatment_plant",
+        "value": 54,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "gongguan_treatment_plant",
+        "value": 61,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shuangxi_water_source",
+        "value": 90,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shilin_water_source",
+        "value": 160,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "sanjiaopu",
+        "value": 257,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "dingbeitou_water_source",
+        "value": 164,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "lujiaokeng_clear_water",
+        "value": 136,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      }
+    ],
+    "total_hardness": [
+      {
+        "siteKey": "zhitan_treatment_plant",
+        "value": 28.3,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "changxing_treatment_plant",
+        "value": 27,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "gongguan_treatment_plant",
+        "value": 27.4,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shuangxi_water_source",
+        "value": 38,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shilin_water_source",
+        "value": 80.3,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "sanjiaopu",
+        "value": 136,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "dingbeitou_water_source",
+        "value": 79.7,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "lujiaokeng_clear_water",
+        "value": 64.8,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      }
+    ],
+    "total_trihalomethanes": [
+      {
+        "siteKey": "zhitan_treatment_plant",
+        "value": 0.00852,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "changxing_treatment_plant",
+        "value": 0.00994,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "gongguan_treatment_plant",
+        "value": 0.00727,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shuangxi_water_source",
+        "value": 0.0146,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "shilin_water_source",
+        "value": 0.00056,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "sanjiaopu",
+        "value": 0.00017,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "dingbeitou_water_source",
+        "value": 0.00769,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      },
+      {
+        "siteKey": "lujiaokeng_clear_water",
+        "value": 0.0103,
+        "unit": "mg/L",
+        "comparisonToStandard": "within_standard"
+      }
+    ]
+  },
+  "dataQuality": {
+    "missingMeasuredValueCount": 0,
+    "unparsedMeasuredValueCount": 0,
+    "unparsedStandardLimitCount": 0,
+    "unparsedDetectionLimitCount": 128,
+    "unknownSiteColumnCount": 0
+  }
+}

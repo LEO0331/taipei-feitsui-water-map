@@ -78,6 +78,9 @@
 - **Park water-safety coordinates are defensive**: The official description says TWD97, but current CSV resources mostly contain WGS84-like longitude/latitude values.
   - Context: Leaflet must receive WGS84, and rendering raw TWD97 would put markers in the wrong place.
   - Alternatives considered: Forcing all coordinates through TWD97 conversion; rejected because the current source values are already WGS84-like.
+- **Clear-water quality is table-first**: The treatment plant clear-water CSV has no official coordinates, so the module uses filters, charts, a quality matrix, and a long-format table instead of generated map points or nearby lookup.
+  - Context: The source is a wide quality table by test item and site column.
+  - Alternatives considered: Geocoding treatment plants or inferring site positions; rejected because it would create coordinates outside the dataset and blur source-field honesty.
 
 ## Files Modified This Session
 
@@ -116,6 +119,10 @@
 - `scripts/fetchParkWaterSafetyEquipment.ts`, `scripts/convertParkWaterSafetyEquipment.ts`, and `scripts/buildParkWaterSafetyEquipmentSummary.ts` - Official district CSV fetch, static conversion, and summary/report updates.
 - `src/ParkWaterSafetyPanel.tsx` - Bilingual map layer, filters, nearby lookup, charts, directory, and safety disclaimers.
 - `tests/parkWaterSafety.test.ts` - Facility classification, district/park parsing, and coordinate regression checks.
+- `src/types/clearWaterQuality.ts` and `src/utils/clearWaterQuality.ts` - Treatment plant clear-water models, site mapping, parser, standard comparison, detection status, and summaries.
+- `scripts/fetchTreatmentPlantClearWaterQuality.ts`, `scripts/convertTreatmentPlantClearWaterQuality.ts`, and `scripts/buildTreatmentPlantClearWaterQualitySummary.ts` - Local/official CSV workflow, wide-to-long conversion, static outputs, and report/dashboard updates.
+- `src/ClearWaterQualityPanel.tsx` - Bilingual filters, cards, charts, quality matrix, table, and no-coordinate/data-limit notes.
+- `tests/clearWaterQuality.test.ts` - ROC period, standard-limit, numeric, test-item, comparison, and detection-status regression checks.
 
 ## Evidence of Completion
 
@@ -146,6 +153,8 @@
 - [x] Park water-safety tests/build: `npm test` passed with 25 tests; `npm run build` passed with the known Vite chunk-size warning.
 - [x] Park water-safety final verification: full `./init.sh` passed including conversion, 25 tests, local build, and Pages build; `npm audit --omit=dev` found 0 vulnerabilities; `git diff --check` passed.
 - [ ] Park water-safety browser smoke: not completed because this sandbox still has no usable local Playwright/Chrome browser.
+- [x] Clear-water conversion: uploaded UTF-8-SIG 115年4月 CSV generated 568 normalized records from 71 test items across 8 treatment plant / water-source columns.
+- [x] Clear-water final verification: `npm run data:fetch:clear-water-quality -- --force` fell back to the local uploaded CSV when the Taipei page resource URL was not parseable; `npm run data:convert:clear-water-quality` generated 568 records; `npm test` passed with 30 tests; `./init.sh`, `npm run build`, `GITHUB_PAGES=true npm run build`, `npm audit --omit=dev`, and `git diff --check` passed.
 
 ## Notes for Next Session
 

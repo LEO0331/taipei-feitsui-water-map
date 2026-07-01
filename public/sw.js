@@ -26,6 +26,9 @@ const STATIC_ASSETS = [
   'data/taipei-water-support-twc-annual-summary.json',
   'data/park-water-safety-equipment-records.json',
   'data/park-water-safety-equipment-summary.json',
+  'data/tap-water-treatment-plant-clear-water-quality-records.json',
+  'data/tap-water-treatment-plant-clear-water-quality-summary.json',
+  'data/tap-water-treatment-plant-clear-water-quality-latest.json',
   'data/conversion-report.json'
 ];
 

@@ -1,6 +1,6 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, and park water-safety facilities / 新增臺北市河川水質檢測、水利設施抽水站、北水處支援台水月統計與公園水域安全設施模組.
+Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, treatment plant clear-water quality, and park water-safety facilities / 新增臺北市河川水質檢測、水利設施抽水站、北水處支援台水月統計、各淨水場清水水質與公園水域安全設施模組.
 
 Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
@@ -67,6 +67,20 @@ Water safety facilities:
 - Equipment codes are preserved and searchable
 - Valid converted coordinates render as map markers and support nearby lookup
 - The module does not represent emergency dispatch, rescue guarantee, current equipment condition, swimming safety advice, water-quality status, or emergency instruction
+
+Tap water and treated-water quality:
+
+- Dataset: `臺北自來水事業處各淨水場清水水質`
+- Module key: `tap_water_treatment_plant_clear_water_quality`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=ee8842ea-25a2-4cd2-a6c0-d50b37ab18d0`
+- Raw CSV directory: `data/raw/tap-water-treatment-plant-clear-water-quality/`
+- The UTF-8-SIG CSV wide table is converted into `資料月份 × 檢驗項目 × 淨水場或水源` long records
+- Source period is parsed from filenames such as `115年4月` and resource coverage such as `114/5-115/4`
+- Site columns map to 直潭、長興、公館淨水場 and 雙溪、士林、三角埔、頂北投、鹿角坑清 water-source fields
+- Standard limits preserve raw text and parse upper bounds or ranges such as `2`, `6.0~8.5`, and `0.2~1.0`
+- Method detection limits, measured values, source-reported zeroes, and missing `-` / `--` values are preserved separately from parsed numbers
+- Standard comparisons are source-field comparisons only; they are not real-time safety, household tap-water, health-risk, or regulatory-enforcement conclusions
+- No official coordinates are provided, so this module does not geocode, render dataset-generated map markers, or provide nearby lookup
 
 Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 
@@ -182,10 +196,22 @@ Fetch park water-safety equipment CSV resources:
 npm run data:fetch:park-water-safety
 ```
 
+Fetch treatment plant clear-water quality CSV resources:
+
+```sh
+npm run data:fetch:clear-water-quality
+```
+
 Convert park water-safety equipment CSV resources:
 
 ```sh
 npm run data:convert:park-water-safety
+```
+
+Convert treatment plant clear-water quality CSV resources:
+
+```sh
+npm run data:convert:clear-water-quality
 ```
 
 Convert all local raw data:

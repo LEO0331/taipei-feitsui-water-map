@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-07-01T06:04:21.103Z",
+  "officialDataset": "臺北自來水事業處各淨水場清水水質",
+  "sourceAgency": "北水處",
+  "sources": [
+    {
+      "file": "臺北自來水事業處各淨水場清水水質（115年4月）1.csv",
+      "resourceName": "臺北自來水事業處各淨水場清水水質114/5-115/4",
+      "note": "Official resource URL was not found on the Taipei Open Data page; existing local CSV reused."
+    }
+  ],
+  "recordCount": 568,
+  "warningCount": 0,
+  "warnings": [],
+  "duplicatePrimaryKeys": [],
+  "duplicateFallbackKeys": [],
+  "notes": [
+    "CSV has no official coordinates; no geocoding or source-generated map markers are produced.",
+    "Standard comparisons are source-field comparisons, not safety or enforcement conclusions."
+  ]
+}

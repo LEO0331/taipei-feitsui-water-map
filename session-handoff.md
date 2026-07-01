@@ -103,6 +103,9 @@
 - Support-to-TWC verification passed through `./init.sh`; browser smoke was not completed because no usable local browser was available from the sandbox.
 - Park water-safety source metadata says TWD97, but current CSV values are WGS84-like. Keep defensive coordinate detection and only render valid WGS84 coordinates.
 - Park water-safety final verification passed through `./init.sh`; browser smoke was not completed because no usable local browser was available from the sandbox.
+- Treatment plant clear-water quality is a table/chart module because the CSV has no official coordinates. Do not geocode it, add near-me, or claim household tap-water or real-time drinking-water safety.
+- Clear-water official forced fetch could not parse a CSV URL from the Taipei Open Data page shape, so the fetch script records that warning and reuses the uploaded local CSV. Conversion produced 568 records from 71 test items across 8 site columns.
+- Clear-water final verification passed: local/forced fetch fallback, conversion, `npm test`, `./init.sh`, normal build, Pages build, `npm audit --omit=dev`, and `git diff --check`.
 
 ## Blockers / Risks
 

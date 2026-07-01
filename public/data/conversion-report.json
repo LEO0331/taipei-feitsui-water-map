@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T02:15:56.203Z",
+  "generatedAt": "2026-07-01T06:03:18.613Z",
   "rawDirectory": "/Users/Leo/Documents/taipei-feitsui-water-map/data/raw/feitsui-water",
   "recordCount": 1764,
   "periods": [
@@ -284,7 +284,7 @@
   "coordinatePolicy": "Only stations with verified coordinates in station-locations.json should render as map markers.",
   "issues": [],
   "riverWaterQuality": {
-    "generatedAt": "2026-06-30T02:15:58.820Z",
+    "generatedAt": "2026-07-01T06:03:20.411Z",
     "recordCount": 768,
     "sources": [
       {
@@ -312,7 +312,7 @@
     "unparsed": []
   },
   "pumpingStations": {
-    "generatedAt": "2026-06-30T02:15:59.606Z",
+    "generatedAt": "2026-07-01T06:03:20.939Z",
     "source": {
       "file": "臺北市水利處抽水站TWD97.csv",
       "encoding": "UTF-8-SIG",
@@ -325,7 +325,7 @@
     ]
   },
   "taipeiWaterSupportTwcMonthlyStatistics": {
-    "generatedAt": "2026-06-30T02:16:00.948Z",
+    "generatedAt": "2026-07-01T06:03:22.314Z",
     "officialDataset": "臺北自來水事業處支援台水月統計表",
     "sourceAgency": "北水處",
     "supportVolumeUnit": "raw",
@@ -354,7 +354,7 @@
     ]
   },
   "parkWaterSafetyEquipment": {
-    "generatedAt": "2026-06-30T02:16:01.829Z",
+    "generatedAt": "2026-07-01T06:03:23.237Z",
     "officialDataset": "臺北市各公園水域安全告示牌及救生設備位置資訊",
     "sourceAgency": "工務局公園處",
     "sources": [
@@ -473,6 +473,27 @@
     ],
     "notes": [
       "Source says coordinates are TWD97; WGS84-like values are also accepted defensively before Leaflet rendering."
+    ]
+  },
+  "treatmentPlantClearWaterQuality": {
+    "generatedAt": "2026-07-01T06:04:21.103Z",
+    "officialDataset": "臺北自來水事業處各淨水場清水水質",
+    "sourceAgency": "北水處",
+    "sources": [
+      {
+        "file": "臺北自來水事業處各淨水場清水水質（115年4月）1.csv",
+        "resourceName": "臺北自來水事業處各淨水場清水水質114/5-115/4",
+        "note": "Official resource URL was not found on the Taipei Open Data page; existing local CSV reused."
+      }
+    ],
+    "recordCount": 568,
+    "warningCount": 0,
+    "warnings": [],
+    "duplicatePrimaryKeys": [],
+    "duplicateFallbackKeys": [],
+    "notes": [
+      "CSV has no official coordinates; no geocoding or source-generated map markers are produced.",
+      "Standard comparisons are source-field comparisons, not safety or enforcement conclusions."
     ]
   }
 }
