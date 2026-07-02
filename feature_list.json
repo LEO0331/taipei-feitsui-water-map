@@ -127,6 +127,14 @@
       "dependencies": ["feat-001", "feat-013", "feat-015"],
       "status": "done",
       "evidence": "Converted the uploaded Big5/CP950 11504業務關鍵數據 CSV into 48 monthly records covering 2022-05 through 2026-04; parsed water volume, service, population, staffing, revenue, expense, surplus, asset, liability, and equity fields; derived support share, billed share, approximate unbilled difference, financial ratios, month-over-month/year-over-year changes, and rolling 12-month sums; added static JSON outputs, bilingual KPI tab, filters, cards, charts, data table, no-coordinate notices, PWA cache entries, README notes, and parser regression tests."
+    },
+    {
+      "id": "feat-017",
+      "name": "Feitsui Carlson Trophic State Index",
+      "description": "Add annual Feitsui Reservoir Carlson trophic state index records as a static no-map reservoir water-quality/trophic-state module with fetch fallback, conversion, summaries, charts, table, and interpretation limits.",
+      "dependencies": ["feat-001", "feat-008", "feat-010"],
+      "status": "done",
+      "evidence": "Converted 14 annual CTSI records covering ROC 101-114 / 2012-2025 from the provided local CSV fallback; latest 2025 CTSI is 37.61 with 貧養 indicator, min CTSI is 36.83, max CTSI is 41.22, and indicator counts are 13 貧養 / 1 普養. Added static JSON outputs, feitsui-water summary integration, bilingual CTSI tab, filters, cards, charts, data table, no-coordinate notices, PWA cache entries, README notes, and parser/trend regression tests. npm test passed with 38 tests."
     }
   ]
 }

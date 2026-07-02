@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-07-02T06:25:02.049Z",
+  "officialDataset": "臺北翡翠水庫卡爾森優養指數",
+  "sourceAgency": "翡管局",
+  "officialResourceUpdatedAt": "2026-03-11",
+  "sources": [
+    {
+      "file": "carlson-trophic-state-index.csv",
+      "resourceName": "臺北翡翠水庫卡爾森優養指數",
+      "note": "Official resource URL was not found on the Taipei Open Data page; existing local CSV reused."
+    }
+  ],
+  "recordCount": 14,
+  "warningCount": 0,
+  "warnings": [],
+  "duplicateYears": [],
+  "notes": [
+    "Annual CTSI rows have no coordinates, addresses, stations, or facility point fields; no geocoding or map markers are produced.",
+    "CTSI summaries are source-field calculations for annual trophic-state context, not real-time water quality, drinking-water safety, pollution-source determination, or official risk scoring."
+  ]
+}

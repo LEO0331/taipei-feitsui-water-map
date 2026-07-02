@@ -32,6 +32,10 @@ const STATIC_ASSETS = [
   'data/tap-water-business-key-metrics.json',
   'data/tap-water-business-key-metric-summary.json',
   'data/tap-water-business-key-metric-latest.json',
+  'data/carlson-trophic-state-index.json',
+  'data/carlson-trophic-state-index-summary.json',
+  'data/carlson-trophic-state-index-latest.json',
+  'data/feitsui-water-summary.json',
   'data/conversion-report.json'
 ];
 

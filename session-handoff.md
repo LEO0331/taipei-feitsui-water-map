@@ -3,7 +3,7 @@
 ## Current Objective
 
 - Goal: Maintain a reviewed, restartable static water-quality map project.
-- Current status: Existing reservoir modules and the separate Taipei river-water module are complete and verified.
+- Current status: Existing reservoir modules, Feitsui CTSI, and the separate Taipei river-water module are complete and verified.
 - Branch / commit: Current working tree has uncommitted project files.
 
 ## Completed This Session
@@ -17,6 +17,7 @@
 - [x] Fixed hydromet review findings: added weekday/weekend and ISO date-range filters, shared those filters with charts and table rows, and removed obsolete table code.
 - [x] Added reservoir-operation resource fetching, conversion, models, tests, operation dashboard tab, combined context comparisons, data table modes, cache entries, and README updates.
 - [x] Added four years of Taipei river-water CSV data, qualifier-aware conversion, summaries, bilingual river dashboard/table, optional verified locations, cache entries, and README updates.
+- [x] Added Feitsui Carlson trophic state index annual CSV fallback, conversion, summaries, bilingual CTSI dashboard/table, cache entries, and README updates.
 
 ## Verification Evidence
 
@@ -29,6 +30,8 @@
 | Local build | `npm run build` | Passed | Vite chunk-size warning remains. |
 | Pages build | `GITHUB_PAGES=true npm run build` | Passed | Verifies project subpath URLs. |
 | Production audit | `npm audit --omit=dev` | Passed | 0 production vulnerabilities. |
+| CTSI conversion | `npm run data:convert:ctsi` | Passed | 14 annual records, 2012-2025; latest 2025 CTSI 37.61, min 36.83, max 41.22. |
+| CTSI tests/typecheck | `npm test` | Passed | 38 tests including CTSI parser/category/trend coverage. |
 | Operation fetch | `npm run fetch:operation` | Passed | Fetched or reused 130 operation resources. |
 | Operation conversion | `npm run convert:operation` | Passed | Generated 3,961 daily records across 130 periods. |
 | Operation tests/build | `npm test`; `npm run build` | Passed | 14 tests passed; build passed with existing large chunk warning. |
@@ -85,6 +88,18 @@
 - `public/data/river-water-quality-summary.json`
 - `public/data/water-dashboard-summary.json`
 - `public/data/river-station-locations.json`
+- `data/raw/carlson-trophic-state-index/`
+- `src/types/carlsonTrophicStateIndex.ts`
+- `src/utils/carlsonTrophicStateIndex.ts`
+- `src/CarlsonTrophicStateIndexPanel.tsx`
+- `scripts/fetchCarlsonTrophicStateIndex.ts`
+- `scripts/convertCarlsonTrophicStateIndex.ts`
+- `scripts/buildCarlsonTrophicStateIndexSummary.ts`
+- `tests/carlsonTrophicStateIndex.test.ts`
+- `public/data/carlson-trophic-state-index.json`
+- `public/data/carlson-trophic-state-index-summary.json`
+- `public/data/carlson-trophic-state-index-latest.json`
+- `public/data/feitsui-water-summary.json`
 
 ## Decisions Made
 
@@ -109,6 +124,7 @@
 - Taipei Water business key metrics are monthly department-wide operations KPIs, not water quality, outage, billing, finance advice, audit, or performance ranking data. Keep it charts/tables only; no map markers or near-me behavior.
 - Business KPI official forced fetch could not parse a CSV URL from the Taipei Open Data page shape, so the fetch script records that warning and reuses the uploaded Big5 local CSV. Conversion produced 48 monthly records covering `2022-05` through `2026-04`.
 - Business KPI final verification passed: local/forced fetch fallback, conversion, `npm test`, `./init.sh`, `npm audit --omit=dev`, and `git diff --check`.
+- CTSI is annual reservoir trophic-state context, not station-level monthly water quality. Keep it charts/tables only and do not geocode, add near-me behavior, or claim real-time water quality, drinking-water safety, pollution-source determination, emergency warning, or official risk scoring.
 
 ## Blockers / Risks
 

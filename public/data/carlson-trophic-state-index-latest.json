@@ -1,0 +1,26 @@
+[
+  {
+    "id": "2025",
+    "module": "carlson_trophic_state_index",
+    "sourceId": "14",
+    "agencyName": "臺北翡翠水庫管理局",
+    "agencyCode": "379550000G",
+    "rocYear": 114,
+    "year": 2025,
+    "yearKey": "2025",
+    "periodDate": "2025-01-01",
+    "ctsiRaw": "37.61",
+    "ctsi": 37.61,
+    "ctsiCategory": "30_to_40",
+    "trophicStateIndicatorRaw": "貧養",
+    "trophicStateIndicatorCategory": "oligotrophic",
+    "trendDirection": "increase",
+    "isLatestYear": true,
+    "sourceRecordHash": "7079a61b1cc2b446",
+    "source": "臺北翡翠水庫卡爾森優養指數",
+    "sourceAgency": "翡管局",
+    "yearOverYearChange": 0.14000000000000057,
+    "yearOverYearPercentChange": 0.37363223912463456,
+    "rolling3YearAverage": 37.39666666666667
+  }
+]

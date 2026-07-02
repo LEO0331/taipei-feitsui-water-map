@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T07:02:57.663Z",
+  "generatedAt": "2026-07-02T06:25:02.326Z",
   "feitsuiReservoir": {
     "latestPeriod": "2026-03",
     "periods": [
@@ -4095,6 +4095,208 @@
       "missingMetricValueCount": 0,
       "invalidNumericValueCount": 0,
       "duplicateMonthKeyCount": 0
+    }
+  },
+  "carlsonTrophicStateIndex": {
+    "totalRecords": 14,
+    "minYear": 2012,
+    "maxYear": 2025,
+    "minRocYear": 101,
+    "maxRocYear": 114,
+    "latestYear": 2025,
+    "latest": {
+      "id": "2025",
+      "module": "carlson_trophic_state_index",
+      "sourceId": "14",
+      "agencyName": "臺北翡翠水庫管理局",
+      "agencyCode": "379550000G",
+      "rocYear": 114,
+      "year": 2025,
+      "yearKey": "2025",
+      "periodDate": "2025-01-01",
+      "ctsiRaw": "37.61",
+      "ctsi": 37.61,
+      "ctsiCategory": "30_to_40",
+      "trophicStateIndicatorRaw": "貧養",
+      "trophicStateIndicatorCategory": "oligotrophic",
+      "trendDirection": "increase",
+      "isLatestYear": true,
+      "sourceRecordHash": "7079a61b1cc2b446",
+      "source": "臺北翡翠水庫卡爾森優養指數",
+      "sourceAgency": "翡管局",
+      "yearOverYearChange": 0.14000000000000057,
+      "yearOverYearPercentChange": 0.37363223912463456,
+      "rolling3YearAverage": 37.39666666666667
+    },
+    "minCtsi": {
+      "year": 2020,
+      "rocYear": 109,
+      "value": 36.83
+    },
+    "maxCtsi": {
+      "year": 2012,
+      "rocYear": 101,
+      "value": 41.22
+    },
+    "averageCtsi": 38.18928571428571,
+    "medianCtsi": 37.989999999999995,
+    "totalCtsiChange": -3.6099999999999994,
+    "averageAnnualCtsiChange": -0.2776923076923076,
+    "trophicStateIndicatorCounts": {
+      "oligotrophic": 13,
+      "mesotrophic": 1,
+      "eutrophic": 0,
+      "hypereutrophic": 0,
+      "unknown": 0
+    },
+    "ctsiCategoryCounts": {
+      "under_30": 0,
+      "30_to_40": 13,
+      "40_to_50": 1,
+      "50_to_60": 0,
+      "60_to_70": 0,
+      "over_70": 0,
+      "missing": 0,
+      "unknown": 0
+    },
+    "trendDirectionCounts": {
+      "increase": 7,
+      "decrease": 6,
+      "no_change": 0,
+      "first_record": 1,
+      "unknown": 0
+    },
+    "byYear": [
+      {
+        "year": 2012,
+        "rocYear": 101,
+        "ctsi": 41.22,
+        "trophicStateIndicatorCategory": "mesotrophic",
+        "trendDirection": "first_record"
+      },
+      {
+        "year": 2013,
+        "rocYear": 102,
+        "ctsi": 38.15,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "decrease",
+        "yearOverYearChange": -3.0700000000000003
+      },
+      {
+        "year": 2014,
+        "rocYear": 103,
+        "ctsi": 37.94,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "decrease",
+        "yearOverYearChange": -0.21000000000000085,
+        "rolling3YearAverage": 39.10333333333333
+      },
+      {
+        "year": 2015,
+        "rocYear": 104,
+        "ctsi": 38.51,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "increase",
+        "yearOverYearChange": 0.5700000000000003,
+        "rolling3YearAverage": 38.199999999999996
+      },
+      {
+        "year": 2016,
+        "rocYear": 105,
+        "ctsi": 39.26,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "increase",
+        "yearOverYearChange": 0.75,
+        "rolling3YearAverage": 38.56999999999999
+      },
+      {
+        "year": 2017,
+        "rocYear": 106,
+        "ctsi": 38.88,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "decrease",
+        "yearOverYearChange": -0.37999999999999545,
+        "rolling3YearAverage": 38.88333333333333
+      },
+      {
+        "year": 2018,
+        "rocYear": 107,
+        "ctsi": 37.72,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "decrease",
+        "yearOverYearChange": -1.1600000000000037,
+        "rolling3YearAverage": 38.62
+      },
+      {
+        "year": 2019,
+        "rocYear": 108,
+        "ctsi": 38.36,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "increase",
+        "yearOverYearChange": 0.6400000000000006,
+        "rolling3YearAverage": 38.32
+      },
+      {
+        "year": 2020,
+        "rocYear": 109,
+        "ctsi": 36.83,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "decrease",
+        "yearOverYearChange": -1.5300000000000011,
+        "rolling3YearAverage": 37.63666666666666
+      },
+      {
+        "year": 2021,
+        "rocYear": 110,
+        "ctsi": 37.55,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "increase",
+        "yearOverYearChange": 0.7199999999999989,
+        "rolling3YearAverage": 37.58
+      },
+      {
+        "year": 2022,
+        "rocYear": 111,
+        "ctsi": 38.04,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "increase",
+        "yearOverYearChange": 0.490000000000002,
+        "rolling3YearAverage": 37.47333333333333
+      },
+      {
+        "year": 2023,
+        "rocYear": 112,
+        "ctsi": 37.11,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "decrease",
+        "yearOverYearChange": -0.9299999999999997,
+        "rolling3YearAverage": 37.56666666666667
+      },
+      {
+        "year": 2024,
+        "rocYear": 113,
+        "ctsi": 37.47,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "increase",
+        "yearOverYearChange": 0.35999999999999943,
+        "rolling3YearAverage": 37.54
+      },
+      {
+        "year": 2025,
+        "rocYear": 114,
+        "ctsi": 37.61,
+        "trophicStateIndicatorCategory": "oligotrophic",
+        "trendDirection": "increase",
+        "yearOverYearChange": 0.14000000000000057,
+        "rolling3YearAverage": 37.39666666666667
+      }
+    ],
+    "dataQuality": {
+      "invalidYearCount": 0,
+      "missingCtsiCount": 0,
+      "invalidCtsiCount": 0,
+      "duplicateYearCount": 0,
+      "unknownIndicatorCount": 0
     }
   }
 }

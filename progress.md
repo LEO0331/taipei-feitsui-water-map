@@ -2,8 +2,8 @@
 
 ## Current State
 
-**Last Updated:** 2026-06-26
-**Session ID:** pumping-stations
+**Last Updated:** 2026-07-02
+**Session ID:** carlson-trophic-state-index
 **Active Feature:** none
 
 ## Status
@@ -22,6 +22,7 @@
 - [x] Reservoir operation context feature completed with static fetch/convert scripts, operation tab, combined dashboard, and table modes.
 - [x] Taipei river-water module completed as a separate domain with four years of Big5 CSV data.
 - [x] Taipei pumping-stations module completed with local UTF-8-SIG source, TWD97-to-WGS84 conversion, map markers, filters, nearby lookup, directory, charts, and interpretation limits.
+- [x] Feitsui Carlson trophic state index module completed with annual CTSI conversion, summaries, charts, table, and no-map interpretation limits.
 
 ### What's In Progress
 
@@ -84,6 +85,9 @@
 - **Business key metrics are operations KPIs, not water-quality or finance advice**: The business CSV has department-wide monthly supply, user, staffing, and financial fields with no location fields.
   - Context: The module belongs beside water support and clear-water context, but it should not be merged into quality or map workflows.
   - Alternatives considered: Adding map bubbles or performance rankings; rejected because the source has no spatial fields and the dataset is not an audit/rating source.
+- **CTSI is annual trophic-state context**: The Carlson trophic state index dataset is shown through cards, charts, and a table, not map markers.
+  - Context: The source has annual year, CTSI, and trophic indicator fields but no coordinates, stations, addresses, or facility points.
+  - Alternatives considered: Geocoding or tying CTSI to reservoir map points; rejected because it would invent spatial precision and blur annual trophic-state context with station-level monthly water-quality records.
 
 ## Files Modified This Session
 
@@ -130,6 +134,10 @@
 - `scripts/fetchTapWaterBusinessKeyMetrics.ts`, `scripts/convertTapWaterBusinessKeyMetrics.ts`, and `scripts/buildTapWaterBusinessKeyMetricSummary.ts` - Local/official CSV workflow, Big5 conversion, static outputs, and report/dashboard updates.
 - `src/TapWaterBusinessPanel.tsx` - Bilingual operations KPI filters, cards, charts, table, and interpretation/no-map notes.
 - `tests/tapWaterBusiness.test.ts` - ROC month, numeric parsing, derived ratio, change, and rolling-window regression checks.
+- `src/types/carlsonTrophicStateIndex.ts` and `src/utils/carlsonTrophicStateIndex.ts` - CTSI models, ROC-year parser, category parsing, trends, rolling average, and summaries.
+- `scripts/fetchCarlsonTrophicStateIndex.ts`, `scripts/convertCarlsonTrophicStateIndex.ts`, and `scripts/buildCarlsonTrophicStateIndexSummary.ts` - Local/official CSV workflow, annual conversion, static outputs, and report/dashboard updates.
+- `src/CarlsonTrophicStateIndexPanel.tsx` - Bilingual annual CTSI filters, cards, charts, data table, and no-map/data-limit notes.
+- `tests/carlsonTrophicStateIndex.test.ts` - ROC year, CTSI numeric, category, trend, rolling-average, and summary regression checks.
 
 ## Evidence of Completion
 
@@ -164,6 +172,9 @@
 - [x] Clear-water final verification: `npm run data:fetch:clear-water-quality -- --force` fell back to the local uploaded CSV when the Taipei page resource URL was not parseable; `npm run data:convert:clear-water-quality` generated 568 records; `npm test` passed with 30 tests; `./init.sh`, `npm run build`, `GITHUB_PAGES=true npm run build`, `npm audit --omit=dev`, and `git diff --check` passed.
 - [x] Business KPI conversion: uploaded Big5/CP950 `11504業務關鍵數據.csv` generated 48 monthly records covering `2022-05` through `2026-04` with 0 conversion warnings.
 - [x] Business KPI final verification: `npm run data:fetch:tap-water-business -- --force` fell back to the local uploaded CSV when the Taipei page resource URL was not parseable; `npm run data:convert:tap-water-business` generated 48 records; `npm test` passed with 34 tests; `./init.sh`, `npm audit --omit=dev`, and `git diff --check` passed.
+- [x] CTSI baseline verification: `./init.sh` passed before edits.
+- [x] CTSI conversion: `npm run data:fetch:ctsi` reused 1 local CSV fallback and `npm run data:convert:ctsi` generated 14 annual records covering 2012-2025.
+- [x] CTSI tests/typecheck: `npm test` passed with 38 tests.
 
 ## Notes for Next Session
 

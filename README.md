@@ -1,6 +1,6 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Now includes Taipei River Water Quality Monitoring, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, treatment plant clear-water quality, Taipei Water business key metrics, and park water-safety facilities / 新增臺北市河川水質檢測、水利設施抽水站、北水處支援台水月統計、各淨水場清水水質、北水業務關鍵數據與公園水域安全設施模組.
+Now includes Taipei River Water Quality Monitoring, Feitsui Carlson Trophic State Index, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, treatment plant clear-water quality, Taipei Water business key metrics, and park water-safety facilities / 新增臺北市河川水質檢測、翡翠水庫卡爾森優養指數、水利設施抽水站、北水處支援台水月統計、各淨水場清水水質、北水業務關鍵數據與公園水域安全設施模組.
 
 Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
@@ -94,6 +94,18 @@ Tap water operations and supply service:
 - Derived ratios and rolling 12-month totals are generated from source fields and labeled as data-organization outputs, not official audit, rating, forecast, or performance conclusions
 - No coordinates, addresses, districts, or facility points are provided, so this module does not geocode, render map markers, or provide nearby lookup
 - The module does not represent real-time supply status, outage information, household water-use records, bill estimates, drinking-water safety, financial advice, investment advice, credit rating, or operational performance ranking
+
+Reservoir trophic-state monitoring:
+
+- Dataset: `臺北翡翠水庫卡爾森優養指數`
+- Module key: `carlson_trophic_state_index`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=56adb2f7-3a86-4a2b-9b4a-610e6df247e5`
+- Raw CSV directory: `data/raw/carlson-trophic-state-index/`
+- Source agency: `翡管局`; official resource update date recorded as `2026-03-11`
+- Annual ROC years are converted to Gregorian years; CTSI values, source indicators, year-over-year change, and rolling 3-year averages are generated as static records
+- Summary files include min/max/average/median CTSI, trophic-state indicator counts, CTSI band counts, trend counts, and data-quality counters
+- The source fields do not provide coordinates, addresses, stations, or facility points, so this module does not geocode, render map markers, or provide nearby lookup
+- The module does not represent real-time water quality, drinking-water safety guarantees, tap-water quality, medical advice, pollution-source determination, complete water-quality results, emergency warnings, or official risk scoring
 
 Water-quality data is monthly and station-based. Hydrometeorological data is daily and weather-station based. Reservoir-operation data is daily operation/hydrology context. The frontend reads local static JSON only; Taipei Open Data API fetching happens through local Node scripts.
 
@@ -221,6 +233,12 @@ Fetch Taipei Water business key metrics CSV resources:
 npm run data:fetch:tap-water-business
 ```
 
+Fetch Feitsui Carlson trophic state index CSV resources:
+
+```sh
+npm run data:fetch:ctsi
+```
+
 Convert park water-safety equipment CSV resources:
 
 ```sh
@@ -237,6 +255,12 @@ Convert Taipei Water business key metrics CSV resources:
 
 ```sh
 npm run data:convert:tap-water-business
+```
+
+Convert Feitsui Carlson trophic state index CSV resources:
+
+```sh
+npm run data:convert:ctsi
 ```
 
 Convert all local raw data:
@@ -313,6 +337,14 @@ Park water-safety equipment:
 - `public/data/park-water-safety-equipment-records.json`
 - `public/data/park-water-safety-equipment-summary.json`
 - `public/data/park-water-safety-equipment-conversion-report.json`
+
+Feitsui Carlson trophic state index:
+
+- `public/data/carlson-trophic-state-index.json`
+- `public/data/carlson-trophic-state-index-summary.json`
+- `public/data/carlson-trophic-state-index-latest.json`
+- `public/data/carlson-trophic-state-index-conversion-report.json`
+- `public/data/feitsui-water-summary.json`
 
 Shared:
 

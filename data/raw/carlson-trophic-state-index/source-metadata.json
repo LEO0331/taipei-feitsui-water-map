@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-02T06:24:39.904Z",
+  "pageUrl": "https://data.taipei/dataset/detail?id=56adb2f7-3a86-4a2b-9b4a-610e6df247e5",
+  "officialDataset": "臺北翡翠水庫卡爾森優養指數",
+  "officialResourceUpdatedAt": "2026-03-11",
+  "files": [
+    {
+      "file": "carlson-trophic-state-index.csv",
+      "resourceName": "臺北翡翠水庫卡爾森優養指數",
+      "note": "Official resource URL was not found on the Taipei Open Data page; existing local CSV reused."
+    }
+  ]
+}
