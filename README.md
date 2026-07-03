@@ -1,6 +1,6 @@
 # Taipei Feitsui Reservoir Water Quality Map / 台北翡翠水庫水質地圖
 
-Now includes Taipei River Water Quality Monitoring, Feitsui Carlson Trophic State Index, Taipei pumping stations, Taipei Water support-to-Taiwan-Water statistics, treatment plant clear-water quality, Taipei Water business key metrics, and park water-safety facilities / 新增臺北市河川水質檢測、翡翠水庫卡爾森優養指數、水利設施抽水站、北水處支援台水月統計、各淨水場清水水質、北水業務關鍵數據與公園水域安全設施模組.
+Now includes Taipei River Water Quality Monitoring, Feitsui Carlson Trophic State Index, Taipei pumping stations, Taipei sedimentation basins, Taipei Water support-to-Taiwan-Water statistics, treatment plant clear-water quality, Taipei Water business key metrics, and park water-safety facilities / 新增臺北市河川水質檢測、翡翠水庫卡爾森優養指數、水利設施抽水站、臺北市水利處沉砂池、北水處支援台水月統計、各淨水場清水水質、北水業務關鍵數據與公園水域安全設施模組.
 
 Mobile-first bilingual app with separate Feitsui Reservoir and Taipei river-water modules. Reservoir and river records have different sources, monitoring purposes, and locations and are not merged into one station dataset.
 
@@ -41,6 +41,16 @@ Water infrastructure:
 - TWD97-TM2(zone121) X/Y coordinates are converted to WGS84 for Leaflet markers
 - Gregorian `YYYYMMDD` establishment dates, river-system/district/management-unit filters, and nearby-station lookup are supported
 - The module does not represent real-time pumping status, flood-risk prediction, or emergency instruction
+
+Sedimentation basin infrastructure:
+
+- Dataset: `臺北市水利處沉砂池`
+- Module key: `sedimentation_basin_facilities`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=03db6e0d-c6a6-400a-9e52-9b821c404c38`
+- Raw CSV directory: `data/raw/sedimentation-basin-facilities/`
+- Source `X坐標` / `Y坐標` values are TWD97-TM2 projected coordinates, not WGS84 latitude/longitude
+- Conversion preserves source fields, converts coordinates to WGS84, validates Taipei-nearby bounds, and renders valid reference markers
+- Catchment area is preserved as a source field for comparison; the app does not infer real-time drainage capacity, flood protection, facility maintenance, public access, engineering design, property risk, insurance risk, or safety advice
 
 Water supply support statistics:
 
@@ -239,6 +249,12 @@ Fetch Feitsui Carlson trophic state index CSV resources:
 npm run data:fetch:ctsi
 ```
 
+Fetch sedimentation basin CSV resources:
+
+```sh
+npm run data:fetch:sedimentation-basins
+```
+
 Convert park water-safety equipment CSV resources:
 
 ```sh
@@ -261,6 +277,12 @@ Convert Feitsui Carlson trophic state index CSV resources:
 
 ```sh
 npm run data:convert:ctsi
+```
+
+Convert sedimentation basin CSV files and build summaries:
+
+```sh
+npm run data:convert:sedimentation-basins
 ```
 
 Convert all local raw data:
@@ -360,4 +382,4 @@ The browser app reads static JSON from `public/data` and does not call Taipei Op
 
 ## Disclaimer
 
-This app presents public environmental monitoring data for exploration and trend comparison. It does not represent real-time water quality, drinking-water safety judgment, pollution source attribution, operational decision quality, prediction, causation, or official enforcement basis.
+This app presents public environmental monitoring and water-infrastructure data for exploration, trend comparison, and location lookup. It does not represent real-time water quality, real-time flooding warning, drainage-capacity guarantee, drinking-water safety judgment, facility maintenance status, public-access status, engineering design parameters, pollution source attribution, operational decision quality, prediction, causation, property or insurance risk, or official enforcement basis.

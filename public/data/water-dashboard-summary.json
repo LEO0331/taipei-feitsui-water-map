@@ -4298,5 +4298,269 @@
       "duplicateYearCount": 0,
       "unknownIndicatorCount": 0
     }
+  },
+  "sedimentationBasinFacilities": {
+    "totalRecords": 67,
+    "districtCount": 8,
+    "uniquePoolCodeCount": 67,
+    "uniquePoolNameCount": 67,
+    "uniqueCustomCodeCount": 3,
+    "uniqueCoordinatePairCount": 66,
+    "recordsWithValidConvertedCoordinates": 67,
+    "recordsWithInvalidCoordinates": 0,
+    "duplicateCoordinatePairCount": 1,
+    "totalCatchmentArea": 69998.02,
+    "minCatchmentArea": 0,
+    "maxCatchmentArea": 45900,
+    "averageCatchmentArea": 1044.7465671641792,
+    "medianCatchmentArea": 120,
+    "zeroCatchmentAreaCount": 3,
+    "byDistrict": [
+      {
+        "districtName": "士林區",
+        "count": 20,
+        "totalCatchmentArea": 6191.6900000000005,
+        "averageCatchmentArea": 309.58450000000005,
+        "maxCatchmentArea": 1975,
+        "validCoordinateCount": 20
+      },
+      {
+        "districtName": "內湖區",
+        "count": 13,
+        "totalCatchmentArea": 55063.25,
+        "averageCatchmentArea": 4235.634615384615,
+        "maxCatchmentArea": 45900,
+        "validCoordinateCount": 13
+      },
+      {
+        "districtName": "文山區",
+        "count": 9,
+        "totalCatchmentArea": 5889.74,
+        "averageCatchmentArea": 654.4155555555556,
+        "maxCatchmentArea": 4040,
+        "validCoordinateCount": 9
+      },
+      {
+        "districtName": "北投區",
+        "count": 8,
+        "totalCatchmentArea": 1113.4,
+        "averageCatchmentArea": 139.175,
+        "maxCatchmentArea": 330,
+        "validCoordinateCount": 8
+      },
+      {
+        "districtName": "信義區",
+        "count": 7,
+        "totalCatchmentArea": 694,
+        "averageCatchmentArea": 99.14285714285714,
+        "maxCatchmentArea": 281.6,
+        "validCoordinateCount": 7
+      },
+      {
+        "districtName": "中山區",
+        "count": 4,
+        "totalCatchmentArea": 194,
+        "averageCatchmentArea": 48.5,
+        "maxCatchmentArea": 64,
+        "validCoordinateCount": 4
+      },
+      {
+        "districtName": "南港區",
+        "count": 4,
+        "totalCatchmentArea": 454.84000000000003,
+        "averageCatchmentArea": 113.71000000000001,
+        "maxCatchmentArea": 240,
+        "validCoordinateCount": 4
+      },
+      {
+        "districtName": "大安區",
+        "count": 2,
+        "totalCatchmentArea": 397.1,
+        "averageCatchmentArea": 198.55,
+        "maxCatchmentArea": 278.2,
+        "validCoordinateCount": 2
+      }
+    ],
+    "byCatchmentAreaCategory": [
+      {
+        "catchmentAreaCategory": "zero_or_not_reported",
+        "count": 3,
+        "totalCatchmentArea": 0
+      },
+      {
+        "catchmentAreaCategory": "small",
+        "count": 38,
+        "totalCatchmentArea": 2318.6
+      },
+      {
+        "catchmentAreaCategory": "medium",
+        "count": 22,
+        "totalCatchmentArea": 8264.42
+      },
+      {
+        "catchmentAreaCategory": "large",
+        "count": 2,
+        "totalCatchmentArea": 6015
+      },
+      {
+        "catchmentAreaCategory": "very_large",
+        "count": 2,
+        "totalCatchmentArea": 53400
+      },
+      {
+        "catchmentAreaCategory": "unknown",
+        "count": 0,
+        "totalCatchmentArea": 0
+      }
+    ],
+    "topBasinsByCatchmentArea": [
+      {
+        "poolCode": "61",
+        "poolName": "大溝溪生態治水園區(大湖山莊街243巷口)",
+        "districtName": "內湖區",
+        "catchmentArea": 45900
+      },
+      {
+        "poolCode": "62",
+        "poolName": "金瑞治水園區(內湖路3段348巷)",
+        "districtName": "內湖區",
+        "catchmentArea": 7500
+      },
+      {
+        "poolCode": "64",
+        "poolName": "憲兵營區(辛亥路4段188巷-202巷對面)",
+        "districtName": "文山區",
+        "catchmentArea": 4040
+      },
+      {
+        "poolCode": "16",
+        "poolName": "住六之六D池(建賢街富館街口)",
+        "districtName": "士林區",
+        "catchmentArea": 1975
+      },
+      {
+        "poolCode": "15",
+        "poolName": "住六之六B池(富館街底)",
+        "districtName": "士林區",
+        "catchmentArea": 912
+      },
+      {
+        "poolCode": "63",
+        "poolName": "文山運動中心北側用地(興隆路3段222號北側)",
+        "districtName": "文山區",
+        "catchmentArea": 790
+      },
+      {
+        "poolCode": "6",
+        "poolName": "猴峒坑溪(下游至善路口)",
+        "districtName": "士林區",
+        "catchmentArea": 650
+      },
+      {
+        "poolCode": "58",
+        "poolName": "康湖路大湖橋下",
+        "districtName": "內湖區",
+        "catchmentArea": 627
+      },
+      {
+        "poolCode": "53",
+        "poolName": "光輝公園(光輝路30巷旁)",
+        "districtName": "文山區",
+        "catchmentArea": 450
+      },
+      {
+        "poolCode": "17",
+        "poolName": "住六之六E池(草東街底)",
+        "districtName": "士林區",
+        "catchmentArea": 420
+      },
+      {
+        "poolCode": "4",
+        "poolName": "玉漕坑溪(中山北路7段14巷53弄2號對面)",
+        "districtName": "士林區",
+        "catchmentArea": 385.2
+      },
+      {
+        "poolCode": "14",
+        "poolName": "住六之六A池(富館街底)",
+        "districtName": "士林區",
+        "catchmentArea": 354
+      },
+      {
+        "poolCode": "18",
+        "poolName": "住六之六F池(近永公路245巷34弄50號旁)",
+        "districtName": "士林區",
+        "catchmentArea": 349
+      },
+      {
+        "poolCode": "23",
+        "poolName": "崇仰公園(三池)(公館路255巷19弄旁)",
+        "districtName": "北投區",
+        "catchmentArea": 330
+      },
+      {
+        "poolCode": "36",
+        "poolName": "內湖路3段256巷5號",
+        "districtName": "內湖區",
+        "catchmentArea": 308.91
+      },
+      {
+        "poolCode": "3",
+        "poolName": "德行東路338巷",
+        "districtName": "士林區",
+        "catchmentArea": 300
+      },
+      {
+        "poolCode": "2",
+        "poolName": "東山路25巷",
+        "districtName": "士林區",
+        "catchmentArea": 293.04
+      },
+      {
+        "poolCode": "60",
+        "poolName": "信義快速道路近文山隧道南端出口",
+        "districtName": "信義區",
+        "catchmentArea": 281.6
+      },
+      {
+        "poolCode": "46",
+        "poolName": "臥龍街(二池)(和平東路3段642號後方)",
+        "districtName": "大安區",
+        "catchmentArea": 278.2
+      },
+      {
+        "poolCode": "52",
+        "poolName": "老泉街45巷(混元宮)",
+        "districtName": "文山區",
+        "catchmentArea": 244
+      }
+    ],
+    "coordinateQuality": {
+      "validConvertedWgs84Taipei": 67,
+      "validWgs84Taipei": 0,
+      "outsideTaipeiBounds": 0,
+      "invalid": 0,
+      "missing": 0,
+      "duplicateCoordinatePairCount": 1
+    },
+    "dataQuality": {
+      "missingCustomCodeCount": 0,
+      "missingPoolCodeCount": 0,
+      "duplicatePoolCodeCount": 0,
+      "missingPoolNameCount": 0,
+      "duplicatePoolNameCount": 0,
+      "missingDistrictCount": 0,
+      "unknownDistrictCount": 0,
+      "missingSourceCoordinateXCount": 0,
+      "missingSourceCoordinateYCount": 0,
+      "invalidSourceCoordinateCount": 0,
+      "coordinateConversionFailedCount": 0,
+      "outsideTaipeiBoundsAfterConversionCount": 0,
+      "missingCatchmentAreaCount": 0,
+      "invalidCatchmentAreaCount": 0,
+      "zeroCatchmentAreaCount": 3,
+      "duplicateCoordinatePairCount": 1,
+      "duplicateFallbackKeyCount": 0
+    }
   }
 }

@@ -536,5 +536,59 @@
       "Annual CTSI rows have no coordinates, addresses, stations, or facility point fields; no geocoding or map markers are produced.",
       "CTSI summaries are source-field calculations for annual trophic-state context, not real-time water quality, drinking-water safety, pollution-source determination, or official risk scoring."
     ]
+  },
+  "sedimentationBasinFacilities": {
+    "generatedAt": "2026-07-03T07:13:08.349Z",
+    "source": "臺北市水利處沉砂池",
+    "sourceAgency": "工務局水利處",
+    "file": "沉砂池OK.csv",
+    "encoding": "UTF-8-SIG",
+    "inputRows": 67,
+    "outputRows": 67,
+    "sourceCoordinateSystem": "TWD97-TM2 zone 121 / EPSG:3826",
+    "sourceCoordinateRange": {
+      "x": {
+        "min": 297081.064,
+        "max": 312817.05
+      },
+      "y": {
+        "min": 2763453.891,
+        "max": 2781373.13
+      }
+    },
+    "convertedCoordinateRange": {
+      "longitude": {
+        "min": 121.4669166621786,
+        "max": 121.62270642678172
+      },
+      "latitude": {
+        "min": 24.977933330878884,
+        "max": 25.139761109203043
+      }
+    },
+    "dataQuality": {
+      "missingCustomCodeCount": 0,
+      "missingPoolCodeCount": 0,
+      "duplicatePoolCodeCount": 0,
+      "missingPoolNameCount": 0,
+      "duplicatePoolNameCount": 0,
+      "missingDistrictCount": 0,
+      "unknownDistrictCount": 0,
+      "missingSourceCoordinateXCount": 0,
+      "missingSourceCoordinateYCount": 0,
+      "invalidSourceCoordinateCount": 0,
+      "coordinateConversionFailedCount": 0,
+      "outsideTaipeiBoundsAfterConversionCount": 0,
+      "missingCatchmentAreaCount": 0,
+      "invalidCatchmentAreaCount": 0,
+      "zeroCatchmentAreaCount": 3,
+      "duplicateCoordinatePairCount": 1,
+      "duplicateFallbackKeyCount": 0
+    },
+    "issues": [],
+    "notes": [
+      "Source X/Y are projected coordinates and are converted to WGS84 before map display.",
+      "Points are reference locations, not facility boundaries, entrances, or public-access guidance."
+    ]
   }
 }

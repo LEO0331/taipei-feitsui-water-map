@@ -175,6 +175,9 @@
 - [x] CTSI baseline verification: `./init.sh` passed before edits.
 - [x] CTSI conversion: `npm run data:fetch:ctsi` reused 1 local CSV fallback and `npm run data:convert:ctsi` generated 14 annual records covering 2012-2025.
 - [x] CTSI tests/typecheck: `npm test` passed with 38 tests.
+- [x] Sedimentation basin conversion: uploaded UTF-8-SIG `沉砂池OK.csv` generated 67 sedimentation basin records across 8 districts; all 67 source TWD97-TM2 coordinates converted to valid WGS84 reference points, with 1 duplicate coordinate pair preserved and reported.
+- [x] Sedimentation basin verification: `npm test` passed with 40 tests; `npm run build` passed with the known Vite chunk-size warning.
+- [x] Sedimentation basin final verification: `npm run data:fetch:sedimentation-basins` reused the local uploaded CSV; full `./init.sh` passed including convert:data, 40 tests, local build, and Pages build.
 
 ## Notes for Next Session
 

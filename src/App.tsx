@@ -53,6 +53,8 @@ import RiverWaterQualityPanel from './RiverWaterQualityPanel';
 import type { RiverStationLocation, RiverWaterQualityRecord, RiverWaterQualitySummary } from './types/riverWaterQuality';
 import PumpingStationsPanel from './PumpingStationsPanel';
 import type { PumpingStation, PumpingStationSummary } from './types/pumpingStations';
+import SedimentationBasinsPanel from './SedimentationBasinsPanel';
+import type { SedimentationBasinFacilityRecord, SedimentationBasinFacilitySummary } from './types/sedimentationBasins';
 import TwcSupportPanel from './TwcSupportPanel';
 import type { TaipeiWaterSupportTwcMonthlyRecord, TaipeiWaterSupportTwcSummary } from './types/twcSupport';
 import ParkWaterSafetyPanel from './ParkWaterSafetyPanel';
@@ -64,7 +66,7 @@ import type { TapWaterBusinessKeyMetricRecord, TapWaterBusinessKeyMetricSummary 
 import CarlsonTrophicStateIndexPanel from './CarlsonTrophicStateIndexPanel';
 import type { CarlsonTrophicStateIndexRecord, CarlsonTrophicStateIndexSummary } from './types/carlsonTrophicStateIndex';
 
-type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'sedimentationBasins' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -175,6 +177,7 @@ function MonitoringTabs({
     { id: 'waterQuality', label: t.waterQuality },
     { id: 'riverWaterQuality', label: t.riverWaterQuality },
     { id: 'pumpingStations', label: t.pumpingStations },
+    { id: 'sedimentationBasins', label: t.sedimentationBasins },
     { id: 'parkWaterSafety', label: t.waterSafetyEquipment },
     { id: 'clearWaterQuality', label: t.clearWaterQuality },
     { id: 'tapWaterBusiness', label: t.waterBusinessKpis },
@@ -1190,6 +1193,8 @@ export default function App() {
   const [riverLocations, setRiverLocations] = useState<RiverStationLocation[]>([]);
   const [pumpingStations, setPumpingStations] = useState<PumpingStation[]>([]);
   const [pumpingSummary, setPumpingSummary] = useState<PumpingStationSummary | null>(null);
+  const [sedimentationBasins, setSedimentationBasins] = useState<SedimentationBasinFacilityRecord[]>([]);
+  const [sedimentationBasinSummary, setSedimentationBasinSummary] = useState<SedimentationBasinFacilitySummary | null>(null);
   const [twcSupportRecords, setTwcSupportRecords] = useState<TaipeiWaterSupportTwcMonthlyRecord[]>([]);
   const [twcSupportSummary, setTwcSupportSummary] = useState<TaipeiWaterSupportTwcSummary | null>(null);
   const [parkWaterSafetyRecords, setParkWaterSafetyRecords] = useState<ParkWaterSafetyEquipmentRecord[]>([]);
@@ -1247,6 +1252,8 @@ export default function App() {
       fetchJson<RiverStationLocation[]>('river-station-locations.json'),
       fetchJson<PumpingStation[]>('pumping-stations.json'),
       fetchJson<PumpingStationSummary>('pumping-station-summary.json'),
+      fetchJson<SedimentationBasinFacilityRecord[]>('sedimentation-basin-facilities.json'),
+      fetchJson<SedimentationBasinFacilitySummary>('sedimentation-basin-facility-summary.json'),
       fetchJson<TaipeiWaterSupportTwcMonthlyRecord[]>('taipei-water-support-twc-monthly-records.json'),
       fetchJson<TaipeiWaterSupportTwcSummary>('taipei-water-support-twc-summary.json'),
       fetchJson<ParkWaterSafetyEquipmentRecord[]>('park-water-safety-equipment-records.json'),
@@ -1257,7 +1264,7 @@ export default function App() {
       fetchJson<TapWaterBusinessKeyMetricSummary>('tap-water-business-key-metric-summary.json'),
       fetchJson<CarlsonTrophicStateIndexRecord[]>('carlson-trophic-state-index.json'),
       fetchJson<CarlsonTrophicStateIndexSummary>('carlson-trophic-state-index-summary.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData]) => {
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, sedimentationBasinData, sedimentationBasinSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
@@ -1270,6 +1277,8 @@ export default function App() {
       setRiverLocations(riverLocationData);
       setPumpingStations(pumpingStationData);
       setPumpingSummary(pumpingSummaryData);
+      setSedimentationBasins(sedimentationBasinData);
+      setSedimentationBasinSummary(sedimentationBasinSummaryData);
       setTwcSupportRecords(twcSupportRecordData);
       setTwcSupportSummary(twcSupportSummaryData);
       setParkWaterSafetyRecords(parkWaterSafetyRecordData);
@@ -1329,7 +1338,7 @@ export default function App() {
     );
   }
 
-  if (!summary || !riverSummary || !pumpingSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary) {
+  if (!summary || !riverSummary || !pumpingSummary || !sedimentationBasinSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary) {
     return <main className="loading">Loading</main>;
   }
 
@@ -1346,7 +1355,7 @@ export default function App() {
 
       <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} />
 
-      {activeTab !== 'riverWaterQuality' && activeTab !== 'pumpingStations' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && activeTab !== 'carlsonTrophicStateIndex' && (
+      {activeTab !== 'riverWaterQuality' && activeTab !== 'pumpingStations' && activeTab !== 'sedimentationBasins' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && activeTab !== 'carlsonTrophicStateIndex' && (
         <FilterPanel
           filters={filters}
           setFilters={setFilters}
@@ -1433,6 +1442,10 @@ export default function App() {
 
       {activeTab === 'pumpingStations' && (
         <PumpingStationsPanel records={pumpingStations} summary={pumpingSummary} language={language} />
+      )}
+
+      {activeTab === 'sedimentationBasins' && (
+        <SedimentationBasinsPanel records={sedimentationBasins} summary={sedimentationBasinSummary} language={language} />
       )}
 
       {activeTab === 'parkWaterSafety' && (
