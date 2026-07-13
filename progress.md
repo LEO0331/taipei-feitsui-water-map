@@ -2,8 +2,8 @@
 
 ## Current State
 
-**Last Updated:** 2026-07-02
-**Session ID:** carlson-trophic-state-index
+**Last Updated:** 2026-07-13
+**Session ID:** feitsui-operation-reports-compatibility
 **Active Feature:** none
 
 ## Status
@@ -23,6 +23,7 @@
 - [x] Taipei river-water module completed as a separate domain with four years of Big5 CSV data.
 - [x] Taipei pumping-stations module completed with local UTF-8-SIG source, TWD97-to-WGS84 conversion, map markers, filters, nearby lookup, directory, charts, and interpretation limits.
 - [x] Feitsui Carlson trophic state index module completed with annual CTSI conversion, summaries, charts, table, and no-map interpretation limits.
+- [x] Extended the existing Feitsui reservoir-operation module with canonical `feitsui_reservoir_operation_monthly_reports` outputs, yearly summaries, optional local CSV ingestion, neutral classifications, and operation-specific filters; it remains a no-marker static-data module.
 
 ### What's In Progress
 
@@ -178,6 +179,8 @@
 - [x] Sedimentation basin conversion: uploaded UTF-8-SIG `沉砂池OK.csv` generated 67 sedimentation basin records across 8 districts; all 67 source TWD97-TM2 coordinates converted to valid WGS84 reference points, with 1 duplicate coordinate pair preserved and reported.
 - [x] Sedimentation basin verification: `npm test` passed with 40 tests; `npm run build` passed with the known Vite chunk-size warning.
 - [x] Sedimentation basin final verification: `npm run data:fetch:sedimentation-basins` reused the local uploaded CSV; full `./init.sh` passed including convert:data, 40 tests, local build, and Pages build.
+
+- [x] Operation-report compatibility verification: `npm test` passed with 41 tests; `npm run data:convert:feitsui-operation-reports` generated 3,961 records across 130 periods and all canonical outputs; `npm run build`, `GITHUB_PAGES=true npm run build`, and `git diff --check` passed.
 
 ## Notes for Next Session
 

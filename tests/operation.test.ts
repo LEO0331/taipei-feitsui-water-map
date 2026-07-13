@@ -7,6 +7,7 @@ import {
   parseOperationValue,
   parsePeriodFromTitle,
 } from '../src/utils/operation';
+import { buildOperationYearlySummary } from '../scripts/buildFeitsuiReservoirOperationMonthlyReportSummary';
 import type { HydrometMonthlySummary } from '../src/types/hydromet';
 import type { OperationDailyRecord } from '../src/types/operation';
 import type { WaterQualityRecord } from '../src/types/waterQuality';
@@ -61,6 +62,18 @@ test('aggregateOperationMonthlySummary totals flows and bounds water level', () 
   assert.equal(summary.totalReservoirInflowM3, 2000);
   assert.equal(summary.totalReservoirOutflowM3, 1600);
   assert.equal(summary.highestDailyRainfallMm, 3);
+});
+
+test('buildOperationYearlySummary combines every available month without assuming a fixed range', () => {
+  const monthly = aggregateOperationMonthlySummary([
+    makeOperationRecord('2026-01-01', 2),
+    makeOperationRecord('2026-02-01', 3),
+  ]);
+  const [summary] = buildOperationYearlySummary(monthly);
+  assert.equal(summary.year, 2026);
+  assert.equal(summary.monthCount, 2);
+  assert.equal(summary.totalCatchmentRainfallMm, 5);
+  assert.equal(summary.totalReservoirInflowM3, 2000);
 });
 
 test('joinMonitoringDataByPeriod joins water with hydromet or operation context', () => {

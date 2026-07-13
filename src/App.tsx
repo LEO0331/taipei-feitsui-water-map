@@ -1216,6 +1216,13 @@ export default function App() {
   const [operationDayType, setOperationDayType] = useState<DayTypeFilter>('all');
   const [operationStartDate, setOperationStartDate] = useState('');
   const [operationEndDate, setOperationEndDate] = useState('');
+  const [operationYear, setOperationYear] = useState('');
+  const [operationMonth, setOperationMonth] = useState('');
+  const [operationRainfallCategory, setOperationRainfallCategory] = useState('');
+  const [operationNetDirection, setOperationNetDirection] = useState('');
+  const [operationWaterLevelCategory, setOperationWaterLevelCategory] = useState('');
+  const [operationMissingOnly, setOperationMissingOnly] = useState(false);
+  const [operationSearch, setOperationSearch] = useState('');
 
   const latestPeriod = useMemo(() => getLatestPeriod(records), [records]);
   const periods = useMemo(() => [...new Set([
@@ -1322,10 +1329,20 @@ export default function App() {
     : operationSummaries.at(-1)?.period ?? filters.period;
   const filteredOperationRecords = operationRecords.filter((record) => {
     if (record.period !== selectedOperationPeriod) return false;
+    if (operationYear && record.year !== Number(operationYear)) return false;
+    if (operationMonth && record.month !== Number(operationMonth)) return false;
     if (operationStartDate && record.date < operationStartDate) return false;
     if (operationEndDate && record.date > operationEndDate) return false;
     if (operationDayType === 'weekday') return record.weekday !== 0 && record.weekday !== 6;
     if (operationDayType === 'weekend') return record.weekday === 0 || record.weekday === 6;
+    if (operationRainfallCategory && record.rainfallCategory !== operationRainfallCategory) return false;
+    if (operationNetDirection && record.netStorageChangeDirection !== operationNetDirection) return false;
+    if (operationWaterLevelCategory && record.waterLevelCategory !== operationWaterLevelCategory) return false;
+    if (operationMissingOnly && !record.dataQualityFlags?.length) return false;
+    if (operationSearch) {
+      const query = operationSearch.trim().toLowerCase();
+      if (query && ![record.date, String(record.year), String(record.month), record.sourceResourceName ?? record.sourceResource].join(' ').toLowerCase().includes(query)) return false;
+    }
     return true;
   });
   const t = translations[language];
@@ -1407,6 +1424,20 @@ export default function App() {
               </select>
             </label>
             <label>
+              <span>{t.year}</span>
+              <select value={operationYear} onChange={(event) => setOperationYear(event.target.value)}>
+                <option value="">{t.all}</option>
+                {[...new Set(operationRecords.map((record) => record.year))].sort((a, b) => a - b).map((year) => <option key={year} value={year}>{year}</option>)}
+              </select>
+            </label>
+            <label>
+              <span>{t.month}</span>
+              <select value={operationMonth} onChange={(event) => setOperationMonth(event.target.value)}>
+                <option value="">{t.all}</option>
+                {Array.from({ length: 12 }, (_, index) => index + 1).map((month) => <option key={month} value={month}>{month}</option>)}
+              </select>
+            </label>
+            <label>
               <span>{t.startDate}</span>
               <input
                 value={hydrometStartDate}
@@ -1425,6 +1456,32 @@ export default function App() {
                 pattern="\\d{4}-\\d{2}-\\d{2}"
                 placeholder="YYYY-MM-DD"
               />
+            </label>
+            <label>
+              <span>Rainfall category</span>
+              <select value={operationRainfallCategory} onChange={(event) => setOperationRainfallCategory(event.target.value)}>
+                <option value="">{t.all}</option><option value="none">None</option><option value="light">Light</option><option value="moderate">Moderate</option><option value="heavy">Heavy</option><option value="unknown">Unknown</option>
+              </select>
+            </label>
+            <label>
+              <span>Net storage direction</span>
+              <select value={operationNetDirection} onChange={(event) => setOperationNetDirection(event.target.value)}>
+                <option value="">{t.all}</option><option value="positive">Positive</option><option value="negative">Negative</option><option value="neutral">Neutral</option><option value="unknown">Unknown</option>
+              </select>
+            </label>
+            <label>
+              <span>Water-level category</span>
+              <select value={operationWaterLevelCategory} onChange={(event) => setOperationWaterLevelCategory(event.target.value)}>
+                <option value="">{t.all}</option><option value="low">Low</option><option value="normal">Normal</option><option value="high">High</option><option value="unknown">Unknown</option>
+              </select>
+            </label>
+            <label>
+              <span>{t.searchPlaceholder}</span>
+              <input value={operationSearch} onChange={(event) => setOperationSearch(event.target.value)} />
+            </label>
+            <label>
+              <span>Missing values</span>
+              <input type="checkbox" checked={operationMissingOnly} onChange={(event) => setOperationMissingOnly(event.target.checked)} />
             </label>
           </section>
           <HydrometDashboard

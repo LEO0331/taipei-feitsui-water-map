@@ -12,6 +12,7 @@
     "fetch:water": "tsx scripts/fetchFeitsuiWaterResources.ts",
     "fetch:hydromet": "tsx scripts/fetchFeitsuiHydrometResources.ts",
     "fetch:operation": "tsx scripts/fetchFeitsuiOperationResources.ts",
+    "data:fetch:feitsui-operation-reports": "tsx scripts/fetchFeitsuiOperationResources.ts",
     "data:fetch:river-water": "tsx scripts/fetchRiverWaterQuality.ts",
     "data:fetch:pumping-stations": "tsx scripts/fetchPumpingStations.ts",
     "data:fetch:twc-support": "tsx scripts/fetchTaipeiWaterSupportTwcMonthlyStatistics.ts",
@@ -31,8 +32,9 @@
     "convert:water": "tsx scripts/convertFeitsuiWaterQuality.ts",
     "convert:hydromet": "tsx scripts/convertFeitsuiHydromet.ts",
     "convert:operation": "tsx scripts/convertFeitsuiOperation.ts",
+    "data:convert:feitsui-operation-reports": "tsx scripts/convertFeitsuiOperation.ts && tsx scripts/buildFeitsuiReservoirOperationMonthlyReportSummary.ts",
     "data:convert:river-water": "tsx scripts/convertRiverWaterQuality.ts && tsx scripts/buildRiverWaterQualitySummary.ts",
-    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run convert:operation && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts && npm run data:convert:twc-support && npm run data:convert:park-water-safety && npm run data:convert:clear-water-quality && npm run data:convert:tap-water-business && npm run data:convert:ctsi && npm run data:convert:sedimentation-basins"
+    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run data:convert:feitsui-operation-reports && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts && npm run data:convert:twc-support && npm run data:convert:park-water-safety && npm run data:convert:clear-water-quality && npm run data:convert:tap-water-business && npm run data:convert:ctsi && npm run data:convert:sedimentation-basins"
   },
   "dependencies": {
     "@types/proj4": "^2.5.6",

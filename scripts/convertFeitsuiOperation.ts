@@ -14,6 +14,7 @@ import type { OperationDailyRecord, OperationParameterKey } from '../src/types/o
 
 const root = process.cwd();
 const rawDir = path.join(root, 'data/raw/feitsui-operation');
+const csvRawDir = path.join(root, 'data/raw/feitsui-reservoir-operation-monthly-reports');
 const publicDataDir = path.join(root, 'public/data');
 
 function resolveValue(row: Record<string, unknown>, candidates: string[]): unknown {
@@ -30,6 +31,61 @@ function resolveValue(row: Record<string, unknown>, candidates: string[]): unkno
 
 function resolveDate(row: Record<string, unknown>): string {
   return String(resolveValue(row, ['日期', 'date']));
+}
+
+function parseCsv(text: string): Record<string, string>[] {
+  const rows: string[][] = [];
+  let row: string[] = [];
+  let field = '';
+  let quoted = false;
+  for (let index = 0; index < text.length; index += 1) {
+    const char = text[index];
+    if (char === '"') {
+      if (quoted && text[index + 1] === '"') {
+        field += '"';
+        index += 1;
+      } else quoted = !quoted;
+    } else if (char === ',' && !quoted) {
+      row.push(field.trim()); field = '';
+    } else if ((char === '\n' || char === '\r') && !quoted) {
+      if (char === '\r' && text[index + 1] === '\n') index += 1;
+      row.push(field.trim()); field = '';
+      if (row.some((item) => item)) rows.push(row);
+      row = [];
+    } else field += char;
+  }
+  row.push(field.trim());
+  if (row.some((item) => item)) rows.push(row);
+  const [headers = [], ...body] = rows;
+  return body.map((values) => Object.fromEntries(headers.map((header, index) => [header.trim(), values[index]?.trim() ?? ''])));
+}
+
+function decodeCsv(buffer: Buffer): string {
+  const utf8 = new TextDecoder('utf-8', { fatal: false }).decode(buffer).replace(/^\uFEFF/, '');
+  // Replacement characters are strong evidence that a legacy Big5/CP950 export was supplied.
+  return utf8.includes('\uFFFD') ? new TextDecoder('big5').decode(buffer).replace(/^\uFEFF/, '') : utf8;
+}
+
+function enrichRecord(record: OperationDailyRecord, sourceResourceYearMonth: string | null): OperationDailyRecord {
+  const rainfall = record.values.catchmentAverageRainfallMm.value;
+  const waterLevel = record.values.dailyAverageWaterLevelM.value;
+  const net = record.values.inflowMinusOutflowM3.value;
+  const missing = Object.entries(record.values).filter(([, item]) => item.value === null).map(([key]) => key);
+  return {
+    ...record,
+    sourceResourceName: record.sourceResource,
+    sourceResourceYearMonth,
+    storageCubicMeters: record.values.effectiveStorageMillionM3.value === null ? null : record.values.effectiveStorageMillionM3.value * 1_000_000,
+    storageBillionCubicMeters: record.values.effectiveStorageMillionM3.value === null ? null : record.values.effectiveStorageMillionM3.value / 1_000,
+    inflowMillionCubicMeters: record.values.reservoirInflowM3.value === null ? null : record.values.reservoirInflowM3.value / 1_000_000,
+    releaseMillionCubicMeters: record.values.reservoirOutflowM3.value === null ? null : record.values.reservoirOutflowM3.value / 1_000_000,
+    inflowMinusReleaseMillionCubicMeters: net === null ? null : net / 1_000_000,
+    netStorageChangeDirection: net === null ? 'unknown' : net > 0 ? 'positive' : net < 0 ? 'negative' : 'neutral',
+    rainfallCategory: rainfall === null ? 'unknown' : rainfall === 0 ? 'none' : rainfall < 10 ? 'light' : rainfall < 50 ? 'moderate' : 'heavy',
+    // The source has no official water-level thresholds. These neutral bands support filtering only.
+    waterLevelCategory: waterLevel === null ? 'unknown' : waterLevel < 160 ? 'low' : waterLevel >= 170 ? 'high' : 'normal',
+    dataQualityFlags: missing.map((key) => `missing:${key}`),
+  };
 }
 
 function rowToRecord(
@@ -54,7 +110,7 @@ function rowToRecord(
     });
   }
 
-  return {
+  return enrichRecord({
     id: `${date}-${sourceResource}-${index}`,
     date,
     year,
@@ -73,7 +129,7 @@ function rowToRecord(
       combinedRawWaterM3: parseOperationValue(resolveValue(row, operationColumnMap.combinedRawWaterM3)),
     },
     sourceResource,
-  };
+  }, fallbackPeriod);
 }
 
 function buildParameterSeries(records: OperationDailyRecord[]) {
@@ -111,6 +167,25 @@ async function main() {
     }
   }
 
+  try {
+    const csvFiles = (await readdir(csvRawDir)).filter((file) => file.toLowerCase().endsWith('.csv'));
+    for (const file of csvFiles) {
+      try {
+        const sourceResource = file;
+        const fallbackPeriod = parsePeriodFromTitle(file);
+        const rows = parseCsv(decodeCsv(await readFile(path.join(csvRawDir, file))));
+        for (const [index, row] of rows.entries()) {
+          const record = rowToRecord(row, sourceResource, fallbackPeriod, index, issues);
+          if (record) records.push(record);
+        }
+      } catch (error) {
+        issues.push({ file, message: error instanceof Error ? error.message : String(error) });
+      }
+    }
+  } catch {
+    // Local CSV ingestion is optional; the API JSON raw directory remains the established default.
+  }
+
   records.sort((a, b) => a.date.localeCompare(b.date));
   const monthlySummary = aggregateOperationMonthlySummary(records);
   const report = {
@@ -118,6 +193,10 @@ async function main() {
     rawDirectory: rawDir,
     recordCount: records.length,
     periods: monthlySummary.map((summary) => summary.period),
+    notes: [
+      'Reads API JSON resources and optional manually placed UTF-8-SIG or Big5/CP950-compatible CSV files.',
+      'Water-level categories are neutral exploration bands only; they are not official thresholds or drought/flood determinations.',
+    ],
     issues,
   };
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'feitsui-water-map-v2';
+const CACHE_NAME = 'feitsui-water-map-v3';
 const scope = self.registration.scope;
 const STATIC_ASSETS = [
   '',
@@ -14,6 +14,10 @@ const STATIC_ASSETS = [
   'data/operation-daily-records.json',
   'data/operation-monthly-summary.json',
   'data/operation-parameter-series.json',
+  'data/feitsui-reservoir-operation-monthly-reports/records.json',
+  'data/feitsui-reservoir-operation-monthly-reports/summary.json',
+  'data/feitsui-reservoir-operation-monthly-reports/monthly-summary.json',
+  'data/feitsui-reservoir-operation-monthly-reports/yearly-summary.json',
   'data/river-water-quality-records.json',
   'data/river-water-quality-summary.json',
   'data/water-dashboard-summary.json',

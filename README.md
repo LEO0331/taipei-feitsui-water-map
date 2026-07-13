@@ -25,6 +25,9 @@ Reservoir operation:
 - Taipei Open Data page: `https://data.taipei/dataset/detail?id=e6189636-9972-4c65-8a8b-5607a867c6be`
 - Recent known API resources are seeded in `data/raw/feitsui-operation/manual-resources.json`
 - Raw JSON directory: `data/raw/feitsui-operation/`
+- Module key: `feitsui_reservoir_operation_monthly_reports`
+- Optional manually placed CSV directory: `data/raw/feitsui-reservoir-operation-monthly-reports/` (UTF-8-SIG, Big5, and CP950-compatible Big5 decoding)
+- This is a static operation and hydrology exploration module. It has no map markers and does not represent real-time reservoir conditions, drought/flood status, water-supply decisions, or water-quality/safety judgments.
 
 River water quality:
 
@@ -207,6 +210,12 @@ Convert local operation API JSON:
 npm run convert:operation
 ```
 
+Convert the operation module with its canonical report outputs (including local CSV files when present):
+
+```sh
+npm run data:convert:feitsui-operation-reports
+```
+
 Convert local river-water CSV files and build summaries:
 
 ```sh
@@ -338,6 +347,10 @@ Reservoir operation:
 - `public/data/operation-monthly-summary.json`
 - `public/data/operation-parameter-series.json`
 - `public/data/operation-conversion-report.json`
+- `public/data/feitsui-reservoir-operation-monthly-reports/records.json`
+- `public/data/feitsui-reservoir-operation-monthly-reports/summary.json`
+- `public/data/feitsui-reservoir-operation-monthly-reports/monthly-summary.json`
+- `public/data/feitsui-reservoir-operation-monthly-reports/yearly-summary.json`
 
 River water quality:
 

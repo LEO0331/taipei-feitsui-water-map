@@ -24,6 +24,17 @@ export type OperationDailyRecord = {
   period: string;
   values: Record<OperationParameterKey, OperationValue>;
   sourceResource: string;
+  sourceResourceName?: string;
+  sourceResourceYearMonth?: string | null;
+  storageCubicMeters?: number | null;
+  storageBillionCubicMeters?: number | null;
+  inflowMillionCubicMeters?: number | null;
+  releaseMillionCubicMeters?: number | null;
+  inflowMinusReleaseMillionCubicMeters?: number | null;
+  netStorageChangeDirection?: 'positive' | 'negative' | 'neutral' | 'unknown';
+  rainfallCategory?: 'none' | 'light' | 'moderate' | 'heavy' | 'unknown';
+  waterLevelCategory?: 'low' | 'normal' | 'high' | 'unknown';
+  dataQualityFlags?: string[];
 };
 
 export type OperationMonthlySummary = {
@@ -52,4 +63,16 @@ export type OperationParameterSeriesPoint = {
   period: string;
   parameter: OperationParameterKey;
   value: number | null;
+};
+
+export type OperationYearlySummary = {
+  year: number;
+  monthCount: number;
+  dayCount: number;
+  avgWaterLevelM: number | null;
+  avgEffectiveStorageMillionM3: number | null;
+  totalCatchmentRainfallMm: number | null;
+  totalReservoirInflowM3: number | null;
+  totalReservoirOutflowM3: number | null;
+  totalInflowMinusOutflowM3: number | null;
 };

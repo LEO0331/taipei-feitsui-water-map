@@ -143,6 +143,14 @@
       "dependencies": ["feat-001", "feat-012"],
       "status": "done",
       "evidence": "Converted uploaded UTF-8-SIG 沉砂池OK.csv into 67 sedimentation basin records across 8 districts; all 67 source TWD97-TM2 coordinates converted to valid WGS84 reference points, with 1 duplicate coordinate pair preserved and reported. Added static records, summary, conversion report, dashboard/report integration, bilingual tab, map, filters, charts, directory, PWA cache entries, README notes, and regression tests. npm test passed with 40 tests; npm run build passed."
+    },
+    {
+      "id": "feat-019",
+      "name": "Feitsui Reservoir Operation Monthly Reports Compatibility",
+      "description": "Extend the existing Feitsui operation module with canonical module-key outputs, optional multi-file CSV ingestion, yearly summaries, derived neutral classifications, and operation-specific filters while retaining the existing no-marker dashboard.",
+      "dependencies": ["feat-010"],
+      "status": "done",
+      "evidence": "Verified the existing operation module before extension. npm test passed with 41 tests; operation conversion generated 3,961 daily records across 130 periods and canonical records, summary, monthly-summary, and yearly-summary outputs; local and GitHub Pages builds passed."
     }
   ]
 }

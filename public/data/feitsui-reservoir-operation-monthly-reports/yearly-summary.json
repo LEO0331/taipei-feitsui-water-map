@@ -1,0 +1,134 @@
+[
+  {
+    "year": 2015,
+    "monthCount": 6,
+    "dayCount": 184,
+    "avgWaterLevelM": 163.77498745519713,
+    "avgEffectiveStorageMillionM3": 280.1930191756273,
+    "totalCatchmentRainfallMm": 2734.1000000000004,
+    "totalReservoirInflowM3": 773506456,
+    "totalReservoirOutflowM3": 707835456,
+    "totalInflowMinusOutflowM3": 65671000
+  },
+  {
+    "year": 2016,
+    "monthCount": 12,
+    "dayCount": 366,
+    "avgWaterLevelM": 164.02891020887404,
+    "avgEffectiveStorageMillionM3": 282.43384135459155,
+    "totalCatchmentRainfallMm": 4387.299999999999,
+    "totalReservoirInflowM3": 1245469308,
+    "totalReservoirOutflowM3": 1251313308,
+    "totalInflowMinusOutflowM3": -5844000
+  },
+  {
+    "year": 2017,
+    "monthCount": 12,
+    "dayCount": 365,
+    "avgWaterLevelM": 162.93541097030212,
+    "avgEffectiveStorageMillionM3": 273.25264673579113,
+    "totalCatchmentRainfallMm": 3586.5999999999995,
+    "totalReservoirInflowM3": 965401080,
+    "totalReservoirOutflowM3": 966538080,
+    "totalInflowMinusOutflowM3": -1137000
+  },
+  {
+    "year": 2018,
+    "monthCount": 12,
+    "dayCount": 365,
+    "avgWaterLevelM": 160.18330062724013,
+    "avgEffectiveStorageMillionM3": 251.8266940540195,
+    "totalCatchmentRainfallMm": 3496.7000000000003,
+    "totalReservoirInflowM3": 864332428,
+    "totalReservoirOutflowM3": 855490428,
+    "totalInflowMinusOutflowM3": 8842000
+  },
+  {
+    "year": 2019,
+    "monthCount": 12,
+    "dayCount": 365,
+    "avgWaterLevelM": 162.33169540450584,
+    "avgEffectiveStorageMillionM3": 268.00508867767536,
+    "totalCatchmentRainfallMm": 3341.3,
+    "totalReservoirInflowM3": 849533880,
+    "totalReservoirOutflowM3": 853700076,
+    "totalInflowMinusOutflowM3": -4166196
+  },
+  {
+    "year": 2020,
+    "monthCount": 12,
+    "dayCount": 366,
+    "avgWaterLevelM": 160.03832248794956,
+    "avgEffectiveStorageMillionM3": 250.79190609318997,
+    "totalCatchmentRainfallMm": 3007.3999999999996,
+    "totalReservoirInflowM3": 755735220,
+    "totalReservoirOutflowM3": 745025220,
+    "totalInflowMinusOutflowM3": 10710000
+  },
+  {
+    "year": 2021,
+    "monthCount": 12,
+    "dayCount": 365,
+    "avgWaterLevelM": 164.4693234126984,
+    "avgEffectiveStorageMillionM3": 286.4136028353815,
+    "totalCatchmentRainfallMm": 3433.7999999999993,
+    "totalReservoirInflowM3": 849229918,
+    "totalReservoirOutflowM3": 850647924,
+    "totalInflowMinusOutflowM3": -1418006
+  },
+  {
+    "year": 2022,
+    "monthCount": 12,
+    "dayCount": 365,
+    "avgWaterLevelM": 165.64402483358938,
+    "avgEffectiveStorageMillionM3": 296.4911175243215,
+    "totalCatchmentRainfallMm": 4960.599999999999,
+    "totalReservoirInflowM3": 1360960382,
+    "totalReservoirOutflowM3": 1375590852,
+    "totalInflowMinusOutflowM3": -14630470
+  },
+  {
+    "year": 2023,
+    "monthCount": 12,
+    "dayCount": 365,
+    "avgWaterLevelM": 161.65505037122375,
+    "avgEffectiveStorageMillionM3": 263.212146281362,
+    "totalCatchmentRainfallMm": 2729.5000000000005,
+    "totalReservoirInflowM3": 660807200,
+    "totalReservoirOutflowM3": 652885200,
+    "totalInflowMinusOutflowM3": 7922000
+  },
+  {
+    "year": 2024,
+    "monthCount": 12,
+    "dayCount": 366,
+    "avgWaterLevelM": 161.50837791991097,
+    "avgEffectiveStorageMillionM3": 296.2282033524904,
+    "totalCatchmentRainfallMm": 3670.3999999999996,
+    "totalReservoirInflowM3": 951361770,
+    "totalReservoirOutflowM3": 949001760,
+    "totalInflowMinusOutflowM3": 2360010
+  },
+  {
+    "year": 2025,
+    "monthCount": 12,
+    "dayCount": 368,
+    "avgWaterLevelM": 162.74249650612933,
+    "avgEffectiveStorageMillionM3": 306.66312340818047,
+    "totalCatchmentRainfallMm": 3814.7000000000003,
+    "totalReservoirInflowM3": 957992000,
+    "totalReservoirOutflowM3": 954810000,
+    "totalInflowMinusOutflowM3": 3182000
+  },
+  {
+    "year": 2026,
+    "monthCount": 4,
+    "dayCount": 121,
+    "avgWaterLevelM": 166.72919820468508,
+    "avgEffectiveStorageMillionM3": 340.31330159130187,
+    "totalCatchmentRainfallMm": 627.0999999999999,
+    "totalReservoirInflowM3": 181220780,
+    "totalReservoirOutflowM3": 212376780,
+    "totalInflowMinusOutflowM3": -31156000
+  }
+]

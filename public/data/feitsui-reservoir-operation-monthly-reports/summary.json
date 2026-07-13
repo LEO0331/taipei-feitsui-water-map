@@ -1,0 +1,11 @@
+{
+  "moduleKey": "feitsui_reservoir_operation_monthly_reports",
+  "recordCount": 3961,
+  "dateRange": {
+    "start": "2015-07-01",
+    "end": "2026-04-30"
+  },
+  "latestAvailableDate": "2026-04-30",
+  "monthCount": 130,
+  "yearCount": 12
+}
