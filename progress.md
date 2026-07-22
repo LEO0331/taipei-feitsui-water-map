@@ -181,6 +181,7 @@
 - [x] Sedimentation basin final verification: `npm run data:fetch:sedimentation-basins` reused the local uploaded CSV; full `./init.sh` passed including convert:data, 40 tests, local build, and Pages build.
 
 - [x] Operation-report compatibility verification: `npm test` passed with 41 tests; `npm run data:convert:feitsui-operation-reports` generated 3,961 records across 130 periods and all canonical outputs; `npm run build`, `GITHUB_PAGES=true npm run build`, and `git diff --check` passed.
+- [x] Reservoir sedimentation surveys: normalized 39 official Feitsui survey rows (initial capacity through ROC 114 / 2025) to local static JSON. Added a standalone no-marker dashboard with filters, metric switching, charts, pagination, filtered CSV export, source/derived separation, and data-quality notes. `npm test` passed with 42 tests; `npm run build` passed with the existing chunk-size warning. `init.sh` is unavailable in this Windows session because the Bash service is access-denied; equivalent npm commands were used.
 
 ## Notes for Next Session
 

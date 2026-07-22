@@ -1,0 +1,11 @@
+{
+  "officialDataset": "臺北翡翠水庫淤積調查報告",
+  "datasetUrl": "https://data.taipei/dataset/detail?id=8c4511a5-ea23-4978-b448-8cc91cdfe842",
+  "checkedAt": "2026-07-22",
+  "sourceUnit": "thousand cubic metres",
+  "recordCount": 39,
+  "notes": [
+    "Source values are preserved in sourceValues.",
+    "This survey dataset is separate from operational storage data and has no map markers."
+  ]
+}

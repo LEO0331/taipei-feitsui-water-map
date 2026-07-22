@@ -3,10 +3,10 @@ import L from 'leaflet';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import type { Language } from './data/i18n';
+import { localize as text } from './utils/presentation';
 import type { ParkWaterSafetyEquipmentRecord, ParkWaterSafetyEquipmentSummary, ParkWaterSafetyFacilityCategory } from './types/parkWaterSafety';
 
 const icon = L.divIcon({ className: 'station-marker safety-marker', html: '<span></span>', iconSize: [24, 24], iconAnchor: [12, 12] });
-const text = (language: Language, zh: string, en: string) => language === 'zh' ? zh : en;
 const labels: Record<Language, Record<ParkWaterSafetyFacilityCategory, string>> = {
   zh: { water_safety_sign: '水域安全告示牌', lifebuoy: '救生圈', lifesaving_equipment: '救生設備', rescue_rope: '救生繩', rescue_pole: '救生竿', combined_sign_and_equipment: '告示牌與救生設備', other: '其他', unknown: '未知' },
   en: { water_safety_sign: 'Water-safety sign', lifebuoy: 'Lifebuoy', lifesaving_equipment: 'Lifesaving equipment', rescue_rope: 'Rescue rope', rescue_pole: 'Rescue pole', combined_sign_and_equipment: 'Sign & equipment', other: 'Other', unknown: 'Unknown' },

@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import type { Language } from './data/i18n';
+import { localize as text } from './utils/presentation';
 import type { ClearWaterQualitySiteType, TreatmentPlantClearWaterQualityRecord, TreatmentPlantClearWaterQualitySummary, WaterQualityStandardComparison, WaterQualityTestItemCategory } from './types/clearWaterQuality';
 
-const text = (language: Language, zh: string, en: string) => language === 'zh' ? zh : en;
 const fmt = (value?: number, digits = 2) => value === undefined ? '-' : value.toLocaleString(undefined, { maximumFractionDigits: digits });
 const categoryLabels: Record<Language, Record<WaterQualityTestItemCategory, string>> = {
   zh: { physical: '物理性質', chemical_general: '一般化學', disinfection: '消毒與副產物', microbiological: '微生物', organic: '有機物', metal: '金屬', volatile_organic_compound: '揮發性有機物', pesticide: '農藥相關', other: '其他', unknown: '未知' },

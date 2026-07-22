@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import type { Language } from './data/i18n';
+import { localize as text } from './utils/presentation';
 import type { TapWaterBusinessKeyMetricRecord, TapWaterBusinessKeyMetricSummary } from './types/tapWaterBusiness';
 
-const text = (language: Language, zh: string, en: string) => language === 'zh' ? zh : en;
 const fmt = (value?: number, digits = 0) => value === undefined ? '-' : value.toLocaleString(undefined, { maximumFractionDigits: digits });
 const pct = (value?: number) => value === undefined ? '-' : `${fmt(value, 1)}%`;
 const money = (language: Language, value?: number) => value === undefined ? '-' : `${fmt(value / 1000, 1)} ${text(language, '百萬元', 'million NTD')}`;

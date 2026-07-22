@@ -3,10 +3,10 @@ import L from 'leaflet';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import type { Language } from './data/i18n';
+import { localize as text } from './utils/presentation';
 import type { PumpingStation, PumpingStationSummary } from './types/pumpingStations';
 
 const icon = L.divIcon({ className: 'station-marker', html: '<span>💧</span>', iconSize: [24, 24], iconAnchor: [12, 12] });
-const text = (language: Language, zh: string, en: string) => language === 'zh' ? zh : en;
 const notice = (language: Language) => text(language, '抽水站資料為臺北市水利處公開之設施位置與基本資料，僅供水利設施分布、河系與行政區探索使用，不代表即時抽水狀態、設備容量、現場開放情形、防洪效果、淹水風險或緊急應變指示。即時水情、防汛資訊與緊急指示請以主管機關正式公告與官方系統為準。', "Pumping station data is public facility-location and basic-information data from Taipei's Hydraulic Engineering Office. It is provided for exploring water-infrastructure distribution, river systems, and districts only. It does not represent real-time pumping status, equipment capacity, site access, flood-control effectiveness, flood risk, or emergency instructions. Real-time information must be verified through official systems.");
 
 export default function PumpingStationsPanel({ records, summary, language }: { records: PumpingStation[]; summary: PumpingStationSummary; language: Language }) {

@@ -65,8 +65,10 @@ import TapWaterBusinessPanel from './TapWaterBusinessPanel';
 import type { TapWaterBusinessKeyMetricRecord, TapWaterBusinessKeyMetricSummary } from './types/tapWaterBusiness';
 import CarlsonTrophicStateIndexPanel from './CarlsonTrophicStateIndexPanel';
 import type { CarlsonTrophicStateIndexRecord, CarlsonTrophicStateIndexSummary } from './types/carlsonTrophicStateIndex';
+import ReservoirSedimentationSurveysPanel from './ReservoirSedimentationSurveysPanel';
+import type { ReservoirSedimentationSurveyRecord, ReservoirSedimentationSurveySummary } from './types/reservoirSedimentationSurvey';
 
-type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'sedimentationBasins' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -178,6 +180,7 @@ function MonitoringTabs({
     { id: 'riverWaterQuality', label: t.riverWaterQuality },
     { id: 'pumpingStations', label: t.pumpingStations },
     { id: 'sedimentationBasins', label: t.sedimentationBasins },
+    { id: 'reservoirSedimentationSurveys', label: language === 'zh' ? '翡翠水庫淤積調查' : 'Reservoir Sedimentation Surveys' },
     { id: 'parkWaterSafety', label: t.waterSafetyEquipment },
     { id: 'clearWaterQuality', label: t.clearWaterQuality },
     { id: 'tapWaterBusiness', label: t.waterBusinessKpis },
@@ -1205,6 +1208,8 @@ export default function App() {
   const [tapWaterBusinessSummary, setTapWaterBusinessSummary] = useState<TapWaterBusinessKeyMetricSummary | null>(null);
   const [ctsiRecords, setCtsiRecords] = useState<CarlsonTrophicStateIndexRecord[]>([]);
   const [ctsiSummary, setCtsiSummary] = useState<CarlsonTrophicStateIndexSummary | null>(null);
+  const [sedimentationSurveyRecords, setSedimentationSurveyRecords] = useState<ReservoirSedimentationSurveyRecord[]>([]);
+  const [sedimentationSurveySummary, setSedimentationSurveySummary] = useState<ReservoirSedimentationSurveySummary | null>(null);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
@@ -1271,7 +1276,9 @@ export default function App() {
       fetchJson<TapWaterBusinessKeyMetricSummary>('tap-water-business-key-metric-summary.json'),
       fetchJson<CarlsonTrophicStateIndexRecord[]>('carlson-trophic-state-index.json'),
       fetchJson<CarlsonTrophicStateIndexSummary>('carlson-trophic-state-index-summary.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, sedimentationBasinData, sedimentationBasinSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData]) => {
+      fetchJson<ReservoirSedimentationSurveyRecord[]>('reservoir-sedimentation-surveys/records.json'),
+      fetchJson<ReservoirSedimentationSurveySummary>('reservoir-sedimentation-surveys/summary.json'),
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, sedimentationBasinData, sedimentationBasinSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData, sedimentationSurveyData, sedimentationSurveySummaryData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
@@ -1296,6 +1303,8 @@ export default function App() {
       setTapWaterBusinessSummary(tapWaterBusinessSummaryData);
       setCtsiRecords(ctsiRecordData);
       setCtsiSummary(ctsiSummaryData);
+      setSedimentationSurveyRecords(sedimentationSurveyData);
+      setSedimentationSurveySummary(sedimentationSurveySummaryData);
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
@@ -1355,7 +1364,7 @@ export default function App() {
     );
   }
 
-  if (!summary || !riverSummary || !pumpingSummary || !sedimentationBasinSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary) {
+  if (!summary || !riverSummary || !pumpingSummary || !sedimentationBasinSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary || !sedimentationSurveySummary) {
     return <main className="loading">Loading</main>;
   }
 
@@ -1424,20 +1433,6 @@ export default function App() {
               </select>
             </label>
             <label>
-              <span>{t.year}</span>
-              <select value={operationYear} onChange={(event) => setOperationYear(event.target.value)}>
-                <option value="">{t.all}</option>
-                {[...new Set(operationRecords.map((record) => record.year))].sort((a, b) => a - b).map((year) => <option key={year} value={year}>{year}</option>)}
-              </select>
-            </label>
-            <label>
-              <span>{t.month}</span>
-              <select value={operationMonth} onChange={(event) => setOperationMonth(event.target.value)}>
-                <option value="">{t.all}</option>
-                {Array.from({ length: 12 }, (_, index) => index + 1).map((month) => <option key={month} value={month}>{month}</option>)}
-              </select>
-            </label>
-            <label>
               <span>{t.startDate}</span>
               <input
                 value={hydrometStartDate}
@@ -1456,32 +1451,6 @@ export default function App() {
                 pattern="\\d{4}-\\d{2}-\\d{2}"
                 placeholder="YYYY-MM-DD"
               />
-            </label>
-            <label>
-              <span>Rainfall category</span>
-              <select value={operationRainfallCategory} onChange={(event) => setOperationRainfallCategory(event.target.value)}>
-                <option value="">{t.all}</option><option value="none">None</option><option value="light">Light</option><option value="moderate">Moderate</option><option value="heavy">Heavy</option><option value="unknown">Unknown</option>
-              </select>
-            </label>
-            <label>
-              <span>Net storage direction</span>
-              <select value={operationNetDirection} onChange={(event) => setOperationNetDirection(event.target.value)}>
-                <option value="">{t.all}</option><option value="positive">Positive</option><option value="negative">Negative</option><option value="neutral">Neutral</option><option value="unknown">Unknown</option>
-              </select>
-            </label>
-            <label>
-              <span>Water-level category</span>
-              <select value={operationWaterLevelCategory} onChange={(event) => setOperationWaterLevelCategory(event.target.value)}>
-                <option value="">{t.all}</option><option value="low">Low</option><option value="normal">Normal</option><option value="high">High</option><option value="unknown">Unknown</option>
-              </select>
-            </label>
-            <label>
-              <span>{t.searchPlaceholder}</span>
-              <input value={operationSearch} onChange={(event) => setOperationSearch(event.target.value)} />
-            </label>
-            <label>
-              <span>Missing values</span>
-              <input type="checkbox" checked={operationMissingOnly} onChange={(event) => setOperationMissingOnly(event.target.checked)} />
             </label>
           </section>
           <HydrometDashboard
@@ -1503,6 +1472,10 @@ export default function App() {
 
       {activeTab === 'sedimentationBasins' && (
         <SedimentationBasinsPanel records={sedimentationBasins} summary={sedimentationBasinSummary} language={language} />
+      )}
+
+      {activeTab === 'reservoirSedimentationSurveys' && (
+        <ReservoirSedimentationSurveysPanel records={sedimentationSurveyRecords} summary={sedimentationSurveySummary} language={language} />
       )}
 
       {activeTab === 'parkWaterSafety' && (
@@ -1544,6 +1517,13 @@ export default function App() {
                 <option value="weekend">{t.weekends}</option>
               </select>
             </label>
+            <label><span>{t.year}</span><select value={operationYear} onChange={(event) => setOperationYear(event.target.value)}><option value="">{t.all}</option>{[...new Set(operationRecords.map((record) => record.year))].sort((a, b) => a - b).map((year) => <option key={year} value={year}>{year}</option>)}</select></label>
+            <label><span>{t.month}</span><select value={operationMonth} onChange={(event) => setOperationMonth(event.target.value)}><option value="">{t.all}</option>{Array.from({ length: 12 }, (_, index) => index + 1).map((month) => <option key={month} value={month}>{month}</option>)}</select></label>
+            <label><span>Rainfall category</span><select value={operationRainfallCategory} onChange={(event) => setOperationRainfallCategory(event.target.value)}><option value="">{t.all}</option><option value="none">None</option><option value="light">Light</option><option value="moderate">Moderate</option><option value="heavy">Heavy</option><option value="unknown">Unknown</option></select></label>
+            <label><span>Net storage direction</span><select value={operationNetDirection} onChange={(event) => setOperationNetDirection(event.target.value)}><option value="">{t.all}</option><option value="positive">Positive</option><option value="negative">Negative</option><option value="neutral">Neutral</option><option value="unknown">Unknown</option></select></label>
+            <label><span>Water-level category</span><select value={operationWaterLevelCategory} onChange={(event) => setOperationWaterLevelCategory(event.target.value)}><option value="">{t.all}</option><option value="low">Low</option><option value="normal">Normal</option><option value="high">High</option><option value="unknown">Unknown</option></select></label>
+            <label><span>{t.searchPlaceholder}</span><input value={operationSearch} onChange={(event) => setOperationSearch(event.target.value)} /></label>
+            <label><span>Missing values</span><input type="checkbox" checked={operationMissingOnly} onChange={(event) => setOperationMissingOnly(event.target.checked)} /></label>
             <label>
               <span>{t.startDate}</span>
               <input

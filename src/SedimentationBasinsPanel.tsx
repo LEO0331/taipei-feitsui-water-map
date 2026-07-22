@@ -3,10 +3,10 @@ import L from 'leaflet';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import type { Language } from './data/i18n';
+import { localize as text } from './utils/presentation';
 import type { SedimentationBasinCatchmentAreaCategory, SedimentationBasinFacilityRecord, SedimentationBasinFacilitySummary } from './types/sedimentationBasins';
 
 const icon = L.divIcon({ className: 'station-marker', html: '<span>◒</span>', iconSize: [24, 24], iconAnchor: [12, 12] });
-const text = (language: Language, zh: string, en: string) => language === 'zh' ? zh : en;
 const fmt = (value: number | undefined, digits = 1) => value === undefined || !Number.isFinite(value) ? '-' : value.toFixed(digits).replace(/\.?0+$/, '');
 const categoryLabel = (language: Language, category: SedimentationBasinCatchmentAreaCategory) => ({
   zero_or_not_reported: text(language, '零或未回報', 'Zero or not reported'),

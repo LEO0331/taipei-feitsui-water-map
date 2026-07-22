@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import type { Language } from './data/i18n';
+import { localize as text } from './utils/presentation';
 import type { CarlsonTrophicStateIndexCategory, CarlsonTrophicStateIndexRecord, CarlsonTrophicStateIndexSummary, TrophicStateIndicatorCategory, WaterQualityTrendDirection } from './types/carlsonTrophicStateIndex';
 
-const text = (language: Language, zh: string, en: string) => language === 'zh' ? zh : en;
 const fmt = (value?: number, digits = 2) => value === undefined ? '-' : value.toLocaleString(undefined, { maximumFractionDigits: digits });
 const signed = (value?: number) => value === undefined ? '-' : `${value > 0 ? '+' : ''}${fmt(value, 2)}`;
 

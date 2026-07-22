@@ -151,6 +151,14 @@
       "dependencies": ["feat-010"],
       "status": "done",
       "evidence": "Verified the existing operation module before extension. npm test passed with 41 tests; operation conversion generated 3,961 daily records across 130 periods and canonical records, summary, monthly-summary, and yearly-summary outputs; local and GitHub Pages builds passed."
+    },
+    {
+      "id": "feat-020",
+      "name": "Feitsui Reservoir Sedimentation Surveys",
+      "description": "Add a static, survey-period dashboard for Feitsui Reservoir remaining capacity and sedimentation statistics, clearly separated from daily operations and without map markers.",
+      "dependencies": ["feat-010"],
+      "status": "done",
+      "evidence": "Normalized 39 official survey rows through ROC 114 / 2025, retaining source fields and converting source thousand-cubic-metre values to cubic metres. Added local JSON, filtering, metric switching, charts, pagination, filtered CSV export, data-quality notes, PWA entries, README attribution, and parser regression tests. npm test and npm run build passed."
     }
   ]
 }

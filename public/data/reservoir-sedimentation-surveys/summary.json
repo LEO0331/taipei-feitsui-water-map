@@ -1,0 +1,37 @@
+{
+  "totalRecords": 39,
+  "latest": {
+    "id": "38-114.01-114.12-377333",
+    "surveyPeriodRaw": "38",
+    "surveySequence": 38,
+    "dateRangeRaw": "114.01-114.12",
+    "startYear": 2025,
+    "startMonth": 1,
+    "endYear": 2025,
+    "endMonth": 12,
+    "endPeriod": "2025-12",
+    "endDate": null,
+    "intervalYears": 1,
+    "cumulativeIntervalYears": 41.5,
+    "remainingStorageCapacityCubicMeters": 377333000,
+    "sedimentationVolumeCubicMeters": 272000,
+    "cumulativeSedimentationVolumeCubicMeters": 28667000,
+    "cumulativeAverageAnnualSedimentationCubicMeters": 691000,
+    "cumulativeSedimentationRatePercent": 7.06,
+    "sourceValues": {
+      "期別": "38",
+      "起訖年月": "114.01-114.12",
+      "間隔(年)": "1",
+      "累計間隔(年)": "41.5",
+      "剩餘總蓄水容量(千立方公尺)": "377333",
+      "淤積量(千立方公尺)": "272",
+      "歷年累計淤積量(千立方公尺)": "28667",
+      "歷年累計年平均淤積量(千立方公尺)": "691",
+      "歷年累計淤積率(%)": "7.06"
+    },
+    "warnings": []
+  },
+  "minYear": 1984,
+  "maxYear": 2025,
+  "dataQualityWarningCount": 0
+}

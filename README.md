@@ -29,6 +29,14 @@ Reservoir operation:
 - Optional manually placed CSV directory: `data/raw/feitsui-reservoir-operation-monthly-reports/` (UTF-8-SIG, Big5, and CP950-compatible Big5 decoding)
 - This is a static operation and hydrology exploration module. It has no map markers and does not represent real-time reservoir conditions, drought/flood status, water-supply decisions, or water-quality/safety judgments.
 
+Feitsui Reservoir sedimentation surveys:
+
+- Dataset: `臺北翡翠水庫淤積調查報告`
+- Module key: `reservoir_sedimentation_surveys`
+- Taipei Open Data page: `https://data.taipei/dataset/detail?id=8c4511a5-ea23-4978-b448-8cc91cdfe842`
+- Static outputs: `public/data/reservoir-sedimentation-surveys/records.json` and `summary.json`
+- Records retain source values in thousand cubic metres and normalize display values to cubic metres. They are periodic survey statistics, not real-time storage, water level, drought, dam-safety, dredging, or lifespan indicators; no map markers are generated.
+
 River water quality:
 
 - Dataset: `臺北市河川水質檢測`
@@ -214,6 +222,12 @@ Convert the operation module with its canonical report outputs (including local 
 
 ```sh
 npm run data:convert:feitsui-operation-reports
+```
+
+Convert Feitsui Reservoir sedimentation-survey records:
+
+```sh
+npm run data:convert:reservoir-sedimentation-surveys
 ```
 
 Convert local river-water CSV files and build summaries:
