@@ -1,0 +1,14 @@
+{
+  "datasetUrl": "https://data.taipei/dataset/detail?id=cdbc2677-7f23-42e5-9b83-a57ab9bee39c",
+  "downloadedAt": "2026-07-28T03:28:34.032Z",
+  "files": [
+    {
+      "file": "official-1.csv",
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=0f4541e5-9f7c-406f-bbd4-3c22e6255465"
+    },
+    {
+      "file": "official-2.csv",
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=dd0f5ff1-d688-40f4-9a53-c5faaeca05a2"
+    }
+  ]
+}

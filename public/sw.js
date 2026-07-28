@@ -1,4 +1,4 @@
-const CACHE_NAME = 'feitsui-water-map-v3';
+const CACHE_NAME = 'feitsui-water-map-v4';
 const scope = self.registration.scope;
 const STATIC_ASSETS = [
   '',
@@ -28,6 +28,9 @@ const STATIC_ASSETS = [
   'data/sedimentation-basin-facilities.json',
   'data/sedimentation-basin-facility-summary.json',
   'data/sedimentation-basin-facility-conversion-report.json',
+  'data/storm-rainfall-rented-machinery-sites/records.json',
+  'data/storm-rainfall-rented-machinery-sites/metadata.json',
+  'data/storm-rainfall-rented-machinery-sites/sites.geojson',
   'data/reservoir-sedimentation-surveys/records.json',
   'data/reservoir-sedimentation-surveys/summary.json',
   'data/reservoir-sedimentation-surveys/conversion-report.json',

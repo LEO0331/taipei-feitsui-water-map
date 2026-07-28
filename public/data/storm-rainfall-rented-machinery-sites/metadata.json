@@ -1,0 +1,81 @@
+{
+  "totalRecords": 73,
+  "validCoordinateCount": 73,
+  "districtCount": 10,
+  "equipmentTypeCount": 6,
+  "contractorCount": 4,
+  "latestRecordDate": null,
+  "coverageEndDate": null,
+  "byDistrict": [
+    {
+      "district": "北投區",
+      "records": 19,
+      "equipmentIds": 19,
+      "equipmentTypes": 4,
+      "contractors": 1
+    },
+    {
+      "district": "士林區",
+      "records": 14,
+      "equipmentIds": 14,
+      "equipmentTypes": 4,
+      "contractors": 2
+    },
+    {
+      "district": "松山區",
+      "records": 4,
+      "equipmentIds": 4,
+      "equipmentTypes": 1,
+      "contractors": 1
+    },
+    {
+      "district": "中山區",
+      "records": 4,
+      "equipmentIds": 4,
+      "equipmentTypes": 2,
+      "contractors": 1
+    },
+    {
+      "district": "大同區",
+      "records": 3,
+      "equipmentIds": 3,
+      "equipmentTypes": 1,
+      "contractors": 1
+    },
+    {
+      "district": "內湖區",
+      "records": 6,
+      "equipmentIds": 6,
+      "equipmentTypes": 3,
+      "contractors": 1
+    },
+    {
+      "district": "信義區",
+      "records": 5,
+      "equipmentIds": 5,
+      "equipmentTypes": 2,
+      "contractors": 1
+    },
+    {
+      "district": "文山區",
+      "records": 11,
+      "equipmentIds": 11,
+      "equipmentTypes": 3,
+      "contractors": 1
+    },
+    {
+      "district": "萬華區",
+      "records": 2,
+      "equipmentIds": 2,
+      "equipmentTypes": 1,
+      "contractors": 1
+    },
+    {
+      "district": "大安區",
+      "records": 5,
+      "equipmentIds": 5,
+      "equipmentTypes": 1,
+      "contractors": 1
+    }
+  ]
+}
