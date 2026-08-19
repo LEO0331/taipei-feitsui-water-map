@@ -1,0 +1,30 @@
+{
+  "totalRecords": 199,
+  "validCoordinateCount": 199,
+  "speciesCount": 33,
+  "locationCount": 8,
+  "totalAbundance": 1748,
+  "alienSpeciesCount": 1,
+  "minDate": "2014-05-28",
+  "maxDate": "2015-04-30",
+  "byRegion": [
+    {
+      "region": "淡水河",
+      "records": 90,
+      "species": 25,
+      "abundance": 1039
+    },
+    {
+      "region": "新店溪",
+      "records": 88,
+      "species": 18,
+      "abundance": 529
+    },
+    {
+      "region": "關渡水岸公園",
+      "records": 21,
+      "species": 8,
+      "abundance": 180
+    }
+  ]
+}

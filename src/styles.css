@@ -94,6 +94,51 @@ main {
   color: white;
 }
 
+.module-navigation {
+  display: grid;
+  gap: 8px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.category-tabs,
+.module-tabs {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: thin;
+}
+
+.category-tabs button,
+.module-tabs button,
+.module-browser button {
+  flex: 0 0 auto;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.category-tabs button.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: white;
+}
+
+.module-tabs button.active {
+  background: var(--surface-strong);
+  border-color: var(--accent);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.module-browser {
+  display: none;
+}
+
 .filters {
   position: sticky;
   top: 0;
@@ -428,6 +473,28 @@ footer {
   }
 
   .unmapped small {
+    text-align: left;
+  }
+
+  .module-browser {
+    display: block;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 10px;
+  }
+
+  .module-browser summary {
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .module-browser section {
+    display: grid;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .module-browser button {
     text-align: left;
   }
 }

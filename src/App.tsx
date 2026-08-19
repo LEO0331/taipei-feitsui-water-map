@@ -69,8 +69,11 @@ import ReservoirSedimentationSurveysPanel from './ReservoirSedimentationSurveysP
 import type { ReservoirSedimentationSurveyRecord, ReservoirSedimentationSurveySummary } from './types/reservoirSedimentationSurvey';
 import StormMachineryPanel from './StormMachineryPanel';
 import type { StormMachineryDeploymentSite, StormMachinerySummary } from './types/stormMachinery';
+import RiverEcologyPanel from './RiverEcologyPanel';
+import type { RiverEcologyRecord, RiverEcologySummary } from './types/riverEcology';
 
-type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'pumpingStations' | 'stormMachinery' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'riverEcology' | 'pumpingStations' | 'stormMachinery' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type NavigationCategory = 'overview' | 'reservoir' | 'rivers' | 'urbanWater' | 'waterServices';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -95,6 +98,7 @@ const markerIcon = L.divIcon({
 });
 
 const dataUrl = (fileName: string) => `${import.meta.env.BASE_URL}data/${fileName}`;
+const text = (language: Language, zh: string, en: string) => language === 'zh' ? zh : en;
 
 type TrendPoint = {
   period: string;
@@ -177,26 +181,21 @@ function MonitoringTabs({
   language: Language;
 }) {
   const t = translations[language];
-  const tabs: Array<{ id: MonitoringTab; label: string }> = [
-    { id: 'waterQuality', label: t.waterQuality },
-    { id: 'riverWaterQuality', label: t.riverWaterQuality },
-    { id: 'pumpingStations', label: t.pumpingStations },
-    { id: 'stormMachinery', label: language === 'zh' ? '防汛外租機械' : 'Storm Machinery Sites' },
-    { id: 'sedimentationBasins', label: t.sedimentationBasins },
-    { id: 'reservoirSedimentationSurveys', label: language === 'zh' ? '翡翠水庫淤積調查' : 'Reservoir Sedimentation Surveys' },
-    { id: 'parkWaterSafety', label: t.waterSafetyEquipment },
-    { id: 'clearWaterQuality', label: t.clearWaterQuality },
-    { id: 'tapWaterBusiness', label: t.waterBusinessKpis },
-    { id: 'carlsonTrophicStateIndex', label: t.carlsonTrophicStateIndex },
-    { id: 'twcSupport', label: t.twcSupport },
-    { id: 'hydromet', label: t.hydromet },
-    { id: 'operation', label: t.operation },
-    { id: 'combinedDashboard', label: t.combinedDashboard },
-    { id: 'dataTable', label: t.dataTable },
+  const categories: Array<{ id: NavigationCategory; label: string; tabs: Array<{ id: MonitoringTab; label: string }> }> = [
+    { id: 'overview', label: text(language, '總覽', 'Overview'), tabs: [{ id: 'waterQuality', label: t.waterQuality }, { id: 'combinedDashboard', label: t.combinedDashboard }, { id: 'dataTable', label: t.dataTable }] },
+    { id: 'reservoir', label: text(language, '水庫', 'Reservoir'), tabs: [{ id: 'hydromet', label: t.hydromet }, { id: 'operation', label: t.operation }, { id: 'reservoirSedimentationSurveys', label: text(language, '翡翠水庫淤積調查', 'Sedimentation Surveys') }, { id: 'carlsonTrophicStateIndex', label: t.carlsonTrophicStateIndex }] },
+    { id: 'rivers', label: text(language, '河川與生態', 'Rivers & Ecology'), tabs: [{ id: 'riverWaterQuality', label: t.riverWaterQuality }, { id: 'riverEcology', label: text(language, '河川生態', 'River Ecology') }] },
+    { id: 'urbanWater', label: text(language, '都市水務與防汛', 'Urban Water & Preparedness'), tabs: [{ id: 'pumpingStations', label: t.pumpingStations }, { id: 'stormMachinery', label: text(language, '防汛外租機械', 'Storm Machinery') }, { id: 'sedimentationBasins', label: t.sedimentationBasins }, { id: 'parkWaterSafety', label: t.waterSafetyEquipment }] },
+    { id: 'waterServices', label: text(language, '自來水服務', 'Water Services'), tabs: [{ id: 'twcSupport', label: t.twcSupport }, { id: 'clearWaterQuality', label: t.clearWaterQuality }, { id: 'tapWaterBusiness', label: t.waterBusinessKpis }] },
   ];
+  const current = categories.find((category) => category.tabs.some((tab) => tab.id === activeTab)) ?? categories[0];
   return (
-    <nav className="tabs" aria-label="Monitoring sections">
-      {tabs.map((tab) => (
+    <nav className="module-navigation" aria-label={text(language, '資料模組導覽', 'Data module navigation')}>
+      <div className="category-tabs" role="tablist" aria-label={text(language, '資料類別', 'Data categories')}>
+        {categories.map((category) => <button key={category.id} className={category.id === current.id ? 'active' : ''} onClick={() => setActiveTab(category.tabs[0].id)}>{category.label}</button>)}
+      </div>
+      <div className="module-tabs" role="tablist" aria-label={current.label}>
+      {current.tabs.map((tab) => (
         <button
           key={tab.id}
           className={activeTab === tab.id ? 'active' : ''}
@@ -205,6 +204,8 @@ function MonitoringTabs({
           {tab.label}
         </button>
       ))}
+      </div>
+      <details className="module-browser"><summary>{text(language, '瀏覽全部資料模組', 'Browse all data modules')}</summary><div>{categories.map((category) => <section key={category.id}><strong>{category.label}</strong>{category.tabs.map((tab) => <button key={tab.id} onClick={() => setActiveTab(tab.id)}>{tab.label}</button>)}</section>)}</div></details>
     </nav>
   );
 }
@@ -1215,6 +1216,7 @@ export default function App() {
   const [sedimentationSurveySummary, setSedimentationSurveySummary] = useState<ReservoirSedimentationSurveySummary | null>(null);
   const [stormMachineryRecords, setStormMachineryRecords] = useState<StormMachineryDeploymentSite[]>([]);
   const [stormMachinerySummary, setStormMachinerySummary] = useState<StormMachinerySummary | null>(null);
+  const [riverEcologyRecords, setRiverEcologyRecords] = useState<RiverEcologyRecord[]>([]); const [riverEcologySummary, setRiverEcologySummary] = useState<RiverEcologySummary | null>(null);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
@@ -1285,7 +1287,8 @@ export default function App() {
       fetchJson<ReservoirSedimentationSurveySummary>('reservoir-sedimentation-surveys/summary.json'),
       fetchJson<StormMachineryDeploymentSite[]>('storm-rainfall-rented-machinery-sites/records.json'),
       fetchJson<StormMachinerySummary>('storm-rainfall-rented-machinery-sites/metadata.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, sedimentationBasinData, sedimentationBasinSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData, sedimentationSurveyData, sedimentationSurveySummaryData, stormMachineryData, stormMachinerySummaryData]) => {
+      fetchJson<RiverEcologyRecord[]>('river-ecology/records.json'), fetchJson<RiverEcologySummary>('river-ecology/summary.json'),
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, sedimentationBasinData, sedimentationBasinSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData, sedimentationSurveyData, sedimentationSurveySummaryData, stormMachineryData, stormMachinerySummaryData, ecologyData, ecologySummaryData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
@@ -1313,6 +1316,7 @@ export default function App() {
       setSedimentationSurveyRecords(sedimentationSurveyData);
       setSedimentationSurveySummary(sedimentationSurveySummaryData);
       setStormMachineryRecords(stormMachineryData); setStormMachinerySummary(stormMachinerySummaryData);
+      setRiverEcologyRecords(ecologyData); setRiverEcologySummary(ecologySummaryData);
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
@@ -1372,7 +1376,7 @@ export default function App() {
     );
   }
 
-  if (!summary || !riverSummary || !pumpingSummary || !sedimentationBasinSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary || !sedimentationSurveySummary || !stormMachinerySummary) {
+  if (!summary || !riverSummary || !pumpingSummary || !sedimentationBasinSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary || !sedimentationSurveySummary || !stormMachinerySummary || !riverEcologySummary) {
     return <main className="loading">Loading</main>;
   }
 
@@ -1389,7 +1393,7 @@ export default function App() {
 
       <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} />
 
-      {activeTab !== 'riverWaterQuality' && activeTab !== 'pumpingStations' && activeTab !== 'sedimentationBasins' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && activeTab !== 'carlsonTrophicStateIndex' && (
+      {activeTab !== 'riverWaterQuality' && activeTab !== 'riverEcology' && activeTab !== 'pumpingStations' && activeTab !== 'stormMachinery' && activeTab !== 'sedimentationBasins' && activeTab !== 'reservoirSedimentationSurveys' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && activeTab !== 'carlsonTrophicStateIndex' && (
         <FilterPanel
           filters={filters}
           setFilters={setFilters}
@@ -1477,6 +1481,7 @@ export default function App() {
       {activeTab === 'pumpingStations' && (
         <PumpingStationsPanel records={pumpingStations} summary={pumpingSummary} language={language} />
       )}
+      {activeTab === 'riverEcology' && <RiverEcologyPanel records={riverEcologyRecords} summary={riverEcologySummary} language={language} />}
       {activeTab === 'stormMachinery' && <StormMachineryPanel records={stormMachineryRecords} summary={stormMachinerySummary} language={language} />}
 
       {activeTab === 'sedimentationBasins' && (
