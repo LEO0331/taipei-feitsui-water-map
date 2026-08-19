@@ -73,8 +73,10 @@ import RiverEcologyPanel from './RiverEcologyPanel';
 import type { RiverEcologyRecord, RiverEcologySummary } from './types/riverEcology';
 import AmphibianEcologyPanel from './AmphibianEcologyPanel';
 import type { AmphibianObservation, AmphibianSummary } from './types/amphibianEcology';
+import ButterflyEcologyPanel from './ButterflyEcologyPanel';
+import type { ButterflyObservation, ButterflySummary } from './types/butterflyEcology';
 
-type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'riverEcology' | 'amphibianEcology' | 'pumpingStations' | 'stormMachinery' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'waterQuality' | 'riverWaterQuality' | 'riverEcology' | 'amphibianEcology' | 'butterflyEcology' | 'pumpingStations' | 'stormMachinery' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
 type NavigationCategory = 'overview' | 'reservoir' | 'rivers' | 'urbanWater' | 'waterServices';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
@@ -186,7 +188,7 @@ function MonitoringTabs({
   const categories: Array<{ id: NavigationCategory; label: string; tabs: Array<{ id: MonitoringTab; label: string }> }> = [
     { id: 'overview', label: text(language, '總覽', 'Overview'), tabs: [{ id: 'waterQuality', label: t.waterQuality }, { id: 'combinedDashboard', label: t.combinedDashboard }, { id: 'dataTable', label: t.dataTable }] },
     { id: 'reservoir', label: text(language, '水庫', 'Reservoir'), tabs: [{ id: 'hydromet', label: t.hydromet }, { id: 'operation', label: t.operation }, { id: 'reservoirSedimentationSurveys', label: text(language, '翡翠水庫淤積調查', 'Sedimentation Surveys') }, { id: 'carlsonTrophicStateIndex', label: t.carlsonTrophicStateIndex }] },
-    { id: 'rivers', label: text(language, '河川與生態', 'Rivers & Ecology'), tabs: [{ id: 'riverWaterQuality', label: t.riverWaterQuality }, { id: 'riverEcology', label: text(language, '底棲生物', 'Benthic Species') }, { id: 'amphibianEcology', label: text(language, '兩棲類調查', 'Amphibian Survey') }] },
+    { id: 'rivers', label: text(language, '河川與生態', 'Rivers & Ecology'), tabs: [{ id: 'riverWaterQuality', label: t.riverWaterQuality }, { id: 'riverEcology', label: text(language, '底棲生物', 'Benthic Species') }, { id: 'amphibianEcology', label: text(language, '兩棲類調查', 'Amphibian Survey') }, { id: 'butterflyEcology', label: text(language, '蝴蝶分布', 'Butterfly Distribution') }] },
     { id: 'urbanWater', label: text(language, '都市水務與防汛', 'Urban Water & Preparedness'), tabs: [{ id: 'pumpingStations', label: t.pumpingStations }, { id: 'stormMachinery', label: text(language, '防汛外租機械', 'Storm Machinery') }, { id: 'sedimentationBasins', label: t.sedimentationBasins }, { id: 'parkWaterSafety', label: t.waterSafetyEquipment }] },
     { id: 'waterServices', label: text(language, '自來水服務', 'Water Services'), tabs: [{ id: 'twcSupport', label: t.twcSupport }, { id: 'clearWaterQuality', label: t.clearWaterQuality }, { id: 'tapWaterBusiness', label: t.waterBusinessKpis }] },
   ];
@@ -1220,6 +1222,7 @@ export default function App() {
   const [stormMachinerySummary, setStormMachinerySummary] = useState<StormMachinerySummary | null>(null);
   const [riverEcologyRecords, setRiverEcologyRecords] = useState<RiverEcologyRecord[]>([]); const [riverEcologySummary, setRiverEcologySummary] = useState<RiverEcologySummary | null>(null);
   const [amphibianRecords, setAmphibianRecords] = useState<AmphibianObservation[]>([]); const [amphibianSummary, setAmphibianSummary] = useState<AmphibianSummary | null>(null);
+  const [butterflyRecords, setButterflyRecords] = useState<ButterflyObservation[]>([]); const [butterflySummary, setButterflySummary] = useState<ButterflySummary | null>(null);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
   const [activeTab, setActiveTab] = useState<MonitoringTab>('waterQuality');
@@ -1292,7 +1295,8 @@ export default function App() {
       fetchJson<StormMachinerySummary>('storm-rainfall-rented-machinery-sites/metadata.json'),
       fetchJson<RiverEcologyRecord[]>('river-ecology/records.json'), fetchJson<RiverEcologySummary>('river-ecology/summary.json'),
       fetchJson<AmphibianObservation[]>('amphibian-ecology/records.json'), fetchJson<AmphibianSummary>('amphibian-ecology/summary.json'),
-    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, sedimentationBasinData, sedimentationBasinSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData, sedimentationSurveyData, sedimentationSurveySummaryData, stormMachineryData, stormMachinerySummaryData, ecologyData, ecologySummaryData, amphibianData, amphibianSummaryData]) => {
+      fetchJson<ButterflyObservation[]>('butterfly-ecology/records.json'), fetchJson<ButterflySummary>('butterfly-ecology/summary.json'),
+    ]).then(([recordData, summaryData, locationData, hydrometDailyData, hydrometMonthlyData, operationDailyData, operationMonthlyData, riverRecordData, riverSummaryData, riverLocationData, pumpingStationData, pumpingSummaryData, sedimentationBasinData, sedimentationBasinSummaryData, twcSupportRecordData, twcSupportSummaryData, parkWaterSafetyRecordData, parkWaterSafetySummaryData, clearWaterRecordData, clearWaterSummaryData, tapWaterBusinessRecordData, tapWaterBusinessSummaryData, ctsiRecordData, ctsiSummaryData, sedimentationSurveyData, sedimentationSurveySummaryData, stormMachineryData, stormMachinerySummaryData, ecologyData, ecologySummaryData, amphibianData, amphibianSummaryData, butterflyData, butterflySummaryData]) => {
       setRecords(recordData);
       setSummary(summaryData);
       setStationLocations(locationData);
@@ -1322,6 +1326,7 @@ export default function App() {
       setStormMachineryRecords(stormMachineryData); setStormMachinerySummary(stormMachinerySummaryData);
       setRiverEcologyRecords(ecologyData); setRiverEcologySummary(ecologySummaryData);
       setAmphibianRecords(amphibianData); setAmphibianSummary(amphibianSummaryData);
+      setButterflyRecords(butterflyData); setButterflySummary(butterflySummaryData);
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
@@ -1381,7 +1386,7 @@ export default function App() {
     );
   }
 
-  if (!summary || !riverSummary || !pumpingSummary || !sedimentationBasinSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary || !sedimentationSurveySummary || !stormMachinerySummary || !riverEcologySummary || !amphibianSummary) {
+  if (!summary || !riverSummary || !pumpingSummary || !sedimentationBasinSummary || !twcSupportSummary || !parkWaterSafetySummary || !clearWaterSummary || !tapWaterBusinessSummary || !ctsiSummary || !sedimentationSurveySummary || !stormMachinerySummary || !riverEcologySummary || !amphibianSummary || !butterflySummary) {
     return <main className="loading">Loading</main>;
   }
 
@@ -1398,7 +1403,7 @@ export default function App() {
 
       <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} />
 
-      {activeTab !== 'riverWaterQuality' && activeTab !== 'riverEcology' && activeTab !== 'amphibianEcology' && activeTab !== 'pumpingStations' && activeTab !== 'stormMachinery' && activeTab !== 'sedimentationBasins' && activeTab !== 'reservoirSedimentationSurveys' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && activeTab !== 'carlsonTrophicStateIndex' && (
+      {activeTab !== 'riverWaterQuality' && activeTab !== 'riverEcology' && activeTab !== 'amphibianEcology' && activeTab !== 'butterflyEcology' && activeTab !== 'pumpingStations' && activeTab !== 'stormMachinery' && activeTab !== 'sedimentationBasins' && activeTab !== 'reservoirSedimentationSurveys' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && activeTab !== 'carlsonTrophicStateIndex' && (
         <FilterPanel
           filters={filters}
           setFilters={setFilters}
@@ -1488,6 +1493,7 @@ export default function App() {
       )}
       {activeTab === 'riverEcology' && <RiverEcologyPanel records={riverEcologyRecords} summary={riverEcologySummary} language={language} />}
       {activeTab === 'amphibianEcology' && <AmphibianEcologyPanel records={amphibianRecords} summary={amphibianSummary} language={language} />}
+      {activeTab === 'butterflyEcology' && <ButterflyEcologyPanel records={butterflyRecords} summary={butterflySummary} language={language} />}
       {activeTab === 'stormMachinery' && <StormMachineryPanel records={stormMachineryRecords} summary={stormMachinerySummary} language={language} />}
 
       {activeTab === 'sedimentationBasins' && (

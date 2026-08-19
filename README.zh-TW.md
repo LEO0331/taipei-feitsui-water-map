@@ -20,7 +20,7 @@
 | --- | --- |
 | 總覽 | 翡翠水庫水質、綜合脈絡儀表板、資料表 |
 | 水庫 | 水文氣象、水庫操作、淤積調查、卡爾森優養指數 |
-| 河川與生態 | 臺北河川水質、歷史底棲生物調查、歷史兩棲類調查 |
+| 河川與生態 | 臺北河川水質、歷史底棲生物調查、歷史兩棲類調查、歷史蝴蝶調查 |
 | 都市水務與防汛 | 抽水站、防汛外租機械據點、沉砂池、公園水域安全設施 |
 | 自來水服務 | 支援台水統計、清水水質、營運關鍵指標 |
 
@@ -29,6 +29,7 @@
 - **翡翠水庫淤積調查**（`reservoir_sedimentation_surveys`）：1984–2025 的定期調查結果，不是目前可用蓄水量、乾旱風險、大壩安全或壽命預測。
 - **臺北市河濱生態底棲**（`4cb2cb61-1b3f-4c0f-894b-353266b8a06b`）：一次性歷史調查；本機資料範圍為 2014-05-28 至 2015-04-30。
 - **臺北市河濱生態兩棲**（`a9228b5e-84fc-4781-916c-6c3e186b9f0c`）：一次性歷史調查；官方調查範圍為 2012-08-01 至 2015-05-31，不代表目前兩棲類分布。
+- **臺北市河濱生態蝴蝶**（`679ae4e4-0fc2-4ac5-8db0-bab87990ada4`）：一次性歷史調查；官方調查範圍為 2012-08-01 至 2015-05-31，不代表目前蝴蝶分布或生物多樣性狀況。
 - **颱風豪雨外租機械據點**（`storm_rainfall_rented_machinery_sites`）：來源記載的防汛整備地點，不是即時派遣或設備可用性追蹤器。
 
 ## 資料來源與處理方式
@@ -83,6 +84,8 @@ npm run data:fetch:river-ecology
 npm run data:convert:river-ecology
 npm run data:fetch:amphibian-ecology
 npm run data:convert:amphibian-ecology
+npm run data:fetch:butterfly-ecology
+npm run data:convert:butterfly-ecology
 npm run data:fetch:storm-machinery
 npm run data:convert:storm-machinery
 npm run data:convert:reservoir-sedimentation-surveys
@@ -98,6 +101,7 @@ npm run data:convert:reservoir-sedimentation-surveys
 - `public/data/river-water-quality-*.json`
 - `public/data/river-ecology/{records,summary,sites,metadata}.json`
 - `public/data/amphibian-ecology/{records,summary,sites,metadata}.json`
+- `public/data/butterfly-ecology/{records,summary,sites,metadata}.json`
 - `public/data/storm-rainfall-rented-machinery-sites/{records,metadata,sites}.json`
 - `public/data/reservoir-sedimentation-surveys/{records,summary,conversion-report}.json`
 

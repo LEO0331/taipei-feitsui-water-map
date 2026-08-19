@@ -1,0 +1,109 @@
+{
+  "totalRecords": 474,
+  "validCoordinateCount": 474,
+  "speciesCount": 52,
+  "regionCount": 3,
+  "totalCount": 1427,
+  "endemicSpeciesCount": 13,
+  "minDate": "2014-05-24",
+  "maxDate": "2015-01-11",
+  "byRegion": [
+    {
+      "region": "新店溪",
+      "records": 277,
+      "species": 39,
+      "count": 840
+    },
+    {
+      "region": "淡水河",
+      "records": 176,
+      "species": 32,
+      "count": 560
+    },
+    {
+      "region": "關渡水岸公園",
+      "records": 21,
+      "species": 16,
+      "count": 27
+    }
+  ],
+  "byFamily": [
+    {
+      "family": "粉蝶科",
+      "species": 11,
+      "count": 749
+    },
+    {
+      "family": "灰蝶科",
+      "species": 6,
+      "count": 532
+    },
+    {
+      "family": "蛺蝶科",
+      "species": 29,
+      "count": 114
+    },
+    {
+      "family": "鳳蝶科",
+      "species": 5,
+      "count": 31
+    },
+    {
+      "family": "挵蝶科",
+      "species": 1,
+      "count": 1
+    }
+  ],
+  "byMonth": [
+    {
+      "month": 1,
+      "records": 6
+    },
+    {
+      "month": 5,
+      "records": 49
+    },
+    {
+      "month": 6,
+      "records": 37
+    },
+    {
+      "month": 7,
+      "records": 41
+    },
+    {
+      "month": 8,
+      "records": 37
+    },
+    {
+      "month": 9,
+      "records": 39
+    },
+    {
+      "month": 10,
+      "records": 15
+    },
+    {
+      "month": 11,
+      "records": 89
+    },
+    {
+      "month": 12,
+      "records": 21
+    }
+  ],
+  "byYear": [
+    {
+      "year": 2014,
+      "records": 328,
+      "species": 51,
+      "count": 809
+    },
+    {
+      "year": 2015,
+      "records": 42,
+      "species": 5,
+      "count": 76
+    }
+  ]
+}

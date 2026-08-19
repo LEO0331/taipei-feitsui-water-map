@@ -1,4 +1,4 @@
-const CACHE_NAME = 'feitsui-water-map-v6';
+const CACHE_NAME = 'feitsui-water-map-v7';
 const scope = self.registration.scope;
 const STATIC_ASSETS = [
   '',
@@ -28,6 +28,10 @@ const STATIC_ASSETS = [
   'data/amphibian-ecology/summary.json',
   'data/amphibian-ecology/sites.json',
   'data/amphibian-ecology/metadata.json',
+  'data/butterfly-ecology/records.json',
+  'data/butterfly-ecology/summary.json',
+  'data/butterfly-ecology/sites.json',
+  'data/butterfly-ecology/metadata.json',
   'data/water-dashboard-summary.json',
   'data/river-station-locations.json',
   'data/pumping-stations.json',

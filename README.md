@@ -20,7 +20,7 @@ Navigation is grouped to keep the interface usable on desktop and mobile.
 | --- | --- |
 | Overview | Feitsui water quality, combined context dashboard, data table |
 | Reservoir | Hydrometeorology, reservoir operation, sedimentation surveys, Carlson Trophic State Index |
-| Rivers & Ecology | Taipei river water quality, historical benthic species survey, historical amphibian survey |
+| Rivers & Ecology | Taipei river water quality, historical benthic species survey, historical amphibian survey, historical butterfly survey |
 | Urban Water & Preparedness | Pumping stations, contracted storm machinery sites, sedimentation basins, park water-safety equipment |
 | Water Services | Taipei Water support to Taiwan Water, clear-water quality, business KPIs |
 
@@ -29,6 +29,7 @@ Navigation is grouped to keep the interface usable on desktop and mobile.
 - **Feitsui Reservoir Sedimentation Surveys** (`reservoir_sedimentation_surveys`): periodic survey results from 1984–2025; not current usable storage, drought risk, dam safety, or a lifespan forecast.
 - **Taipei Riverside Benthic Ecology** (`4cb2cb61-1b3f-4c0f-894b-353266b8a06b`): one-time historical survey records; the local extract covers 2014-05-28 to 2015-04-30.
 - **Taipei Riverside Amphibian Ecology** (`a9228b5e-84fc-4781-916c-6c3e186b9f0c`): one-time historical survey records; the official survey coverage is 2012-08-01 to 2015-05-31. It does not represent current species distribution.
+- **Taipei Riverside Butterfly Ecology** (`679ae4e4-0fc2-4ac5-8db0-bab87990ada4`): one-time historical survey records; the official survey coverage is 2012-08-01 to 2015-05-31. It does not represent current butterfly distribution or biodiversity condition.
 - **Storm and Heavy-Rain Contracted Machinery Sites** (`storm_rainfall_rented_machinery_sites`): source-recorded preparedness sites, not a live deployment or equipment-availability tracker.
 
 ## Data sources and processing
@@ -83,6 +84,8 @@ npm run data:fetch:river-ecology
 npm run data:convert:river-ecology
 npm run data:fetch:amphibian-ecology
 npm run data:convert:amphibian-ecology
+npm run data:fetch:butterfly-ecology
+npm run data:convert:butterfly-ecology
 npm run data:fetch:storm-machinery
 npm run data:convert:storm-machinery
 npm run data:convert:reservoir-sedimentation-surveys
@@ -98,6 +101,7 @@ The application caches key static assets through `public/sw.js`. Major outputs i
 - `public/data/river-water-quality-*.json`
 - `public/data/river-ecology/{records,summary,sites,metadata}.json`
 - `public/data/amphibian-ecology/{records,summary,sites,metadata}.json`
+- `public/data/butterfly-ecology/{records,summary,sites,metadata}.json`
 - `public/data/storm-rainfall-rented-machinery-sites/{records,metadata,sites}.json`
 - `public/data/reservoir-sedimentation-surveys/{records,summary,conversion-report}.json`
 
