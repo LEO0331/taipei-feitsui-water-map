@@ -1,0 +1,135 @@
+{
+  "totalRecords": 586,
+  "validCoordinateCount": 586,
+  "speciesCount": 19,
+  "locationCount": 410,
+  "totalAbundance": 4205,
+  "endemicSpeciesCount": 6,
+  "alienSpeciesCount": 1,
+  "minDate": "2014-05-15",
+  "maxDate": "2015-04-28",
+  "byPark": [
+    {
+      "park": "新店溪",
+      "records": 293,
+      "species": 16,
+      "abundance": 2113
+    },
+    {
+      "park": "福和橋-華中橋",
+      "records": 156,
+      "species": 9,
+      "abundance": 621
+    },
+    {
+      "park": "淡水河",
+      "records": 56,
+      "species": 7,
+      "abundance": 278
+    },
+    {
+      "park": "關渡水岸公園-華中橋",
+      "records": 24,
+      "species": 6,
+      "abundance": 90
+    },
+    {
+      "park": "華中橋-大稻埕",
+      "records": 36,
+      "species": 5,
+      "abundance": 386
+    },
+    {
+      "park": "關渡水岸公園",
+      "records": 7,
+      "species": 4,
+      "abundance": 23
+    },
+    {
+      "park": "中正橋-華中橋",
+      "records": 5,
+      "species": 2,
+      "abundance": 681
+    },
+    {
+      "park": "關渡河岸公園",
+      "records": 5,
+      "species": 2,
+      "abundance": 6
+    },
+    {
+      "park": "淡水河5K",
+      "records": 1,
+      "species": 1,
+      "abundance": 1
+    },
+    {
+      "park": "轉彎小水池",
+      "records": 1,
+      "species": 1,
+      "abundance": 1
+    },
+    {
+      "park": "華中-大稻埕",
+      "records": 2,
+      "species": 1,
+      "abundance": 5
+    }
+  ],
+  "byMonth": [
+    {
+      "month": 1,
+      "records": 2
+    },
+    {
+      "month": 2,
+      "records": 20
+    },
+    {
+      "month": 3,
+      "records": 147
+    },
+    {
+      "month": 4,
+      "records": 56
+    },
+    {
+      "month": 5,
+      "records": 81
+    },
+    {
+      "month": 6,
+      "records": 78
+    },
+    {
+      "month": 7,
+      "records": 95
+    },
+    {
+      "month": 8,
+      "records": 76
+    },
+    {
+      "month": 9,
+      "records": 25
+    },
+    {
+      "month": 10,
+      "records": 4
+    },
+    {
+      "month": 12,
+      "records": 2
+    }
+  ],
+  "byYear": [
+    {
+      "year": 2014,
+      "records": 361
+    },
+    {
+      "year": 2015,
+      "records": 225
+    }
+  ]
+}
