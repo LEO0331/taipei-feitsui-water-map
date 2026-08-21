@@ -1,0 +1,91 @@
+{
+  "totalRecords": 149,
+  "validCoordinateCount": 149,
+  "speciesCount": 9,
+  "familyCount": 3,
+  "regionCount": 3,
+  "totalCount": 541,
+  "minDate": "2014-05-24",
+  "maxDate": "2015-04-14",
+  "byRegion": [
+    {
+      "region": "淡水河",
+      "records": 55,
+      "species": 2,
+      "count": 226
+    },
+    {
+      "region": "新店溪",
+      "records": 92,
+      "species": 9,
+      "count": 313
+    },
+    {
+      "region": "關渡水岸公園",
+      "records": 2,
+      "species": 1,
+      "count": 2
+    }
+  ],
+  "byMonth": [
+    {
+      "month": 3,
+      "records": 7,
+      "count": 8
+    },
+    {
+      "month": 4,
+      "records": 10,
+      "count": 17
+    },
+    {
+      "month": 5,
+      "records": 3,
+      "count": 3
+    },
+    {
+      "month": 6,
+      "records": 20,
+      "count": 40
+    },
+    {
+      "month": 7,
+      "records": 7,
+      "count": 10
+    },
+    {
+      "month": 8,
+      "records": 17,
+      "count": 49
+    },
+    {
+      "month": 9,
+      "records": 47,
+      "count": 323
+    },
+    {
+      "month": 10,
+      "records": 22,
+      "count": 54
+    },
+    {
+      "month": 11,
+      "records": 16,
+      "count": 37
+    }
+  ],
+  "byYear": [
+    {
+      "year": 2014,
+      "records": 132,
+      "species": 9,
+      "count": 516
+    },
+    {
+      "year": 2015,
+      "records": 17,
+      "species": 1,
+      "count": 25
+    }
+  ]
+}
