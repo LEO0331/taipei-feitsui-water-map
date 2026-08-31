@@ -3,11 +3,12 @@ import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Too
 import type { Language } from './data/i18n';
 import { localize as text } from './utils/presentation';
 import type { TaipeiWaterSupportTwcMonthlyRecord, TaipeiWaterSupportTwcSummary } from './types/twcSupport';
+import { buildTaipeiWaterSupportTwcSummary } from './utils/twcSupport';
 
 const fmt = (value?: number, digits = 0) => value === undefined ? '-' : value.toLocaleString(undefined, { maximumFractionDigits: digits });
 const pct = (value?: number) => value === undefined ? '-' : `${fmt(value, 1)}%`;
 
-export default function TwcSupportPanel({ records, summary, language }: { records: TaipeiWaterSupportTwcMonthlyRecord[]; summary: TaipeiWaterSupportTwcSummary; language: Language }) {
+export default function TwcSupportPanel({ records, summary: _summary, language }: { records: TaipeiWaterSupportTwcMonthlyRecord[]; summary: TaipeiWaterSupportTwcSummary; language: Language }) {
   const [year, setYear] = useState('all');
   const [month, setMonth] = useState('all');
   const [quarter, setQuarter] = useState('all');
@@ -20,6 +21,7 @@ export default function TwcSupportPanel({ records, summary, language }: { record
     const haystack = `${record.year} ${record.month} ${record.monthKey} 第一區處 第十二區處 First District Office Twelfth District Office`.toLowerCase();
     return haystack.includes(search.toLowerCase());
   });
+  const summary = useMemo(() => buildTaipeiWaterSupportTwcSummary(filtered), [filtered]);
   const highestAnnual = [...summary.byYear].sort((a, b) => (b.totalSupportVolume ?? 0) - (a.totalSupportVolume ?? 0))[0];
   const chartData = filtered.map((record) => ({
     month: record.monthKey,

@@ -5,16 +5,18 @@ import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxi
 import type { Language } from './data/i18n';
 import { localize as text } from './utils/presentation';
 import type { PumpingStation, PumpingStationSummary } from './types/pumpingStations';
+import { buildPumpingStationSummary } from './utils/pumpingStations';
 
 const icon = L.divIcon({ className: 'station-marker', html: '<span>💧</span>', iconSize: [24, 24], iconAnchor: [12, 12] });
 const notice = (language: Language) => text(language, '抽水站資料為臺北市水利處公開之設施位置與基本資料，僅供水利設施分布、河系與行政區探索使用，不代表即時抽水狀態、設備容量、現場開放情形、防洪效果、淹水風險或緊急應變指示。即時水情、防汛資訊與緊急指示請以主管機關正式公告與官方系統為準。', "Pumping station data is public facility-location and basic-information data from Taipei's Hydraulic Engineering Office. It is provided for exploring water-infrastructure distribution, river systems, and districts only. It does not represent real-time pumping status, equipment capacity, site access, flood-control effectiveness, flood risk, or emergency instructions. Real-time information must be verified through official systems.");
 
-export default function PumpingStationsPanel({ records, summary, language }: { records: PumpingStation[]; summary: PumpingStationSummary; language: Language }) {
+export default function PumpingStationsPanel({ records, summary: _summary, language }: { records: PumpingStation[]; summary: PumpingStationSummary; language: Language }) {
   const [river, setRiver] = useState('all'); const [district, setDistrict] = useState('all'); const [unit, setUnit] = useState('all'); const [search, setSearch] = useState(''); const [nearby, setNearby] = useState<Array<PumpingStation & { distance: number }>>([]);
   const rivers = useMemo(() => [...new Set(records.map((record) => record.riverSystemNormalized).filter(Boolean))].sort(), [records]);
   const districts = useMemo(() => [...new Set(records.map((record) => record.districtNormalized).filter(Boolean))].sort(), [records]);
   const units = useMemo(() => [...new Set(records.map((record) => record.managementUnit).filter(Boolean))].sort(), [records]);
   const filtered = useMemo(() => records.filter((record) => (river === 'all' || record.riverSystemNormalized === river) && (district === 'all' || record.districtNormalized === district) && (unit === 'all' || record.managementUnit === unit) && (!search.trim() || `${record.stationName} ${record.riverSystem} ${record.district} ${record.managementUnit} ${record.sourceSequenceNumber}`.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase()))), [records, river, district, unit, search]);
+  const summary = useMemo(() => buildPumpingStationSummary(filtered), [filtered]);
   const mapRecords = filtered.filter((record) => record.coordinateStatus === 'valid' && record.latitude !== undefined && record.longitude !== undefined);
   const showNearby = () => navigator.geolocation?.getCurrentPosition(({ coords }) => { const distance = (record: PumpingStation) => { const rad = Math.PI / 180; const a = Math.sin((record.latitude! - coords.latitude) * rad / 2) ** 2 + Math.cos(coords.latitude * rad) * Math.cos(record.latitude! * rad) * Math.sin((record.longitude! - coords.longitude) * rad / 2) ** 2; return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)); }; setNearby(mapRecords.map((record) => ({ ...record, distance: distance(record) })).sort((a, b) => a.distance - b.distance).slice(0, 5)); });
   const chart = (title: string, data: Array<{ name: string; value: number }>) => <section className="chart-block"><h3>{title}</h3><ResponsiveContainer width="100%" height={240}><BarChart data={data}><CartesianGrid strokeDasharray="3 3" /><XAxis dataKey="name" interval={0} angle={-25} textAnchor="end" height={72} /><YAxis /><Tooltip /><Bar dataKey="value" fill="#0f766e" /></BarChart></ResponsiveContainer></section>;

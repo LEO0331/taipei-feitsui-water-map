@@ -58,4 +58,8 @@ test('CTSI trend and summary values are generated from records', () => {
   assert.equal(summary.minCtsi?.value, 37);
   assert.equal(summary.maxCtsi?.value, 38);
   assert.equal(summary.trophicStateIndicatorCounts.oligotrophic, 3);
+  const filteredSummary = buildCarlsonTrophicStateIndexSummary(records.filter((item) => item.year === 2025));
+  assert.equal(filteredSummary.totalRecords, 1);
+  assert.equal(filteredSummary.latestYear, 2025);
+  assert.equal(filteredSummary.trophicStateIndicatorCounts.oligotrophic, 1);
 });

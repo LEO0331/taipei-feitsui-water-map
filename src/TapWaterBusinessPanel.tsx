@@ -3,12 +3,13 @@ import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Too
 import type { Language } from './data/i18n';
 import { localize as text } from './utils/presentation';
 import type { TapWaterBusinessKeyMetricRecord, TapWaterBusinessKeyMetricSummary } from './types/tapWaterBusiness';
+import { buildTapWaterBusinessKeyMetricSummary } from './utils/tapWaterBusiness';
 
 const fmt = (value?: number, digits = 0) => value === undefined ? '-' : value.toLocaleString(undefined, { maximumFractionDigits: digits });
 const pct = (value?: number) => value === undefined ? '-' : `${fmt(value, 1)}%`;
 const money = (language: Language, value?: number) => value === undefined ? '-' : `${fmt(value / 1000, 1)} ${text(language, '百萬元', 'million NTD')}`;
 
-export default function TapWaterBusinessPanel({ records, summary, language }: { records: TapWaterBusinessKeyMetricRecord[]; summary: TapWaterBusinessKeyMetricSummary; language: Language }) {
+export default function TapWaterBusinessPanel({ records, summary: _summary, language }: { records: TapWaterBusinessKeyMetricRecord[]; summary: TapWaterBusinessKeyMetricSummary; language: Language }) {
   const [year, setYear] = useState('all'); const [month, setMonth] = useState('all'); const [quarter, setQuarter] = useState('all'); const [latestOnly, setLatestOnly] = useState(false); const [search, setSearch] = useState('');
   const years = useMemo(() => [...new Set(records.map((record) => record.year))].sort(), [records]);
   const filtered = records.filter((record) => {
@@ -19,6 +20,7 @@ export default function TapWaterBusinessPanel({ records, summary, language }: { 
     const haystack = `${record.periodRaw} ${record.monthKey} ${record.year} ${record.quarter} 配水量 計費水量 支援台水 用戶 員工 收入 支出 盈餘 資產 負債 equity revenue supply`.toLowerCase();
     return haystack.includes(search.trim().toLowerCase());
   });
+  const summary = useMemo(() => buildTapWaterBusinessKeyMetricSummary(filtered), [filtered]);
   const latest = summary.latest;
   const lineData = filtered.map((record) => ({
     month: record.monthKey,

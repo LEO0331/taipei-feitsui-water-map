@@ -3,6 +3,7 @@ import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxi
 import type { Language } from './data/i18n';
 import { localize as text } from './utils/presentation';
 import type { ClearWaterQualitySiteType, TreatmentPlantClearWaterQualityRecord, TreatmentPlantClearWaterQualitySummary, WaterQualityStandardComparison, WaterQualityTestItemCategory } from './types/clearWaterQuality';
+import { buildTreatmentPlantClearWaterQualitySummary } from './utils/clearWaterQuality';
 
 const fmt = (value?: number, digits = 2) => value === undefined ? '-' : value.toLocaleString(undefined, { maximumFractionDigits: digits });
 const categoryLabels: Record<Language, Record<WaterQualityTestItemCategory, string>> = {
@@ -18,10 +19,10 @@ const siteTypeLabels: Record<Language, Record<ClearWaterQualitySiteType, string>
   en: { treatment_plant: 'Treatment plant', water_source: 'Water source', clear_water_source: 'Clear water source', unknown: 'Unknown' },
 };
 
-export default function ClearWaterQualityPanel({ records, summary, language }: { records: TreatmentPlantClearWaterQualityRecord[]; summary: TreatmentPlantClearWaterQualitySummary; language: Language }) {
+export default function ClearWaterQualityPanel({ records, summary: sourceSummary, language }: { records: TreatmentPlantClearWaterQualityRecord[]; summary: TreatmentPlantClearWaterQualitySummary; language: Language }) {
   const [site, setSite] = useState('all'); const [siteType, setSiteType] = useState('all'); const [category, setCategory] = useState('all'); const [comparison, setComparison] = useState('all'); const [item, setItem] = useState('all'); const [search, setSearch] = useState('');
-  const sites = useMemo(() => summary.bySite, [summary]);
-  const items = useMemo(() => summary.byTestItem.map((row) => row.testItem).sort((a, b) => a.localeCompare(b, 'zh-Hant')), [summary]);
+  const sites = useMemo(() => sourceSummary.bySite, [sourceSummary]);
+  const items = useMemo(() => sourceSummary.byTestItem.map((row) => row.testItem).sort((a, b) => a.localeCompare(b, 'zh-Hant')), [sourceSummary]);
   const filtered = records.filter((record) => {
     if (site !== 'all' && record.siteKey !== site) return false;
     if (siteType !== 'all' && record.siteType !== siteType) return false;
@@ -31,6 +32,8 @@ export default function ClearWaterQualityPanel({ records, summary, language }: {
     const haystack = `${record.sourcePeriodMonthKey} ${record.siteNameZh} ${record.siteNameEn} ${record.testItem} ${record.unit} ${record.testItemCategory} ${record.standardLimitRaw}`.toLowerCase();
     return haystack.includes(search.trim().toLowerCase());
   });
+  const summary = useMemo(() => buildTreatmentPlantClearWaterQualitySummary(filtered), [filtered]);
+  const displaySites = useMemo(() => summary.bySite, [summary]);
   const matrixItems = [...new Map(filtered.map((record) => [record.testItemKey, record])).values()].slice(0, 18);
   const selectedItem = item === 'all' ? '濁度' : item;
   const selectedItemRecords = filtered.filter((record) => record.testItem === selectedItem || (item === 'all' && record.testItemKey === 'turbidity'));
@@ -64,7 +67,7 @@ export default function ClearWaterQualityPanel({ records, summary, language }: {
       <BarPanel title={text(language, '重點指標', 'Key indicators')} data={keyData.filter((row) => row.value !== undefined)} bars={[['value', '#7c3aed']]} />
       <BarPanel title={`${text(language, '場站比較', 'Site comparison')} · ${selectedItem}`} data={selectedItemRecords.map((record) => ({ name: language === 'zh' ? record.siteNameZh : record.siteNameEn, value: record.measuredValue, ratio: record.standardRatio }))} bars={[['value', '#0891b2'], ['ratio', '#c2410c']]} />
     </section>
-    <section className="table-panel"><h3>{text(language, '水質項目矩陣', 'Quality Matrix')}</h3><div className="table-wrap"><table><thead><tr><th>{text(language, '檢驗項目', 'Test item')}</th>{sites.map((siteRow) => <th key={siteRow.siteKey}>{language === 'zh' ? siteRow.siteNameZh : siteRow.siteNameEn}</th>)}</tr></thead><tbody>{matrixItems.map((sample) => <tr key={sample.testItemKey}><td>{sample.testItem}<br /><small>{sample.unit ?? '-'}</small></td>{sites.map((siteRow) => { const record = filtered.find((candidate) => candidate.testItemKey === sample.testItemKey && candidate.siteKey === siteRow.siteKey); return <td key={siteRow.siteKey}>{record ? <><strong>{record.measuredValueRaw ?? '-'}</strong><br /><small>{comparisonLabels[language][record.comparisonToStandard]}</small></> : '-'}</td>; })}</tr>)}</tbody></table></div></section>
+    <section className="table-panel"><h3>{text(language, '水質項目矩陣', 'Quality Matrix')}</h3><div className="table-wrap"><table><thead><tr><th>{text(language, '檢驗項目', 'Test item')}</th>{displaySites.map((siteRow) => <th key={siteRow.siteKey}>{language === 'zh' ? siteRow.siteNameZh : siteRow.siteNameEn}</th>)}</tr></thead><tbody>{matrixItems.map((sample) => <tr key={sample.testItemKey}><td>{sample.testItem}<br /><small>{sample.unit ?? '-'}</small></td>{displaySites.map((siteRow) => { const record = filtered.find((candidate) => candidate.testItemKey === sample.testItemKey && candidate.siteKey === siteRow.siteKey); return <td key={siteRow.siteKey}>{record ? <><strong>{record.measuredValueRaw ?? '-'}</strong><br /><small>{comparisonLabels[language][record.comparisonToStandard]}</small></> : '-'}</td>; })}</tr>)}</tbody></table></div></section>
     <section className="table-panel"><h3>{text(language, '資料表', 'Data Table')}</h3><div className="table-wrap"><table><thead><tr>{[text(language, '資料月份', 'Data month'), text(language, '淨水場或水源', 'Treatment plant / source'), text(language, '檢驗項目', 'Test item'), text(language, '單位', 'Unit'), text(language, '檢測數值', 'Measured value'), text(language, '水質標準限值', 'Water quality standard limit'), text(language, '方法偵測極限', 'Method detection limit'), text(language, '標準比較', 'Standard comparison')].map((header) => <th key={header}>{header}</th>)}</tr></thead><tbody>{filtered.map((record) => <tr key={record.id}><td>{record.sourcePeriodMonthKey}</td><td>{language === 'zh' ? record.siteNameZh : record.siteNameEn}</td><td>{record.testItem}</td><td>{record.unit ?? '-'}</td><td title={record.isZeroReported ? text(language, '0為來源報告值，請勿過度解讀為精確無濃度。', '0 is a source-reported value and should not be over-interpreted as exact absence.') : undefined}>{record.measuredValueRaw ?? '-'}</td><td>{record.standardLimitDisplay ?? '-'}</td><td>{record.methodDetectionLimitRaw ?? '-'}</td><td>{comparisonLabels[language][record.comparisonToStandard]}</td></tr>)}</tbody></table></div></section>
     <section className="notice-block"><p>{text(language, '翡翠水庫、河川水質與清水水質資料性質不同；本模組反映淨水場或水源清水檢測結果，不應視為同一採樣點、同一處理階段、即時飲用安全、用戶端水龍頭水質、個人健康風險或法規裁罰結論。', 'Feitsui Reservoir, river water, and clear-water quality data have different meanings. This module reflects clear-water testing at treatment plants or water sources and should not be treated as the same sampling point, same treatment stage, real-time drinking-water safety, household tap-water quality, individual health risk, or regulatory penalty conclusion.')}</p></section>
   </section>;

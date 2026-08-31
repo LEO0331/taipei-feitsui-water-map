@@ -3,6 +3,7 @@ import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Too
 import type { Language } from './data/i18n';
 import { localize as text } from './utils/presentation';
 import type { CarlsonTrophicStateIndexCategory, CarlsonTrophicStateIndexRecord, CarlsonTrophicStateIndexSummary, TrophicStateIndicatorCategory, WaterQualityTrendDirection } from './types/carlsonTrophicStateIndex';
+import { buildCarlsonTrophicStateIndexSummary } from './utils/carlsonTrophicStateIndex';
 
 const fmt = (value?: number, digits = 2) => value === undefined ? '-' : value.toLocaleString(undefined, { maximumFractionDigits: digits });
 const signed = (value?: number) => value === undefined ? '-' : `${value > 0 ? '+' : ''}${fmt(value, 2)}`;
@@ -32,7 +33,7 @@ const trendLabel = (language: Language, value: WaterQualityTrendDirection) => ({
   unknown: text(language, '未知', 'Unknown'),
 }[value]);
 
-export default function CarlsonTrophicStateIndexPanel({ records, summary, language }: { records: CarlsonTrophicStateIndexRecord[]; summary: CarlsonTrophicStateIndexSummary; language: Language }) {
+export default function CarlsonTrophicStateIndexPanel({ records, summary: _summary, language }: { records: CarlsonTrophicStateIndexRecord[]; summary: CarlsonTrophicStateIndexSummary; language: Language }) {
   const [indicator, setIndicator] = useState<TrophicStateIndicatorCategory | 'all'>('all');
   const [category, setCategory] = useState<CarlsonTrophicStateIndexCategory | 'all'>('all');
   const [trend, setTrend] = useState<WaterQualityTrendDirection | 'all'>('all');
@@ -44,6 +45,7 @@ export default function CarlsonTrophicStateIndexPanel({ records, summary, langua
     const haystack = `${record.year} ${record.rocYear} ${record.ctsiRaw} ${record.trophicStateIndicatorRaw} ${record.agencyName} ${record.agencyCode} 卡爾森 優養 指數 CTSI trophic oligotrophic mesotrophic`.toLowerCase();
     return haystack.includes(search.trim().toLowerCase());
   });
+  const summary = useMemo(() => buildCarlsonTrophicStateIndexSummary(filtered), [filtered]);
   const trendData = filtered.map((record) => ({ year: record.year, ctsi: record.ctsi, rolling3YearAverage: record.rolling3YearAverage }));
   const yoyData = filtered.filter((record) => record.yearOverYearChange !== undefined).map((record) => ({ year: record.year, change: record.yearOverYearChange }));
   const indicatorData = (Object.entries(summary.trophicStateIndicatorCounts) as Array<[TrophicStateIndicatorCategory, number]>).map(([key, count]) => ({ name: indicatorLabel(language, key), count }));

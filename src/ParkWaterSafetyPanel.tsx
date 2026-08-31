@@ -5,6 +5,7 @@ import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxi
 import type { Language } from './data/i18n';
 import { localize as text } from './utils/presentation';
 import type { ParkWaterSafetyEquipmentRecord, ParkWaterSafetyEquipmentSummary, ParkWaterSafetyFacilityCategory } from './types/parkWaterSafety';
+import { buildParkWaterSafetyEquipmentSummary } from './utils/parkWaterSafety';
 
 const icon = L.divIcon({ className: 'station-marker safety-marker', html: '<span></span>', iconSize: [24, 24], iconAnchor: [12, 12] });
 const labels: Record<Language, Record<ParkWaterSafetyFacilityCategory, string>> = {
@@ -13,11 +14,12 @@ const labels: Record<Language, Record<ParkWaterSafetyFacilityCategory, string>> 
 };
 const notice = (language: Language) => text(language, '點位僅為來源資料位置參考，不代表即時設備狀態、即時可用性、救援保證或現場安全判定。緊急事件請立即聯絡119。', 'The point is only a source-data location reference and does not represent real-time equipment condition, real-time usability, rescue guarantee, or on-site safety determination. For emergencies, contact 119 immediately.');
 
-export default function ParkWaterSafetyPanel({ records, summary, language }: { records: ParkWaterSafetyEquipmentRecord[]; summary: ParkWaterSafetyEquipmentSummary; language: Language }) {
+export default function ParkWaterSafetyPanel({ records, summary: _summary, language }: { records: ParkWaterSafetyEquipmentRecord[]; summary: ParkWaterSafetyEquipmentSummary; language: Language }) {
   const [district, setDistrict] = useState('all'); const [park, setPark] = useState('all'); const [category, setCategory] = useState('all'); const [status, setStatus] = useState('all'); const [search, setSearch] = useState(''); const [nearby, setNearby] = useState<Array<ParkWaterSafetyEquipmentRecord & { distance: number }>>([]);
   const districts = useMemo(() => [...new Set(records.map((record) => record.districtNormalized).filter(Boolean))].sort(), [records]);
   const parks = useMemo(() => [...new Set(records.map((record) => record.parkName).filter(Boolean))].sort(), [records]);
   const filtered = useMemo(() => records.filter((record) => (district === 'all' || record.districtNormalized === district) && (park === 'all' || record.parkName === park) && (category === 'all' || record.facilityCategory === category) && (status === 'all' || record.coordinateStatus === status) && (!search.trim() || `${record.districtNormalized} ${record.parkName} ${record.locationDescription} ${record.facilityNameRaw} ${record.equipmentCode} ${record.resourceName}`.toLowerCase().includes(search.trim().toLowerCase()))), [records, district, park, category, status, search]);
+  const summary = useMemo(() => buildParkWaterSafetyEquipmentSummary(filtered), [filtered]);
   const mapRecords = filtered.filter((record) => record.coordinateStatus === 'valid' && record.latitude !== undefined && record.longitude !== undefined);
   const findNearby = () => navigator.geolocation?.getCurrentPosition(({ coords }) => { const distance = (record: ParkWaterSafetyEquipmentRecord) => { const rad = Math.PI / 180; const a = Math.sin((record.latitude! - coords.latitude) * rad / 2) ** 2 + Math.cos(coords.latitude * rad) * Math.cos(record.latitude! * rad) * Math.sin((record.longitude! - coords.longitude) * rad / 2) ** 2; return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)); }; setNearby(mapRecords.map((record) => ({ ...record, distance: distance(record) })).sort((a, b) => a.distance - b.distance).slice(0, 6)); });
   const chart = (title: string, data: Array<{ name: string; value: number }>) => <section className="chart-block"><h3>{title}</h3><ResponsiveContainer width="100%" height={240}><BarChart data={data}><CartesianGrid strokeDasharray="3 3" /><XAxis dataKey="name" interval={0} angle={-25} textAnchor="end" height={72} /><YAxis /><Tooltip /><Bar dataKey="value" fill="#be123c" /></BarChart></ResponsiveContainer></section>;
