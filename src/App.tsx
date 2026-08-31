@@ -810,11 +810,11 @@ function OperationSummaryCards({
   const cards = [
     [t.latestMonth, latest?.period ?? '-'],
     [t.avgWaterLevel, formatNumber(selected?.avgWaterLevelM, 'm')],
-    [t.effectiveStorage, formatNumber(selected?.avgEffectiveStorageMillionM3, 'million m3')],
+    [t.effectiveStorage, formatNumber(selected?.avgEffectiveStorageMillionM3, language === 'zh' ? '百萬立方公尺' : 'million m3')],
     [t.totalRainfall, formatNumber(selected?.totalCatchmentRainfallMm, 'mm')],
-    [t.totalInflow, formatNumber(selected?.totalReservoirInflowM3, 'm3', 0)],
-    [t.totalOutflow, formatNumber(selected?.totalReservoirOutflowM3, 'm3', 0)],
-    [t.netInflowOutflow, formatNumber(selected?.totalInflowMinusOutflowM3, 'm3', 0)],
+    [t.totalInflow, formatNumber(selected?.totalReservoirInflowM3, language === 'zh' ? '立方公尺' : 'm3', 0)],
+    [t.totalOutflow, formatNumber(selected?.totalReservoirOutflowM3, language === 'zh' ? '立方公尺' : 'm3', 0)],
+    [t.netInflowOutflow, formatNumber(selected?.totalInflowMinusOutflowM3, language === 'zh' ? '立方公尺' : 'm3', 0)],
     [t.highestDailyRainfall, formatNumber(highestRainfall, 'mm')],
     [t.lowestWaterLevel, formatNumber(selected?.lowestWaterLevelM, 'm')],
   ];
@@ -951,7 +951,6 @@ function OperationDashboard({
   return (
     <section className="dashboard">
       <div className="section-heading">
-        <h2>{t.operationDashboard}</h2>
         <p>{t.dataDisclaimer}</p>
       </div>
       <OperationSummaryCards summaries={summaries} records={dailyRecords} period={period} language={language} />
@@ -1119,7 +1118,7 @@ function MonitoringDataTable({
             period: record.period,
             dayType: record.weekday === 0 || record.weekday === 6 ? translations[language].weekends : translations[language].weekdays,
             parameter: operationParameterLabels[language][operationParameter],
-            value: formatNumber(record.values[operationParameter].value, operationParameterUnits[operationParameter], operationParameter === 'dailyAverageWaterLevelM' || operationParameter === 'effectiveStorageMillionM3' ? 1 : 0),
+            value: formatNumber(record.values[operationParameter].value, operationParameterUnits[language][operationParameter], operationParameter === 'dailyAverageWaterLevelM' || operationParameter === 'effectiveStorageMillionM3' ? 1 : 0),
             raw: record.values[operationParameter].raw,
           }))
       : mode === 'waterSummary'
@@ -1137,8 +1136,8 @@ function MonitoringDataTable({
               days: summary.dayCount,
               avgWaterLevel: formatNumber(summary.avgWaterLevelM, 'm'),
               totalRainfall: formatNumber(summary.totalCatchmentRainfallMm, 'mm'),
-              totalInflow: formatNumber(summary.totalReservoirInflowM3, 'm3', 0),
-              totalOutflow: formatNumber(summary.totalReservoirOutflowM3, 'm3', 0),
+              totalInflow: formatNumber(summary.totalReservoirInflowM3, language === 'zh' ? '立方公尺' : 'm3', 0),
+              totalOutflow: formatNumber(summary.totalReservoirOutflowM3, language === 'zh' ? '立方公尺' : 'm3', 0),
             }));
   return (
     <section className="table-section">

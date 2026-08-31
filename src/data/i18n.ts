@@ -474,15 +474,27 @@ export const operationParameterLabels: Record<Language, Record<OperationParamete
   },
 };
 
-export const operationParameterUnits: Partial<Record<OperationParameterKey, string>> = {
-  dailyAverageWaterLevelM: 'm',
-  effectiveStorageMillionM3: 'million m3',
-  catchmentAverageRainfallMm: 'mm',
-  reservoirInflowM3: 'm3',
-  reservoirOutflowM3: 'm3',
-  inflowMinusOutflowM3: 'm3',
-  nanshiRiverFlowM3: 'm3',
-  combinedRawWaterM3: 'm3',
+export const operationParameterUnits: Record<Language, Partial<Record<OperationParameterKey, string>>> = {
+  zh: {
+    dailyAverageWaterLevelM: '公尺',
+    effectiveStorageMillionM3: '百萬立方公尺',
+    catchmentAverageRainfallMm: '毫米',
+    reservoirInflowM3: '立方公尺',
+    reservoirOutflowM3: '立方公尺',
+    inflowMinusOutflowM3: '立方公尺',
+    nanshiRiverFlowM3: '立方公尺',
+    combinedRawWaterM3: '立方公尺',
+  },
+  en: {
+    dailyAverageWaterLevelM: 'm',
+    effectiveStorageMillionM3: 'million m3',
+    catchmentAverageRainfallMm: 'mm',
+    reservoirInflowM3: 'm3',
+    reservoirOutflowM3: 'm3',
+    inflowMinusOutflowM3: 'm3',
+    nanshiRiverFlowM3: 'm3',
+    combinedRawWaterM3: 'm3',
+  },
 };
 
 export const riverIndicatorLabels: Record<Language, Record<RiverIndicatorKey, string>> = {
