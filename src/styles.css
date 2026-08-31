@@ -302,6 +302,41 @@ input {
   overflow-wrap: anywhere;
 }
 
+/* Shared KPI grid used by every customer-facing module. */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.card {
+  min-width: 0;
+  min-height: 86px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-strong);
+  box-shadow: 0 2px 8px rgba(18, 48, 46, 0.05);
+}
+
+.card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.card strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
 .unmapped ul {
   list-style: none;
   padding: 0;
@@ -475,6 +510,20 @@ footer {
 
   .unmapped small {
     text-align: left;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .card {
+    min-height: 76px;
+    padding: 11px 12px;
+  }
+
+  .card strong {
+    font-size: 1.05rem;
   }
 
   .module-browser {
