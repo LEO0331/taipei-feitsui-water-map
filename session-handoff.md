@@ -142,3 +142,15 @@
 ## Recommended Next Step
 
 - Pick one unfinished feature from `feature_list.json`: `feat-004` verified station coordinates or `feat-005` performance split.
+
+
+## 2026-10-19 — Current handoff: Issue 7 complete
+
+- Work supersedes the old Current Objective above; history retained. Feature feat-021 is done on codex/heavy-rain-preparedness-review.
+- Start with docs/preparedness-implementation-plan.md, docs/preparedness-source-audit.md, docs/preparedness-decision-methodology.md and docs/evidence/verification.md.
+- Run npm run data:convert:preparedness offline. Explicit data:audit:preparedness performs selected network requests; never run full fetch:data unnecessarily.
+- Stop Vite before rebuilding snapshots on Windows: a watcher handle can block atomic rename. Failed builds retain the prior cohesive browser snapshot; do not add a non-atomic fallback.
+- Bash startup is unavailable here; use npm ci, npm run convert:data, npm test, npm run build, then set GITHUB_PAGES=true and build. All equivalents passed;65 tests and tsc passed. Existing dev advisories6 / production0; no dependency changes.
+- Sources:88/73/67 infrastructure,9 reference polygons (北投/士林 only),695 historical observations/44 explicit exclusions. Actual history1991–2025 vs catalogue metadata mismatch; strict default excludes limited history and permissive admits validated rows. No operational readiness or flood-risk claims.
+- Direct #preparedness loading is isolated; navigation back to existing data was manually checked. Full bilingual/mobile/retry/download smoke evidence and screenshots saved. PR prepared separately; do not merge automatically.
+- Remaining possible improvements: agency-verified catchment/asset IDs, published area/depth unit definitions, authoritative district boundaries, updated readiness evidence, and original source discrepancy resolution. These require source evidence and are outside this MVP.

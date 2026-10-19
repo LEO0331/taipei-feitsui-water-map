@@ -21,7 +21,7 @@
 | 總覽 | 翡翠水庫水質、綜合脈絡儀表板、資料表 |
 | 水庫 | 水文氣象、水庫操作、淤積調查、卡爾森優養指數 |
 | 河川與生態 | 臺北河川水質、歷史底棲生物調查、歷史兩棲類調查、歷史蝴蝶調查 |
-| 都市水務與防汛 | 抽水站、防汛外租機械據點、沉砂池、公園水域安全設施 |
+| 都市水務與防汛 | 防汛整備決策分析、抽水站、防汛外租機械據點、沉砂池、公園水域安全設施 |
 | 自來水服務 | 支援台水統計、清水水質、營運關鍵指標 |
 
 ### 重要歷史資料
@@ -31,6 +31,12 @@
 - **臺北市河濱生態兩棲**（`a9228b5e-84fc-4781-916c-6c3e186b9f0c`）：一次性歷史調查；官方調查範圍為 2012-08-01 至 2015-05-31，不代表目前兩棲類分布。
 - **臺北市河濱生態蝴蝶**（`679ae4e4-0fc2-4ac5-8db0-bab87990ada4`）：一次性歷史調查；官方調查範圍為 2012-08-01 至 2015-05-31，不代表目前蝴蝶分布或生物多樣性狀況。
 - **颱風豪雨外租機械據點**（`storm_rainfall_rented_machinery_sites`）：來源記載的防汛整備地點，不是即時派遣或設備可用性追蹤器。
+
+### 防汛整備證據查核
+
+從「都市水務與防汛 → 防汛整備決策分析」進入，或使用 `/#preparedness`（GitHub Pages 為 `/taipei-feitsui-water-map/#preparedness`）。模組延後載入，只讀單一靜態快照；直接進入時不需先載入舊水庫／生態資料。它比較有限文件／現地查核名額下的候選清單，不預測淹水、不認證整備現況、不建議派遣。
+
+稽核輸入為 88 筆抽水站、僅採 2026 版的 73 筆機械、67 筆沉砂池及 9 個官方易積水參考多邊形。歷史淹水 739 筆中納入 695 筆觀測，實際日期為 1991-06-19 至 2025-10-19；因期間／版本限制維持有限證據，預設嚴格模式排除，寬鬆模式才允許行政區彙整。未知設備狀態不等於故障，鄰近不代表排水服務。來源日期、排除原因、實際情境及重現方式見 [MVP 說明](docs/preparedness-decision-mvp.zh-TW.md)、[精確方法](docs/preparedness-decision-methodology.md) 與 [來源稽核](docs/preparedness-source-audit.md)。
 
 ## 資料來源與處理方式
 
@@ -89,9 +95,12 @@ npm run data:convert:butterfly-ecology
 npm run data:fetch:storm-machinery
 npm run data:convert:storm-machinery
 npm run data:convert:reservoir-sedimentation-surveys
+npm run data:convert:preparedness
 ```
 
 `npm run fetch:data` 會進行網路請求並可能覆寫原始資料；僅在確定需要更新來源資料時使用。
+
+`npm run data:convert:preparedness` 為離線轉換，先驗證已保存來源的雜湊，再重建決策快照。`npm run data:audit:preparedness` 明確進行網路作業，只取得本模組選定五個來源；僅在有意更新來源時執行。轉換後以 `npm test` 與 `npm run build` 驗證。
 
 ## 產生的靜態資料
 
@@ -104,6 +113,7 @@ npm run data:convert:reservoir-sedimentation-surveys
 - `public/data/butterfly-ecology/{records,summary,sites,metadata}.json`
 - `public/data/storm-rainfall-rented-machinery-sites/{records,metadata,sites}.json`
 - `public/data/reservoir-sedimentation-surveys/{records,summary,conversion-report}.json`
+- `public/data/preparedness-decision/{snapshot,source-health,review-areas,evidence-summary,conversion-report}.json`
 
 ## 部署
 
@@ -114,6 +124,9 @@ npm run data:convert:reservoir-sedimentation-surveys
 - [客戶儀表板洞察](doc/customer-dashboard-insights.md)
 - [English README](README.md)
 - [代理與專案工作流程](AGENTS.md)
+- [防汛整備決策支援 MVP](docs/preparedness-decision-mvp.zh-TW.md)
+- [防汛查核方法](docs/preparedness-decision-methodology.md)
+- [官方來源稽核](docs/preparedness-source-audit.md)
 
 ## 更新或新增資料集
 

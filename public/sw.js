@@ -1,4 +1,4 @@
-const CACHE_NAME = 'feitsui-water-map-v8';
+const CACHE_NAME = 'feitsui-water-map-v9';
 const scope = self.registration.scope;
 const STATIC_ASSETS = [
   '',
@@ -84,6 +84,22 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  // One cohesive decision snapshot: refresh before cache, retain its visible version offline.
+  // Do not serve an old cache-first snapshot after a source/algorithm version changes.
+  if (new URL(event.request.url).pathname.endsWith('/data/preparedness-decision/snapshot.json')) {
+    event.respondWith(fetch(event.request, { cache: 'no-store' }).then(async (response) => {
+      if (!response.ok) throw new Error('Decision snapshot unavailable');
+      const snapshot = await response.clone().json();
+      if (snapshot.schemaVersion !== '1.0.0' || snapshot.methodologyVersion !== 'heavy-rain-preparedness-review-v1' || !/^sha256-[a-f0-9]{16}$/.test(snapshot.snapshotVersion)) throw new Error('Unsupported decision snapshot');
+      const cache = await caches.open(CACHE_NAME);
+      await cache.put(event.request, response.clone());
+      return response;
+    }).catch(async () => {
+      const cached = await caches.match(event.request);
+      return cached || new Response('Decision snapshot unavailable', { status: 503 });
+    }));
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then((cached) => cached || fetch(event.request))
   );

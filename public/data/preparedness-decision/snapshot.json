@@ -1,0 +1,4537 @@
+{
+  "schemaVersion": "1.0.0",
+  "methodologyVersion": "heavy-rain-preparedness-review-v1",
+  "snapshotVersion": "sha256-d67edc57254ee273",
+  "processedAt": "2026-10-19T01:14:54.464Z",
+  "sources": [
+    {
+      "sourceId": "pumping",
+      "datasetId": "026cc0fa-cecc-4c78-b986-ead3b0c8b95b",
+      "resourceId": "d1f9c6e0-5f72-4fc4-ac18-0b75ce0b002e",
+      "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=d1f9c6e0-5f72-4fc4-ac18-0b75ce0b002e",
+      "publicationDate": "2026-06-25",
+      "retrievedAt": "2026-10-19T01:14:54.464Z",
+      "sourceSha256": "664b6780150f7734e9dd3c667bab695816f8a3dcb194a29040400d0ccb6e01a3",
+      "version": "catalogue-2026-06-25",
+      "publisher": "臺北市政府工務局水利工程處",
+      "coordinateSystem": "EPSG:3826",
+      "sourceSchema": "CSV NO/站名/行政區域/X坐標/Y坐標",
+      "temporalCoverage": {
+        "start": null,
+        "end": null
+      },
+      "status": "verified",
+      "recordCount": 88,
+      "rejectedCount": 0,
+      "limitations": [
+        "Inventory records do not verify operating condition, present availability or service coverage."
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "datasetId": "cdbc2677-7f23-42e5-9b83-a57ab9bee39c",
+      "resourceId": "0f4541e5-9f7c-406f-bbd4-3c22e6255465",
+      "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=0f4541e5-9f7c-406f-bbd4-3c22e6255465",
+      "publicationDate": "2026-07-21",
+      "retrievedAt": "2026-10-19T01:14:54.464Z",
+      "sourceSha256": "4a9953e8fe939fabe3bf1537f84cf77d0f4fda65e2de27ad3792264600c08088",
+      "version": "115年度/2026",
+      "publisher": "臺北市政府工務局水利工程處",
+      "coordinateSystem": "EPSG:4326",
+      "sourceSchema": "CSV 115年度 ENGINEID/OBJECTID/DISTRICT/Longitude/Latitude",
+      "temporalCoverage": {
+        "start": null,
+        "end": null
+      },
+      "status": "verified",
+      "recordCount": 73,
+      "rejectedCount": 0,
+      "limitations": [
+        "Inventory records do not verify operating condition, present availability or service coverage.",
+        "Only the official 115年度/2026 edition is used; 2025 edition is excluded. No personal or contractor attributes retained."
+      ]
+    },
+    {
+      "sourceId": "basin",
+      "datasetId": "03db6e0d-c6a6-400a-9e52-9b821c404c38",
+      "resourceId": "a513c535-e903-4b69-9f5e-7ba6d7b6aa3d",
+      "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=a513c535-e903-4b69-9f5e-7ba6d7b6aa3d",
+      "publicationDate": "2024-12-18",
+      "retrievedAt": "2026-10-19T01:14:54.464Z",
+      "sourceSha256": "19764a9a1f3fbe27c49f299bcec953cfae121dca7b337e5d195437ee40e24f94",
+      "version": "catalogue-2024-12-18",
+      "publisher": "臺北市政府工務局水利工程處",
+      "coordinateSystem": "EPSG:3826",
+      "sourceSchema": "CSV POOL_CODE/POOL_NAME/TOWN_NAME/X坐標/Y坐標",
+      "temporalCoverage": {
+        "start": null,
+        "end": null
+      },
+      "status": "verified",
+      "recordCount": 67,
+      "rejectedCount": 0,
+      "limitations": [
+        "Inventory records do not verify operating condition, present availability or service coverage.",
+        "Catchment area unit is not stated in the selected CSV header or catalogue; omitted from decision inputs. Catchment area is not detention volume."
+      ]
+    },
+    {
+      "sourceId": "flood-prone",
+      "datasetId": "08101966-7aca-48e0-a028-6da02ba1192e",
+      "resourceId": "db12426f-777c-48f0-90a8-bb582f39a33e",
+      "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=db12426f-777c-48f0-90a8-bb582f39a33e",
+      "publicationDate": "2025-06-03",
+      "retrievedAt": "2026-10-19T01:14:54.464Z",
+      "sourceSha256": "735fd7adda319dde4017f6184bab90a13c548853d1768a5b1e0a2471bccbd864",
+      "version": "catalogue-2025-06-03",
+      "publisher": "臺北市政府工務局水利工程處",
+      "coordinateSystem": "EPSG:4326",
+      "sourceSchema": "KML 2.2 Polygon/MultiGeometry",
+      "temporalCoverage": {
+        "start": null,
+        "end": null
+      },
+      "status": "verified",
+      "recordCount": 9,
+      "rejectedCount": 0,
+      "limitations": [
+        "WGS84 KML source precision; coordinate bounds are a sanity check, not administrative boundary verification. District labels are source attributes, not independently surveyed boundaries.",
+        "Self-intersection, ring and planar component intersection/containment checks applied. Holes and touching or overlapping components are excluded conservatively. Historical/reference geometry is not a present-day flood forecast.",
+        "Published reference areas do not cover every district; absence is not evidence of no flood susceptibility."
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "datasetId": "8377b584-81e9-432d-b902-5b4e9978e6bc",
+      "resourceId": "dbed5503-d5fb-46d5-8701-7b591ac38c35",
+      "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=dbed5503-d5fb-46d5-8701-7b591ac38c35",
+      "publicationDate": "2026-09-30",
+      "retrievedAt": "2026-10-19T01:14:54.464Z",
+      "sourceSha256": "c8c4432002de47233219b03b4de916b6be24747e6b2acb92cfc0760090c04bb1",
+      "version": "catalogue-2026-09-30/document-1140307",
+      "publisher": "臺北市政府工務局水利工程處",
+      "coordinateSystem": "EPSG:4326",
+      "sourceSchema": "KML 2.2 Polygon/MultiGeometry",
+      "temporalCoverage": {
+        "start": "1991-06-19",
+        "end": "2025-10-19"
+      },
+      "status": "limited",
+      "recordCount": 695,
+      "rejectedCount": 44,
+      "limitations": [
+        "WGS84 KML source precision; coordinate bounds are a sanity check, not administrative boundary verification. District labels are source attributes, not independently surveyed boundaries.",
+        "Self-intersection, ring and planar component intersection/containment checks applied. Holes and touching or overlapping components are excluded conservatively. Historical/reference geometry is not a present-day flood forecast.",
+        "Publication date is not event coverage. Validated observation dates: 1991-06-19 through 2025-10-19, including observations before catalogue coverage start 2015-05-01. Document title 1140307 differs from catalogue update 2026-09-30; catalogue coverage end 2026-09-11 does not establish observations through that date. Counts represent polygon observations; distinct dates are not unique storm events. Depth/area units not independently confirmed and not scored. Household addresses and historical polygons are not republished."
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "id": "pumping:1",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "建國",
+      "longitude": 121.52891347,
+      "latitude": 25.07250361,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:2",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "新生",
+      "longitude": 121.52836962,
+      "latitude": 25.07228174,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:3",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "中山",
+      "longitude": 121.53416051,
+      "latitude": 25.0740092,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:4",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "長春",
+      "longitude": 121.5276,
+      "latitude": 25.05329973,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:5",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "錦州",
+      "longitude": 121.527797,
+      "latitude": 25.06150762,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:6",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "林森",
+      "longitude": 121.5317634,
+      "latitude": 25.04607191,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:7",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "民生",
+      "longitude": 121.52729991,
+      "latitude": 25.05844427,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:8",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "圓山",
+      "longitude": 121.52738728,
+      "latitude": 25.07144391,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:9",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "長安",
+      "longitude": 121.52720232,
+      "latitude": 25.05266015,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:10",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "民權",
+      "longitude": 121.52772118,
+      "latitude": 25.058801,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:11",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "經貿",
+      "longitude": 121.62117258,
+      "latitude": 25.05657163,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:12",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "福山",
+      "longitude": 121.6171681,
+      "latitude": 25.04643428,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:13",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "誠正",
+      "longitude": 121.62068407,
+      "latitude": 25.05438908,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:14",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "大坑右(由誠正站監管)",
+      "longitude": 121.61634778,
+      "latitude": 25.04913977,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:15",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "大坑左(由誠正站監管)",
+      "longitude": 121.61619138,
+      "latitude": 25.0494341,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:16",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "勤力",
+      "longitude": 121.61199024,
+      "latitude": 25.04769913,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:17",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "南深右(由勤力站監管)",
+      "longitude": 121.6146879,
+      "latitude": 25.04862663,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:18",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "南深左(由勤力站監管)",
+      "longitude": 121.61347204,
+      "latitude": 25.04929386,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:19",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "松山區",
+      "name": "南京",
+      "longitude": 121.57228081,
+      "latitude": 25.05073365,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:20",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "松山區",
+      "name": "撫遠",
+      "longitude": 121.56877368,
+      "latitude": 25.0623374,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:21",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "成功",
+      "longitude": 121.59620164,
+      "latitude": 25.05877705,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:22",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "南港",
+      "longitude": 121.61246962,
+      "latitude": 25.06214166,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:23",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "松山區",
+      "name": "松山",
+      "longitude": 121.57014034,
+      "latitude": 25.05448707,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:24",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "濱江",
+      "longitude": 121.54969952,
+      "latitude": 25.07272574,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:25",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "南港區",
+      "name": "玉成",
+      "longitude": 121.58253274,
+      "latitude": 25.05234467,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:26",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "成美",
+      "longitude": 121.58346182,
+      "latitude": 25.05549342,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:27",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "港漧",
+      "longitude": 121.57287138,
+      "latitude": 25.07449754,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:28",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "北安",
+      "longitude": 121.55582924,
+      "latitude": 25.0778153,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:29",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "環山",
+      "longitude": 121.56274149,
+      "latitude": 25.07671818,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:30",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "南湖",
+      "longitude": 121.61081504,
+      "latitude": 25.06354907,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:31",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "陽光",
+      "longitude": 121.57384732,
+      "latitude": 25.07142361,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:32",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "新民權",
+      "longitude": 121.57339255,
+      "latitude": 25.06092742,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:33",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "長壽",
+      "longitude": 121.59629816,
+      "latitude": 25.06094582,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:34",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "大直",
+      "longitude": 121.54736279,
+      "latitude": 25.07757087,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:35",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "康樂",
+      "longitude": 121.61747087,
+      "latitude": 25.06665027,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:36",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "內湖區",
+      "name": "康寧",
+      "longitude": 121.61193037,
+      "latitude": 25.06480072,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:37",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中山區",
+      "name": "大直二",
+      "longitude": 121.5408191,
+      "latitude": 25.07796772,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:38",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨一(由社子島管理中心監管)",
+      "longitude": 121.47474302,
+      "latitude": 25.10963728,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:39",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨二(由社子島管理中心監管)",
+      "longitude": 121.47801839,
+      "latitude": 25.10999112,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:40",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨三(由社子島管理中心監管)",
+      "longitude": 121.48465962,
+      "latitude": 25.11236389,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:41",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨五(由社子島管理中心監管)",
+      "longitude": 121.49627715,
+      "latitude": 25.10097073,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:42",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨四(由社子島管理中心監管)",
+      "longitude": 121.49544949,
+      "latitude": 25.10922015,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:43",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社增三(由社子島管理中心監管)",
+      "longitude": 121.49063413,
+      "latitude": 25.11293928,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:44",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "大龍",
+      "longitude": 121.51616195,
+      "latitude": 25.07872874,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:45",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "大同區",
+      "name": "社子",
+      "longitude": 121.50861713,
+      "latitude": 25.09283917,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:46",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社增四(由社子島管理中心監管)",
+      "longitude": 121.49621518,
+      "latitude": 25.10141213,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:47",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨九(由社子島管理中心監管)",
+      "longitude": 121.49641832,
+      "latitude": 25.0977253,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:48",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "中洲(由社子島管理中心監管)",
+      "longitude": 121.47491992,
+      "latitude": 25.10573794,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:49",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨七(由社子島管理中心監管)",
+      "longitude": 121.48353594,
+      "latitude": 25.1027991,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:50",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨八(由社子島管理中心監管)",
+      "longitude": 121.49111311,
+      "latitude": 25.09855341,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:51",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨六(由社子島管理中心監管)",
+      "longitude": 121.47046982,
+      "latitude": 25.10711636,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:52",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "萬華區",
+      "name": "貴陽",
+      "longitude": 121.49940902,
+      "latitude": 25.04164946,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:53",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社增一(由社子島管理中心監管)",
+      "longitude": 121.47688951,
+      "latitude": 25.10518723,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:54",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社增二(由社子島管理中心監管)",
+      "longitude": 121.48212196,
+      "latitude": 25.10352992,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:55",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "大同區",
+      "name": "六館",
+      "longitude": 121.50816067,
+      "latitude": 25.05733779,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:56",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "社臨十(由社子島管理中心監管)",
+      "longitude": 121.49681533,
+      "latitude": 25.09365738,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:57",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "迪化",
+      "longitude": 121.5077707,
+      "latitude": 25.08025733,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:58",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "萬華區",
+      "name": "忠孝",
+      "longitude": 121.50635471,
+      "latitude": 25.04997081,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:59",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "萬華區",
+      "name": "雙園",
+      "longitude": 121.48881068,
+      "latitude": 25.03049272,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:60",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "埤腹",
+      "longitude": 121.54542182,
+      "latitude": 24.98652009,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:61",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "道南",
+      "longitude": 121.57325414,
+      "latitude": 24.98796714,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:62",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "萬芳",
+      "longitude": 121.57159611,
+      "latitude": 24.99526407,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:63",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "樟新(由保儀站監管)",
+      "longitude": 121.55361444,
+      "latitude": 24.98018739,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:64",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "保儀",
+      "longitude": 121.55379479,
+      "latitude": 24.98031546,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:65",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "老泉溪",
+      "longitude": 121.55990703,
+      "latitude": 24.97917121,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:66",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "無名溪",
+      "longitude": 121.56614294,
+      "latitude": 24.98016211,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:67",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "中港",
+      "longitude": 121.55338797,
+      "latitude": 24.98664027,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:68",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "實踐",
+      "longitude": 121.55425685,
+      "latitude": 24.9834298,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:69",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "木新(由無名溪監管)",
+      "longitude": 121.56552586,
+      "latitude": 24.98176614,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:70",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "中正區",
+      "name": "古亭",
+      "longitude": 121.52307141,
+      "latitude": 25.02009335,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:71",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "文山區",
+      "name": "景美",
+      "longitude": 121.5344736,
+      "latitude": 25.00938509,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:72",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "士林",
+      "longitude": 121.51123629,
+      "latitude": 25.09609778,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:73",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "八仙",
+      "longitude": 121.49032887,
+      "latitude": 25.11603185,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:74",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "洲美一",
+      "longitude": 121.49886924,
+      "latitude": 25.11049563,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:75",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "洲美二",
+      "longitude": 121.49902788,
+      "latitude": 25.10661025,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:76",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "大業(由下八仙監管)",
+      "longitude": 121.49536058,
+      "latitude": 25.11365773,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:77",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "大南",
+      "longitude": 121.51534746,
+      "latitude": 25.08951439,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:78",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "劍潭",
+      "longitude": 121.51828684,
+      "latitude": 25.08135508,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:79",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "洲美抽水站",
+      "longitude": 121.51213494,
+      "latitude": 25.09910056,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:80",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "北憲",
+      "longitude": 121.50081498,
+      "latitude": 25.11797096,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:81",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "奇岩",
+      "longitude": 121.50331921,
+      "latitude": 25.12419623,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:82",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "大業東(由北憲監管)",
+      "longitude": 121.50048796,
+      "latitude": 25.11972864,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:83",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "東華",
+      "longitude": 121.52223077,
+      "latitude": 25.10993554,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:84",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "北投區",
+      "name": "文林",
+      "longitude": 121.51760591,
+      "latitude": 25.10247069,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:85",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "芝山",
+      "longitude": 121.52817612,
+      "latitude": 25.10119812,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:86",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "文昌",
+      "longitude": 121.51967472,
+      "latitude": 25.10023471,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:87",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "福林",
+      "longitude": 121.52614794,
+      "latitude": 25.10265406,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "pumping:88",
+      "sourceId": "pumping",
+      "assetType": "pumping",
+      "district": "士林區",
+      "name": "福德",
+      "longitude": 121.5288722,
+      "latitude": 25.09939139,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "machinery:1",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投2",
+      "longitude": 121.5135298,
+      "latitude": 25.12281079,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:2",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投3",
+      "longitude": 121.5047928,
+      "latitude": 25.12086362,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:3",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投4",
+      "longitude": 121.4865394,
+      "latitude": 25.13833809,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:4",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投5",
+      "longitude": 121.485843,
+      "latitude": 25.11807778,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:5",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投6",
+      "longitude": 121.5197372,
+      "latitude": 25.10447259,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:6",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投7",
+      "longitude": 121.516724,
+      "latitude": 25.10629808,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:7",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投8",
+      "longitude": 121.5169106,
+      "latitude": 25.10654197,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:8",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投9",
+      "longitude": 121.5002926,
+      "latitude": 25.11535471,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:9",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投10",
+      "longitude": 121.508,
+      "latitude": 25.1265,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:10",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投12",
+      "longitude": 121.5006416,
+      "latitude": 25.11818839,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:11",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投13",
+      "longitude": 121.4850606,
+      "latitude": 25.11580242,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:12",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投14",
+      "longitude": 121.4995858,
+      "latitude": 25.11793031,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:13",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投15",
+      "longitude": 121.4963777,
+      "latitude": 25.12257308,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:14",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投16",
+      "longitude": 121.5099897,
+      "latitude": 25.11777756,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:15",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投17",
+      "longitude": 121.5096814,
+      "latitude": 25.11580769,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:16",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投22",
+      "longitude": 121.4904995,
+      "latitude": 25.1159499,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:17",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投25",
+      "longitude": 121.5041973,
+      "latitude": 25.11514419,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:18",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投26",
+      "longitude": 121.5007767,
+      "latitude": 25.11719295,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:19",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "北投區",
+      "name": "北投27",
+      "longitude": 121.5007307,
+      "latitude": 25.11445806,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:20",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北投30",
+      "longitude": 121.518667,
+      "latitude": 25.101396,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:21",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "松山區",
+      "name": "北區1",
+      "longitude": 121.5521617,
+      "latitude": 25.05434312,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:22",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "中山區",
+      "name": "北區2",
+      "longitude": 121.5392268,
+      "latitude": 25.05874444,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:23",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "中山區",
+      "name": "北區5",
+      "longitude": 121.5228717,
+      "latitude": 25.06022194,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:24",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "中山區",
+      "name": "北區6",
+      "longitude": 121.523209,
+      "latitude": 25.06019032,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:25",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大同區",
+      "name": "北區8",
+      "longitude": 121.520504,
+      "latitude": 25.057049,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:26",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大同區",
+      "name": "北區9",
+      "longitude": 121.520456,
+      "latitude": 25.056148,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:27",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區10",
+      "longitude": 121.5403243,
+      "latitude": 25.10910408,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:28",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區11",
+      "longitude": 121.5335538,
+      "latitude": 25.12524421,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:29",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區12",
+      "longitude": 121.5467213,
+      "latitude": 25.09611947,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:30",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "中山區",
+      "name": "北區14",
+      "longitude": 121.5389385,
+      "latitude": 25.08398766,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:31",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區15",
+      "longitude": 121.4954964,
+      "latitude": 25.09914409,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:32",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區16",
+      "longitude": 121.4942399,
+      "latitude": 25.09603078,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:33",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區18",
+      "longitude": 121.4973957,
+      "latitude": 25.09685257,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:34",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區19",
+      "longitude": 121.4906357,
+      "latitude": 25.11276094,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:35",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區20",
+      "longitude": 121.5363,
+      "latitude": 25.11827663,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:36",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區23",
+      "longitude": 121.5291826,
+      "latitude": 25.0944142,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:37",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區24",
+      "longitude": 121.5268739,
+      "latitude": 25.09552053,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:38",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大同區",
+      "name": "北區26",
+      "longitude": 121.5204614,
+      "latitude": 25.05661869,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:39",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區27",
+      "longitude": 121.5254557,
+      "latitude": 25.09400696,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:40",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區30",
+      "longitude": 121.481988,
+      "latitude": 25.105885,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:41",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "松山區",
+      "name": "北區34",
+      "longitude": 121.544693,
+      "latitude": 25.050209,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:42",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "松山區",
+      "name": "北區35",
+      "longitude": 121.545195,
+      "latitude": 25.05577,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:43",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "松山區",
+      "name": "北區36",
+      "longitude": 121.550761,
+      "latitude": 25.058307,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:44",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "士林區",
+      "name": "北區37",
+      "longitude": 121.482,
+      "latitude": 25.1034,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:45",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "內湖區",
+      "name": "南內1",
+      "longitude": 121.5611264,
+      "latitude": 25.08850557,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:46",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "內湖區",
+      "name": "南內2",
+      "longitude": 121.5676603,
+      "latitude": 25.08861855,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:47",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "內湖區",
+      "name": "南內3",
+      "longitude": 121.6070072,
+      "latitude": 25.07887714,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:48",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "內湖區",
+      "name": "南內5",
+      "longitude": 121.6126206,
+      "latitude": 25.06763852,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:49",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "信義區",
+      "name": "南內6",
+      "longitude": 121.57125,
+      "latitude": 25.01748094,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:50",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "信義區",
+      "name": "南內7",
+      "longitude": 121.5723082,
+      "latitude": 25.02223094,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:51",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "信義區",
+      "name": "南內11",
+      "longitude": 121.5762,
+      "latitude": 25.03599863,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:52",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "信義區",
+      "name": "南內14",
+      "longitude": 121.5773898,
+      "latitude": 25.03460301,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:53",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "內湖區",
+      "name": "南內16",
+      "longitude": 121.6110791,
+      "latitude": 25.06499809,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:54",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "內湖區",
+      "name": "南內17",
+      "longitude": 121.6066,
+      "latitude": 25.0821,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:55",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "信義區",
+      "name": "南內18",
+      "longitude": 121.5675,
+      "latitude": 25.0225,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:56",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區2",
+      "longitude": 121.5754076,
+      "latitude": 24.97327332,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:57",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區3",
+      "longitude": 121.5592517,
+      "latitude": 24.9903128,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:58",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區4",
+      "longitude": 121.5550751,
+      "latitude": 25.00079406,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:59",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區5",
+      "longitude": 121.5532078,
+      "latitude": 25.00136344,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:60",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區6",
+      "longitude": 121.5559535,
+      "latitude": 24.99593314,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:61",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "萬華區",
+      "name": "南區7",
+      "longitude": 121.5010634,
+      "latitude": 25.02543311,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:62",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "萬華區",
+      "name": "南區8",
+      "longitude": 121.4966889,
+      "latitude": 25.0318161,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:63",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區9",
+      "longitude": 121.5625649,
+      "latitude": 24.9806989,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:64",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區11",
+      "longitude": 121.5768254,
+      "latitude": 24.98492251,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:65",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區13",
+      "longitude": 121.5550154,
+      "latitude": 24.99955712,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:66",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大安區",
+      "name": "南區14",
+      "longitude": 121.5456754,
+      "latitude": 25.01327773,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:67",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大安區",
+      "name": "南區15",
+      "longitude": 121.5473341,
+      "latitude": 25.01183828,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:68",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大安區",
+      "name": "南區19",
+      "longitude": 121.531192,
+      "latitude": 25.023013,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:69",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大安區",
+      "name": "南區20",
+      "longitude": 121.5440346,
+      "latitude": 25.02654144,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:70",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區21",
+      "longitude": 121.5772033,
+      "latitude": 25.00501499,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:71",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "大安區",
+      "name": "南區22",
+      "longitude": 121.5467659,
+      "latitude": 25.0259388,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:72",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區23",
+      "longitude": 121.5445501,
+      "latitude": 24.99507463,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "machinery:73",
+      "sourceId": "machinery",
+      "assetType": "machinery",
+      "district": "文山區",
+      "name": "南區24",
+      "longitude": 121.5590582,
+      "latitude": 24.98884048,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified",
+        "missing_record_date"
+      ]
+    },
+    {
+      "id": "basin:58",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "康湖路大湖橋下",
+      "longitude": 121.60821036,
+      "latitude": 25.08149057,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:59",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "南港區",
+      "name": "南深路(174號燈桿對面)",
+      "longitude": 121.62220739,
+      "latitude": 25.03467634,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:043-1",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "信義區",
+      "name": "信義路5段150巷499號對面(二池)",
+      "longitude": 121.57350555,
+      "latitude": 25.02101389,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:44",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "信義區",
+      "name": "信義路5段150巷447號對面",
+      "longitude": 121.57259723,
+      "latitude": 25.02323333,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:48",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "南港區",
+      "name": "南港國宅(一池)(福德街737巷)",
+      "longitude": 121.59329722,
+      "latitude": 25.03870278,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:49",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "南港區",
+      "name": "南港國宅(二池)(福德街737巷與成福路269巷口)",
+      "longitude": 121.591475,
+      "latitude": 25.038275,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:50",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "南港區",
+      "name": "南港車站特定區(忠孝東路7段)",
+      "longitude": 121.60488673,
+      "latitude": 25.05148234,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:51",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "仙岩路16巷75號(麥田山莊)  (私有)",
+      "longitude": 121.55037222,
+      "latitude": 24.99625833,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:52",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "老泉街45巷(混元宮)",
+      "longitude": 121.56903611,
+      "latitude": 24.97793333,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:53",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "光輝公園(光輝路30巷旁)",
+      "longitude": 121.55479167,
+      "latitude": 24.98641389,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:54",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "木柵路4段159巷194號旁",
+      "longitude": 121.57714445,
+      "latitude": 25.00512222,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:55",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "萬壽路一池(政大國際關係中心對面)(萬壽路64號旁)",
+      "longitude": 121.58060601,
+      "latitude": 24.98917856,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:56",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "萬壽路二池(21-22燈桿間)",
+      "longitude": 121.58140117,
+      "latitude": 24.98947916,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:57",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "萬壽路三池(25-26燈桿間)",
+      "longitude": 121.58279898,
+      "latitude": 24.98988122,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:34",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "大湖山莊街243巷底",
+      "longitude": 121.59974166,
+      "latitude": 25.09035833,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:35",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "文湖街21巷68弄25-5號",
+      "longitude": 121.56105555,
+      "latitude": 25.088525,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:46",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "大安區",
+      "name": "臥龍街(二池)(和平東路3段642號後方)",
+      "longitude": 121.56305556,
+      "latitude": 25.01222778,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:47",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "信義區",
+      "name": "吳興街600巷98弄11號對面",
+      "longitude": 121.57133333,
+      "latitude": 25.01721944,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:28",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "中山區",
+      "name": "北安路501巷81弄",
+      "longitude": 121.54473889,
+      "latitude": 25.08548333,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:33",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "大湖山莊街177巷23號旁",
+      "longitude": 121.60239444,
+      "latitude": 25.08846111,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:022-1",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "奇岩路(崇仰路口處100米處)下池",
+      "longitude": 121.51288889,
+      "latitude": 25.12660278,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:11",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "中社路1段80號下方49號燈桿對面",
+      "longitude": 121.56148889,
+      "latitude": 25.10719167,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:40",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "康湖(二)(康湖路與康樂街口)",
+      "longitude": 121.62270643,
+      "latitude": 25.07798349,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:042-1",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "信義區",
+      "name": "聯勤技術訓練中心內(二池)",
+      "longitude": 121.57647223,
+      "latitude": 25.02216111,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:45",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "大安區",
+      "name": "臥龍街(一池)(和平東路3段642號)",
+      "longitude": 121.56325,
+      "latitude": 25.01266389,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:3",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "德行東路338巷",
+      "longitude": 121.54039723,
+      "latitude": 25.10891944,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:17",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "住六之六E池(草東街底)",
+      "longitude": 121.56248333,
+      "latitude": 25.1392,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:18",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "住六之六F池(近永公路245巷34弄50號旁)",
+      "longitude": 121.56081388,
+      "latitude": 25.13288333,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:23",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "崇仰公園(三池)(公館路255巷19弄旁)",
+      "longitude": 121.51135,
+      "latitude": 25.12618056,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:41",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "康湖(三)(康湖路與康樂街口)",
+      "longitude": 121.62250176,
+      "latitude": 25.07838248,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:27",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "石牌路2段315巷",
+      "longitude": 121.52186111,
+      "latitude": 25.12456667,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:32",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "大湖山莊街調洪池(大湖山莊街241號旁)",
+      "longitude": 121.59850833,
+      "latitude": 25.08879722,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:12",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "中社路2段66號電桿對面",
+      "longitude": 121.5646,
+      "latitude": 25.10704445,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:1",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "東山路1巷",
+      "longitude": 121.53920834,
+      "latitude": 25.11836111,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:2",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "東山路25巷",
+      "longitude": 121.53965833,
+      "latitude": 25.11598056,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:4",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "玉漕坑溪(中山北路7段14巷53弄2號對面)",
+      "longitude": 121.53355,
+      "latitude": 25.12080833,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:5",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "猴峒坑溪(上游臨福橋處)",
+      "longitude": 121.55031667,
+      "latitude": 25.10311389,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:6",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "猴峒坑溪(下游至善路口)",
+      "longitude": 121.55039167,
+      "latitude": 25.10052222,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:7",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "中社路1段11巷口",
+      "longitude": 121.55996945,
+      "latitude": 25.11084444,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:8",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "中社路1段36巷口",
+      "longitude": 121.56007223,
+      "latitude": 25.10968334,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:9",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "中社路1段派出所對面",
+      "longitude": 121.56007778,
+      "latitude": 25.10921944,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:10",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "中社路1段61巷口上方10米處",
+      "longitude": 121.56056945,
+      "latitude": 25.10779722,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:13",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "中社路2段95棟下方84號燈桿對面",
+      "longitude": 121.56912222,
+      "latitude": 25.10715834,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:14",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "住六之六A池(富館街底)",
+      "longitude": 121.55493889,
+      "latitude": 25.13858056,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:15",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "住六之六B池(富館街底)",
+      "longitude": 121.55520834,
+      "latitude": 25.13976111,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:16",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "住六之六D池(建賢街富館街口)",
+      "longitude": 121.55991388,
+      "latitude": 25.137825,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:19",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "住六之六G池(近永公路245巷34弄262號對面巷底)",
+      "longitude": 121.56237778,
+      "latitude": 25.13296111,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:20",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "士林區",
+      "name": "士林官邸北側沉砂池",
+      "longitude": 121.53212615,
+      "latitude": 25.09618216,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:21",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "公館路350巷對面(公車站旁)",
+      "longitude": 121.50474722,
+      "latitude": 25.12303611,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:22",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "奇岩路(崇仰路口處100米處)上池",
+      "longitude": 121.51288889,
+      "latitude": 25.12660278,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:24",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "致遠三路160號旁",
+      "longitude": 121.50881389,
+      "latitude": 25.12185834,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:25",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "北投藝術大學西南側",
+      "longitude": 121.46691666,
+      "latitude": 25.13032778,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:26",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "北投區",
+      "name": "石牌路2段343巷",
+      "longitude": 121.52365555,
+      "latitude": 25.12436111,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:29",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "中山區",
+      "name": "北安路759巷793號前",
+      "longitude": 121.55331112,
+      "latitude": 25.08627778,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:30",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "中山區",
+      "name": "通北街65巷14號對面",
+      "longitude": 121.53929723,
+      "latitude": 25.08383889,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:31",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "中山區",
+      "name": "通北街161號對面(通北街165巷)",
+      "longitude": 121.537525,
+      "latitude": 25.08879723,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:36",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "內湖路3段256巷5號",
+      "longitude": 121.58776389,
+      "latitude": 25.08921111,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:37",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "康寧醫院大門前",
+      "longitude": 121.60862778,
+      "latitude": 25.07589722,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:38",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "富邦湖濱特區(成功路5段450巷22弄對面)",
+      "longitude": 121.60786389,
+      "latitude": 25.07582222,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:39",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "康湖(一)(成功路5段與康湖路口)",
+      "longitude": 121.60700211,
+      "latitude": 25.08188218,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:42",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "信義區",
+      "name": "聯勤技術訓練中心內(一池)",
+      "longitude": 121.57573611,
+      "latitude": 25.02225278,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:43",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "信義區",
+      "name": "信義路5段150巷499號對面(一池)",
+      "longitude": 121.57374722,
+      "latitude": 25.02080278,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:60",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "信義區",
+      "name": "信義快速道路近文山隧道南端出口",
+      "longitude": 121.58139659,
+      "latitude": 25.0082201,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:61",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "大溝溪生態治水園區(大湖山莊街243巷口)",
+      "longitude": 121.59834411,
+      "latitude": 25.08897346,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:62",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "內湖區",
+      "name": "金瑞治水園區(內湖路3段348巷)",
+      "longitude": 121.58248627,
+      "latitude": 25.0909331,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:64",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "憲兵營區(辛亥路4段188巷-202巷對面)",
+      "longitude": 121.55648026,
+      "latitude": 25.00266126,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    },
+    {
+      "id": "basin:63",
+      "sourceId": "basin",
+      "assetType": "basin",
+      "district": "文山區",
+      "name": "文山運動中心北側用地(興隆路3段222號北側)",
+      "longitude": 121.5592431,
+      "latitude": 24.99731648,
+      "coordinateStatus": "verified",
+      "qualityFlags": [
+        "operational_status_unknown",
+        "catchment_relationship_unverified"
+      ]
+    }
+  ],
+  "reviewAreas": [
+    {
+      "id": "reference:400a13e2a2c79598",
+      "sourceId": "flood-prone",
+      "district": "北投區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.500002824536,
+              25.1178825470301
+            ],
+            [
+              121.500228746853,
+              25.1179234586792
+            ],
+            [
+              121.500383665013,
+              25.1173331607012
+            ],
+            [
+              121.500299751009,
+              25.115421978383
+            ],
+            [
+              121.500493398709,
+              25.1144459196158
+            ],
+            [
+              121.499570344673,
+              25.1143640939758
+            ],
+            [
+              121.499964094996,
+              25.1154687354936
+            ],
+            [
+              121.500002824536,
+              25.1178825470301
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:214df1a1b83a4b30",
+      "sourceId": "flood-prone",
+      "district": "北投區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.482352512195,
+              25.1163897381884
+            ],
+            [
+              121.483964141425,
+              25.1164943971464
+            ],
+            [
+              121.483974048982,
+              25.1157139381876
+            ],
+            [
+              121.48443640163,
+              25.1156780548973
+            ],
+            [
+              121.484769956041,
+              25.114801901289
+            ],
+            [
+              121.484320813468,
+              25.1145088519229
+            ],
+            [
+              121.481982630076,
+              25.1141231021964
+            ],
+            [
+              121.481824109168,
+              25.1156900159952
+            ],
+            [
+              121.482349209676,
+              25.1157288895555
+            ],
+            [
+              121.482352512195,
+              25.1163897381884
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:f47724c66bd76a97",
+      "sourceId": "flood-prone",
+      "district": "北投區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.476253558508,
+              25.1304099022744
+            ],
+            [
+              121.476588787218,
+              25.1302679438507
+            ],
+            [
+              121.476407655576,
+              25.1299105995023
+            ],
+            [
+              121.47616975133,
+              25.1298347248828
+            ],
+            [
+              121.476085944152,
+              25.1296144434624
+            ],
+            [
+              121.475842632991,
+              25.1297490599332
+            ],
+            [
+              121.476253558508,
+              25.1304099022744
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:7ccc9e69f9d93eae",
+      "sourceId": "flood-prone",
+      "district": "士林區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.496066897007,
+              25.1015072588807
+            ],
+            [
+              121.496234146183,
+              25.1008212604712
+            ],
+            [
+              121.496263660744,
+              25.1000372575775
+            ],
+            [
+              121.496273498931,
+              25.0987276051715
+            ],
+            [
+              121.495761913214,
+              25.0986830589247
+            ],
+            [
+              121.495761913214,
+              25.0990216099935
+            ],
+            [
+              121.495496282169,
+              25.0989948823116
+            ],
+            [
+              121.49536838574,
+              25.0986652404215
+            ],
+            [
+              121.495722560467,
+              25.0987097866748
+            ],
+            [
+              121.495752075027,
+              25.0983801440163
+            ],
+            [
+              121.495486443982,
+              25.0983712347429
+            ],
+            [
+              121.495476605795,
+              25.0982375955646
+            ],
+            [
+              121.495998029699,
+              25.0982821419736
+            ],
+            [
+              121.495998029699,
+              25.098112865533
+            ],
+            [
+              121.495771751401,
+              25.0980415911722
+            ],
+            [
+              121.495761913214,
+              25.0978901330175
+            ],
+            [
+              121.495447091235,
+              25.0978277678404
+            ],
+            [
+              121.495486443982,
+              25.0973823013656
+            ],
+            [
+              121.496145602502,
+              25.0973733920195
+            ],
+            [
+              121.496204631623,
+              25.0971773862424
+            ],
+            [
+              121.49552579673,
+              25.0971773862424
+            ],
+            [
+              121.495584825851,
+              25.0970170176457
+            ],
+            [
+              121.495201136563,
+              25.0970081082731
+            ],
+            [
+              121.495142107442,
+              25.09692792389
+            ],
+            [
+              121.49486663821,
+              25.0969279238901
+            ],
+            [
+              121.495240489311,
+              25.0965180917782
+            ],
+            [
+              121.494984696452,
+              25.0963666317372
+            ],
+            [
+              121.495092916508,
+              25.0957607896981
+            ],
+            [
+              121.494541978044,
+              25.0957518802339
+            ],
+            [
+              121.494541978044,
+              25.0954578675534
+            ],
+            [
+              121.493922172272,
+              25.096170624347
+            ],
+            [
+              121.494187803317,
+              25.096170624347
+            ],
+            [
+              121.494296023372,
+              25.0963666317372
+            ],
+            [
+              121.494286185185,
+              25.0967764643565
+            ],
+            [
+              121.494601007165,
+              25.0967675549663
+            ],
+            [
+              121.494758418155,
+              25.0969902895258
+            ],
+            [
+              121.494384567054,
+              25.0973555733255
+            ],
+            [
+              121.494532139857,
+              25.0975515788171
+            ],
+            [
+              121.494512463483,
+              25.0978723143987
+            ],
+            [
+              121.494905990958,
+              25.0978723143987
+            ],
+            [
+              121.495102754695,
+              25.0982821419736
+            ],
+            [
+              121.494886314584,
+              25.0982732326931
+            ],
+            [
+              121.494886314584,
+              25.0984692367143
+            ],
+            [
+              121.494118936009,
+              25.0985048737753
+            ],
+            [
+              121.494118936009,
+              25.0989146992309
+            ],
+            [
+              121.495151945629,
+              25.0987276051715
+            ],
+            [
+              121.49536838574,
+              25.0990572468936
+            ],
+            [
+              121.495535634917,
+              25.0995027072687
+            ],
+            [
+              121.494118936009,
+              25.0997699827151
+            ],
+            [
+              121.494089421448,
+              25.1002688953191
+            ],
+            [
+              121.494404243428,
+              25.1001976222146
+            ],
+            [
+              121.494394405241,
+              25.1003490775121
+            ],
+            [
+              121.495417576674,
+              25.1001441673589
+            ],
+            [
+              121.495732398654,
+              25.1008390786603
+            ],
+            [
+              121.495279842058,
+              25.1009638059119
+            ],
+            [
+              121.495388062114,
+              25.1014092593435
+            ],
+            [
+              121.496007867886,
+              25.1012756234843
+            ],
+            [
+              121.496066897007,
+              25.1015072588807
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:1199c95cfd4865c9",
+      "sourceId": "flood-prone",
+      "district": "士林區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.4911578248,
+              25.111526375112
+            ],
+            [
+              121.490608167588,
+              25.110844203426
+            ],
+            [
+              121.490973324477,
+              25.1105936087894
+            ],
+            [
+              121.490815730452,
+              25.1103464941309
+            ],
+            [
+              121.490058510377,
+              25.1097269650447
+            ],
+            [
+              121.489635697137,
+              25.1096329912574
+            ],
+            [
+              121.489305134058,
+              25.1097339260631
+            ],
+            [
+              121.488913070872,
+              25.1101933524017
+            ],
+            [
+              121.488936133412,
+              25.1106179721794
+            ],
+            [
+              121.48922057141,
+              25.1108685667661
+            ],
+            [
+              121.489105258708,
+              25.1111017584895
+            ],
+            [
+              121.489401227976,
+              25.1112723014085
+            ],
+            [
+              121.489958572702,
+              25.1106806208743
+            ],
+            [
+              121.490784980398,
+              25.1115611796878
+            ],
+            [
+              121.4911578248,
+              25.111526375112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:94190298bdcb118e",
+      "sourceId": "flood-prone",
+      "district": "士林區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.481136261442,
+              25.1060181179859
+            ],
+            [
+              121.482054576126,
+              25.1060441041145
+            ],
+            [
+              121.48250416769,
+              25.1061913587391
+            ],
+            [
+              121.482905930365,
+              25.1061697036584
+            ],
+            [
+              121.483231166815,
+              25.1061393865389
+            ],
+            [
+              121.483274212816,
+              25.1063256201541
+            ],
+            [
+              121.483575534822,
+              25.1063126271204
+            ],
+            [
+              121.483561186155,
+              25.1061567106081
+            ],
+            [
+              121.484087303943,
+              25.1059878008288
+            ],
+            [
+              121.4841494815,
+              25.1057972356695
+            ],
+            [
+              121.483843376605,
+              25.1057322702064
+            ],
+            [
+              121.483900771273,
+              25.1055157184135
+            ],
+            [
+              121.48353727171,
+              25.1055070563338
+            ],
+            [
+              121.483551620377,
+              25.1051259242198
+            ],
+            [
+              121.483355521929,
+              25.1051562415906
+            ],
+            [
+              121.483235949704,
+              25.1043246766975
+            ],
+            [
+              121.483125943258,
+              25.1038352634661
+            ],
+            [
+              121.480777544768,
+              25.1040561493263
+            ],
+            [
+              121.480232295424,
+              25.1044242915401
+            ],
+            [
+              121.480978426105,
+              25.1044112983044
+            ],
+            [
+              121.480964077438,
+              25.105047965232
+            ],
+            [
+              121.481303662556,
+              25.1050652894558
+            ],
+            [
+              121.481136261442,
+              25.1060181179859
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:34a94ce74c6fee6c",
+      "sourceId": "flood-prone",
+      "district": "士林區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.477873407948,
+              25.1062927447545
+            ],
+            [
+              121.478039807993,
+              25.1060187827467
+            ],
+            [
+              121.478284869903,
+              25.1060461789853
+            ],
+            [
+              121.478466397198,
+              25.1059776883934
+            ],
+            [
+              121.478457320832,
+              25.1058571448753
+            ],
+            [
+              121.477797771564,
+              25.1058489259947
+            ],
+            [
+              121.477779618832,
+              25.1057420804972
+            ],
+            [
+              121.477682804261,
+              25.1057338616089
+            ],
+            [
+              121.477322775073,
+              25.1053804488897
+            ],
+            [
+              121.477020229538,
+              25.1053722299771
+            ],
+            [
+              121.476802396752,
+              25.1055557855602
+            ],
+            [
+              121.477616244243,
+              25.1063694540064
+            ],
+            [
+              121.477746338823,
+              25.106268088199
+            ],
+            [
+              121.477873407948,
+              25.1062927447545
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:5b057869218840c7",
+      "sourceId": "flood-prone",
+      "district": "士林區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.475834251039,
+              25.1064872574069
+            ],
+            [
+              121.475903836512,
+              25.106451642437
+            ],
+            [
+              121.475828200129,
+              25.1063886313095
+            ],
+            [
+              121.476091414744,
+              25.106205076979
+            ],
+            [
+              121.475925014699,
+              25.1059530317743
+            ],
+            [
+              121.475271516342,
+              25.1060434393532
+            ],
+            [
+              121.474990148994,
+              25.1056434538012
+            ],
+            [
+              121.474702730736,
+              25.1057092049407
+            ],
+            [
+              121.474875181691,
+              25.1060489185982
+            ],
+            [
+              121.475029479914,
+              25.1062571297283
+            ],
+            [
+              121.474971996262,
+              25.1063146616885
+            ],
+            [
+              121.47525336361,
+              25.1064598612774
+            ],
+            [
+              121.475105116298,
+              25.1065886230327
+            ],
+            [
+              121.475401610923,
+              25.1068571045545
+            ],
+            [
+              121.475625494619,
+              25.106648894446
+            ],
+            [
+              121.476157974762,
+              25.1071283250851
+            ],
+            [
+              121.476363705726,
+              25.1069776470868
+            ],
+            [
+              121.476079312922,
+              25.1067310826891
+            ],
+            [
+              121.476027880181,
+              25.1067803956084
+            ],
+            [
+              121.475686003726,
+              25.1065173931423
+            ],
+            [
+              121.475776767387,
+              25.1064406839831
+            ],
+            [
+              121.475834251039,
+              25.1064872574069
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference:0b85be6ee5934ae7",
+      "sourceId": "flood-prone",
+      "district": "北投區",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.494730091137,
+              25.1235435659638
+            ],
+            [
+              121.495214557726,
+              25.1235263646225
+            ],
+            [
+              121.495285802805,
+              25.1239133935119
+            ],
+            [
+              121.497199920612,
+              25.1239090931452
+            ],
+            [
+              121.497670138146,
+              25.1215352969585
+            ],
+            [
+              121.495737021615,
+              25.1215697001315
+            ],
+            [
+              121.49590800981,
+              25.1225286846819
+            ],
+            [
+              121.494654096384,
+              25.1225673879362
+            ],
+            [
+              121.494730091137,
+              25.1235435659638
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "historicalByDistrict": [
+    {
+      "district": "中山區",
+      "sourceId": "historical-inundation",
+      "observationCount": 87,
+      "distinctDateCount": 36,
+      "eventDates": [
+        "1991-06-21",
+        "1992-05-15",
+        "1993-07-26",
+        "1995-07-24",
+        "1997-06-04",
+        "1997-07-02",
+        "1997-08-18",
+        "1998-04-13",
+        "1998-06-23",
+        "1998-07-11",
+        "1998-08-06",
+        "1998-09-28",
+        "1998-10-15",
+        "1998-10-25",
+        "1999-06-17",
+        "1999-08-10",
+        "1999-08-25",
+        "2004-06-23",
+        "2004-09-11",
+        "2004-10-25",
+        "2008-09-12",
+        "2009-08-12",
+        "2012-06-16",
+        "2013-08-14",
+        "2013-08-30",
+        "2015-07-23",
+        "2015-08-08",
+        "2017-06-02",
+        "2018-09-08",
+        "2019-07-22",
+        "2021-06-04",
+        "2023-06-23",
+        "2023-06-30",
+        "2023-08-10",
+        "2023-08-22",
+        "2023-08-27"
+      ]
+    },
+    {
+      "district": "中正區",
+      "sourceId": "historical-inundation",
+      "observationCount": 39,
+      "distinctDateCount": 21,
+      "eventDates": [
+        "1991-06-21",
+        "1993-07-26",
+        "1997-07-02",
+        "1998-04-13",
+        "1998-04-14",
+        "1998-06-23",
+        "1998-08-28",
+        "1999-08-25",
+        "2000-06-20",
+        "2000-11-01",
+        "2004-06-23",
+        "2004-08-20",
+        "2004-09-11",
+        "2007-08-22",
+        "2013-08-23",
+        "2015-06-14",
+        "2019-07-22",
+        "2020-08-27",
+        "2023-08-10",
+        "2023-08-20",
+        "2024-08-23"
+      ]
+    },
+    {
+      "district": "信義區",
+      "sourceId": "historical-inundation",
+      "observationCount": 44,
+      "distinctDateCount": 13,
+      "eventDates": [
+        "1991-06-21",
+        "1998-10-15",
+        "1998-10-25",
+        "1999-06-17",
+        "2000-06-20",
+        "2000-06-21",
+        "2001-09-17",
+        "2004-09-11",
+        "2012-06-12",
+        "2016-06-17",
+        "2019-09-28",
+        "2021-06-04",
+        "2024-07-10"
+      ]
+    },
+    {
+      "district": "內湖區",
+      "sourceId": "historical-inundation",
+      "observationCount": 33,
+      "distinctDateCount": 19,
+      "eventDates": [
+        "1991-06-19",
+        "1996-05-28",
+        "1996-09-28",
+        "1997-06-04",
+        "1997-08-18",
+        "1998-10-15",
+        "1999-06-17",
+        "1999-08-11",
+        "2000-11-01",
+        "2001-09-17",
+        "2004-06-23",
+        "2004-09-11",
+        "2004-10-25",
+        "2011-06-28",
+        "2015-09-28",
+        "2017-06-02",
+        "2021-06-04",
+        "2022-10-16",
+        "2024-09-21"
+      ]
+    },
+    {
+      "district": "北投區",
+      "sourceId": "historical-inundation",
+      "observationCount": 67,
+      "distinctDateCount": 26,
+      "eventDates": [
+        "1996-07-29",
+        "1998-07-11",
+        "1998-10-25",
+        "1999-06-17",
+        "1999-08-10",
+        "1999-08-11",
+        "2001-07-17",
+        "2004-06-23",
+        "2004-08-24",
+        "2004-10-25",
+        "2005-05-15",
+        "2006-09-10",
+        "2007-06-05",
+        "2007-08-04",
+        "2007-10-06",
+        "2008-09-12",
+        "2012-04-22",
+        "2012-05-02",
+        "2012-06-12",
+        "2013-08-21",
+        "2015-08-08",
+        "2015-09-28",
+        "2017-06-02",
+        "2018-09-08",
+        "2019-05-20",
+        "2020-08-03"
+      ]
+    },
+    {
+      "district": "南港區",
+      "sourceId": "historical-inundation",
+      "observationCount": 47,
+      "distinctDateCount": 11,
+      "eventDates": [
+        "1991-06-21",
+        "1998-10-15",
+        "2000-11-01",
+        "2001-09-17",
+        "2003-08-13",
+        "2004-09-11",
+        "2004-10-25",
+        "2012-06-12",
+        "2016-06-17",
+        "2021-06-04",
+        "2024-07-10"
+      ]
+    },
+    {
+      "district": "士林區",
+      "sourceId": "historical-inundation",
+      "observationCount": 97,
+      "distinctDateCount": 34,
+      "eventDates": [
+        "1991-06-21",
+        "1992-06-07",
+        "1994-10-10",
+        "1996-07-29",
+        "1997-06-04",
+        "1998-06-23",
+        "1998-10-15",
+        "1999-08-10",
+        "2001-09-17",
+        "2004-06-23",
+        "2004-08-24",
+        "2004-09-11",
+        "2004-10-25",
+        "2005-06-03",
+        "2006-09-10",
+        "2007-06-05",
+        "2007-10-06",
+        "2008-09-12",
+        "2012-04-22",
+        "2012-05-02",
+        "2013-08-14",
+        "2017-06-02",
+        "2018-09-08",
+        "2019-05-20",
+        "2019-07-21",
+        "2019-08-21",
+        "2020-08-03",
+        "2020-08-11",
+        "2020-08-27",
+        "2021-07-31",
+        "2023-06-30",
+        "2023-08-10",
+        "2023-08-20",
+        "2025-10-19"
+      ]
+    },
+    {
+      "district": "大同區",
+      "sourceId": "historical-inundation",
+      "observationCount": 58,
+      "distinctDateCount": 20,
+      "eventDates": [
+        "1991-06-21",
+        "1995-07-24",
+        "1996-05-28",
+        "1998-06-23",
+        "1998-08-06",
+        "1998-08-28",
+        "1998-10-15",
+        "1999-08-10",
+        "2000-08-15",
+        "2004-06-23",
+        "2004-09-11",
+        "2004-10-25",
+        "2009-08-12",
+        "2013-08-14",
+        "2013-08-23",
+        "2015-07-23",
+        "2017-06-02",
+        "2019-08-21",
+        "2023-08-10",
+        "2023-08-22"
+      ]
+    },
+    {
+      "district": "大安區",
+      "sourceId": "historical-inundation",
+      "observationCount": 76,
+      "distinctDateCount": 20,
+      "eventDates": [
+        "1991-06-21",
+        "1993-07-26",
+        "1997-08-30",
+        "1998-04-13",
+        "1999-06-17",
+        "1999-08-25",
+        "2001-09-17",
+        "2004-06-23",
+        "2004-09-11",
+        "2004-10-25",
+        "2007-08-23",
+        "2012-06-12",
+        "2012-06-16",
+        "2014-05-20",
+        "2015-06-14",
+        "2015-08-08",
+        "2018-09-08",
+        "2019-07-22",
+        "2021-06-04",
+        "2022-08-25"
+      ]
+    },
+    {
+      "district": "文山區",
+      "sourceId": "historical-inundation",
+      "observationCount": 78,
+      "distinctDateCount": 29,
+      "eventDates": [
+        "1996-07-29",
+        "1997-09-04",
+        "1998-10-15",
+        "1999-07-02",
+        "2000-11-01",
+        "2001-09-17",
+        "2003-06-20",
+        "2003-08-11",
+        "2004-05-30",
+        "2004-05-31",
+        "2004-08-20",
+        "2004-08-24",
+        "2004-09-11",
+        "2004-10-25",
+        "2006-08-27",
+        "2007-06-23",
+        "2007-07-13",
+        "2007-08-23",
+        "2007-10-06",
+        "2008-09-12",
+        "2008-09-27",
+        "2012-06-12",
+        "2012-06-16",
+        "2014-06-25",
+        "2015-06-07",
+        "2015-08-08",
+        "2015-09-28",
+        "2020-05-29",
+        "2021-06-04"
+      ]
+    },
+    {
+      "district": "松山區",
+      "sourceId": "historical-inundation",
+      "observationCount": 50,
+      "distinctDateCount": 21,
+      "eventDates": [
+        "1991-06-19",
+        "1991-06-21",
+        "1996-09-28",
+        "1997-06-04",
+        "1997-07-02",
+        "1998-04-13",
+        "1998-10-15",
+        "1999-06-17",
+        "1999-08-25",
+        "2001-09-17",
+        "2004-06-23",
+        "2004-09-11",
+        "2011-06-28",
+        "2013-05-11",
+        "2013-08-23",
+        "2014-05-21",
+        "2017-06-02",
+        "2018-09-08",
+        "2019-07-22",
+        "2021-06-04",
+        "2022-10-16"
+      ]
+    },
+    {
+      "district": "萬華區",
+      "sourceId": "historical-inundation",
+      "observationCount": 19,
+      "distinctDateCount": 12,
+      "eventDates": [
+        "1993-07-26",
+        "1996-05-28",
+        "1996-07-29",
+        "1998-06-23",
+        "1999-08-25",
+        "2001-09-17",
+        "2003-06-20",
+        "2005-07-17",
+        "2012-08-12",
+        "2018-09-08",
+        "2023-06-23",
+        "2023-08-10"
+      ]
+    }
+  ],
+  "limitations": [
+    "Independent engineering POC for documentary review, not emergency instructions, flood predictions, operational readiness certification or dispatch.",
+    "No rainfall, reservoir level, asset age, capacity or distance-based protection inference contributes to review priorities.",
+    "Missing infrastructure records or historical polygons do not establish absence of protection or zero review need."
+  ],
+  "geographyReason": "District-level documentary review: official reference polygons have incomplete district coverage and no catchment-to-inventory identity relationship has been adopted. Polygons are context only; no artificial district boundaries or proximity linkage are inferred.",
+  "floodContextAvailable": true
+}

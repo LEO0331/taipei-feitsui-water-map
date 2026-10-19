@@ -159,6 +159,17 @@
       "dependencies": ["feat-010"],
       "status": "done",
       "evidence": "Normalized 39 official survey rows through ROC 114 / 2025, retaining source fields and converting source thousand-cubic-metre values to cubic metres. Added local JSON, filtering, metric switching, charts, pagination, filtered CSV export, data-quality notes, PWA entries, README attribution, and parser regression tests. npm test and npm run build passed."
+    },
+    {
+      "id": "feat-021",
+      "name": "Heavy-Rain Preparedness & Infrastructure Review Decision Support",
+      "description": "Policy Issue 7: district/category evidence review, validated official flood context, deterministic capacity scenarios and minimized bilingual briefing exports.",
+      "dependencies": [
+        "feat-012",
+        "feat-018"
+      ],
+      "status": "done",
+      "evidence": "2026-10-19: audited five official resources; 228 infrastructure records, 9 reference polygons, 695 historical observations / 44 exclusions. Snapshot sha256-d67edc57254ee273 reproduces offline. npm ci, convert:data, 65 tests + tsc, normal/Pages builds and git diff --check passed. Desktop/mobile, retry, exports and legacy navigation verified; see docs/evidence/verification.md."
     }
   ]
 }

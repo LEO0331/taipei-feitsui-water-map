@@ -2,8 +2,8 @@
 
 ## Current State
 
-**Last Updated:** 2026-07-13
-**Session ID:** feitsui-operation-reports-compatibility
+**Last Updated:** 2026-10-19
+**Session ID:** heavy-rain-preparedness-review-v1
 **Active Feature:** none
 
 ## Status
@@ -186,3 +186,21 @@
 ## Notes for Next Session
 
 Start with `AGENTS.md`, then `feature_list.json`, then this file. Do not call `npm run fetch:data` unless refreshing Taipei Open Data is part of the task because it rewrites many raw JSON files.
+
+
+## 2026-10-19 — Issue 7 / feat-021 complete
+
+- Branch: codex/heavy-rain-preparedness-review; baseline main bdbfbda, clean before task.
+- Read project harness and task; baseline 43 tests/typecheck plus normal and Pages builds passed. System Bash init.sh returned E_ACCESSDENIED, Git Bash also could not launch; exact equivalent npm steps ran successfully.
+- Audited only five selected official resources; original KML bytes/hashes preserved. Existing infrastructure bytes matched official downloads; no repository-wide fetch ran.
+- Snapshot sha256-d67edc57254ee273: 88 pumping /73 2026 machinery /67 basin records; 9 official reference polygons; 695 historical observations with44 exclusions. Coverage1991-06-19..2025-10-19 differs from catalogue metadata and is disclosed. No contact or household attributes published.
+- District/category candidates, explicit independent-gap tiers, deterministic ranking, capacity5/10/custom/unlimited, balanced/flood scenarios, fixed-scope comparison and JSON/CSV briefings. A requires an official flood-prone designation and2 independent gaps; history alone stays B.
+- Lazy bilingual module directly accessible via #preparedness. Direct opening skips legacy data loads; switching back to existing modules loads normally. Source provenance and temporal coverage, explanations, conservative map evidence filters, no-tiles view, error/retry and minimized exports included. PWA uses network-first decision snapshot with prior-version offline fallback.
+- Final verification: npm ci; npm run convert:data; npm test (65 passing +tsc); npm run build; Pages build; git diff --check all passed. Targeted GIS/decision/cache tests included in65. No lint script exists; tsc and whitespace checks ran. npm audit --omit=dev:0 vulnerabilities. npm ci reports6 existing development advisories (1low,1moderate,4high); dependencies/lockfile unchanged. Existing large bundle warning remains.
+- Browser: Chinese/English,390x844 mobile (scrollWidth375 <=390), scenario5 vs10/unlimited, custom0 rejected, filter/map/table state, candidate explanations, JSON/CSV actual downloads,503 failure and successful retry, legacy pumping88-record tab and return, no fresh-tab console errors. Screenshots and detailed evidence: docs/evidence/verification.md.
+- Simplifications: one cohesive123.7KB snapshot, allowlisted public fields, pure decision logic, no new dependencies, backend, inferred centroids, rainfall scoring or proximity service joins.
+- Real cap5: gaps-first12 questions across2 districts; balanced15 questions across5 districts (same snapshot and assumptions). These are repeated candidate-specific documentary questions, not unique citywide failures or risk measures.
+- Limits: reference geography covers only北投/士林; strict default excludes limited historical aggregates; permissive includes admitted observations. Current operating condition remains unknown. Catchment mapping/rainfall intentionally excluded.
+- Historical progress preserved. Generated timestamp/path/floating-point churn outside this feature was restored after verification. Vite must be stopped for atomic snapshot replacement on this Windows machine because its watcher may hold a rename-blocking handle.
+
+- Final cross-check: Git attributes preserve selected raw source bytes; restored official CRLF machinery bytes in Git. Projected coordinates round to8 decimals for cross-platform determinism; no original WGS84 values altered. Targeted conversion,65 tests/typecheck and both builds reran after this change.

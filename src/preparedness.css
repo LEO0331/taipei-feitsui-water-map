@@ -1,0 +1,23 @@
+.preparedness { display: grid; gap: 16px; margin-top: 18px; }
+.preparedness-shell .app-header > div { min-width: 0; }
+.preparedness-shell .app-header h1 { white-space: normal; overflow-wrap: anywhere; }
+.preparedness h2, .preparedness h3 { margin-top: 0; }
+.preparedness p { line-height: 1.7; margin: 10px 0; }
+.preparedness-intro { border-top: 4px solid var(--accent); }
+.preparedness small { overflow-wrap: anywhere; }
+.preparedness-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); align-items: end; }
+.preparedness button { min-height: 44px; padding: 10px 14px; border-radius: 6px; background: var(--accent); color: white; }
+.preparedness button:disabled { opacity: .5; cursor: not-allowed; }
+.preparedness .preparedness-link { text-align: left; background: transparent; color: var(--accent); padding: 0; text-decoration: underline; }
+.preparedness-check { display: flex; align-items: center; gap: 8px; }
+.preparedness-check input { width: 20px; min-height: 20px; }
+.preparedness-selected { background: var(--surface-strong); }
+.preparedness-detail { padding: 16px; border-left: 4px solid var(--accent); margin-top: 12px; background: var(--surface-strong); }
+.preparedness details { margin-top: 10px; }
+.preparedness summary { cursor: pointer; min-height: 32px; color: var(--accent); }
+.preparedness td { vertical-align: top; }
+.preparedness td details { max-width: 360px; white-space: normal; }
+.preparedness pre { max-height: 360px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.preparedness-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.preparedness :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+@media (max-width: 600px) { .preparedness .section-heading { align-items: start; flex-direction: column; gap: 8px; } .preparedness .map { min-height: 320px; height: 350px; } .preparedness-controls { grid-template-columns: 1fr; } }
