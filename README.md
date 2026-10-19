@@ -21,7 +21,7 @@ Navigation is grouped to keep the interface usable on desktop and mobile.
 | Overview | Feitsui water quality, combined context dashboard, data table |
 | Reservoir | Hydrometeorology, reservoir operation, sedimentation surveys, Carlson Trophic State Index |
 | Rivers & Ecology | Taipei river water quality, historical benthic species survey, historical amphibian survey, historical butterfly survey |
-| Urban Water & Preparedness | Pumping stations, contracted storm machinery sites, sedimentation basins, park water-safety equipment |
+| Urban Water & Preparedness | Heavy-Rain Preparedness Decision Support, pumping stations, contracted storm machinery sites, sedimentation basins, park water-safety equipment |
 | Water Services | Taipei Water support to Taiwan Water, clear-water quality, business KPIs |
 
 ### Important historical datasets
@@ -31,6 +31,12 @@ Navigation is grouped to keep the interface usable on desktop and mobile.
 - **Taipei Riverside Amphibian Ecology** (`a9228b5e-84fc-4781-916c-6c3e186b9f0c`): one-time historical survey records; the official survey coverage is 2012-08-01 to 2015-05-31. It does not represent current species distribution.
 - **Taipei Riverside Butterfly Ecology** (`679ae4e4-0fc2-4ac5-8db0-bab87990ada4`): one-time historical survey records; the official survey coverage is 2012-08-01 to 2015-05-31. It does not represent current butterfly distribution or biodiversity condition.
 - **Storm and Heavy-Rain Contracted Machinery Sites** (`storm_rainfall_rented_machinery_sites`): source-recorded preparedness sites, not a live deployment or equipment-availability tracker.
+
+### Preparedness evidence review
+
+Open **Urban Water & Preparedness → Heavy-Rain Preparedness Decision Support**, or use `/#preparedness` (`/taipei-feitsui-water-map/#preparedness` on GitHub Pages). The lazy-loaded module reads one static snapshot without loading the legacy reservoir/ecology datasets first. It compares documentary/field-review shortlists under limited capacity; it does not forecast flooding, certify readiness or recommend dispatch.
+
+The audited inputs contain 88 pumping, 73 selected 2026 machinery and 67 basin records, plus nine official flood-prone reference polygons. Historical inundation has 695 admitted observations out of 739, spanning 1991-06-19–2025-10-19; its limited status excludes it from default strict analysis. Permissive analysis can admit its district aggregates. Missing operational evidence means unknown condition. Nearby assets do not establish drainage service. See the [Traditional Chinese MVP](docs/preparedness-decision-mvp.zh-TW.md), [exact methodology](docs/preparedness-decision-methodology.md) and [source audit](docs/preparedness-source-audit.md) for dates, exclusions, scenarios and reproduction.
 
 ## Data sources and processing
 
@@ -89,9 +95,12 @@ npm run data:convert:butterfly-ecology
 npm run data:fetch:storm-machinery
 npm run data:convert:storm-machinery
 npm run data:convert:reservoir-sedimentation-surveys
+npm run data:convert:preparedness
 ```
 
 `npm run fetch:data` performs network I/O and can rewrite raw source files. Use it only when intentionally refreshing source data.
+
+`npm run data:convert:preparedness` is offline and validates stored hashes before rebuilding the decision snapshot. `npm run data:audit:preparedness` explicitly performs network acquisition of the five selected preparedness resources; run it only for an intentional source refresh. Use `npm test` and `npm run build` after conversion.
 
 ## Generated static data
 
@@ -104,6 +113,7 @@ The application caches key static assets through `public/sw.js`. Major outputs i
 - `public/data/butterfly-ecology/{records,summary,sites,metadata}.json`
 - `public/data/storm-rainfall-rented-machinery-sites/{records,metadata,sites}.json`
 - `public/data/reservoir-sedimentation-surveys/{records,summary,conversion-report}.json`
+- `public/data/preparedness-decision/{snapshot,source-health,review-areas,evidence-summary,conversion-report}.json`
 
 ## Deployment
 
@@ -114,6 +124,9 @@ The project builds as a static site. GitHub Pages builds with `GITHUB_PAGES=true
 - [Customer dashboard insights](doc/customer-dashboard-insights.md)
 - [Traditional Chinese README](README.zh-TW.md)
 - [Agent and project workflow](AGENTS.md)
+- [Preparedness MVP (繁體中文)](docs/preparedness-decision-mvp.zh-TW.md)
+- [Preparedness methodology](docs/preparedness-decision-methodology.md)
+- [Preparedness official-source audit](docs/preparedness-source-audit.md)
 
 ## Contributing data changes
 

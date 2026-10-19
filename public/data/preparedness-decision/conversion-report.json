@@ -1,0 +1,893 @@
+{
+  "schemaVersion": "1.0.0",
+  "snapshotVersion": "sha256-d67edc57254ee273",
+  "processedAt": "2026-10-19T01:14:54.464Z",
+  "sources": [
+    {
+      "sourceId": "pumping",
+      "validCount": 88,
+      "rejectedCount": 0
+    },
+    {
+      "sourceId": "machinery",
+      "validCount": 73,
+      "rejectedCount": 0
+    },
+    {
+      "sourceId": "basin",
+      "validCount": 67,
+      "rejectedCount": 0
+    },
+    {
+      "sourceId": "flood-prone",
+      "validCount": 9,
+      "rejectedCount": 0
+    },
+    {
+      "sourceId": "historical-inundation",
+      "validCount": 695,
+      "rejectedCount": 44
+    }
+  ],
+  "temporalCoverage": {
+    "flood-prone": {
+      "start": null,
+      "end": null
+    },
+    "historical-inundation": {
+      "start": "1991-06-19",
+      "end": "2025-10-19"
+    }
+  },
+  "issues": [
+    {
+      "sourceId": "machinery",
+      "recordIndex": 1,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 2,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 3,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 4,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 5,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 6,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 7,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 8,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 9,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 10,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 11,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 12,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 13,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 14,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 15,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 16,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 17,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 18,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 19,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 20,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 21,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 22,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 23,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 24,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 25,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 26,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 27,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 28,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 29,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 30,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 31,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 32,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 33,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 34,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 35,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 36,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 37,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 38,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 39,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 40,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 41,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 42,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 43,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 44,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 45,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 46,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 47,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 48,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 49,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 50,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 51,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 52,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 53,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 54,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 55,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 56,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 57,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 58,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 59,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 60,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 61,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 62,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 63,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 64,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 65,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 66,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 67,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 68,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 69,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 70,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 71,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 72,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "machinery",
+      "recordIndex": 73,
+      "reasons": [
+        "missing_record_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 14,
+      "reasons": [
+        "hole_topology_not_verified"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 16,
+      "reasons": [
+        "hole_topology_not_verified"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 19,
+      "reasons": [
+        "hole_topology_not_verified"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 52,
+      "reasons": [
+        "self_intersection"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 56,
+      "reasons": [
+        "self_intersection"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 159,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 231,
+      "reasons": [
+        "hole_topology_not_verified"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 264,
+      "reasons": [
+        "duplicate_observation_geometry"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 441,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 482,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 486,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 498,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 516,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 534,
+      "reasons": [
+        "duplicate_observation_geometry"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 624,
+      "reasons": [
+        "self_intersection"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 625,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 627,
+      "reasons": [
+        "overlapping_polygon_components"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 635,
+      "reasons": [
+        "self_intersection"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 714,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 715,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 716,
+      "reasons": [
+        "self_intersection",
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 717,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 718,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 719,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 720,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 721,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 722,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 723,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 724,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 725,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 726,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 727,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 728,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 729,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 730,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 731,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 732,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 733,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 734,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 735,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 736,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 737,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 738,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    },
+    {
+      "sourceId": "historical-inundation",
+      "recordIndex": 739,
+      "reasons": [
+        "unknown_district",
+        "invalid_event_date"
+      ]
+    }
+  ],
+  "limitations": [
+    "Issues list refers to source row/placemark indices without personal data. Infrastructure documentary gaps are retained; invalid flood geometries/dates are excluded from aggregation and maps."
+  ]
+}

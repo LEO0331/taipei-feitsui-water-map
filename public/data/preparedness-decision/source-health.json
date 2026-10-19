@@ -1,0 +1,123 @@
+[
+  {
+    "sourceId": "pumping",
+    "datasetId": "026cc0fa-cecc-4c78-b986-ead3b0c8b95b",
+    "resourceId": "d1f9c6e0-5f72-4fc4-ac18-0b75ce0b002e",
+    "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=d1f9c6e0-5f72-4fc4-ac18-0b75ce0b002e",
+    "publicationDate": "2026-06-25",
+    "retrievedAt": "2026-10-19T01:14:54.464Z",
+    "sourceSha256": "664b6780150f7734e9dd3c667bab695816f8a3dcb194a29040400d0ccb6e01a3",
+    "version": "catalogue-2026-06-25",
+    "publisher": "臺北市政府工務局水利工程處",
+    "coordinateSystem": "EPSG:3826",
+    "sourceSchema": "CSV NO/站名/行政區域/X坐標/Y坐標",
+    "temporalCoverage": {
+      "start": null,
+      "end": null
+    },
+    "status": "verified",
+    "recordCount": 88,
+    "rejectedCount": 0,
+    "limitations": [
+      "Inventory records do not verify operating condition, present availability or service coverage."
+    ]
+  },
+  {
+    "sourceId": "machinery",
+    "datasetId": "cdbc2677-7f23-42e5-9b83-a57ab9bee39c",
+    "resourceId": "0f4541e5-9f7c-406f-bbd4-3c22e6255465",
+    "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=0f4541e5-9f7c-406f-bbd4-3c22e6255465",
+    "publicationDate": "2026-07-21",
+    "retrievedAt": "2026-10-19T01:14:54.464Z",
+    "sourceSha256": "4a9953e8fe939fabe3bf1537f84cf77d0f4fda65e2de27ad3792264600c08088",
+    "version": "115年度/2026",
+    "publisher": "臺北市政府工務局水利工程處",
+    "coordinateSystem": "EPSG:4326",
+    "sourceSchema": "CSV 115年度 ENGINEID/OBJECTID/DISTRICT/Longitude/Latitude",
+    "temporalCoverage": {
+      "start": null,
+      "end": null
+    },
+    "status": "verified",
+    "recordCount": 73,
+    "rejectedCount": 0,
+    "limitations": [
+      "Inventory records do not verify operating condition, present availability or service coverage.",
+      "Only the official 115年度/2026 edition is used; 2025 edition is excluded. No personal or contractor attributes retained."
+    ]
+  },
+  {
+    "sourceId": "basin",
+    "datasetId": "03db6e0d-c6a6-400a-9e52-9b821c404c38",
+    "resourceId": "a513c535-e903-4b69-9f5e-7ba6d7b6aa3d",
+    "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=a513c535-e903-4b69-9f5e-7ba6d7b6aa3d",
+    "publicationDate": "2024-12-18",
+    "retrievedAt": "2026-10-19T01:14:54.464Z",
+    "sourceSha256": "19764a9a1f3fbe27c49f299bcec953cfae121dca7b337e5d195437ee40e24f94",
+    "version": "catalogue-2024-12-18",
+    "publisher": "臺北市政府工務局水利工程處",
+    "coordinateSystem": "EPSG:3826",
+    "sourceSchema": "CSV POOL_CODE/POOL_NAME/TOWN_NAME/X坐標/Y坐標",
+    "temporalCoverage": {
+      "start": null,
+      "end": null
+    },
+    "status": "verified",
+    "recordCount": 67,
+    "rejectedCount": 0,
+    "limitations": [
+      "Inventory records do not verify operating condition, present availability or service coverage.",
+      "Catchment area unit is not stated in the selected CSV header or catalogue; omitted from decision inputs. Catchment area is not detention volume."
+    ]
+  },
+  {
+    "sourceId": "flood-prone",
+    "datasetId": "08101966-7aca-48e0-a028-6da02ba1192e",
+    "resourceId": "db12426f-777c-48f0-90a8-bb582f39a33e",
+    "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=db12426f-777c-48f0-90a8-bb582f39a33e",
+    "publicationDate": "2025-06-03",
+    "retrievedAt": "2026-10-19T01:14:54.464Z",
+    "sourceSha256": "735fd7adda319dde4017f6184bab90a13c548853d1768a5b1e0a2471bccbd864",
+    "version": "catalogue-2025-06-03",
+    "publisher": "臺北市政府工務局水利工程處",
+    "coordinateSystem": "EPSG:4326",
+    "sourceSchema": "KML 2.2 Polygon/MultiGeometry",
+    "temporalCoverage": {
+      "start": null,
+      "end": null
+    },
+    "status": "verified",
+    "recordCount": 9,
+    "rejectedCount": 0,
+    "limitations": [
+      "WGS84 KML source precision; coordinate bounds are a sanity check, not administrative boundary verification. District labels are source attributes, not independently surveyed boundaries.",
+      "Self-intersection, ring and planar component intersection/containment checks applied. Holes and touching or overlapping components are excluded conservatively. Historical/reference geometry is not a present-day flood forecast.",
+      "Published reference areas do not cover every district; absence is not evidence of no flood susceptibility."
+    ]
+  },
+  {
+    "sourceId": "historical-inundation",
+    "datasetId": "8377b584-81e9-432d-b902-5b4e9978e6bc",
+    "resourceId": "dbed5503-d5fb-46d5-8701-7b591ac38c35",
+    "sourceUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=dbed5503-d5fb-46d5-8701-7b591ac38c35",
+    "publicationDate": "2026-09-30",
+    "retrievedAt": "2026-10-19T01:14:54.464Z",
+    "sourceSha256": "c8c4432002de47233219b03b4de916b6be24747e6b2acb92cfc0760090c04bb1",
+    "version": "catalogue-2026-09-30/document-1140307",
+    "publisher": "臺北市政府工務局水利工程處",
+    "coordinateSystem": "EPSG:4326",
+    "sourceSchema": "KML 2.2 Polygon/MultiGeometry",
+    "temporalCoverage": {
+      "start": "1991-06-19",
+      "end": "2025-10-19"
+    },
+    "status": "limited",
+    "recordCount": 695,
+    "rejectedCount": 44,
+    "limitations": [
+      "WGS84 KML source precision; coordinate bounds are a sanity check, not administrative boundary verification. District labels are source attributes, not independently surveyed boundaries.",
+      "Self-intersection, ring and planar component intersection/containment checks applied. Holes and touching or overlapping components are excluded conservatively. Historical/reference geometry is not a present-day flood forecast.",
+      "Publication date is not event coverage. Validated observation dates: 1991-06-19 through 2025-10-19, including observations before catalogue coverage start 2015-05-01. Document title 1140307 differs from catalogue update 2026-09-30; catalogue coverage end 2026-09-11 does not establish observations through that date. Counts represent polygon observations; distinct dates are not unique storm events. Depth/area units not independently confirmed and not scored. Household addresses and historical polygons are not republished."
+    ]
+  }
+]
