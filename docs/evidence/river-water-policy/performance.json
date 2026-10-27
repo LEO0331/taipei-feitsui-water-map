@@ -1,0 +1,58 @@
+{
+  "snapshotId": "sha256-212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+  "runtime": "v24.14.0",
+  "environment": "win32/x64",
+  "note": "One local Node run; scenario timing is pure calculation, not browser interaction or network latency. Fifty repetitions, no hardware-normalized benchmark claim.",
+  "assets": [
+    {
+      "file": "index-DLQkzA91.js",
+      "bytes": 1059956,
+      "gzipBytes": 311799
+    },
+    {
+      "file": "RiverWaterPolicyDashboard-DKfhzsrH.js",
+      "bytes": 57635,
+      "gzipBytes": 19683
+    },
+    {
+      "file": "RiverWaterPolicyDashboard-lHhjvjv-.css",
+      "bytes": 2208,
+      "gzipBytes": 789
+    }
+  ],
+  "snapshotBytes": 7016489,
+  "snapshotGzipBytes": 310227,
+  "nodeValidationMs": 125.76359999999997,
+  "balancedCapacity10": {
+    "runs": 50,
+    "medianMs": 0.18849999999997635,
+    "p95Ms": 0.27089999999998327
+  },
+  "exports": [
+    {
+      "config": {
+        "mode": "A"
+      },
+      "eligible": 736,
+      "jsonBytes": 1054538,
+      "csvBytes": 2455649
+    },
+    {
+      "config": {
+        "mode": "B",
+        "evidence": "limited"
+      },
+      "eligible": 823,
+      "jsonBytes": 3940168,
+      "csvBytes": 6299507
+    },
+    {
+      "config": {
+        "mode": "C"
+      },
+      "eligible": 0,
+      "jsonBytes": 4243,
+      "csvBytes": 2895
+    }
+  ]
+}

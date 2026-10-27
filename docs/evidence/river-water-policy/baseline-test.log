@@ -1,0 +1,81 @@
+
+> taipei-feitsui-water-map@0.1.0 test
+> npm run test:unit && tsc --noEmit
+
+
+> taipei-feitsui-water-map@0.1.0 test:unit
+> node --import tsx --test tests/*.test.ts
+
+✔ butterfly ecology date parser rejects zero and invalid survey dates (1.2224ms)
+✔ CTSI ROC year parser converts annual ROC years (2.8725ms)
+✔ CTSI parser preserves decimals and warns on out-of-range values (0.7137ms)
+✔ CTSI category helpers classify source indicators and numeric bands (0.2834ms)
+✔ CTSI trend and summary values are generated from records (0.9358ms)
+✔ clear-water period parser converts ROC filename and resource coverage (6.4609ms)
+✔ clear-water numeric and standard parsers preserve missing values (1.1526ms)
+✔ clear-water comparison handles upper bounds and ranges without safety claims (0.3472ms)
+✔ clear-water test item parser creates stable keys and categories (1.2554ms)
+✔ clear-water detection status preserves source-reported zero (0.1983ms)
+✔ parseHydrometDate accepts ROC and Gregorian slash dates (1.6068ms)
+✔ parseHydrometValue preserves raw missing and numeric values (1.2771ms)
+✔ aggregateHydrometMonthlySummary totals and averages daily records (0.9201ms)
+✔ getDominantWindDirection returns null when all directions are missing (0.2445ms)
+✔ joinWaterQualityAndHydrometByPeriod returns only shared periods (0.4468ms)
+✔ parseOperationValue preserves raw comma-formatted values (2.0791ms)
+✔ parseOperationDate accepts ROC dates and resource-title fallback months (0.9195ms)
+✔ aggregateOperationMonthlySummary totals flows and bounds water level (1.0527ms)
+✔ buildOperationYearlySummary combines every available month without assuming a fixed range (11.5488ms)
+✔ joinMonitoringDataByPeriod joins water with hydromet or operation context (0.4196ms)
+✔ park water-safety classifier detects common facility types (1.1713ms)
+✔ park water-safety parser derives district and conservative park names (0.3335ms)
+✔ park water-safety coordinates convert TWD97 and accept WGS84-like values (1.4733ms)
+✔ PWA refreshes a versioned decision snapshot at the Pages base and retains known-good offline data (212.5019ms)
+✔ tiers use independent gaps and official context, never inventory quantity (5.0685ms)
+✔ missing source collapses multiple missing attributes into one failure and insufficient evidence (0.567ms)
+✔ zero source records represent a coverage question rather than unprotected geography (0.5017ms)
+✔ ranking stable IDs and capacities 5, 10, custom, unlimited and eligible limits (1.638ms)
+✔ balanced scenario round-robins districts while keeping exact population fixed (1.1682ms)
+✔ stale and permissive filters explicitly change evidence scope and never mutate inputs (1.9837ms)
+✔ mode A survives unavailable flood input; mode B and flood scenario explain unavailable evidence (1.2281ms)
+✔ historical counts never raise priority on their own and out-of-scope records contribute nothing (2.4021ms)
+✔ explicit source age breaks otherwise equal ties and unknown date remains unknown (0.7096ms)
+✔ ranking compares tier, independent questions, verified source types and version uncertainty before age and stable ID (0.6802ms)
+✔ official flood scenario uses only validated eligible reference inputs, never nearby asset presence (0.7503ms)
+✔ briefing and CSV preserve provenance/configuration/limitations and whitelist fields against private-data leakage (5.6819ms)
+✔ runtime snapshot boundary rejects malformed schema, duplicate source identity and invented coordinates (1.2524ms)
+✔ KML polygon and MultiGeometry are parsed with source attributes and original precision (2.5013ms)
+✔ Invalid/self-intersecting, missing, out-of-bounds and unclosed geometry fail closed (0.2374ms)
+✔ Duplicate geometry identity ignores ring start and orientation (0.2195ms)
+✔ TWD97 conversion, district and event date validation are explicit (3.1626ms)
+✔ Snapshot reproduces exactly, selects a single machinery edition, aggregates dates without unique-event claims and minimizes contact data (166.1895ms)
+✔ Bad source bytes and unsupported/mixed editions preserve the previous-good public snapshot (88.2114ms)
+✔ Missing official KMLs leave Mode A inventory intact and explicitly disable Mode B (16.5803ms)
+✔ Facility duplicate IDs are audited, while missing dates/coordinates and unknown districts remain explicit gaps (73.0352ms)
+✔ pumping station parser treats YYYYMMDD as a Gregorian establishment date (1.2084ms)
+✔ pumping station parser derives management district numbers only from clear labels (0.3041ms)
+✔ TWD97 pumping station coordinates convert into Taipei bounds (1.0752ms)
+✔ sedimentation survey parser handles ROC/Gregorian ranges and source formatting (1.8497ms)
+✔ river parser preserves detection limits and missing states (1.9351ms)
+✔ river parser accepts scientific notation and infers ROC year (0.2787ms)
+✔ sedimentation basin coordinates convert from TWD97 into Taipei bounds (1.2016ms)
+✔ sedimentation basin parsers preserve zero area and normalize districts (0.6347ms)
+✔ business KPI ROC month parser accepts compact and slash formats (1.3748ms)
+✔ business KPI numeric parser preserves commas, negatives, and missing values (0.6535ms)
+✔ business KPI derived metrics compute only from source values (0.3244ms)
+✔ business KPI change and rolling metrics require comparison periods (9.421ms)
+✔ support date parser accepts Gregorian and ROC month formats (0.8145ms)
+✔ support volume parser preserves missing values (0.1445ms)
+✔ support metrics derive shares and rolling totals only with complete 12 months (9.2697ms)
+✔ parseWaterQualityValue preserves qualifiers and numeric thresholds (1.0774ms)
+✔ parseRocYearMonthFromFilename converts ROC dates (0.1886ms)
+✔ filterRecords matches Chinese group and parameter labels (0.2875ms)
+✔ buildWaterQualitySummary excludes summary rows from latest station count (0.3669ms)
+✔ aggregateStationComparison excludes summary rows (0.168ms)
+ℹ tests 65
+ℹ suites 0
+ℹ pass 65
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 981.2952

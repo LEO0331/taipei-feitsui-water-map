@@ -1,0 +1,28 @@
+.river-policy-shell .app-header > div { min-width: 0; }
+.river-policy-shell .app-header h1 { white-space: normal; overflow-wrap: anywhere; }
+.river-policy { display: grid; gap: 16px; margin-top: 18px; min-width: 0; }
+.river-policy > *, .river-policy section, .river-policy .table-wrap { min-width: 0; }
+.river-policy h2, .river-policy h3 { margin-top: 0; }
+.river-policy p { line-height: 1.7; margin: 8px 0; }
+.river-policy .policy-intro { border-top: 4px solid var(--accent); }
+.river-policy-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); align-items: end; }
+.river-policy label { min-width: 0; display: grid; gap: 6px; }
+.river-policy select { min-width: 0; max-width: 100%; }
+.river-policy button { min-height: 44px; padding: 10px 14px; border-radius: 6px; background: var(--accent); color: white; }
+.river-policy button:disabled { opacity: .5; cursor: not-allowed; }
+.river-policy a, .river-policy code, .river-policy small { overflow-wrap: anywhere; }
+.river-policy caption { text-align: left; font-weight: 700; padding: 10px 0; color: var(--ink); }
+.river-policy .table-wrap { max-width: 100%; border-radius: 6px; }
+.river-policy td { vertical-align: top; }
+.river-policy td details { max-width: 420px; white-space: normal; }
+.river-policy details { margin-top: 8px; }
+.river-policy summary { cursor: pointer; min-height: 32px; color: var(--accent); }
+.river-policy pre { max-height: 360px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.river-policy .policy-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
+.river-policy .policy-selected { background: var(--surface-strong); }
+.river-policy .policy-badge { display: inline-block; border: 1px solid var(--line); border-radius: 4px; padding: 3px 6px; font-size: .8rem; }
+.river-policy .policy-chart { width: 100%; height: 310px; min-width: 0; }
+.river-policy .policy-legend { color: var(--muted); font-size: .9rem; }
+.river-policy .policy-ids { max-height: 200px; overflow: auto; overflow-wrap: anywhere; font-size: .78rem; }
+.river-policy :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+@media (max-width: 600px) { .river-policy-controls { grid-template-columns: 1fr; } .river-policy .section-heading { align-items: start; flex-direction: column; gap: 8px; } .river-policy .policy-chart { height: 270px; } }

@@ -1,0 +1,5 @@
+
+> taipei-feitsui-water-map@0.1.0 data:verify:river-water-policy
+> tsx scripts/verifyRiverWaterPolicy.ts
+
+Verified exact bytes and repeat rebuild: sha256-212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81; 7016489 bytes.

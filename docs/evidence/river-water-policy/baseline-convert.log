@@ -1,0 +1,73 @@
+
+> taipei-feitsui-water-map@0.1.0 convert:data
+> npm run convert:water && npm run convert:hydromet && npm run data:convert:feitsui-operation-reports && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts && npm run data:convert:twc-support && npm run data:convert:park-water-safety && npm run data:convert:clear-water-quality && npm run data:convert:tap-water-business && npm run data:convert:ctsi && npm run data:convert:sedimentation-basins && npm run data:convert:reservoir-sedimentation-surveys && npm run data:convert:preparedness
+
+
+> taipei-feitsui-water-map@0.1.0 convert:water
+> tsx scripts/convertFeitsuiWaterQuality.ts
+
+Converted 1764 records across 126 period(s).
+
+> taipei-feitsui-water-map@0.1.0 convert:hydromet
+> tsx scripts/convertFeitsuiHydromet.ts
+
+Converted 31 hydromet daily record(s) across 1 period(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:feitsui-operation-reports
+> tsx scripts/convertFeitsuiOperation.ts && tsx scripts/buildFeitsuiReservoirOperationMonthlyReportSummary.ts
+
+Converted 3961 operation daily record(s) across 130 period(s).
+Built operation-report compatibility summaries for 3961 record(s).
+Converted 768 river water-quality record(s) from 4 file(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:pumping-stations
+> tsx scripts/convertPumpingStations.ts && tsx scripts/buildPumpingStationSummary.ts
+
+Converted 88 pumping station record(s).
+Built river summary for 768 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:twc-support
+> tsx scripts/convertTaipeiWaterSupportTwcMonthlyStatistics.ts && tsx scripts/buildTaipeiWaterSupportTwcSummary.ts
+
+Converted 127 Taipei Water support-to-TWC monthly record(s) from 11 file(s).
+Built Taipei Water support-to-TWC summary for 127 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:park-water-safety
+> tsx scripts/convertParkWaterSafetyEquipment.ts && tsx scripts/buildParkWaterSafetyEquipmentSummary.ts
+
+Converted 156 park water-safety equipment record(s) from 11 file(s).
+Built park water-safety summary for 156 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:clear-water-quality
+> tsx scripts/convertTreatmentPlantClearWaterQuality.ts && tsx scripts/buildTreatmentPlantClearWaterQualitySummary.ts
+
+Converted 568 treatment plant clear-water quality record(s) from 1 file(s).
+Built treatment plant clear-water quality summary for 568 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:tap-water-business
+> tsx scripts/convertTapWaterBusinessKeyMetrics.ts && tsx scripts/buildTapWaterBusinessKeyMetricSummary.ts
+
+Converted 48 Taipei Water business key metric record(s) from 1 file(s).
+Built Taipei Water business key metric summary for 48 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:ctsi
+> tsx scripts/convertCarlsonTrophicStateIndex.ts && tsx scripts/buildCarlsonTrophicStateIndexSummary.ts
+
+Converted 14 Carlson trophic state index record(s) from 1 file(s).
+Built Carlson trophic state index summary for 14 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:sedimentation-basins
+> tsx scripts/convertSedimentationBasinFacilities.ts && tsx scripts/buildSedimentationBasinFacilitySummary.ts
+
+Converted 67 sedimentation basin record(s).
+Built sedimentation basin summary for 67 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:reservoir-sedimentation-surveys
+> tsx scripts/convertReservoirSedimentationSurveys.ts
+
+Converted 39 reservoir sedimentation survey records.
+
+> taipei-feitsui-water-map@0.1.0 data:convert:preparedness
+> tsx scripts/buildPreparednessDecisionSnapshot.ts
+
+Preparedness sha256-d67edc57254ee273: 228 inventory records, 9 reference polygons

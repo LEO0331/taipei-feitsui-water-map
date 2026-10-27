@@ -14,6 +14,16 @@
 
 ## 資料模組
 
+### 政策 #13：河川監測證據查核
+
+由 **河川與生態 → 河川監測證據查核** 開啟，亦可使用 `/#river-policy`（GitHub Pages：`/taipei-feitsui-water-map/#river-policy`）。獨立延遲載入面板只讀取本機不可變快照，並驗證精確檔案 SHA-256。
+
+固定分析日為 2026-10-27。已准入 112–115 年官方年版，共 **768 公布列、720 含量測列**；10 月 16 列尚無量測，11–12 月 32 列為未來預留。460 列具有四項完整數值，但 RPI 精度／四捨五入及同次採樣證據尚未充分准入，因此不產生研究重現 RPI。歷史實體站點連續性未核實，嚴格跨年比較不可用；有限同名標籤配對僅供描述。查核級別是文件疑問，不是污染嚴重度或法規符合性。
+
+離線依序執行 `npm run data:audit:river-water-policy`、`npm run data:build:river-water-policy`、`npm run data:verify:river-water-policy`、`npm run data:report:river-water-policy`。抓取命令預設也僅離線稽核；明確加上 `-- --refresh` 才會暫存官方來源，查閱後以 `-- --accept=<sha256>` 准入指定暫存版本。失敗時保留原先已准入來源與快照，舊探索器資料另行保留。
+
+完整結果見[中文研究報告](docs/river-water-policy-decision-mvp.zh-TW.md)、[來源稽核](docs/river-water-policy-source-audit.md)、[縱向比較方法](docs/river-water-policy-longitudinal-methodology.md)及[交付驗證](docs/river-water-policy-delivery.md)。
+
 為了讓桌面與手機操作更容易，導覽採分類後的次級模組結構。
 
 | 分類 | 模組 |

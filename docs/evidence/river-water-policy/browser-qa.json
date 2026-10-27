@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "tool": "Codex in-app browser via cua_repl",
+  "developmentUrl": "http://127.0.0.1:5173/#river-policy",
+  "pagesProductionPreview": "http://127.0.0.1:5174/taipei-feitsui-water-map/#river-policy",
+  "languages": ["en", "zh-TW"],
+  "responsiveChecksEachLanguage": [
+    {"viewportWidth": 320, "documentScrollWidth": 320},
+    {"viewportWidth": 390, "documentScrollWidth": 375},
+    {"viewportWidth": 768, "documentScrollWidth": 753},
+    {"viewportWidth": 1024, "documentScrollWidth": 1009},
+    {"viewportWidth": 1440, "documentScrollWidth": 1425}
+  ],
+  "allTablesCaptioned": true,
+  "unlabelledSelects": 0,
+  "h1Count": 1,
+  "keyboardFocusVisible": true,
+  "sourceRiverIndicatorFilter": {"source":"river-2026", "river":"新店溪", "indicator":"dissolvedOxygenMgL", "published":12, "observed":9, "future":2, "eligible":10, "selectedAtCapacity10":10},
+  "defaultAllCapacitySelected":736,
+  "latestYearAllCapacitySelected":160,
+  "strictModeBEligible":0,
+  "limitedModeBEligible":823,
+  "modeCEligible":0,
+  "noExactSilverChartUnavailable":true,
+  "missingPointerErrorAndRestoredRetry":true,
+  "legacyNavigationVerified":["river explorer","preparedness inventory228/candidates36","reservoir overview"],
+  "finalCleanConsoleErrors":0,
+  "finalCleanConsoleWarnings":0,
+  "finalProductionDownloads":{"jsonBytes":76875,"csvBytes":118004,"bothByteIdenticalToOfflineRepresentative":true},
+  "networkEvidence":"Policy load code fetches only local pointer and content-addressed snapshot. Direct policy entry skips legacy loader. Full browser network trace was not captured.",
+  "browserPerformanceLimit":"No network latency or first-paint measurements claimed; separate performance.json reports build sizes and local Node calculations only."
+}

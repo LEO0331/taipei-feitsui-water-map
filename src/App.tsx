@@ -79,8 +79,9 @@ import DragonflyEcologyPanel from './DragonflyEcologyPanel';
 import type { DragonflyObservation, DragonflySummary } from './types/dragonflyEcology';
 
 const PreparednessDecisionPanel = lazy(() => import('./PreparednessDecisionPanel'));
+const RiverWaterPolicyDashboard = lazy(() => import('./RiverWaterPolicyDashboard'));
 
-type MonitoringTab = 'preparednessDecision' | 'waterQuality' | 'riverWaterQuality' | 'riverEcology' | 'amphibianEcology' | 'butterflyEcology' | 'dragonflyEcology' | 'pumpingStations' | 'stormMachinery' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
+type MonitoringTab = 'riverWaterPolicy' | 'preparednessDecision' | 'waterQuality' | 'riverWaterQuality' | 'riverEcology' | 'amphibianEcology' | 'butterflyEcology' | 'dragonflyEcology' | 'pumpingStations' | 'stormMachinery' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
 type NavigationCategory = 'overview' | 'reservoir' | 'rivers' | 'urbanWater' | 'waterServices';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
@@ -192,7 +193,7 @@ function MonitoringTabs({
   const categories: Array<{ id: NavigationCategory; label: string; tabs: Array<{ id: MonitoringTab; label: string }> }> = [
     { id: 'overview', label: text(language, '總覽', 'Overview'), tabs: [{ id: 'waterQuality', label: t.waterQuality }, { id: 'combinedDashboard', label: t.combinedDashboard }, { id: 'dataTable', label: t.dataTable }] },
     { id: 'reservoir', label: text(language, '水庫', 'Reservoir'), tabs: [{ id: 'hydromet', label: t.hydromet }, { id: 'operation', label: t.operation }, { id: 'reservoirSedimentationSurveys', label: text(language, '翡翠水庫淤積調查', 'Sedimentation Surveys') }, { id: 'carlsonTrophicStateIndex', label: t.carlsonTrophicStateIndex }] },
-    { id: 'rivers', label: text(language, '河川與生態', 'Rivers & Ecology'), tabs: [{ id: 'riverWaterQuality', label: t.riverWaterQuality }, { id: 'riverEcology', label: text(language, '底棲生物', 'Benthic Species') }, { id: 'amphibianEcology', label: text(language, '兩棲類調查', 'Amphibian Survey') }, { id: 'butterflyEcology', label: text(language, '蝴蝶分布', 'Butterfly Distribution') }, { id: 'dragonflyEcology', label: text(language, '蜻蜓分布', 'Dragonfly Distribution') }] },
+    { id: 'rivers', label: text(language, '河川與生態', 'Rivers & Ecology'), tabs: [{ id: 'riverWaterQuality', label: t.riverWaterQuality }, { id: 'riverWaterPolicy', label: text(language, '河川監測證據查核', 'River Monitoring Evidence Review') }, { id: 'riverEcology', label: text(language, '底棲生物', 'Benthic Species') }, { id: 'amphibianEcology', label: text(language, '兩棲類調查', 'Amphibian Survey') }, { id: 'butterflyEcology', label: text(language, '蝴蝶分布', 'Butterfly Distribution') }, { id: 'dragonflyEcology', label: text(language, '蜻蜓分布', 'Dragonfly Distribution') }] },
     { id: 'urbanWater', label: text(language, '都市水務與防汛', 'Urban Water & Preparedness'), tabs: [{ id: 'preparednessDecision', label: text(language, '防汛整備決策分析', 'Heavy-Rain Preparedness Decision Support') }, { id: 'pumpingStations', label: t.pumpingStations }, { id: 'stormMachinery', label: text(language, '防汛外租機械', 'Storm Machinery') }, { id: 'sedimentationBasins', label: t.sedimentationBasins }, { id: 'parkWaterSafety', label: t.waterSafetyEquipment }] },
     { id: 'waterServices', label: text(language, '自來水服務', 'Water Services'), tabs: [{ id: 'twcSupport', label: t.twcSupport }, { id: 'clearWaterQuality', label: t.clearWaterQuality }, { id: 'tapWaterBusiness', label: t.waterBusinessKpis }] },
   ];
@@ -1229,7 +1230,7 @@ export default function App() {
   const [dragonflyRecords, setDragonflyRecords] = useState<DragonflyObservation[]>([]); const [dragonflySummary, setDragonflySummary] = useState<DragonflySummary | null>(null);
   const [loadError, setLoadError] = useState('');
   const [selectedStation, setSelectedStation] = useState('');
-  const [activeTab, setActiveTab] = useState<MonitoringTab>(() => location.hash === '#preparedness' ? 'preparednessDecision' : 'waterQuality');
+  const [activeTab, setActiveTab] = useState<MonitoringTab>(() => location.hash === '#river-policy' ? 'riverWaterPolicy' : location.hash === '#preparedness' ? 'preparednessDecision' : 'waterQuality');
   const [hydrometParameter, setHydrometParameter] = useState<HydrometParameterKey>('avgTemperatureC');
   const [hydrometDayType, setHydrometDayType] = useState<DayTypeFilter>('all');
   const [hydrometStartDate, setHydrometStartDate] = useState('');
@@ -1262,7 +1263,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    if (activeTab === 'preparednessDecision' || summary) return;
+    if (activeTab === 'preparednessDecision' || activeTab === 'riverWaterPolicy' || summary) return;
     const fetchJson = async <T,>(fileName: string): Promise<T> => {
       const response = await fetch(dataUrl(fileName));
       if (!response.ok) throw new Error(`Failed to load ${fileName}: ${response.status}`);
@@ -1337,7 +1338,7 @@ export default function App() {
     }).catch((error: unknown) => {
       setLoadError(error instanceof Error ? error.message : 'Failed to load water-quality data.');
     });
-  }, [activeTab === 'preparednessDecision']);
+  }, [activeTab === 'preparednessDecision' || activeTab === 'riverWaterPolicy']);
 
   useEffect(() => {
     if (latestPeriod && !filters.period) setFilters((current) => ({ ...current, period: latestPeriod }));
@@ -1384,6 +1385,10 @@ export default function App() {
     return true;
   });
   const t = translations[language];
+
+  if (activeTab === 'riverWaterPolicy') {
+    return <main className="river-policy-shell"><header className="app-header"><div><p className="eyebrow">GovTech · Policy 13</p><h1>{text(language, '臺北市河川水質監測與長期趨勢證據查核', 'Taipei River Monitoring & Longitudinal Evidence Review')}</h1></div><LanguageToggle language={language} setLanguage={setLanguage} /></header><MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} /><Suspense fallback={<p role="status">{text(language, '載入模組…', 'Loading module…')}</p>}><RiverWaterPolicyDashboard language={language} /></Suspense><Footer language={language} /></main>;
+  }
 
   if (activeTab === 'preparednessDecision') {
     return <main className="preparedness-shell"><header className="app-header"><div><p className="eyebrow">GovTech · Issue 7</p><h1>{text(language, '臺北水環境與防汛整備', 'Taipei Water & Preparedness')}</h1></div><LanguageToggle language={language} setLanguage={setLanguage} /></header><MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} /><Suspense fallback={<p role="status">{text(language, '載入模組…', 'Loading module…')}</p>}><PreparednessDecisionPanel language={language} /></Suspense><Footer language={language} /></main>;
