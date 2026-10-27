@@ -44,3 +44,21 @@ The existing preparedness panel is the visual reference. Visual-verdict score **
 ![Policy #13 Traditional Chinese mobile](evidence/river-water-policy/final-zh-mobile.png)
 
 Build/test logs, screenshots, representative exports and measurements are retained in `docs/evidence/river-water-policy/`.
+
+## PR delivery status
+
+Implementation commit `a939dc3` is pushed to `origin/codex/river-water-longitudinal-policy-13`. **No PR has been created and nothing has been merged.** The GitHub connector returned HTTP403 (`Resource not accessible by integration`). Automatic approval review then rejected a credential-helper fallback and normal-browser fallback as requiring explicit authorization after the connector failure. No credential access occurred and neither fallback executed. Await explicit authorization for using the user's already signed-in GitHub browser to create this exact PR, or create it manually from the comparison page below.
+
+[Review changes and open the PR creation form](https://github.com/LEO0331/taipei-feitsui-water-map/compare/main...codex/river-water-longitudinal-policy-13?expand=1).
+
+Title: **Add River Water Quality Monitoring & Longitudinal Evidence Review (Policy #13)**
+
+Suggested body:
+
+> Published annual station-month rows include empty calendar placeholders, so treating all768 rows as observations overstates coverage. This adds independently admitted original source bytes, explicit pending/future/observed states, an immutable verified snapshot, conservative comparability/RPI gates, deterministic5/10/all documentary review and a bilingual lazy dashboard at #river-policy.
+>
+> Accepted2023–2026 sources contain720 observed rows,16current-month pending rows and32future placeholders. ModeA736 eligible(A46/B690/C0); strict longitudinal comparisons/RPI remain unavailable with documented evidence blockers.823limited same-label windows contain7239exact monthly indicator pairs, explicitly descriptive. ModeC unavailable. Existing water/heavy-rain inputs and conclusions preserved; no backend or new dependencies.
+>
+> Full GitBash ./init.sh passed npmci, conversion,92tests+TypeScript and normal/Pages builds. Offline source audit and byte-identical repeated rebuild passed. Bothlanguages/fivewidths, selectors/scenarios, gates, keyboard focus, failure/retry, legacy navigation and production JSON/CSV downloads verified. Final downloads exactly matched offline briefings; clean console. Large initial bundle warning remains.
+>
+> See docs/river-water-policy-delivery.md and results.json for source IDs/hashes, all30 findings, actual selectedIDs, screenshots, performance and limitations. SnapshotSHA256212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81. NoPolicy14; do not merge automatically.
