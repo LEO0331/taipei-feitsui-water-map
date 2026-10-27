@@ -1,0 +1,253 @@
+=== Harness Initialization ===
+Project: Taipei Feitsui Reservoir Water Quality Map
+Working directory: /d/Practice/taipei-feitsui-water-map
+
+=== npm ci ===
+
+added 121 packages, and audited 122 packages in 8s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+=== npm run convert:data ===
+
+> taipei-feitsui-water-map@0.1.0 convert:data
+> npm run convert:water && npm run convert:hydromet && npm run data:convert:feitsui-operation-reports && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts && npm run data:convert:twc-support && npm run data:convert:park-water-safety && npm run data:convert:clear-water-quality && npm run data:convert:tap-water-business && npm run data:convert:ctsi && npm run data:convert:sedimentation-basins && npm run data:convert:reservoir-sedimentation-surveys && npm run data:convert:preparedness
+
+
+> taipei-feitsui-water-map@0.1.0 convert:water
+> tsx scripts/convertFeitsuiWaterQuality.ts
+
+Converted 1764 records across 126 period(s).
+
+> taipei-feitsui-water-map@0.1.0 convert:hydromet
+> tsx scripts/convertFeitsuiHydromet.ts
+
+Converted 31 hydromet daily record(s) across 1 period(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:feitsui-operation-reports
+> tsx scripts/convertFeitsuiOperation.ts && tsx scripts/buildFeitsuiReservoirOperationMonthlyReportSummary.ts
+
+Converted 3961 operation daily record(s) across 130 period(s).
+Built operation-report compatibility summaries for 3961 record(s).
+Converted 768 river water-quality record(s) from 4 file(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:pumping-stations
+> tsx scripts/convertPumpingStations.ts && tsx scripts/buildPumpingStationSummary.ts
+
+Converted 88 pumping station record(s).
+Built river summary for 768 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:twc-support
+> tsx scripts/convertTaipeiWaterSupportTwcMonthlyStatistics.ts && tsx scripts/buildTaipeiWaterSupportTwcSummary.ts
+
+Converted 127 Taipei Water support-to-TWC monthly record(s) from 11 file(s).
+Built Taipei Water support-to-TWC summary for 127 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:park-water-safety
+> tsx scripts/convertParkWaterSafetyEquipment.ts && tsx scripts/buildParkWaterSafetyEquipmentSummary.ts
+
+Converted 156 park water-safety equipment record(s) from 11 file(s).
+Built park water-safety summary for 156 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:clear-water-quality
+> tsx scripts/convertTreatmentPlantClearWaterQuality.ts && tsx scripts/buildTreatmentPlantClearWaterQualitySummary.ts
+
+Converted 568 treatment plant clear-water quality record(s) from 1 file(s).
+Built treatment plant clear-water quality summary for 568 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:tap-water-business
+> tsx scripts/convertTapWaterBusinessKeyMetrics.ts && tsx scripts/buildTapWaterBusinessKeyMetricSummary.ts
+
+Converted 48 Taipei Water business key metric record(s) from 1 file(s).
+Built Taipei Water business key metric summary for 48 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:ctsi
+> tsx scripts/convertCarlsonTrophicStateIndex.ts && tsx scripts/buildCarlsonTrophicStateIndexSummary.ts
+
+Converted 14 Carlson trophic state index record(s) from 1 file(s).
+Built Carlson trophic state index summary for 14 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:sedimentation-basins
+> tsx scripts/convertSedimentationBasinFacilities.ts && tsx scripts/buildSedimentationBasinFacilitySummary.ts
+
+Converted 67 sedimentation basin record(s).
+Built sedimentation basin summary for 67 record(s).
+
+> taipei-feitsui-water-map@0.1.0 data:convert:reservoir-sedimentation-surveys
+> tsx scripts/convertReservoirSedimentationSurveys.ts
+
+Converted 39 reservoir sedimentation survey records.
+
+> taipei-feitsui-water-map@0.1.0 data:convert:preparedness
+> tsx scripts/buildPreparednessDecisionSnapshot.ts
+
+Preparedness sha256-d67edc57254ee273: 228 inventory records, 9 reference polygons
+=== npm test ===
+
+> taipei-feitsui-water-map@0.1.0 test
+> npm run test:unit && tsc --noEmit
+
+
+> taipei-feitsui-water-map@0.1.0 test:unit
+> node --import tsx --test tests/*.test.ts
+
+✔ butterfly ecology date parser rejects zero and invalid survey dates (1.1364ms)
+✔ CTSI ROC year parser converts annual ROC years (1.7521ms)
+✔ CTSI parser preserves decimals and warns on out-of-range values (0.3423ms)
+✔ CTSI category helpers classify source indicators and numeric bands (0.2564ms)
+✔ CTSI trend and summary values are generated from records (0.9343ms)
+✔ clear-water period parser converts ROC filename and resource coverage (3.2204ms)
+✔ clear-water numeric and standard parsers preserve missing values (1.297ms)
+✔ clear-water comparison handles upper bounds and ranges without safety claims (0.2982ms)
+✔ clear-water test item parser creates stable keys and categories (1.4645ms)
+✔ clear-water detection status preserves source-reported zero (0.2753ms)
+✔ parseHydrometDate accepts ROC and Gregorian slash dates (1.9425ms)
+✔ parseHydrometValue preserves raw missing and numeric values (0.9115ms)
+✔ aggregateHydrometMonthlySummary totals and averages daily records (0.7245ms)
+✔ getDominantWindDirection returns null when all directions are missing (0.1837ms)
+✔ joinWaterQualityAndHydrometByPeriod returns only shared periods (0.3738ms)
+✔ parseOperationValue preserves raw comma-formatted values (1.9684ms)
+✔ parseOperationDate accepts ROC dates and resource-title fallback months (0.8836ms)
+✔ aggregateOperationMonthlySummary totals flows and bounds water level (0.8419ms)
+✔ buildOperationYearlySummary combines every available month without assuming a fixed range (16.9556ms)
+✔ joinMonitoringDataByPeriod joins water with hydromet or operation context (0.4664ms)
+✔ park water-safety classifier detects common facility types (1.3667ms)
+✔ park water-safety parser derives district and conservative park names (0.3094ms)
+✔ park water-safety coordinates convert TWD97 and accept WGS84-like values (1.2266ms)
+✔ PWA refreshes a versioned decision snapshot at the Pages base and retains known-good offline data (45.2279ms)
+✔ tiers use independent gaps and official context, never inventory quantity (10.8305ms)
+✔ missing source collapses multiple missing attributes into one failure and insufficient evidence (0.6015ms)
+✔ zero source records represent a coverage question rather than unprotected geography (0.5948ms)
+✔ ranking stable IDs and capacities 5, 10, custom, unlimited and eligible limits (1.583ms)
+✔ balanced scenario round-robins districts while keeping exact population fixed (1.1608ms)
+✔ stale and permissive filters explicitly change evidence scope and never mutate inputs (2.1768ms)
+✔ mode A survives unavailable flood input; mode B and flood scenario explain unavailable evidence (1.2883ms)
+✔ historical counts never raise priority on their own and out-of-scope records contribute nothing (2.7221ms)
+✔ explicit source age breaks otherwise equal ties and unknown date remains unknown (0.7786ms)
+✔ ranking compares tier, independent questions, verified source types and version uncertainty before age and stable ID (0.8977ms)
+✔ official flood scenario uses only validated eligible reference inputs, never nearby asset presence (1.2947ms)
+✔ briefing and CSV preserve provenance/configuration/limitations and whitelist fields against private-data leakage (5.8426ms)
+✔ runtime snapshot boundary rejects malformed schema, duplicate source identity and invented coordinates (1.8602ms)
+✔ KML polygon and MultiGeometry are parsed with source attributes and original precision (4.182ms)
+✔ Invalid/self-intersecting, missing, out-of-bounds and unclosed geometry fail closed (0.3562ms)
+✔ Duplicate geometry identity ignores ring start and orientation (0.323ms)
+✔ TWD97 conversion, district and event date validation are explicit (2.7782ms)
+✔ Snapshot reproduces exactly, selects a single machinery edition, aggregates dates without unique-event claims and minimizes contact data (219.6865ms)
+✔ Bad source bytes and unsupported/mixed editions preserve the previous-good public snapshot (92.4727ms)
+✔ Missing official KMLs leave Mode A inventory intact and explicitly disable Mode B (16.2913ms)
+✔ Facility duplicate IDs are audited, while missing dates/coordinates and unknown districts remain explicit gaps (78.8347ms)
+✔ pumping station parser treats YYYYMMDD as a Gregorian establishment date (1.7615ms)
+✔ pumping station parser derives management district numbers only from clear labels (0.3916ms)
+✔ TWD97 pumping station coordinates convert into Taipei bounds (1.5213ms)
+✔ sedimentation survey parser handles ROC/Gregorian ranges and source formatting (1.974ms)
+✔ published rows are separated from observations, current-month empties and future placeholders (429.8726ms)
+✔ source cutoff is data-driven and never hardcodes November as missing (0.3034ms)
+✔ censoring and missingness retain raw qualifiers without imputation (0.1138ms)
+✔ all duplicate station-period source rows are excluded, never last-row-wins (0.2446ms)
+✔ unknown source station cannot be silently merged by its name or river (0.3357ms)
+✔ RPI official point goldens preserve table boundaries and precision gaps (0.1565ms)
+✔ four exact values are potential inputs only; censored/missing fields never admit RPI (0.4702ms)
+✔ strict longitudinal comparisons stay gated; limited pairs have exact lineage and no censored values (2.0768ms)
+✔ snapshot validation handles malformed/null input without throwing (96.5289ms)
+✔ snapshot validation rejects forged units, station, counts and comparison lineage (415.2861ms)
+✔ immutable exact-byte hashes reproduce and reject changed bytes or hostile pointer paths (483.0121ms)
+✔ failed source rebuild preserves the last accepted snapshot pointer (39.4872ms)
+✔ policy tiers reflect source questions, distinguish future placeholders, and retain raw lineage (2.4759ms)
+✔ duplicate station-period rows become one primary question while same labels across rivers remain distinct (0.2899ms)
+✔ current-period published blank rows remain pending rather than historical missing or overdue (0.1568ms)
+✔ evidence-first and balanced strategies use identical eligible population with tier precedence (0.7782ms)
+✔ equal candidate counts do not conceal changed eligible population identities (0.4435ms)
+✔ all capacities and shuffled input reproduce actual selected IDs and do not mutate candidates (1.9864ms)
+✔ filters change documented scope, qualify individual indicator cells, and do not impute censored results (0.5481ms)
+✔ Mode B strict gate remains closed when physical station continuity is unverified; limited pairs labeled (1.8385ms)
+✔ Mode C remains unavailable for every capacity and cannot fabricate eligible conclusions (0.3586ms)
+✔ safe briefing exports include source lineage, eligibility, configuration and valid empty output (49.8019ms)
+✔ accepted annual sources audit original bytes and preserve current/historical editions (40.5972ms)
+✔ source admission rejects tampered identities, editions, bytes, schemas and encodings (47.9847ms)
+Offline audit only. Network refresh requires --refresh; acceptance also requires --accept.
+Validated staged edition: D:\Practice\taipei-feitsui-water-map\.river-policy-source-hORRdi\data\raw\river-water-policy\staged-83ffb344701fd9c945619cfbe2ff67940e1acaf16521af9ed18e5aff7321ea40.json
+Accepted manifest unchanged. Inspect staged files, then run --accept=83ffb344701fd9c945619cfbe2ff67940e1acaf16521af9ed18e5aff7321ea40 to accept these exact validated bytes offline.
+✔ successful refresh only stages source-governed bytes until exact offline acceptance (95.6814ms)
+✔ CSV admission requires official units, valid months and complete schema (3.7747ms)
+✔ exact offline staged acceptance rejects corruption and failed refresh preserves accepted bytes (37.0813ms)
+✔ river parser preserves detection limits and missing states (1.9224ms)
+✔ river parser accepts scientific notation and infers ROC year (0.4107ms)
+✔ sedimentation basin coordinates convert from TWD97 into Taipei bounds (1.4851ms)
+✔ sedimentation basin parsers preserve zero area and normalize districts (0.8123ms)
+✔ business KPI ROC month parser accepts compact and slash formats (1.3742ms)
+✔ business KPI numeric parser preserves commas, negatives, and missing values (0.9561ms)
+✔ business KPI derived metrics compute only from source values (0.671ms)
+✔ business KPI change and rolling metrics require comparison periods (11.0716ms)
+✔ support date parser accepts Gregorian and ROC month formats (1.2305ms)
+✔ support volume parser preserves missing values (0.1932ms)
+✔ support metrics derive shares and rolling totals only with complete 12 months (11.0722ms)
+✔ parseWaterQualityValue preserves qualifiers and numeric thresholds (1.2677ms)
+✔ parseRocYearMonthFromFilename converts ROC dates (0.2005ms)
+✔ filterRecords matches Chinese group and parameter labels (0.3416ms)
+✔ buildWaterQualitySummary excludes summary rows from latest station count (0.4076ms)
+✔ aggregateStationComparison excludes summary rows (0.1795ms)
+ℹ tests 92
+ℹ suites 0
+ℹ pass 92
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2103.4259
+=== npm run build ===
+
+> taipei-feitsui-water-map@0.1.0 build
+> tsc && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 789 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                         0.78 kB │ gzip:   0.47 kB
+dist/assets/PreparednessDecisionPanel-CYp595Qj.css      1.81 kB │ gzip:   0.69 kB
+dist/assets/RiverWaterPolicyDashboard-lHhjvjv-.css      2.21 kB │ gzip:   0.79 kB
+dist/assets/index-3-Ca_pta.css                         22.23 kB │ gzip:   8.36 kB
+dist/assets/PreparednessDecisionPanel-D0De3scp.js      36.77 kB │ gzip:  13.55 kB
+dist/assets/RiverWaterPolicyDashboard-C7zhHaxb.js      57.61 kB │ gzip:  19.67 kB
+dist/assets/index-C4X045Ji.js                       1,059.88 kB │ gzip: 311.74 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.48s
+=== GITHUB_PAGES=true npm run build ===
+
+> taipei-feitsui-water-map@0.1.0 build
+> tsc && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 789 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                         0.88 kB │ gzip:   0.49 kB
+dist/assets/PreparednessDecisionPanel-CYp595Qj.css      1.81 kB │ gzip:   0.69 kB
+dist/assets/RiverWaterPolicyDashboard-lHhjvjv-.css      2.21 kB │ gzip:   0.79 kB
+dist/assets/index-3-Ca_pta.css                         22.23 kB │ gzip:   8.36 kB
+dist/assets/PreparednessDecisionPanel-wPnz5Y-X.js      36.80 kB │ gzip:  13.57 kB
+dist/assets/RiverWaterPolicyDashboard-DKfhzsrH.js      57.64 kB │ gzip:  19.68 kB
+dist/assets/index-DLQkzA91.js                       1,059.96 kB │ gzip: 311.80 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.46s
+=== Verification Complete ===
+
+Next steps:
+1. Read feature_list.json to see current feature state
+2. Pick ONE unfinished feature to work on
+3. Implement only that feature
+4. Re-run verification before claiming done
+
+Note: npm run fetch:data is intentionally not part of init.sh because it performs network I/O and rewrites raw data resources.

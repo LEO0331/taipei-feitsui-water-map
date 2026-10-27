@@ -47,7 +47,12 @@
     "convert:operation": "tsx scripts/convertFeitsuiOperation.ts",
     "data:convert:feitsui-operation-reports": "tsx scripts/convertFeitsuiOperation.ts && tsx scripts/buildFeitsuiReservoirOperationMonthlyReportSummary.ts",
     "data:convert:river-water": "tsx scripts/convertRiverWaterQuality.ts && tsx scripts/buildRiverWaterQualitySummary.ts",
-    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run data:convert:feitsui-operation-reports && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts && npm run data:convert:twc-support && npm run data:convert:park-water-safety && npm run data:convert:clear-water-quality && npm run data:convert:tap-water-business && npm run data:convert:ctsi && npm run data:convert:sedimentation-basins && npm run data:convert:reservoir-sedimentation-surveys && npm run data:convert:preparedness"
+    "convert:data": "npm run convert:water && npm run convert:hydromet && npm run data:convert:feitsui-operation-reports && tsx scripts/convertRiverWaterQuality.ts && npm run data:convert:pumping-stations && tsx scripts/buildRiverWaterQualitySummary.ts && npm run data:convert:twc-support && npm run data:convert:park-water-safety && npm run data:convert:clear-water-quality && npm run data:convert:tap-water-business && npm run data:convert:ctsi && npm run data:convert:sedimentation-basins && npm run data:convert:reservoir-sedimentation-surveys && npm run data:convert:preparedness",
+    "data:fetch:river-water-policy": "tsx scripts/fetchRiverWaterPolicySources.ts",
+    "data:audit:river-water-policy": "tsx scripts/auditRiverWaterPolicySources.ts",
+    "data:build:river-water-policy": "tsx scripts/buildRiverWaterPolicySnapshot.ts",
+    "data:verify:river-water-policy": "tsx scripts/verifyRiverWaterPolicy.ts",
+    "data:report:river-water-policy": "tsx scripts/buildRiverWaterPolicyReport.ts"
   },
   "dependencies": {
     "@types/proj4": "^2.5.6",

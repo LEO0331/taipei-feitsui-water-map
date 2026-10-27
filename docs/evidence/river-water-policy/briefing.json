@@ -1,0 +1,2285 @@
+{
+  "title": "River Monitoring Evidence Review Briefing",
+  "policy": 13,
+  "method": "river-water-longitudinal-evidence-review-v1",
+  "analysisDate": "2026-10-27",
+  "schemaVersion": "1.0.0",
+  "methodId": "river-water-longitudinal-evidence-review-v1",
+  "snapshotId": "sha256-212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+  "sha256": "212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+  "byteLength": 7016489,
+  "file": "snapshots/212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81.json",
+  "sourceEditions": [
+    {
+      "sourceId": "river-2023",
+      "year": 2023,
+      "sha256": "6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6",
+      "resourceId": "0e488a9c-7e44-4c30-bd07-049779218a76"
+    },
+    {
+      "sourceId": "river-2024",
+      "year": 2024,
+      "sha256": "e71033568e29b1cffbc0babefd94ca66f653effd1488611d0b34028e03f04907",
+      "resourceId": "44524259-d419-4c95-aa6f-16d58f03d1c1"
+    },
+    {
+      "sourceId": "river-2025",
+      "year": 2025,
+      "sha256": "b5114013df50d2e1fecb2ad446b8134c23858ad408af88f803a58d837664c8e3",
+      "resourceId": "4f2bf5d2-9561-471a-a53c-7da82dfac0e2"
+    },
+    {
+      "sourceId": "river-2026",
+      "year": 2026,
+      "sha256": "39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34",
+      "resourceId": "a66f7820-35c0-42f4-af31-87c2401f3c12"
+    }
+  ],
+  "candidateGrain": "station × source month",
+  "config": {
+    "mode": "A",
+    "years": [],
+    "rivers": [],
+    "stations": [],
+    "sourceIds": [],
+    "indicator": "all",
+    "evidence": "strict"
+  },
+  "eligibilityCriteria": "A: admitted published station-months except future placeholders. B strict: verified physical identity and exact compatible paired observations; limited: source-label pairs only. C: unavailable.",
+  "qualifierCountDefinitions": {
+    "qualifierCounts": "A: scoped indicator cells on published candidate rows. B: selected indicator cells on distinct paired source rows.",
+    "excludedQualifierCounts": "B: selected indicator cells on actual nonpaired published rows within the station/year/source window; absent calendar rows create no synthetic cells. A: not applicable."
+  },
+  "strategy": "gaps",
+  "capacity": 5,
+  "selectedIds": [
+    "A:station-b304f8239c8754ee:2023-01",
+    "A:station-b304f8239c8754ee:2023-02",
+    "A:station-b304f8239c8754ee:2023-03",
+    "A:station-b304f8239c8754ee:2023-04",
+    "A:station-b304f8239c8754ee:2023-05"
+  ],
+  "population": 768,
+  "eligiblePopulation": 736,
+  "excludedPopulation": 32,
+  "unusedCapacity": 0,
+  "selectionReasons": [
+    {
+      "id": "A:station-b304f8239c8754ee:2023-01",
+      "reason": "tier_then_issue_precedence_stable_id:A:identity_unmatched|partial_measurement|missing_rpi_inputs|censored_value|identity_unverified|sampling_method_unknown|historical_location_unverified"
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-02",
+      "reason": "tier_then_issue_precedence_stable_id:A:identity_unmatched|partial_measurement|missing_rpi_inputs|censored_value|identity_unverified|sampling_method_unknown|historical_location_unverified"
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-03",
+      "reason": "tier_then_issue_precedence_stable_id:A:identity_unmatched|partial_measurement|missing_rpi_inputs|censored_value|identity_unverified|sampling_method_unknown|historical_location_unverified"
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-04",
+      "reason": "tier_then_issue_precedence_stable_id:A:identity_unmatched|partial_measurement|missing_rpi_inputs|censored_value|identity_unverified|sampling_method_unknown|historical_location_unverified"
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-05",
+      "reason": "tier_then_issue_precedence_stable_id:A:identity_unmatched|partial_measurement|missing_rpi_inputs|censored_value|identity_unverified|sampling_method_unknown|historical_location_unverified"
+    }
+  ],
+  "selected": [
+    {
+      "id": "A:station-b304f8239c8754ee:2023-01",
+      "kind": "station_month",
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2023-01",
+      "years": [
+        2023
+      ],
+      "sourceIds": [
+        "river-2023"
+      ],
+      "rowIds": [
+        "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:11:2023-01:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "A",
+      "issueCodes": [
+        "identity_unmatched",
+        "partial_measurement",
+        "missing_rpi_inputs",
+        "censored_value",
+        "identity_unverified",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": true,
+      "exclusionReasons": [],
+      "observedRowCount": 1,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "measured": 16,
+        "not_detected_below": 7,
+        "not_measured": 4
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-02",
+      "kind": "station_month",
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2023-02",
+      "years": [
+        2023
+      ],
+      "sourceIds": [
+        "river-2023"
+      ],
+      "rowIds": [
+        "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:27:2023-02:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "A",
+      "issueCodes": [
+        "identity_unmatched",
+        "partial_measurement",
+        "missing_rpi_inputs",
+        "censored_value",
+        "identity_unverified",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": true,
+      "exclusionReasons": [],
+      "observedRowCount": 1,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "measured": 13,
+        "not_detected_below": 1,
+        "not_measured": 13
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-03",
+      "kind": "station_month",
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2023-03",
+      "years": [
+        2023
+      ],
+      "sourceIds": [
+        "river-2023"
+      ],
+      "rowIds": [
+        "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:43:2023-03:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "A",
+      "issueCodes": [
+        "identity_unmatched",
+        "partial_measurement",
+        "missing_rpi_inputs",
+        "censored_value",
+        "identity_unverified",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": true,
+      "exclusionReasons": [],
+      "observedRowCount": 1,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "measured": 12,
+        "not_detected_below": 2,
+        "not_measured": 13
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-04",
+      "kind": "station_month",
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2023-04",
+      "years": [
+        2023
+      ],
+      "sourceIds": [
+        "river-2023"
+      ],
+      "rowIds": [
+        "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:59:2023-04:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "A",
+      "issueCodes": [
+        "identity_unmatched",
+        "partial_measurement",
+        "missing_rpi_inputs",
+        "censored_value",
+        "identity_unverified",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": true,
+      "exclusionReasons": [],
+      "observedRowCount": 1,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "measured": 15,
+        "not_detected_below": 8,
+        "not_measured": 4
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2023-05",
+      "kind": "station_month",
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2023-05",
+      "years": [
+        2023
+      ],
+      "sourceIds": [
+        "river-2023"
+      ],
+      "rowIds": [
+        "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:75:2023-05:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "A",
+      "issueCodes": [
+        "identity_unmatched",
+        "partial_measurement",
+        "missing_rpi_inputs",
+        "censored_value",
+        "identity_unverified",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": true,
+      "exclusionReasons": [],
+      "observedRowCount": 1,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "measured": 12,
+        "not_detected_below": 2,
+        "not_measured": 13
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    }
+  ],
+  "excluded": [
+    {
+      "id": "A:station-b304f8239c8754ee:2026-11",
+      "kind": "station_month",
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:171:2026-11:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "A",
+      "issueCodes": [
+        "identity_unmatched",
+        "missing_rpi_inputs",
+        "identity_unverified",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-b304f8239c8754ee:2026-12",
+      "kind": "station_month",
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:187:2026-12:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "A",
+      "issueCodes": [
+        "identity_unmatched",
+        "missing_rpi_inputs",
+        "identity_unverified",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-0bfbba8dbe62861a:2026-11",
+      "kind": "station_month",
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:170:2026-11:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-0bfbba8dbe62861a:2026-12",
+      "kind": "station_month",
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:186:2026-12:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-0dc984395d82495e:2026-11",
+      "kind": "station_month",
+      "stationId": "station-0dc984395d82495e",
+      "riverName": "雙溪",
+      "stationName": "復興橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:172:2026-11:%E9%9B%99%E6%BA%AA:%E5%BE%A9%E8%88%88%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-0dc984395d82495e:2026-12",
+      "kind": "station_month",
+      "stationId": "station-0dc984395d82495e",
+      "riverName": "雙溪",
+      "stationName": "復興橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:188:2026-12:%E9%9B%99%E6%BA%AA:%E5%BE%A9%E8%88%88%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-164608853a0baa99:2026-11",
+      "kind": "station_month",
+      "stationId": "station-164608853a0baa99",
+      "riverName": "磺溪",
+      "stationName": "磺溪橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:174:2026-11:%E7%A3%BA%E6%BA%AA:%E7%A3%BA%E6%BA%AA%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-164608853a0baa99:2026-12",
+      "kind": "station_month",
+      "stationId": "station-164608853a0baa99",
+      "riverName": "磺溪",
+      "stationName": "磺溪橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:190:2026-12:%E7%A3%BA%E6%BA%AA:%E7%A3%BA%E6%BA%AA%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-20cb206dfed95a06:2026-11",
+      "kind": "station_month",
+      "stationId": "station-20cb206dfed95a06",
+      "riverName": "淡水河",
+      "stationName": "臺北橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:166:2026-11:%E6%B7%A1%E6%B0%B4%E6%B2%B3:%E8%87%BA%E5%8C%97%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-20cb206dfed95a06:2026-12",
+      "kind": "station_month",
+      "stationId": "station-20cb206dfed95a06",
+      "riverName": "淡水河",
+      "stationName": "臺北橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:182:2026-12:%E6%B7%A1%E6%B0%B4%E6%B2%B3:%E8%87%BA%E5%8C%97%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-2644cd708b3d0597:2026-11",
+      "kind": "station_month",
+      "stationId": "station-2644cd708b3d0597",
+      "riverName": "景美溪",
+      "stationName": "恆光橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:164:2026-11:%E6%99%AF%E7%BE%8E%E6%BA%AA:%E6%81%86%E5%85%89%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-2644cd708b3d0597:2026-12",
+      "kind": "station_month",
+      "stationId": "station-2644cd708b3d0597",
+      "riverName": "景美溪",
+      "stationName": "恆光橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:180:2026-12:%E6%99%AF%E7%BE%8E%E6%BA%AA:%E6%81%86%E5%85%89%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-6046e5944fe6e28f:2026-11",
+      "kind": "station_month",
+      "stationId": "station-6046e5944fe6e28f",
+      "riverName": "景美溪",
+      "stationName": "景美橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:165:2026-11:%E6%99%AF%E7%BE%8E%E6%BA%AA:%E6%99%AF%E7%BE%8E%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-6046e5944fe6e28f:2026-12",
+      "kind": "station_month",
+      "stationId": "station-6046e5944fe6e28f",
+      "riverName": "景美溪",
+      "stationName": "景美橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:181:2026-12:%E6%99%AF%E7%BE%8E%E6%BA%AA:%E6%99%AF%E7%BE%8E%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-80f33b2a0eb541a5:2026-11",
+      "kind": "station_month",
+      "stationId": "station-80f33b2a0eb541a5",
+      "riverName": "基隆河",
+      "stationName": "承德橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:169:2026-11:%E5%9F%BA%E9%9A%86%E6%B2%B3:%E6%89%BF%E5%BE%B7%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-80f33b2a0eb541a5:2026-12",
+      "kind": "station_month",
+      "stationId": "station-80f33b2a0eb541a5",
+      "riverName": "基隆河",
+      "stationName": "承德橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:185:2026-12:%E5%9F%BA%E9%9A%86%E6%B2%B3:%E6%89%BF%E5%BE%B7%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-8b45ec3433384ed5:2026-11",
+      "kind": "station_month",
+      "stationId": "station-8b45ec3433384ed5",
+      "riverName": "景美溪",
+      "stationName": "萬福橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:163:2026-11:%E6%99%AF%E7%BE%8E%E6%BA%AA:%E8%90%AC%E7%A6%8F%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-8b45ec3433384ed5:2026-12",
+      "kind": "station_month",
+      "stationId": "station-8b45ec3433384ed5",
+      "riverName": "景美溪",
+      "stationName": "萬福橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:179:2026-12:%E6%99%AF%E7%BE%8E%E6%BA%AA:%E8%90%AC%E7%A6%8F%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-d5875cbaaa0dfc7a:2026-11",
+      "kind": "station_month",
+      "stationId": "station-d5875cbaaa0dfc7a",
+      "riverName": "貴子坑溪",
+      "stationName": "新貴子坑",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:175:2026-11:%E8%B2%B4%E5%AD%90%E5%9D%91%E6%BA%AA:%E6%96%B0%E8%B2%B4%E5%AD%90%E5%9D%91"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-d5875cbaaa0dfc7a:2026-12",
+      "kind": "station_month",
+      "stationId": "station-d5875cbaaa0dfc7a",
+      "riverName": "貴子坑溪",
+      "stationName": "新貴子坑",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:191:2026-12:%E8%B2%B4%E5%AD%90%E5%9D%91%E6%BA%AA:%E6%96%B0%E8%B2%B4%E5%AD%90%E5%9D%91"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-e4ec5f711189b58f:2026-11",
+      "kind": "station_month",
+      "stationId": "station-e4ec5f711189b58f",
+      "riverName": "磺溪",
+      "stationName": "陽明山",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:173:2026-11:%E7%A3%BA%E6%BA%AA:%E9%99%BD%E6%98%8E%E5%B1%B1"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-e4ec5f711189b58f:2026-12",
+      "kind": "station_month",
+      "stationId": "station-e4ec5f711189b58f",
+      "riverName": "磺溪",
+      "stationName": "陽明山",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:189:2026-12:%E7%A3%BA%E6%BA%AA:%E9%99%BD%E6%98%8E%E5%B1%B1"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-ec8b74bac5eb5f70:2026-11",
+      "kind": "station_month",
+      "stationId": "station-ec8b74bac5eb5f70",
+      "riverName": "基隆河",
+      "stationName": "大直橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:168:2026-11:%E5%9F%BA%E9%9A%86%E6%B2%B3:%E5%A4%A7%E7%9B%B4%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-ec8b74bac5eb5f70:2026-12",
+      "kind": "station_month",
+      "stationId": "station-ec8b74bac5eb5f70",
+      "riverName": "基隆河",
+      "stationName": "大直橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:184:2026-12:%E5%9F%BA%E9%9A%86%E6%B2%B3:%E5%A4%A7%E7%9B%B4%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-ee3d6759a7b4e0dc:2026-11",
+      "kind": "station_month",
+      "stationId": "station-ee3d6759a7b4e0dc",
+      "riverName": "基隆河",
+      "stationName": "成功橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:167:2026-11:%E5%9F%BA%E9%9A%86%E6%B2%B3:%E6%88%90%E5%8A%9F%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-ee3d6759a7b4e0dc:2026-12",
+      "kind": "station_month",
+      "stationId": "station-ee3d6759a7b4e0dc",
+      "riverName": "基隆河",
+      "stationName": "成功橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:183:2026-12:%E5%9F%BA%E9%9A%86%E6%B2%B3:%E6%88%90%E5%8A%9F%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-f19920a3e6929dbe:2026-11",
+      "kind": "station_month",
+      "stationId": "station-f19920a3e6929dbe",
+      "riverName": "新店溪",
+      "stationName": "永福橋",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:162:2026-11:%E6%96%B0%E5%BA%97%E6%BA%AA:%E6%B0%B8%E7%A6%8F%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-f19920a3e6929dbe:2026-12",
+      "kind": "station_month",
+      "stationId": "station-f19920a3e6929dbe",
+      "riverName": "新店溪",
+      "stationName": "永福橋",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:178:2026-12:%E6%96%B0%E5%BA%97%E6%BA%AA:%E6%B0%B8%E7%A6%8F%E6%A9%8B"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-f42bb56bf7790d4e:2026-11",
+      "kind": "station_month",
+      "stationId": "station-f42bb56bf7790d4e",
+      "riverName": "山豬窟溪",
+      "stationName": "山豬窟溪",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:176:2026-11:%E5%B1%B1%E8%B1%AC%E7%AA%9F%E6%BA%AA:%E5%B1%B1%E8%B1%AC%E7%AA%9F%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-f42bb56bf7790d4e:2026-12",
+      "kind": "station_month",
+      "stationId": "station-f42bb56bf7790d4e",
+      "riverName": "山豬窟溪",
+      "stationName": "山豬窟溪",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:192:2026-12:%E5%B1%B1%E8%B1%AC%E7%AA%9F%E6%BA%AA:%E5%B1%B1%E8%B1%AC%E7%AA%9F%E6%BA%AA"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-fb0b200e20909360:2026-11",
+      "kind": "station_month",
+      "stationId": "station-fb0b200e20909360",
+      "riverName": "磺港溪",
+      "stationName": "大豐停車場",
+      "period": "2026-11",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:177:2026-11:%E7%A3%BA%E6%B8%AF%E6%BA%AA:%E5%A4%A7%E8%B1%90%E5%81%9C%E8%BB%8A%E5%A0%B4"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    },
+    {
+      "id": "A:station-fb0b200e20909360:2026-12",
+      "kind": "station_month",
+      "stationId": "station-fb0b200e20909360",
+      "riverName": "磺港溪",
+      "stationName": "大豐停車場",
+      "period": "2026-12",
+      "years": [
+        2026
+      ],
+      "sourceIds": [
+        "river-2026"
+      ],
+      "rowIds": [
+        "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:193:2026-12:%E7%A3%BA%E6%B8%AF%E6%BA%AA:%E5%A4%A7%E8%B1%90%E5%81%9C%E8%BB%8A%E5%A0%B4"
+      ],
+      "indicator": "all",
+      "tier": "B",
+      "issueCodes": [
+        "missing_rpi_inputs",
+        "sampling_method_unknown",
+        "historical_location_unverified"
+      ],
+      "eligible": false,
+      "exclusionReasons": [
+        "future_placeholder_not_due"
+      ],
+      "observedRowCount": 0,
+      "publishedRowCount": 1,
+      "qualifierCounts": {
+        "missing": 27
+      },
+      "excludedQualifierCounts": {},
+      "comparisonValidity": "not_applicable",
+      "matchedCount": 0,
+      "excludedPairCount": 0,
+      "rpiEligible": false
+    }
+  ],
+  "unselectedIds": [
+    "A:station-b304f8239c8754ee:2023-06",
+    "A:station-b304f8239c8754ee:2023-07",
+    "A:station-b304f8239c8754ee:2023-08",
+    "A:station-b304f8239c8754ee:2023-09",
+    "A:station-b304f8239c8754ee:2023-10",
+    "A:station-b304f8239c8754ee:2023-11",
+    "A:station-b304f8239c8754ee:2023-12",
+    "A:station-b304f8239c8754ee:2024-01",
+    "A:station-b304f8239c8754ee:2024-02",
+    "A:station-b304f8239c8754ee:2024-03",
+    "A:station-b304f8239c8754ee:2024-04",
+    "A:station-b304f8239c8754ee:2024-05",
+    "A:station-b304f8239c8754ee:2024-06",
+    "A:station-b304f8239c8754ee:2024-07",
+    "A:station-b304f8239c8754ee:2024-08",
+    "A:station-b304f8239c8754ee:2024-09",
+    "A:station-b304f8239c8754ee:2024-10",
+    "A:station-b304f8239c8754ee:2024-11",
+    "A:station-b304f8239c8754ee:2024-12",
+    "A:station-b304f8239c8754ee:2025-01",
+    "A:station-b304f8239c8754ee:2025-02",
+    "A:station-b304f8239c8754ee:2025-03",
+    "A:station-b304f8239c8754ee:2025-04",
+    "A:station-b304f8239c8754ee:2025-05",
+    "A:station-b304f8239c8754ee:2025-06",
+    "A:station-b304f8239c8754ee:2025-07",
+    "A:station-b304f8239c8754ee:2025-08",
+    "A:station-b304f8239c8754ee:2025-09",
+    "A:station-b304f8239c8754ee:2025-10",
+    "A:station-b304f8239c8754ee:2025-11",
+    "A:station-b304f8239c8754ee:2025-12",
+    "A:station-b304f8239c8754ee:2026-01",
+    "A:station-b304f8239c8754ee:2026-02",
+    "A:station-b304f8239c8754ee:2026-03",
+    "A:station-b304f8239c8754ee:2026-04",
+    "A:station-b304f8239c8754ee:2026-05",
+    "A:station-b304f8239c8754ee:2026-06",
+    "A:station-b304f8239c8754ee:2026-07",
+    "A:station-b304f8239c8754ee:2026-08",
+    "A:station-b304f8239c8754ee:2026-09",
+    "A:station-b304f8239c8754ee:2026-10",
+    "A:station-0bfbba8dbe62861a:2023-01",
+    "A:station-0bfbba8dbe62861a:2023-02",
+    "A:station-0bfbba8dbe62861a:2023-03",
+    "A:station-0bfbba8dbe62861a:2023-04",
+    "A:station-0bfbba8dbe62861a:2023-05",
+    "A:station-0bfbba8dbe62861a:2023-06",
+    "A:station-0bfbba8dbe62861a:2023-07",
+    "A:station-0bfbba8dbe62861a:2023-08",
+    "A:station-0bfbba8dbe62861a:2023-09",
+    "A:station-0bfbba8dbe62861a:2023-10",
+    "A:station-0bfbba8dbe62861a:2023-11",
+    "A:station-0bfbba8dbe62861a:2023-12",
+    "A:station-0bfbba8dbe62861a:2024-01",
+    "A:station-0bfbba8dbe62861a:2024-02",
+    "A:station-0bfbba8dbe62861a:2024-03",
+    "A:station-0bfbba8dbe62861a:2024-04",
+    "A:station-0bfbba8dbe62861a:2024-05",
+    "A:station-0bfbba8dbe62861a:2024-06",
+    "A:station-0bfbba8dbe62861a:2024-07",
+    "A:station-0bfbba8dbe62861a:2024-08",
+    "A:station-0bfbba8dbe62861a:2024-09",
+    "A:station-0bfbba8dbe62861a:2024-10",
+    "A:station-0bfbba8dbe62861a:2024-11",
+    "A:station-0bfbba8dbe62861a:2024-12",
+    "A:station-0bfbba8dbe62861a:2025-01",
+    "A:station-0bfbba8dbe62861a:2025-02",
+    "A:station-0bfbba8dbe62861a:2025-03",
+    "A:station-0bfbba8dbe62861a:2025-04",
+    "A:station-0bfbba8dbe62861a:2025-05",
+    "A:station-0bfbba8dbe62861a:2025-06",
+    "A:station-0bfbba8dbe62861a:2025-07",
+    "A:station-0bfbba8dbe62861a:2025-08",
+    "A:station-0bfbba8dbe62861a:2025-09",
+    "A:station-0bfbba8dbe62861a:2025-10",
+    "A:station-0bfbba8dbe62861a:2025-11",
+    "A:station-0bfbba8dbe62861a:2025-12",
+    "A:station-0bfbba8dbe62861a:2026-01",
+    "A:station-0bfbba8dbe62861a:2026-02",
+    "A:station-0bfbba8dbe62861a:2026-03",
+    "A:station-0bfbba8dbe62861a:2026-04",
+    "A:station-0bfbba8dbe62861a:2026-05",
+    "A:station-0bfbba8dbe62861a:2026-06",
+    "A:station-0bfbba8dbe62861a:2026-07",
+    "A:station-0bfbba8dbe62861a:2026-08",
+    "A:station-0bfbba8dbe62861a:2026-09",
+    "A:station-0dc984395d82495e:2023-01",
+    "A:station-0dc984395d82495e:2023-02",
+    "A:station-0dc984395d82495e:2023-03",
+    "A:station-0dc984395d82495e:2023-04",
+    "A:station-0dc984395d82495e:2023-05",
+    "A:station-0dc984395d82495e:2023-06",
+    "A:station-0dc984395d82495e:2023-07",
+    "A:station-0dc984395d82495e:2023-08",
+    "A:station-0dc984395d82495e:2023-09",
+    "A:station-0dc984395d82495e:2023-10",
+    "A:station-0dc984395d82495e:2023-11",
+    "A:station-0dc984395d82495e:2023-12",
+    "A:station-0dc984395d82495e:2024-01",
+    "A:station-0dc984395d82495e:2024-02",
+    "A:station-0dc984395d82495e:2024-03",
+    "A:station-0dc984395d82495e:2024-04",
+    "A:station-0dc984395d82495e:2024-05",
+    "A:station-0dc984395d82495e:2024-06",
+    "A:station-0dc984395d82495e:2024-07",
+    "A:station-0dc984395d82495e:2024-08",
+    "A:station-0dc984395d82495e:2024-09",
+    "A:station-0dc984395d82495e:2024-10",
+    "A:station-0dc984395d82495e:2024-11",
+    "A:station-0dc984395d82495e:2024-12",
+    "A:station-0dc984395d82495e:2025-01",
+    "A:station-0dc984395d82495e:2025-02",
+    "A:station-0dc984395d82495e:2025-03",
+    "A:station-0dc984395d82495e:2025-04",
+    "A:station-0dc984395d82495e:2025-05",
+    "A:station-0dc984395d82495e:2025-06",
+    "A:station-0dc984395d82495e:2025-07",
+    "A:station-0dc984395d82495e:2025-08",
+    "A:station-0dc984395d82495e:2025-09",
+    "A:station-0dc984395d82495e:2025-10",
+    "A:station-0dc984395d82495e:2025-11",
+    "A:station-0dc984395d82495e:2025-12",
+    "A:station-0dc984395d82495e:2026-01",
+    "A:station-0dc984395d82495e:2026-02",
+    "A:station-0dc984395d82495e:2026-03",
+    "A:station-0dc984395d82495e:2026-04",
+    "A:station-0dc984395d82495e:2026-05",
+    "A:station-0dc984395d82495e:2026-06",
+    "A:station-0dc984395d82495e:2026-07",
+    "A:station-0dc984395d82495e:2026-08",
+    "A:station-0dc984395d82495e:2026-09",
+    "A:station-164608853a0baa99:2023-01",
+    "A:station-164608853a0baa99:2023-02",
+    "A:station-164608853a0baa99:2023-03",
+    "A:station-164608853a0baa99:2023-04",
+    "A:station-164608853a0baa99:2023-05",
+    "A:station-164608853a0baa99:2023-06",
+    "A:station-164608853a0baa99:2023-07",
+    "A:station-164608853a0baa99:2023-08",
+    "A:station-164608853a0baa99:2023-09",
+    "A:station-164608853a0baa99:2023-10",
+    "A:station-164608853a0baa99:2023-11",
+    "A:station-164608853a0baa99:2023-12",
+    "A:station-164608853a0baa99:2024-01",
+    "A:station-164608853a0baa99:2024-02",
+    "A:station-164608853a0baa99:2024-03",
+    "A:station-164608853a0baa99:2024-04",
+    "A:station-164608853a0baa99:2024-05",
+    "A:station-164608853a0baa99:2024-06",
+    "A:station-164608853a0baa99:2024-07",
+    "A:station-164608853a0baa99:2024-08",
+    "A:station-164608853a0baa99:2024-09",
+    "A:station-164608853a0baa99:2024-10",
+    "A:station-164608853a0baa99:2024-11",
+    "A:station-164608853a0baa99:2024-12",
+    "A:station-164608853a0baa99:2025-01",
+    "A:station-164608853a0baa99:2025-02",
+    "A:station-164608853a0baa99:2025-03",
+    "A:station-164608853a0baa99:2025-04",
+    "A:station-164608853a0baa99:2025-05",
+    "A:station-164608853a0baa99:2025-06",
+    "A:station-164608853a0baa99:2025-07",
+    "A:station-164608853a0baa99:2025-08",
+    "A:station-164608853a0baa99:2025-09",
+    "A:station-164608853a0baa99:2025-10",
+    "A:station-164608853a0baa99:2025-11",
+    "A:station-164608853a0baa99:2025-12",
+    "A:station-164608853a0baa99:2026-01",
+    "A:station-164608853a0baa99:2026-02",
+    "A:station-164608853a0baa99:2026-03",
+    "A:station-164608853a0baa99:2026-04",
+    "A:station-164608853a0baa99:2026-05",
+    "A:station-164608853a0baa99:2026-06",
+    "A:station-164608853a0baa99:2026-07",
+    "A:station-164608853a0baa99:2026-08",
+    "A:station-164608853a0baa99:2026-09",
+    "A:station-20cb206dfed95a06:2023-01",
+    "A:station-20cb206dfed95a06:2023-02",
+    "A:station-20cb206dfed95a06:2023-03",
+    "A:station-20cb206dfed95a06:2023-04",
+    "A:station-20cb206dfed95a06:2023-05",
+    "A:station-20cb206dfed95a06:2023-06",
+    "A:station-20cb206dfed95a06:2023-07",
+    "A:station-20cb206dfed95a06:2023-08",
+    "A:station-20cb206dfed95a06:2023-09",
+    "A:station-20cb206dfed95a06:2023-10",
+    "A:station-20cb206dfed95a06:2023-11",
+    "A:station-20cb206dfed95a06:2023-12",
+    "A:station-20cb206dfed95a06:2024-01",
+    "A:station-20cb206dfed95a06:2024-02",
+    "A:station-20cb206dfed95a06:2024-03",
+    "A:station-20cb206dfed95a06:2024-04",
+    "A:station-20cb206dfed95a06:2024-05",
+    "A:station-20cb206dfed95a06:2024-06",
+    "A:station-20cb206dfed95a06:2024-07",
+    "A:station-20cb206dfed95a06:2024-08",
+    "A:station-20cb206dfed95a06:2024-09",
+    "A:station-20cb206dfed95a06:2024-10",
+    "A:station-20cb206dfed95a06:2024-11",
+    "A:station-20cb206dfed95a06:2024-12",
+    "A:station-20cb206dfed95a06:2025-01",
+    "A:station-20cb206dfed95a06:2025-02",
+    "A:station-20cb206dfed95a06:2025-03",
+    "A:station-20cb206dfed95a06:2025-04",
+    "A:station-20cb206dfed95a06:2025-05",
+    "A:station-20cb206dfed95a06:2025-06",
+    "A:station-20cb206dfed95a06:2025-07",
+    "A:station-20cb206dfed95a06:2025-08",
+    "A:station-20cb206dfed95a06:2025-09",
+    "A:station-20cb206dfed95a06:2025-10",
+    "A:station-20cb206dfed95a06:2025-11",
+    "A:station-20cb206dfed95a06:2025-12",
+    "A:station-20cb206dfed95a06:2026-01",
+    "A:station-20cb206dfed95a06:2026-02",
+    "A:station-20cb206dfed95a06:2026-03",
+    "A:station-20cb206dfed95a06:2026-04",
+    "A:station-20cb206dfed95a06:2026-05",
+    "A:station-20cb206dfed95a06:2026-06",
+    "A:station-20cb206dfed95a06:2026-07",
+    "A:station-20cb206dfed95a06:2026-08",
+    "A:station-20cb206dfed95a06:2026-09",
+    "A:station-2644cd708b3d0597:2023-01",
+    "A:station-2644cd708b3d0597:2023-02",
+    "A:station-2644cd708b3d0597:2023-03",
+    "A:station-2644cd708b3d0597:2023-04",
+    "A:station-2644cd708b3d0597:2023-05",
+    "A:station-2644cd708b3d0597:2023-06",
+    "A:station-2644cd708b3d0597:2023-07",
+    "A:station-2644cd708b3d0597:2023-08",
+    "A:station-2644cd708b3d0597:2023-09",
+    "A:station-2644cd708b3d0597:2023-10",
+    "A:station-2644cd708b3d0597:2023-11",
+    "A:station-2644cd708b3d0597:2023-12",
+    "A:station-2644cd708b3d0597:2024-01",
+    "A:station-2644cd708b3d0597:2024-02",
+    "A:station-2644cd708b3d0597:2024-03",
+    "A:station-2644cd708b3d0597:2024-04",
+    "A:station-2644cd708b3d0597:2024-05",
+    "A:station-2644cd708b3d0597:2024-06",
+    "A:station-2644cd708b3d0597:2024-07",
+    "A:station-2644cd708b3d0597:2024-08",
+    "A:station-2644cd708b3d0597:2024-09",
+    "A:station-2644cd708b3d0597:2024-10",
+    "A:station-2644cd708b3d0597:2024-11",
+    "A:station-2644cd708b3d0597:2024-12",
+    "A:station-2644cd708b3d0597:2025-01",
+    "A:station-2644cd708b3d0597:2025-02",
+    "A:station-2644cd708b3d0597:2025-03",
+    "A:station-2644cd708b3d0597:2025-04",
+    "A:station-2644cd708b3d0597:2025-05",
+    "A:station-2644cd708b3d0597:2025-06",
+    "A:station-2644cd708b3d0597:2025-07",
+    "A:station-2644cd708b3d0597:2025-08",
+    "A:station-2644cd708b3d0597:2025-09",
+    "A:station-2644cd708b3d0597:2025-10",
+    "A:station-2644cd708b3d0597:2025-11",
+    "A:station-2644cd708b3d0597:2025-12",
+    "A:station-2644cd708b3d0597:2026-01",
+    "A:station-2644cd708b3d0597:2026-02",
+    "A:station-2644cd708b3d0597:2026-03",
+    "A:station-2644cd708b3d0597:2026-04",
+    "A:station-2644cd708b3d0597:2026-05",
+    "A:station-2644cd708b3d0597:2026-06",
+    "A:station-2644cd708b3d0597:2026-07",
+    "A:station-2644cd708b3d0597:2026-08",
+    "A:station-2644cd708b3d0597:2026-09",
+    "A:station-6046e5944fe6e28f:2023-01",
+    "A:station-6046e5944fe6e28f:2023-02",
+    "A:station-6046e5944fe6e28f:2023-03",
+    "A:station-6046e5944fe6e28f:2023-04",
+    "A:station-6046e5944fe6e28f:2023-05",
+    "A:station-6046e5944fe6e28f:2023-06",
+    "A:station-6046e5944fe6e28f:2023-07",
+    "A:station-6046e5944fe6e28f:2023-08",
+    "A:station-6046e5944fe6e28f:2023-09",
+    "A:station-6046e5944fe6e28f:2023-10",
+    "A:station-6046e5944fe6e28f:2023-11",
+    "A:station-6046e5944fe6e28f:2023-12",
+    "A:station-6046e5944fe6e28f:2024-01",
+    "A:station-6046e5944fe6e28f:2024-02",
+    "A:station-6046e5944fe6e28f:2024-03",
+    "A:station-6046e5944fe6e28f:2024-04",
+    "A:station-6046e5944fe6e28f:2024-05",
+    "A:station-6046e5944fe6e28f:2024-06",
+    "A:station-6046e5944fe6e28f:2024-07",
+    "A:station-6046e5944fe6e28f:2024-08",
+    "A:station-6046e5944fe6e28f:2024-09",
+    "A:station-6046e5944fe6e28f:2024-10",
+    "A:station-6046e5944fe6e28f:2024-11",
+    "A:station-6046e5944fe6e28f:2024-12",
+    "A:station-6046e5944fe6e28f:2025-01",
+    "A:station-6046e5944fe6e28f:2025-02",
+    "A:station-6046e5944fe6e28f:2025-03",
+    "A:station-6046e5944fe6e28f:2025-04",
+    "A:station-6046e5944fe6e28f:2025-05",
+    "A:station-6046e5944fe6e28f:2025-06",
+    "A:station-6046e5944fe6e28f:2025-07",
+    "A:station-6046e5944fe6e28f:2025-08",
+    "A:station-6046e5944fe6e28f:2025-09",
+    "A:station-6046e5944fe6e28f:2025-10",
+    "A:station-6046e5944fe6e28f:2025-11",
+    "A:station-6046e5944fe6e28f:2025-12",
+    "A:station-6046e5944fe6e28f:2026-01",
+    "A:station-6046e5944fe6e28f:2026-02",
+    "A:station-6046e5944fe6e28f:2026-03",
+    "A:station-6046e5944fe6e28f:2026-04",
+    "A:station-6046e5944fe6e28f:2026-05",
+    "A:station-6046e5944fe6e28f:2026-06",
+    "A:station-6046e5944fe6e28f:2026-07",
+    "A:station-6046e5944fe6e28f:2026-08",
+    "A:station-6046e5944fe6e28f:2026-09",
+    "A:station-80f33b2a0eb541a5:2023-01",
+    "A:station-80f33b2a0eb541a5:2023-02",
+    "A:station-80f33b2a0eb541a5:2023-03",
+    "A:station-80f33b2a0eb541a5:2023-04",
+    "A:station-80f33b2a0eb541a5:2023-05",
+    "A:station-80f33b2a0eb541a5:2023-06",
+    "A:station-80f33b2a0eb541a5:2023-07",
+    "A:station-80f33b2a0eb541a5:2023-08",
+    "A:station-80f33b2a0eb541a5:2023-09",
+    "A:station-80f33b2a0eb541a5:2023-10",
+    "A:station-80f33b2a0eb541a5:2023-11",
+    "A:station-80f33b2a0eb541a5:2023-12",
+    "A:station-80f33b2a0eb541a5:2024-01",
+    "A:station-80f33b2a0eb541a5:2024-02",
+    "A:station-80f33b2a0eb541a5:2024-03",
+    "A:station-80f33b2a0eb541a5:2024-04",
+    "A:station-80f33b2a0eb541a5:2024-05",
+    "A:station-80f33b2a0eb541a5:2024-06",
+    "A:station-80f33b2a0eb541a5:2024-07",
+    "A:station-80f33b2a0eb541a5:2024-08",
+    "A:station-80f33b2a0eb541a5:2024-09",
+    "A:station-80f33b2a0eb541a5:2024-10",
+    "A:station-80f33b2a0eb541a5:2024-11",
+    "A:station-80f33b2a0eb541a5:2024-12",
+    "A:station-80f33b2a0eb541a5:2025-01",
+    "A:station-80f33b2a0eb541a5:2025-02",
+    "A:station-80f33b2a0eb541a5:2025-03",
+    "A:station-80f33b2a0eb541a5:2025-04",
+    "A:station-80f33b2a0eb541a5:2025-05",
+    "A:station-80f33b2a0eb541a5:2025-06",
+    "A:station-80f33b2a0eb541a5:2025-07",
+    "A:station-80f33b2a0eb541a5:2025-08",
+    "A:station-80f33b2a0eb541a5:2025-09",
+    "A:station-80f33b2a0eb541a5:2025-10",
+    "A:station-80f33b2a0eb541a5:2025-11",
+    "A:station-80f33b2a0eb541a5:2025-12",
+    "A:station-80f33b2a0eb541a5:2026-01",
+    "A:station-80f33b2a0eb541a5:2026-02",
+    "A:station-80f33b2a0eb541a5:2026-03",
+    "A:station-80f33b2a0eb541a5:2026-04",
+    "A:station-80f33b2a0eb541a5:2026-05",
+    "A:station-80f33b2a0eb541a5:2026-06",
+    "A:station-80f33b2a0eb541a5:2026-07",
+    "A:station-80f33b2a0eb541a5:2026-08",
+    "A:station-80f33b2a0eb541a5:2026-09",
+    "A:station-8b45ec3433384ed5:2023-01",
+    "A:station-8b45ec3433384ed5:2023-02",
+    "A:station-8b45ec3433384ed5:2023-03",
+    "A:station-8b45ec3433384ed5:2023-04",
+    "A:station-8b45ec3433384ed5:2023-05",
+    "A:station-8b45ec3433384ed5:2023-06",
+    "A:station-8b45ec3433384ed5:2023-07",
+    "A:station-8b45ec3433384ed5:2023-08",
+    "A:station-8b45ec3433384ed5:2023-09",
+    "A:station-8b45ec3433384ed5:2023-10",
+    "A:station-8b45ec3433384ed5:2023-11",
+    "A:station-8b45ec3433384ed5:2023-12",
+    "A:station-8b45ec3433384ed5:2024-01",
+    "A:station-8b45ec3433384ed5:2024-02",
+    "A:station-8b45ec3433384ed5:2024-03",
+    "A:station-8b45ec3433384ed5:2024-04",
+    "A:station-8b45ec3433384ed5:2024-05",
+    "A:station-8b45ec3433384ed5:2024-06",
+    "A:station-8b45ec3433384ed5:2024-07",
+    "A:station-8b45ec3433384ed5:2024-08",
+    "A:station-8b45ec3433384ed5:2024-09",
+    "A:station-8b45ec3433384ed5:2024-10",
+    "A:station-8b45ec3433384ed5:2024-11",
+    "A:station-8b45ec3433384ed5:2024-12",
+    "A:station-8b45ec3433384ed5:2025-01",
+    "A:station-8b45ec3433384ed5:2025-02",
+    "A:station-8b45ec3433384ed5:2025-03",
+    "A:station-8b45ec3433384ed5:2025-04",
+    "A:station-8b45ec3433384ed5:2025-05",
+    "A:station-8b45ec3433384ed5:2025-06",
+    "A:station-8b45ec3433384ed5:2025-07",
+    "A:station-8b45ec3433384ed5:2025-08",
+    "A:station-8b45ec3433384ed5:2025-09",
+    "A:station-8b45ec3433384ed5:2025-10",
+    "A:station-8b45ec3433384ed5:2025-11",
+    "A:station-8b45ec3433384ed5:2025-12",
+    "A:station-8b45ec3433384ed5:2026-01",
+    "A:station-8b45ec3433384ed5:2026-02",
+    "A:station-8b45ec3433384ed5:2026-03",
+    "A:station-8b45ec3433384ed5:2026-04",
+    "A:station-8b45ec3433384ed5:2026-05",
+    "A:station-8b45ec3433384ed5:2026-06",
+    "A:station-8b45ec3433384ed5:2026-07",
+    "A:station-8b45ec3433384ed5:2026-08",
+    "A:station-8b45ec3433384ed5:2026-09",
+    "A:station-d5875cbaaa0dfc7a:2023-01",
+    "A:station-d5875cbaaa0dfc7a:2023-02",
+    "A:station-d5875cbaaa0dfc7a:2023-03",
+    "A:station-d5875cbaaa0dfc7a:2023-04",
+    "A:station-d5875cbaaa0dfc7a:2023-05",
+    "A:station-d5875cbaaa0dfc7a:2023-06",
+    "A:station-d5875cbaaa0dfc7a:2023-07",
+    "A:station-d5875cbaaa0dfc7a:2023-08",
+    "A:station-d5875cbaaa0dfc7a:2023-09",
+    "A:station-d5875cbaaa0dfc7a:2023-10",
+    "A:station-d5875cbaaa0dfc7a:2023-11",
+    "A:station-d5875cbaaa0dfc7a:2023-12",
+    "A:station-d5875cbaaa0dfc7a:2024-01",
+    "A:station-d5875cbaaa0dfc7a:2024-02",
+    "A:station-d5875cbaaa0dfc7a:2024-03",
+    "A:station-d5875cbaaa0dfc7a:2024-04",
+    "A:station-d5875cbaaa0dfc7a:2024-05",
+    "A:station-d5875cbaaa0dfc7a:2024-06",
+    "A:station-d5875cbaaa0dfc7a:2024-07",
+    "A:station-d5875cbaaa0dfc7a:2024-08",
+    "A:station-d5875cbaaa0dfc7a:2024-09",
+    "A:station-d5875cbaaa0dfc7a:2024-10",
+    "A:station-d5875cbaaa0dfc7a:2024-11",
+    "A:station-d5875cbaaa0dfc7a:2024-12",
+    "A:station-d5875cbaaa0dfc7a:2025-01",
+    "A:station-d5875cbaaa0dfc7a:2025-02",
+    "A:station-d5875cbaaa0dfc7a:2025-03",
+    "A:station-d5875cbaaa0dfc7a:2025-04",
+    "A:station-d5875cbaaa0dfc7a:2025-05",
+    "A:station-d5875cbaaa0dfc7a:2025-06",
+    "A:station-d5875cbaaa0dfc7a:2025-07",
+    "A:station-d5875cbaaa0dfc7a:2025-08",
+    "A:station-d5875cbaaa0dfc7a:2025-09",
+    "A:station-d5875cbaaa0dfc7a:2025-10",
+    "A:station-d5875cbaaa0dfc7a:2025-11",
+    "A:station-d5875cbaaa0dfc7a:2025-12",
+    "A:station-d5875cbaaa0dfc7a:2026-01",
+    "A:station-d5875cbaaa0dfc7a:2026-02",
+    "A:station-d5875cbaaa0dfc7a:2026-03",
+    "A:station-d5875cbaaa0dfc7a:2026-04",
+    "A:station-d5875cbaaa0dfc7a:2026-05",
+    "A:station-d5875cbaaa0dfc7a:2026-06",
+    "A:station-d5875cbaaa0dfc7a:2026-07",
+    "A:station-d5875cbaaa0dfc7a:2026-08",
+    "A:station-d5875cbaaa0dfc7a:2026-09",
+    "A:station-e4ec5f711189b58f:2023-01",
+    "A:station-e4ec5f711189b58f:2023-02",
+    "A:station-e4ec5f711189b58f:2023-03",
+    "A:station-e4ec5f711189b58f:2023-04",
+    "A:station-e4ec5f711189b58f:2023-05",
+    "A:station-e4ec5f711189b58f:2023-06",
+    "A:station-e4ec5f711189b58f:2023-07",
+    "A:station-e4ec5f711189b58f:2023-08",
+    "A:station-e4ec5f711189b58f:2023-09",
+    "A:station-e4ec5f711189b58f:2023-10",
+    "A:station-e4ec5f711189b58f:2023-11",
+    "A:station-e4ec5f711189b58f:2023-12",
+    "A:station-e4ec5f711189b58f:2024-01",
+    "A:station-e4ec5f711189b58f:2024-02",
+    "A:station-e4ec5f711189b58f:2024-03",
+    "A:station-e4ec5f711189b58f:2024-04",
+    "A:station-e4ec5f711189b58f:2024-05",
+    "A:station-e4ec5f711189b58f:2024-06",
+    "A:station-e4ec5f711189b58f:2024-07",
+    "A:station-e4ec5f711189b58f:2024-08",
+    "A:station-e4ec5f711189b58f:2024-09",
+    "A:station-e4ec5f711189b58f:2024-10",
+    "A:station-e4ec5f711189b58f:2024-11",
+    "A:station-e4ec5f711189b58f:2024-12",
+    "A:station-e4ec5f711189b58f:2025-01",
+    "A:station-e4ec5f711189b58f:2025-02",
+    "A:station-e4ec5f711189b58f:2025-03",
+    "A:station-e4ec5f711189b58f:2025-04",
+    "A:station-e4ec5f711189b58f:2025-05",
+    "A:station-e4ec5f711189b58f:2025-06",
+    "A:station-e4ec5f711189b58f:2025-07",
+    "A:station-e4ec5f711189b58f:2025-08",
+    "A:station-e4ec5f711189b58f:2025-09",
+    "A:station-e4ec5f711189b58f:2025-10",
+    "A:station-e4ec5f711189b58f:2025-11",
+    "A:station-e4ec5f711189b58f:2025-12",
+    "A:station-e4ec5f711189b58f:2026-01",
+    "A:station-e4ec5f711189b58f:2026-02",
+    "A:station-e4ec5f711189b58f:2026-03",
+    "A:station-e4ec5f711189b58f:2026-04",
+    "A:station-e4ec5f711189b58f:2026-05",
+    "A:station-e4ec5f711189b58f:2026-06",
+    "A:station-e4ec5f711189b58f:2026-07",
+    "A:station-e4ec5f711189b58f:2026-08",
+    "A:station-e4ec5f711189b58f:2026-09",
+    "A:station-ec8b74bac5eb5f70:2023-01",
+    "A:station-ec8b74bac5eb5f70:2023-02",
+    "A:station-ec8b74bac5eb5f70:2023-03",
+    "A:station-ec8b74bac5eb5f70:2023-04",
+    "A:station-ec8b74bac5eb5f70:2023-05",
+    "A:station-ec8b74bac5eb5f70:2023-06",
+    "A:station-ec8b74bac5eb5f70:2023-07",
+    "A:station-ec8b74bac5eb5f70:2023-08",
+    "A:station-ec8b74bac5eb5f70:2023-09",
+    "A:station-ec8b74bac5eb5f70:2023-10",
+    "A:station-ec8b74bac5eb5f70:2023-11",
+    "A:station-ec8b74bac5eb5f70:2023-12",
+    "A:station-ec8b74bac5eb5f70:2024-01",
+    "A:station-ec8b74bac5eb5f70:2024-02",
+    "A:station-ec8b74bac5eb5f70:2024-03",
+    "A:station-ec8b74bac5eb5f70:2024-04",
+    "A:station-ec8b74bac5eb5f70:2024-05",
+    "A:station-ec8b74bac5eb5f70:2024-06",
+    "A:station-ec8b74bac5eb5f70:2024-07",
+    "A:station-ec8b74bac5eb5f70:2024-08",
+    "A:station-ec8b74bac5eb5f70:2024-09",
+    "A:station-ec8b74bac5eb5f70:2024-10",
+    "A:station-ec8b74bac5eb5f70:2024-11",
+    "A:station-ec8b74bac5eb5f70:2024-12",
+    "A:station-ec8b74bac5eb5f70:2025-01",
+    "A:station-ec8b74bac5eb5f70:2025-02",
+    "A:station-ec8b74bac5eb5f70:2025-03",
+    "A:station-ec8b74bac5eb5f70:2025-04",
+    "A:station-ec8b74bac5eb5f70:2025-05",
+    "A:station-ec8b74bac5eb5f70:2025-06",
+    "A:station-ec8b74bac5eb5f70:2025-07",
+    "A:station-ec8b74bac5eb5f70:2025-08",
+    "A:station-ec8b74bac5eb5f70:2025-09",
+    "A:station-ec8b74bac5eb5f70:2025-10",
+    "A:station-ec8b74bac5eb5f70:2025-11",
+    "A:station-ec8b74bac5eb5f70:2025-12",
+    "A:station-ec8b74bac5eb5f70:2026-01",
+    "A:station-ec8b74bac5eb5f70:2026-02",
+    "A:station-ec8b74bac5eb5f70:2026-03",
+    "A:station-ec8b74bac5eb5f70:2026-04",
+    "A:station-ec8b74bac5eb5f70:2026-05",
+    "A:station-ec8b74bac5eb5f70:2026-06",
+    "A:station-ec8b74bac5eb5f70:2026-07",
+    "A:station-ec8b74bac5eb5f70:2026-08",
+    "A:station-ec8b74bac5eb5f70:2026-09",
+    "A:station-ee3d6759a7b4e0dc:2023-01",
+    "A:station-ee3d6759a7b4e0dc:2023-02",
+    "A:station-ee3d6759a7b4e0dc:2023-03",
+    "A:station-ee3d6759a7b4e0dc:2023-04",
+    "A:station-ee3d6759a7b4e0dc:2023-05",
+    "A:station-ee3d6759a7b4e0dc:2023-06",
+    "A:station-ee3d6759a7b4e0dc:2023-07",
+    "A:station-ee3d6759a7b4e0dc:2023-08",
+    "A:station-ee3d6759a7b4e0dc:2023-09",
+    "A:station-ee3d6759a7b4e0dc:2023-10",
+    "A:station-ee3d6759a7b4e0dc:2023-11",
+    "A:station-ee3d6759a7b4e0dc:2023-12",
+    "A:station-ee3d6759a7b4e0dc:2024-01",
+    "A:station-ee3d6759a7b4e0dc:2024-02",
+    "A:station-ee3d6759a7b4e0dc:2024-03",
+    "A:station-ee3d6759a7b4e0dc:2024-04",
+    "A:station-ee3d6759a7b4e0dc:2024-05",
+    "A:station-ee3d6759a7b4e0dc:2024-06",
+    "A:station-ee3d6759a7b4e0dc:2024-07",
+    "A:station-ee3d6759a7b4e0dc:2024-08",
+    "A:station-ee3d6759a7b4e0dc:2024-09",
+    "A:station-ee3d6759a7b4e0dc:2024-10",
+    "A:station-ee3d6759a7b4e0dc:2024-11",
+    "A:station-ee3d6759a7b4e0dc:2024-12",
+    "A:station-ee3d6759a7b4e0dc:2025-01",
+    "A:station-ee3d6759a7b4e0dc:2025-02",
+    "A:station-ee3d6759a7b4e0dc:2025-03",
+    "A:station-ee3d6759a7b4e0dc:2025-04",
+    "A:station-ee3d6759a7b4e0dc:2025-05",
+    "A:station-ee3d6759a7b4e0dc:2025-06",
+    "A:station-ee3d6759a7b4e0dc:2025-07",
+    "A:station-ee3d6759a7b4e0dc:2025-08",
+    "A:station-ee3d6759a7b4e0dc:2025-09",
+    "A:station-ee3d6759a7b4e0dc:2025-10",
+    "A:station-ee3d6759a7b4e0dc:2025-11",
+    "A:station-ee3d6759a7b4e0dc:2025-12",
+    "A:station-ee3d6759a7b4e0dc:2026-01",
+    "A:station-ee3d6759a7b4e0dc:2026-02",
+    "A:station-ee3d6759a7b4e0dc:2026-03",
+    "A:station-ee3d6759a7b4e0dc:2026-04",
+    "A:station-ee3d6759a7b4e0dc:2026-05",
+    "A:station-ee3d6759a7b4e0dc:2026-06",
+    "A:station-ee3d6759a7b4e0dc:2026-07",
+    "A:station-ee3d6759a7b4e0dc:2026-08",
+    "A:station-ee3d6759a7b4e0dc:2026-09",
+    "A:station-f19920a3e6929dbe:2023-01",
+    "A:station-f19920a3e6929dbe:2023-02",
+    "A:station-f19920a3e6929dbe:2023-03",
+    "A:station-f19920a3e6929dbe:2023-04",
+    "A:station-f19920a3e6929dbe:2023-05",
+    "A:station-f19920a3e6929dbe:2023-06",
+    "A:station-f19920a3e6929dbe:2023-07",
+    "A:station-f19920a3e6929dbe:2023-08",
+    "A:station-f19920a3e6929dbe:2023-09",
+    "A:station-f19920a3e6929dbe:2023-10",
+    "A:station-f19920a3e6929dbe:2023-11",
+    "A:station-f19920a3e6929dbe:2023-12",
+    "A:station-f19920a3e6929dbe:2024-01",
+    "A:station-f19920a3e6929dbe:2024-02",
+    "A:station-f19920a3e6929dbe:2024-03",
+    "A:station-f19920a3e6929dbe:2024-04",
+    "A:station-f19920a3e6929dbe:2024-05",
+    "A:station-f19920a3e6929dbe:2024-06",
+    "A:station-f19920a3e6929dbe:2024-07",
+    "A:station-f19920a3e6929dbe:2024-08",
+    "A:station-f19920a3e6929dbe:2024-09",
+    "A:station-f19920a3e6929dbe:2024-10",
+    "A:station-f19920a3e6929dbe:2024-11",
+    "A:station-f19920a3e6929dbe:2024-12",
+    "A:station-f19920a3e6929dbe:2025-01",
+    "A:station-f19920a3e6929dbe:2025-02",
+    "A:station-f19920a3e6929dbe:2025-03",
+    "A:station-f19920a3e6929dbe:2025-04",
+    "A:station-f19920a3e6929dbe:2025-05",
+    "A:station-f19920a3e6929dbe:2025-06",
+    "A:station-f19920a3e6929dbe:2025-07",
+    "A:station-f19920a3e6929dbe:2025-08",
+    "A:station-f19920a3e6929dbe:2025-09",
+    "A:station-f19920a3e6929dbe:2025-10",
+    "A:station-f19920a3e6929dbe:2025-11",
+    "A:station-f19920a3e6929dbe:2025-12",
+    "A:station-f19920a3e6929dbe:2026-01",
+    "A:station-f19920a3e6929dbe:2026-02",
+    "A:station-f19920a3e6929dbe:2026-03",
+    "A:station-f19920a3e6929dbe:2026-04",
+    "A:station-f19920a3e6929dbe:2026-05",
+    "A:station-f19920a3e6929dbe:2026-06",
+    "A:station-f19920a3e6929dbe:2026-07",
+    "A:station-f19920a3e6929dbe:2026-08",
+    "A:station-f19920a3e6929dbe:2026-09",
+    "A:station-f42bb56bf7790d4e:2023-01",
+    "A:station-f42bb56bf7790d4e:2023-02",
+    "A:station-f42bb56bf7790d4e:2023-03",
+    "A:station-f42bb56bf7790d4e:2023-04",
+    "A:station-f42bb56bf7790d4e:2023-05",
+    "A:station-f42bb56bf7790d4e:2023-06",
+    "A:station-f42bb56bf7790d4e:2023-07",
+    "A:station-f42bb56bf7790d4e:2023-08",
+    "A:station-f42bb56bf7790d4e:2023-09",
+    "A:station-f42bb56bf7790d4e:2023-10",
+    "A:station-f42bb56bf7790d4e:2023-11",
+    "A:station-f42bb56bf7790d4e:2023-12",
+    "A:station-f42bb56bf7790d4e:2024-01",
+    "A:station-f42bb56bf7790d4e:2024-02",
+    "A:station-f42bb56bf7790d4e:2024-03",
+    "A:station-f42bb56bf7790d4e:2024-04",
+    "A:station-f42bb56bf7790d4e:2024-05",
+    "A:station-f42bb56bf7790d4e:2024-06",
+    "A:station-f42bb56bf7790d4e:2024-07",
+    "A:station-f42bb56bf7790d4e:2024-08",
+    "A:station-f42bb56bf7790d4e:2024-09",
+    "A:station-f42bb56bf7790d4e:2024-10",
+    "A:station-f42bb56bf7790d4e:2024-11",
+    "A:station-f42bb56bf7790d4e:2024-12",
+    "A:station-f42bb56bf7790d4e:2025-01",
+    "A:station-f42bb56bf7790d4e:2025-02",
+    "A:station-f42bb56bf7790d4e:2025-03",
+    "A:station-f42bb56bf7790d4e:2025-04",
+    "A:station-f42bb56bf7790d4e:2025-05",
+    "A:station-f42bb56bf7790d4e:2025-06",
+    "A:station-f42bb56bf7790d4e:2025-07",
+    "A:station-f42bb56bf7790d4e:2025-08",
+    "A:station-f42bb56bf7790d4e:2025-09",
+    "A:station-f42bb56bf7790d4e:2025-10",
+    "A:station-f42bb56bf7790d4e:2025-11",
+    "A:station-f42bb56bf7790d4e:2025-12",
+    "A:station-f42bb56bf7790d4e:2026-01",
+    "A:station-f42bb56bf7790d4e:2026-02",
+    "A:station-f42bb56bf7790d4e:2026-03",
+    "A:station-f42bb56bf7790d4e:2026-04",
+    "A:station-f42bb56bf7790d4e:2026-05",
+    "A:station-f42bb56bf7790d4e:2026-06",
+    "A:station-f42bb56bf7790d4e:2026-07",
+    "A:station-f42bb56bf7790d4e:2026-08",
+    "A:station-f42bb56bf7790d4e:2026-09",
+    "A:station-fb0b200e20909360:2023-01",
+    "A:station-fb0b200e20909360:2023-02",
+    "A:station-fb0b200e20909360:2023-03",
+    "A:station-fb0b200e20909360:2023-04",
+    "A:station-fb0b200e20909360:2023-05",
+    "A:station-fb0b200e20909360:2023-06",
+    "A:station-fb0b200e20909360:2023-07",
+    "A:station-fb0b200e20909360:2023-08",
+    "A:station-fb0b200e20909360:2023-09",
+    "A:station-fb0b200e20909360:2023-10",
+    "A:station-fb0b200e20909360:2023-11",
+    "A:station-fb0b200e20909360:2023-12",
+    "A:station-fb0b200e20909360:2024-01",
+    "A:station-fb0b200e20909360:2024-02",
+    "A:station-fb0b200e20909360:2024-03",
+    "A:station-fb0b200e20909360:2024-04",
+    "A:station-fb0b200e20909360:2024-05",
+    "A:station-fb0b200e20909360:2024-06",
+    "A:station-fb0b200e20909360:2024-07",
+    "A:station-fb0b200e20909360:2024-08",
+    "A:station-fb0b200e20909360:2024-09",
+    "A:station-fb0b200e20909360:2024-10",
+    "A:station-fb0b200e20909360:2024-11",
+    "A:station-fb0b200e20909360:2024-12",
+    "A:station-fb0b200e20909360:2025-01",
+    "A:station-fb0b200e20909360:2025-02",
+    "A:station-fb0b200e20909360:2025-03",
+    "A:station-fb0b200e20909360:2025-04",
+    "A:station-fb0b200e20909360:2025-05",
+    "A:station-fb0b200e20909360:2025-06",
+    "A:station-fb0b200e20909360:2025-07",
+    "A:station-fb0b200e20909360:2025-08",
+    "A:station-fb0b200e20909360:2025-09",
+    "A:station-fb0b200e20909360:2025-10",
+    "A:station-fb0b200e20909360:2025-11",
+    "A:station-fb0b200e20909360:2025-12",
+    "A:station-fb0b200e20909360:2026-01",
+    "A:station-fb0b200e20909360:2026-02",
+    "A:station-fb0b200e20909360:2026-03",
+    "A:station-fb0b200e20909360:2026-04",
+    "A:station-fb0b200e20909360:2026-05",
+    "A:station-fb0b200e20909360:2026-06",
+    "A:station-fb0b200e20909360:2026-07",
+    "A:station-fb0b200e20909360:2026-08",
+    "A:station-fb0b200e20909360:2026-09",
+    "A:station-0bfbba8dbe62861a:2026-10",
+    "A:station-0dc984395d82495e:2026-10",
+    "A:station-164608853a0baa99:2026-10",
+    "A:station-20cb206dfed95a06:2026-10",
+    "A:station-2644cd708b3d0597:2026-10",
+    "A:station-6046e5944fe6e28f:2026-10",
+    "A:station-80f33b2a0eb541a5:2026-10",
+    "A:station-8b45ec3433384ed5:2026-10",
+    "A:station-d5875cbaaa0dfc7a:2026-10",
+    "A:station-e4ec5f711189b58f:2026-10",
+    "A:station-ec8b74bac5eb5f70:2026-10",
+    "A:station-ee3d6759a7b4e0dc:2026-10",
+    "A:station-f19920a3e6929dbe:2026-10",
+    "A:station-f42bb56bf7790d4e:2026-10",
+    "A:station-fb0b200e20909360:2026-10"
+  ],
+  "unselectedReason": "Eligible candidates outside the deterministic capacity shortlist; not an evidence exclusion or environmental judgement.",
+  "representation": {
+    "rivers": [
+      "雙溪"
+    ],
+    "stations": [
+      "station-b304f8239c8754ee"
+    ],
+    "indicators": [
+      "all"
+    ],
+    "tiers": {
+      "A": 5,
+      "B": 0,
+      "C": 0
+    }
+  },
+  "limitations": [
+    "Monthly station records support documentary evidence review only. They do not establish causality, regulatory compliance, drinking-water safety, ecological harm or current conditions.",
+    "Expected periods assume the published monthly schedule across the admitted years. Station commissioning/discontinuation and historical physical continuity are unknown; missing rows do not prove closure.",
+    "The current month is an observation opportunity still in progress; its empty rows are neither future placeholders nor overdue historical samples. Future months are excluded from expected-to-date denominators.",
+    "Current official label matching does not establish unchanged historical physical monitoring location or laboratory methodology. Strict Mode B has no admitted comparisons. Limited pairs describe exact same-label monthly differences only, not validated trends or significance.",
+    "Censored values preserve detection limits without substitution. No ordinary mean mixes exact and censored observations. No station coordinates are admitted and no policy map pins are generated.",
+    "Complete four-indicator inputs are potential inputs only; research RPI remains unavailable pending precision, rounding and common-sampling evidence."
+  ],
+  "modeCEvidenceBlockers": [
+    "No independent causal identification",
+    "No permit or official compliance determination",
+    "No validated public-health suitability assessment"
+  ]
+}

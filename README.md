@@ -40,6 +40,23 @@ The audited inputs contain 88 pumping, 73 selected 2026 machinery and 67 basin r
 
 ## Data sources and processing
 
+### Policy #13: river monitoring evidence review
+
+Open **Rivers & Ecology → River Monitoring Evidence Review**, or `/#river-policy` (Pages: `/taipei-feitsui-water-map/#river-policy`). The lazy panel reads an independent immutable static snapshot and checks its exact SHA-256 before use.
+
+The accepted 2023–2026 editions contain **768 published rows and 720 measurement-bearing rows** at the fixed 2026-10-27 cutoff. October has 16 pending empty rows; November–December contain 32 future placeholders. There are 460 complete four-indicator input sets, but research RPI remains unavailable pending verified precision/rounding and common-sampling evidence. Strict cross-year comparison is unavailable because historical physical station continuity is unverified. Limited same-label exact monthly pairs are explicitly descriptive. Review tiers concern documentary questions, not pollution severity or legal compliance.
+
+Offline reproduction:
+
+```sh
+npm run data:audit:river-water-policy
+npm run data:build:river-water-policy
+npm run data:verify:river-water-policy
+npm run data:report:river-water-policy
+```
+
+`npm run data:fetch:river-water-policy` is also offline by default. Use `-- --refresh` to stage a scoped network refresh, then inspect and accept the exact staged hash with `-- --accept=<sha256>`. Failed acquisition or validation retains accepted sources and the previous snapshot. Existing explorer inputs remain separate. See the [Chinese report](docs/river-water-policy-decision-mvp.zh-TW.md), [source audit](docs/river-water-policy-source-audit.md), [methodology](docs/river-water-policy-longitudinal-methodology.md) and [delivery evidence](docs/river-water-policy-delivery.md).
+
 | Dataset area | Source / local pipeline |
 | --- | --- |
 | Feitsui water quality | `data/raw/feitsui-water/` → `convertFeitsuiWaterQuality.ts` |

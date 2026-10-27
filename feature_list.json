@@ -170,6 +170,17 @@
       ],
       "status": "done",
       "evidence": "2026-10-19: audited five official resources; 228 infrastructure records, 9 reference polygons, 695 historical observations / 44 exclusions. Snapshot sha256-d67edc57254ee273 reproduces offline. npm ci, convert:data, 65 tests + tsc, normal/Pages builds and git diff --check passed. Desktop/mobile, retry, exports and legacy navigation verified; see docs/evidence/verification.md."
+    },
+    {
+      "id": "feat-022",
+      "name": "Policy #13 — Taipei River Water Quality Monitoring & Longitudinal Evidence Review",
+      "description": "Official-source admission, observation coverage, conservative comparability/RPI evidence gates, reproducible review scenarios, bilingual static dashboard and briefings.",
+      "dependencies": [
+        "feat-011",
+        "feat-021"
+      ],
+      "status": "done",
+      "evidence": "2026-10-27: four official annual editions independently admitted with original SHA256;768 published/720 observed/32 future/16 current pending;15 current label matches,1 unresolved alias,no inferred pins. ModeA736(A46/B690/C0),strictB0,limited823 windows/7239 exact pairs,RPI unavailable with460 complete potential inputs,C unavailable. Immutable snapshot212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81 exactly reproduces. GitBash ./init.sh passed npmci,conversion,92 tests+tsc,normal/Pages builds;offline audit/rebuild/exports/diffcheck passed. EN/ZH browser5widths,filters,scenarios,download,retry,focus and legacy navigation verified. See docs/river-water-policy-delivery.md and results.json."
     }
   ]
 }

@@ -3,3 +3,5 @@ data/raw/pumping-stations/*.csv -text -diff -whitespace
 data/raw/sedimentation-basin-facilities/*.csv -text -diff -whitespace
 data/raw/storm-rainfall-rented-machinery-sites/official-1.csv -text -diff -whitespace
 data/raw/preparedness-decision/*.kml -text -diff -whitespace
+data/raw/river-water-policy/* -text -diff -whitespace
+public/data/river-water-policy/** -text

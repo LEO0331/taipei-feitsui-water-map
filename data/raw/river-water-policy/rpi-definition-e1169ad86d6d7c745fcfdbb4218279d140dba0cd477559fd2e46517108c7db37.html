@@ -1,0 +1,699 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="zh-Hant-TW"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="zh-Hant-TW"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="zh-Hant-TW"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="zh-Hant-TW"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="zh-Hant-TW">
+<!--<![endif]-->
+
+<head lang="zh-Hant-TW"><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="format-detection" content="telephone=no" /><title>
+	河川污染指數 ( River Pollution Index, RPI ) - 全國環境水質監測資訊網
+</title>
+
+    
+    
+
+    
+
+    <link rel="shortcut icon" href="../../../images/ico/favicon.ico" />
+    <link rel="apple-touch-icon" href="../../../images/ico/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" href="../../../images/ico/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" href="../../../images/ico/touch-icon-iphone4.png" />
+    <link rel="apple-touch-icon" href="../../../images/ico/apple-touch-icon-precomposed.png" />
+
+    <!-- 行動裝置顯示設定 -->
+    <meta name="viewport" content="width=device-width,&#32;initial-scale=1.0,&#32;maximum-scale=1.0,&#32;user-scalable=no" />
+    <!-- 手機板視窗 color -->
+    <meta name="theme-color" content="#0B8BCE" />
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="../../../css/external/animate.css" />
+    <link rel="stylesheet" href="../../../css/external/fontawesome-all.css?t=20241106" />
+    <link rel="stylesheet" href="../../../css/external/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../css/internal/global.css?t=20241106" />
+    <link rel="stylesheet" href="../../../css/internal/Grid.css?t=20231017" />
+    <link rel="stylesheet" href="../../../css/internal/Layout.css?t=20231017" />
+    <link rel="stylesheet" href="../../../css/internal/Loading.css" />
+
+     <link rel="alternate" hreflang="en" href="https://wq.moenv.gov.tw/EWQP/en/" />
+    <!--  JS 大多放在頁面結束，除了 modernizr-->
+    <script src="../../../js/external/modernizr.js"></script>
+    <script defer src="../../../js/external/ie10plus.modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>window.jQuery || document.write("<script src='" + "js/external/jq.js" + "'>\x3C/script>")</script>
+
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+        <script  src="../../../js/external/html5shiv.js" ></script>
+    <!<![endif]-->
+
+    
+    <script src="../../../js/Master/GoogleAnalytics.js?t=20241106"></script>
+
+    <!-- Open Graph Protocol Metadata -->
+    <meta property="og:title" content="&#20840;&#22283;&#29872;&#22659;&#27700;&#36074;&#30435;&#28204;&#36039;&#35338;&#32178;" /><meta property="og:description" content="&#29872;&#22659;&#37096;&#29872;&#22659;&#36039;&#35338;&#31185;&#25216;&#21496;&#36065;&#32396;&#36774;&#29702;&#20840;&#22283;&#24615;&#12300;&#29872;&#22659;&#27700;&#36074;&#30435;&#28204;&#12301;&#24037;&#20316;&#65292;&#21253;&#21547;&#27827;&#24029;&#12289;&#27700;&#24235;&#12289;&#22320;&#19979;&#27700;&#31561;&#27700;&#39636;&#23450;&#26399;&#27599;&#26376;(&#23395;)&#30435;&#28204;&#12290;&#25152;&#24471;&#30435;&#28204;&#32080;&#26524;&#32147;&#21697;&#20445;&#21450;&#21697;&#31649;&#23529;&#26597;&#24460;&#20844;&#24067;&#65292;&#33853;&#23526;&#27665;&#30526;&#23565;&#36039;&#35338;&#12300;&#30693;&#30340;&#27402;&#30410;&#12301;&#21450;&#23565;&#25976;&#25818;&#12300;&#29992;&#30340;&#27402;&#30410;&#12301;&#12290;&#21478;&#25345;&#32396;&#33936;&#25972;&#22320;&#26041;&#29872;&#20445;&#23616;&#21450;&#30456;&#38364;&#27231;&#38364;&#30435;&#28204;&#36039;&#35338;&#65292;&#36879;&#36942;&#20114;&#21205;&#24335;&#32178;&#38913;&#65292;&#25552;&#20379;&#25972;&#21512;&#24615;&#21450;&#34892;&#21205;&#35222;&#35258;&#21270;&#30340;&#29872;&#22659;&#36039;&#35338;&#26381;&#21209;&#65292;&#20415;&#21033;&#27665;&#30526;&#25484;&#25569;&#29983;&#27963;&#29872;&#22659;&#36039;&#35338;&#33287;&#21697;&#36074;&#12290;" /><meta property="og:type" content="website" /><meta property="og:url" content="https://wq.moenv.gov.tw/EWQP/zh/Default.aspx" /><meta property="og:image" content="https://wq.moenv.gov.tw/EWQP/images/img-facebookMeta.jpg" />
+    <!--以下 og:image 延伸 非必要-->
+    <meta property="og:image:secure_url" content="https://wq.moenv.gov.tw/EWQP/images/img-facebookMeta.jpg" /><meta property="og:image:type" content="image/jpg" /><meta property="og:image:width" content="400" /><meta property="og:image:height" content="235" />
+
+    <!--MasterHead  Start-------------------------------------------------- -->
+    
+    <meta name="title" content="河川污染指數 ( River Pollution Index, RPI ) - 全國環境水質監測資訊網" />
+    <meta name="description" content="環境部環境資訊科技司賡續辦理全國性「環境水質監測」工作，包含河川、水庫、地下水等水體定期每月(季)監測。所得監測結果經品保及品管審查後公布，落實民眾對資訊「知的權益」及對數據「用的權益」。另持續蒐整地方環保局及相關機關監測資訊，透過互動式網頁，提供整合性及行動視覺化的環境資訊服務，便利民眾掌握生活環境資訊與品質。" />
+    <meta name="author" content="全國環境水質監測資訊網 - 環境部" />
+    <meta name="Copyright" content="版權環境部所有。All Rights Reserved Ministry of Environment Executive Yuan, R.O.C. (Taiwan)" />
+    <meta name="Keywords" content="環境部,環境水質監測,地下水水質,全國,水質監測,河川水質,水庫水質,moenv" />
+    <!-- Dublin Core Metadata -->
+    <meta name="DC.title" content="全國環境水質監測資訊網" />
+    <meta name="DC.subject" content="環境水質監測平台建置計畫" />
+    <meta name="DC.creator" content="環輿科技股份有限公司 Environmental & GeoInformatic Technology Co. Ltd." />
+
+    <!--MasterHead  End-------------------------------------------------- -->
+</head>
+
+<body>
+    <!--Form Star-------------------------------------------------- -->
+    <form method="post" action="./Pedia_37.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="B3HRjzNk/WQYQbdm0FQ5q0FfZmRkG6MS0BIzSDrm8RRsxxZWS1gSpUl8z4ExBMMo/fm3yQ/BNLTt63fosesSw2+vvyxdmW1X/oqhDVKiRQjJBottAsycjNKD8qvU1Uw89EvukVy5Utb4ikizQMD2xRKvPYebq0eochBQzxYuiajc08lP+ygl83vXsb+Wg+whWXu2EH2oHOGQjJtZjLPOqeJ62wkgqhYMFLrl3jR204VRyv9Qf53x4jEr97OhnM/D" />
+
+
+<script src="/EWQP/ScriptResource.axd?d=0y8MEsr3ao3EJ7P-lfA9Zy8ZP8N9-4Zh_q_Q-HBzx2nrMQ_SdzHqp5NDP5TbcrKVkuG-j7MZH2iA7WqyxJvViqx7wpG0VV9rbmGj-7OzHk0OxN8-VvZMFfg4cydCEbgpYY9aP06qj2vC9BURUJVVQ4Mo5CmFW6N4vHAyU-fvUVU1&amp;t=ffffffffbec1863d" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="949AE9BB" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="HCcKm+mrFGTSFOo8vy8C5+lSApfMvfbCIl6KSBOFxnXvHnFpO2k8Z4PAV85o6F5NURuRXCpfrKqilK3pUuOcMPnkzrWRHl+T9EM8uOnimYUFN3a53V6Chfjfb9mk1YFO" />
+        
+        <input type="hidden" name="ctl00$hid_Hash" id="hid_Hash" value="9fe44f84921b45af857a06af44fd4d45" />
+        <div id="Wrap">
+            <div class="TopNotice">您的瀏覽器不支援 JavaScript 功能，可能會造成部分網頁功能無法正常使用時，建議開啟瀏覽器 JavaScript 狀態</div>
+            <div class="TopAccessibility">
+                <a href="#Content" id="TOP" title="跳到主要內容區塊" tabindex="1" aria-label="跳到主要內容區塊">跳到主要內容區塊</a>
+            </div>
+            <header id="Header" class="clearfix">
+                <div class="accesskey">
+                    <a href="#Accesskey_1" id="Accesskey_1" accesskey="1" title="上方選單連結區，此區塊列有本網站的主要連結。" aria-label="上方選單連結區，此區塊列有本網站的主要連結。">:::</a>
+                </div>
+                <div id="Banner" class="bannerWrp wrapper">
+                    <!-- Logo -->
+                    <div class="logoArea">
+                        <a href="https://www.moenv.gov.tw/" class="Logo" title="環境部全球資訊網" aria-label="點擊前往環境部全球資訊網">
+                            <img src="../../../images/img-moenvLogo.svg" alt="環境部 全國環境水質監測資訊網" aria-label="環境部 全國環境水質監測資訊網">
+                        </a>
+                        <div class="LogoInfo">
+                            <h1>全國環境水質監測資訊網</h1>
+                        </div>
+                    </div>
+
+                    <!-- TopNav -->
+                    <div class="TopNav">
+                        <div class="accesskey">
+                            <a href="#Accesskey_2" id="Accesskey_2" class="label-tips" accesskey="2" title="上方快速導覽區，此區塊列可連結網站導覽、意見信箱及相關社群網站。" aria-label="上方快速導覽區，此區塊列可連結網站導覽、意見信箱及相關社群網站。">:::</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="../../Default.aspx" target="_top" title="首頁" aria-label="首頁">首頁</a>｜
+                            </li>
+                            <li>
+                                <a href="https://epamail.moenv.gov.tw/front/mailboxhome" target="_top" title="[另開新連結] 環境部首長信箱" aria-label="[另開新連結] 環境部首長信箱">意見信箱</a>｜
+                            </li>
+                            <li>
+                                <a href="../../Sitemap.aspx" title="網站導覽" aria-label="網站導覽">網站導覽</a>｜
+                            </li>
+                            <li>
+                                <a href="../../../en/Default.aspx" title="English" aria-label="English">English</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/MOENV.TW/" target="_blank" title="[另開新連結] 環境部粉絲團" aria-label="[另開新連結] 環境部粉絲團">
+                                    <img src="../../../images/facebook.svg" alt="Facebook Logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://line.me/R/ti/p/KjOox0U09B" target="_blank" title="[另開新連結] 環境部Line" aria-label="[另開新連結] 環境部 Line">
+                                    <img src="../../../images/line.svg" alt="Line Logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- mainMenu -->
+            <nav id="Nav" class="clearfix">
+                <!-- hamburger button -->
+                <input type="checkbox" id="btnMenu" class="toggleMenu" aria-hidden="true">
+                <label for="btnMenu" class="toggleMenuLabel" title="選單" aria-label="選單">
+                    <i class="fas fa-bars fa-fw" aria-hidden="true"></i>
+                </label>
+                <div class="menuArea wrapper">
+                    <div class="mainMenu">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" role="button">最新消息</a>
+                                <ul class="secMenu">
+                                    <li>
+                                        <a href="../../News/Newslist.aspx?Category_ID=2" title="前往 水質報告" aria-label="前往 水質報告">水質報告</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../News/Newslist.aspx?Category_ID=4" title="前往 臨時公告" aria-label="前往 臨時公告">臨時公告</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" role="button">環境水質監測</a>
+                                <ul class="secMenu">
+                                    <li>
+                                        <a href="../../EnvWaterMonitoring/River.aspx" title="前往 河川" aria-label="前往 河川">河川</a>
+                                        <ul class="trdMenu">
+                                            <li>
+                                                <a href="../../EnvWaterMonitoring/RiverWaterQuality.aspx" title="前往 河川其他機關監測數據" aria-label="前往 河川其他機關監測數據">- 其他機關監測數據</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="../../EnvWaterMonitoring/Reservoir.aspx" title="前往 水庫" aria-label="前往 水庫">水庫</a>
+                                        <ul class="trdMenu">
+                                            <li>
+                                                <a href="../../EnvWaterMonitoring/ReservoirWaterQuality.aspx" title="前往 水庫其他機關監測數據" aria-label="前往 水庫其他機關監測數據">- 其他機關監測數據</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="../../EnvWaterMonitoring/Groundwater.aspx" title="前往 地下水" aria-label="前往 地下水">地下水</a>
+                                        <ul class="trdMenu">
+                                            <li>
+                                                <a href="../../EnvWaterMonitoring/GroundwaterWaterQuality.aspx" title="前往 地下水其他機關監測數據" aria-label="前往 地下水其他機關監測數據">- 其他機關監測數據</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" role="button">水質小百科</a>
+                                <ul class="secMenu">
+                                    <li>
+                                        <a href="../WaterKnowledge/EncyclopediaList.aspx" title="前往 關於水的知識" aria-label="前往 關於水的知識">關於水的知識</a>
+                                    </li>
+                                    <li>
+                                        <a href="EncyclopediaList.aspx" title="前往 名詞解釋" aria-label="前往 名詞解釋">名詞解釋</a>
+                                    </li>
+                                    <li>
+                                        <a href="../MonSpecification/SampleProcess.aspx" title="前往 監測作業規範" aria-label="前往 監測作業規範">監測作業規範</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" role="button">便民服務</a>
+                                <ul class="secMenu">
+                                    <li>
+                                        <a href="../../ConService/DownLoad/AnnReport.aspx" title="前往 水質年報" aria-label="前往 水質年報">水質年報</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../ConService/DownLoad/HistoryData.aspx" title="前往 資料下載" aria-label="前往 資料下載">資料下載</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../ConService/ResSharing/LinkInternal.aspx" title="前往 資源共享" aria-label="前往 資源共享">資源共享</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://epamail.moenv.gov.tw/front/mailboxhome" title="[另開新連結] 環境部首長信箱" aria-label="[另開新連結] 環境部首長信箱" target="_blank">意見信箱</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.moenv.gov.tw/Page/7CDE9E54E2E1FF84" title="[另開新連結] 環境部環境資訊科技司" aria-label="[另開新連結] 環境部環境資訊科技司" target="_blank">業務聯繫</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" role="button">用地圖看水質</a>
+                                <ul class="secMenu">
+                                    <li>
+                                        <a href="https://wq.moenv.gov.tw/EWQP_GIS/" title="前往 水質地理資訊平台" aria-label="前往 水質地理資訊平台">水質地理資訊平台</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="SearchArea">
+                                <button type="button" id="openSearchBox" title="開啟搜尋" aria-label="開啟搜尋">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <div class="SearchBox">
+                                    <input type="search" id="txtSearch" placeholder="全站搜尋..." title="輸入關鍵字進行搜尋" aria-label="輸入關鍵字進行搜尋">
+                                    <button id="btnSearch" title="搜尋" aria-label="搜尋">搜尋</button>
+                                    <div class="searchWord">
+                                        <ul>
+                                            <li>熱門搜尋：</li>
+                                            <li>
+                                                <a href="Pedia_08.aspx" title="氨氮(Ammonia nitrogen)" aria-label="氨氮(Ammonia nitrogen)">氨氮(Ammonia nitrogen)</a>、
+                                            </li>
+                                            <li>
+                                                <a href="Pedia_48.aspx" title="導電度 (Electrical conductivity , EC )" aria-label="導電度 (Electrical conductivity , EC )">導電度 (Electrical conductivity , EC )</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--MasterContent Start-------------------------------------------------- -->
+            
+    <main class="baseMain EncyclopediaCont">
+        <div id="Content" class="PediaWrap clearfix">
+            <div class="BreadcrumbArea">
+                <div class="BreadcrumbCont wrapper">
+                    <div class="accesskey"><a href="#Accesskey_3" id="Accesskey_3" accesskey="3" title="中間主要內容區，此區塊列有本網站的主要內容區。" aria-label="中間主要內容區，此區塊列有本網站的主要內容區。">:::</a></div>
+                    <div class="Breadcrumb">
+                        <span id="CPH1_SiteMapPath2"><span><a title="&#39318;&#38913;&#32;Home" href="/EWQP/zh/Default.aspx">&#39318;&#38913;</a></span><span> &gt; </span><span><a title="&#27700;&#36074;&#23567;&#30334;&#31185;">&#27700;&#36074;&#23567;&#30334;&#31185;</a></span><span> &gt; </span><span><a title="&#21517;&#35422;&#35299;&#37323;" href="/EWQP/zh/Encyclopedia/NounDefinition/EncyclopediaList.aspx">&#21517;&#35422;&#35299;&#37323;</a></span><span> &gt; </span><span>&#27827;&#24029;&#27745;&#26579;&#25351;&#25976;</span></span>
+                    </div>
+                </div>
+            </div>
+            <div id="Main" class="wrapper">
+                <div class="PageTitle">
+                    <h2>名詞解釋</h2>
+                    <h3 class="PediaTitle">河川污染指數 ( River Pollution Index, RPI )</h3>
+                </div>
+                <div class="SocialMedia">
+                    <ul>
+                        <li class="Facebook">
+                            <a href="https://www.facebook.com/share.php?u=https://wq.moenv.gov.tw/EWQP/zh/Encyclopedia/NounDefinition/Pedia_37.aspx" target="_blank" title="[另開新連結]分享至Facebook" aria-label="[另開新連結]分享至Facebook">
+                                <i class="fa-brands fa-facebook-f fa-fw fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="Line">
+                            <a href="https://line.naver.jp/R/msg/text/?https://wq.moenv.gov.tw/EWQP/zh/Encyclopedia/NounDefinition/Pedia_37.aspx" target="_blank" title="[另開新連結]分享至Line" aria-label="[另開新連結]分享至Line">
+                                <i class="fa-brands fa-line fa-fw fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="Twitter">
+                            <a href="https://twitter.com/home/?status=https://wq.moenv.gov.tw/EWQP/zh/Encyclopedia/NounDefinition/Pedia_37.aspx" target="_blank" title="[另開新連結]分享至Twitter" aria-label="[另開新連結]分享至Twitter">
+                                <i class="fa-brands fa-x-twitter fa-fw fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="BlockSpace">
+                <div class="wrapper clearfix">
+                    <ul class="PediaInfo">
+                        <li>
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i>發布時間：
+								<span class="PublishDate">2020-05-28</span>
+                        </li>
+                        <li>
+                            <span class="articlWrap">
+                                <i class="fas fa-tags" aria-hidden="true"></i>標籤：
+									<a href="EncyclopediaList.aspx" class="articlTag" title="名詞解釋" aria-label="名詞解釋">名詞解釋</a>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="PediaCont">
+
+                        <article class="txtCont">
+                            <p>由生化需氧量、溶氧量、氨氮及懸浮固體等四項理化水質參數組成，用以根據其數值來對污染程度加以分類， 計算方式如下：RPI=(1/4) ΣSi 式中，Si 為污染點數，i 為水質項目，RPI 為河川污染指數，介於 1~10 間，RPI 2 以下代表 未(稍)受污染。 Si：第 i 項水質參數之點數，水質參數包括 DO（mg/L）、BOD<sub>5</sub>（mg/L）、NH<sub>3</sub><sup>-</sup>N（mg/L）、SS（mg/L）。</p>
+
+                            <figure class="myFormula" role="figure">
+                                <img src="../../../images/Encyclopedia/ND_Pedia_37_RPI.svg" alt="河川污染指數公式" aria-label="河川污染指數公式" />
+                                <figcaption>河川污染指數(RPI)=(1/4) ΣSi 
+                                </figcaption>
+                            </figure>
+
+                            <table class="Mytable" summary="河川污染指數之計算及比對基準">
+                                <caption>河川污染指數之計算及比對基準</caption>
+                                <thead>
+                                    <tr>
+                                        <th>水質/項目</th>
+                                        <th>未(稍)受污染</th>
+                                        <th>輕度污染</th>
+                                        <th>中度污染</th>
+                                        <th>嚴重污染</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>溶氧量 (DO) mg/L</td>
+                                        <td>DO ≧ 6.5</td>
+                                        <td>6.5 ＞ DO ≧ 4.6</td>
+                                        <td>4.5 ≧ DO ≧ 2.0</td>
+                                        <td>DO ＜ 2.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>生化需氧量 (BOD<sub>5</sub>) mg/L</td>
+                                        <td>BOD<sub>5</sub> ≦ 3.0</td>
+                                        <td>3.0 ＜ BOD<sub>5</sub> ≦ 4.9</td>
+                                        <td>5.0 ≦ BOD<sub>5</sub> ≦ 15.0</td>
+                                        <td>BOD<sub>5</sub> ＞ 15.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>懸浮固體 (SS) mg/L</td>
+                                        <td>SS ≦ 20.0</td>
+                                        <td>20.0 ＜ SS ≦ 49.9</td>
+                                        <td>50.0 ≦ SS ≦ 100</td>
+                                        <td>SS ＞ 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>氨氮 (NH<sub>3</sub><sup>-</sup>N) mg/L</td>
+                                        <td>NH<sub>3</sub><sup>-</sup>N ≦ 0.50</td>
+                                        <td>0.50 ＜ NH<sub>3</sub><sup>-</sup>N ≦ 0.99</td>
+                                        <td>1.00 ≦ NH<sub>3</sub><sup>-</sup>N ≦ 3.00</td>
+                                        <td>NH<sub>3</sub><sup>-</sup>N ＞ 3.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>點數</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                        <td>6</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>污染指數積分值 (S)</td>
+                                        <td>S ≦ 2.0</td>
+                                        <td>2.0 ＜ S ≦ 3.0</td>
+                                        <td>3.1 ≦ S ≦ 6.0</td>
+                                        <td>S ＞ 6.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>備註：本表依 102 年 5 月 30 日環署水字第 1020045468 號函「河川污染指數 (RPI) 基準值及計算方式修正」研商會議結論，自 102 年起參考國家環境研究院公告「檢測報告位數表示規定」，調整計算 RPI 公式。</p>
+                        </article>
+                    </div>
+                    <div class="Pagination">
+                        <ul>
+                            <li>
+                                <a href="Pedia_36.aspx" title="上一篇" aria-label="上一篇">
+                                    <i class="fas fa-angle-left" aria-hidden="true"></i>上一篇
+                                </a>
+                            </li>
+                            <li class="txtRight">
+                                <a href="Pedia_38.aspx" title="下一篇" aria-label="下一篇">
+                                    <i class="fas fa-angle-right" aria-hidden="true"></i>下一篇
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Reading">
+                        <article class="txtCont">
+                            <h4>
+                                <i class="fas fa-tags" aria-hidden="true"></i>延伸閱讀：
+                            </h4>
+                            <ul class="itemList">
+                                <li>
+                                    <a href="../WaterKnowledge/Pedia_04.aspx" title="河流怎麼變混濁了？" aria-label="河流怎麼變混濁了？">河流怎麼變混濁了？</a>
+                                </li>
+                                <li>
+                                    <a href="../WaterKnowledge/Pedia_06.aspx" title="水底為什麼會冒氣泡？" aria-label="水底為什麼會冒氣泡？">水底為什麼會冒氣泡？</a>
+                                </li>
+                                <li>
+                                    <a href="../WaterKnowledge/Pedia_08.aspx" title="河水為什麼會有顏色" aria-label="河水為什麼會有顏色">河水為什麼會有顏色</a>
+                                </li>
+                                <li>
+                                    <a href="../WaterKnowledge/Pedia_05.aspx" title="水中出現死亡的魚類" aria-label="水中出現死亡的魚類">水中出現死亡的魚類</a>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+            <!--MasterContent End-------------------------------------------------- -->
+
+            <div id="Footer">
+                <div class="accesskey">
+                    <a href="#Accesskey_0" id="Accesskey_0" accesskey="0" title="下方選單連結區，此區塊有[資訊安全政策]、[隱私權政策]等連結，以及聯絡資訊。" aria-label="下方選單連結區，此區塊有[資訊安全政策]、[隱私權政策]等連結，以及聯絡資訊。">:::</a>
+                </div>
+                <div class="FooterMenu clearfix">
+                    <div class="wrapper">
+                        <nav class="Menu">
+                            <ul>
+                                <li>
+                                    <a href="#!" role="button">最新消息</a>
+                                    <ul class="secMenu">
+                                        <li>
+                                            <a href="../../News/Newslist.aspx?Category_ID=2" title="前往 水質報告" aria-label="前往 水質報告">水質報告</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../News/Newslist.aspx?Category_ID=4" title="前往 臨時公告" aria-label="前往 臨時公告">臨時公告</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#!" role="button">環境水質監測</a>
+                                    <ul class="secMenu">
+                                        <li>
+                                            <a href="../../EnvWaterMonitoring/River.aspx" title="前往 河川" aria-label="前往 河川">河川</a>
+                                            <ul class="trdMenu">
+                                                <li>
+                                                    <a href="../../EnvWaterMonitoring/RiverWaterQuality.aspx" title="前往 河川其他機關監測數據" aria-label="前往 河川其他機關監測數據">其他機關監測數據</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="../../EnvWaterMonitoring/Reservoir.aspx" title="前往 水庫" aria-label="前往 水庫">水庫</a>
+                                            <ul class="trdMenu">
+                                                <li>
+                                                    <a href="../../EnvWaterMonitoring/ReservoirWaterQuality.aspx" title="前往 水庫其他機關監測數據" aria-label="前往 水庫其他機關監測數據">其他機關監測數據</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="../../EnvWaterMonitoring/Groundwater.aspx" title="前往 地下水" aria-label="前往 地下水">地下水</a>
+                                            <ul class="trdMenu">
+                                                <li>
+                                                    <a href="../../EnvWaterMonitoring/GroundwaterWaterQuality.aspx" title="前往 地下水其他機關監測數據" aria-label="前往 地下水其他機關監測數據">其他機關監測數據</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#!" role="button">水質小百科</a>
+                                    <ul class="secMenu">
+                                        <li>
+                                            <a href="../WaterKnowledge/EncyclopediaList.aspx" title="前往 關於水的知識" aria-label="前往 關於水的知識">關於水的知識</a>
+                                        </li>
+                                        <li>
+                                            <a href="EncyclopediaList.aspx" title="前往 名詞解釋" aria-label="前往 名詞解釋">名詞解釋</a>
+                                        </li>
+                                        <li>
+                                            <a href="../MonSpecification/SampleProcess.aspx" title="前往 監測作業規範" aria-label="前往 監測作業規範">監測作業規範</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#!" role="button">便民服務</a>
+                                    <ul class="secMenu">
+                                        <li>
+                                            <a href="../../ConService/DownLoad/AnnReport.aspx" title="前往 水質年報" aria-label="前往 水質年報">水質年報</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../ConService/DownLoad/HistoryData.aspx" title="前往 資料下載" aria-label="前往 資料下載">資料下載</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../ConService/ResSharing/LinkInternal.aspx" title="前往 資源共享" aria-label="前往 資源共享">資源共享</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://epamail.moenv.gov.tw/front/mailboxhome" title="[另開新連結] 環境部首長信箱" aria-label="[另開新連結] 環境部首長信箱" target="_blank">意見信箱</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.moenv.gov.tw/Page/7CDE9E54E2E1FF84" title="[另開新連結] 環境部環境資訊科技司" aria-label="[另開新連結] 環境部環境資訊科技司" target="_blank">業務聯繫</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#!" role="button">用地圖看水質</a>
+                                    <ul class="secMenu">
+                                        <li>
+                                            <a href="https://wq.moenv.gov.tw/EWQP_GIS/" title="前往 水質地理資訊平台" aria-label="前往 水質地理資訊平台">水質地理資訊平台</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="FooterInfo clearfix">
+                    <div class="wrapper clearfix">
+                        <div class="FooterInfoWrap">
+                            <div class="Announce">
+                                <a href="https://www.moenv.gov.tw/Page/B12F9A27ED79AB88" target="_blank" title="[另開新連結] 網站政策及宣告" aria-label="[另開新連結] 網站政策及宣告">網站政策及宣告</a>
+                                <div class="listMark">
+                                    <a href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260715145945" class="icon-accessibility" title="[另開新連結] 無障礙網站" aria-label="[另開新連結] 無障礙網站" target="_blank">
+                                        <img src="../../../images/Marks/img-AccessibilityAA.png" alt="通過AA等級無障礙網頁檢測" aria-label="通過AA等級無障礙網頁檢測">
+                                    </a>
+                                </div>
+                            </div>
+                            <address>
+                                <p>地址：100006 臺北市中正區中華路一段 83 號</p>
+                                <p>電話：(02)2311-7722 系統問題請洽分機2335 水質監測/資料問題請洽分機2814</p>
+                                <p>
+                                    瀏覽人次：3506553
+                                    (自 2020-12-01 起)
+                                </p>
+                                <p>更新日期：2026-09-17</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="FixMenu">
+                <ul class="Item">
+                    <li>
+                        
+                        <a href="javascript:;" role="button" class="Top" title="回到 頁面最頂端" aria-label="回到 頁面最頂端">
+                            <i class="fas fa-angle-up fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="div_Querying" class="MyLoading black_opacity">
+                <div class="loadbox">
+                    <i class="fas fa-spinner fa-pulse fa-4x" style="color:white"></i>
+                    <p>資料載入中</p>
+                </div>
+            </div>
+
+            <div id="div_Downloading" class="MyLoading&#32;black_opacity">
+                <div class="loadbox">
+                    <i class="gt whirl"></i>
+                    <p>下載中</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS -->
+
+        
+        <script>
+
+            _strClint = "#CPH_Content_";
+            _strClintName = "ctl00$CPH_Content$";  //ClintName
+            //jQuery物件設定
+            $(document).ready(function () {
+                var mHeight = $("#Wrap").height();
+                var mWidth = $("#Wrap").width();
+                //alert("長寬：" + mWidth + " x " + mHeight);
+
+                //無障礙
+                var $a = $('.TopAccessibility a');
+                $a.on('click', function (evt) {
+                    var $href = $($(this).attr('href')),
+                        $target = $href.find('a').eq(0).get(0);
+                    setTimeout(function () { try { $target.focus(); } catch (e) { } }, 0);
+                });
+
+                //無障礙鍵盤menu輔助
+                $("#" + "btnMenu").on('keydown', function (evt) {
+                    $(this).prop("checked", true);
+                    $("#" + "Accesskey_5").focus();
+                });
+
+                //mainMenu open
+                $('.mainMenu > ul > li > a').on('click', function (e) {
+                    $('.mainMenu > ul > li').removeClass('on');
+                    $(this).parent().addClass('on');
+                    e.stopPropagation()
+                });
+                $(document).on('click', function (e) {
+                    if ($(e.target).is('.mainMenu > ul > li') === false) {
+                        $('.mainMenu > ul > li').removeClass('on');
+                    }
+                });
+
+                //searchBox open
+                $('#openSearchBox').on('click', function (e) {
+                    $('.SearchBox').toggleClass('on');
+                    e.stopPropagation()
+                });
+            });
+        </script>
+
+        
+        <script>
+            ////全站搜尋
+            //function SiteSearch() {
+            //    var strSearch = $("#txtSearch").val();
+            //    // console.log(strSearch);
+            //    if (strSearch.length == 0) {
+            //        alert("請輸入欲查詢關鍵字");
+            //        return;
+            //    };
+            //    // TODO：換 Domain  要改
+            //    window.open("https://www.google.com.tw/search?q=" + strSearch + "&domains=ewq.moenv.gov.tw&sitesearch=ewq.moenv.gov.tw/EWQP/", "searchView");
+            //};
+
+            (function () {
+                var cx = '001350343792202069601:q8ppi0scndi';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+
+
+            $(document).ready(function () {
+                $("#btnSearch").on("click", function (e) {
+                    DoAdvancedSearch(e.target.id);
+                    return false;
+                });
+            });
+            function DoAdvancedSearch(id) {
+                var KeyWord;
+                KeyWord = $("#txtSearch").val();
+                if (KeyWord != "") {
+                    window.location.href = "../../AdvancedSearch.aspx?q=" + KeyWord;
+                }
+            }
+        </script>
+        <script>
+            $(".Top").click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                });
+                return false;
+            })
+        </script>
+
+        
+        <script>
+            function showLoading(type) {
+                isLoading = true;
+                switch (type.toLowerCase()) {
+                    case "query":
+                        $('#div_Querying').addClass('active');
+                        break;
+                    case "download":
+                        $('#div_Downloading').addClass('active');
+                        break;
+                }
+            };
+
+            function hideLoading(type) {
+                isLoading = false;
+                switch (type.toLowerCase()) {
+                    case 'query':
+                        $('#div_Querying').removeClass('active');
+                        break;
+                    case 'download':
+                        $('#div_Downloading').removeClass('active');
+                        break;
+                    default:
+                        $('#div_Querying').removeClass('active');
+                        $('#div_Downloading').removeClass('active');
+                        break;
+                }
+            };
+        </script>
+
+        <!--MasterContent JS Star-------------------------------------------------- -->
+        
+
+        <!--MasterContent JS End-------------------------------------------------- -->
+
+    </form>
+    <!--Form End -------------------------------------------------- -->
+</body>
+</html>

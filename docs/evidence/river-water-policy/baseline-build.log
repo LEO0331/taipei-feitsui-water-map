@@ -1,0 +1,20 @@
+
+> taipei-feitsui-water-map@0.1.0 build
+> tsc && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 784 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                         0.78 kB │ gzip:   0.47 kB
+dist/assets/PreparednessDecisionPanel-CYp595Qj.css      1.81 kB │ gzip:   0.69 kB
+dist/assets/index-3-Ca_pta.css                         22.23 kB │ gzip:   8.36 kB
+dist/assets/PreparednessDecisionPanel-BrGOFWKW.js      36.77 kB │ gzip:  13.56 kB
+dist/assets/index-CjXbFCf0.js                       1,057.12 kB │ gzip: 311.19 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 3.11s
