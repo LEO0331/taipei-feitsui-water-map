@@ -181,6 +181,18 @@
       ],
       "status": "done",
       "evidence": "2026-10-27: four official annual editions independently admitted with original SHA256;768 published/720 observed/32 future/16 current pending;15 current label matches,1 unresolved alias,no inferred pins. ModeA736(A46/B690/C0),strictB0,limited823 windows/7239 exact pairs,RPI unavailable with460 complete potential inputs,C unavailable. Immutable snapshot212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81 exactly reproduces. GitBash ./init.sh passed npmci,conversion,92 tests+tsc,normal/Pages builds;offline audit/rebuild/exports/diffcheck passed. EN/ZH browser5widths,filters,scenarios,download,retry,focus and legacy navigation verified. See docs/river-water-policy-delivery.md and results.json."
+    },
+    {
+      "id": "feat-023",
+      "name": "Optional Civic Explorer",
+      "description": "Five conceptual 2.5D navigation hubs derived from existing bilingual metadata, with all 21 module targets and original analytical panels preserved.",
+      "dependencies": [
+        "feat-001",
+        "feat-021",
+        "feat-022"
+      ],
+      "status": "done",
+      "evidence": "2026-10-29: exact ./init.sh passed npm ci (0 vulnerabilities), offline conversion, 95 tests + TypeScript and root/Pages builds. Production browser verification passed 83 checks at 320/390/768/1440px in ZH/EN, all 21 targets, direct entries, retained state, keyboard/reduced motion, maps/charts/table and repeated chunk failure. Zero extra data requests on Explorer entry; optional JS 5.62 kB. See docs/civic-explorer-delivery.md. Data/scientific files unchanged. Draft-only delivery; no merge."
     }
   ]
 }
