@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState, Component, type ReactNode } from 'react';
 import L from 'leaflet';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import {
@@ -78,11 +78,12 @@ import type { ButterflyObservation, ButterflySummary } from './types/butterflyEc
 import DragonflyEcologyPanel from './DragonflyEcologyPanel';
 import type { DragonflyObservation, DragonflySummary } from './types/dragonflyEcology';
 
+const CivicExplorer = lazy(() => import('./CivicExplorer'));
+
 const PreparednessDecisionPanel = lazy(() => import('./PreparednessDecisionPanel'));
 const RiverWaterPolicyDashboard = lazy(() => import('./RiverWaterPolicyDashboard'));
 
-type MonitoringTab = 'riverWaterPolicy' | 'preparednessDecision' | 'waterQuality' | 'riverWaterQuality' | 'riverEcology' | 'amphibianEcology' | 'butterflyEcology' | 'dragonflyEcology' | 'pumpingStations' | 'stormMachinery' | 'sedimentationBasins' | 'reservoirSedimentationSurveys' | 'parkWaterSafety' | 'clearWaterQuality' | 'tapWaterBusiness' | 'carlsonTrophicStateIndex' | 'twcSupport' | 'hydromet' | 'operation' | 'combinedDashboard' | 'dataTable';
-type NavigationCategory = 'overview' | 'reservoir' | 'rivers' | 'urbanWater' | 'waterServices';
+import { getNavigationCategories, type MonitoringTab } from './navigation';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -184,19 +185,14 @@ function MonitoringTabs({
   activeTab,
   setActiveTab,
   language,
+  explorerAction,
 }: {
   activeTab: MonitoringTab;
   setActiveTab: (tab: MonitoringTab) => void;
   language: Language;
+  explorerAction: ReactNode;
 }) {
-  const t = translations[language];
-  const categories: Array<{ id: NavigationCategory; label: string; tabs: Array<{ id: MonitoringTab; label: string }> }> = [
-    { id: 'overview', label: text(language, '總覽', 'Overview'), tabs: [{ id: 'waterQuality', label: t.waterQuality }, { id: 'combinedDashboard', label: t.combinedDashboard }, { id: 'dataTable', label: t.dataTable }] },
-    { id: 'reservoir', label: text(language, '水庫', 'Reservoir'), tabs: [{ id: 'hydromet', label: t.hydromet }, { id: 'operation', label: t.operation }, { id: 'reservoirSedimentationSurveys', label: text(language, '翡翠水庫淤積調查', 'Sedimentation Surveys') }, { id: 'carlsonTrophicStateIndex', label: t.carlsonTrophicStateIndex }] },
-    { id: 'rivers', label: text(language, '河川與生態', 'Rivers & Ecology'), tabs: [{ id: 'riverWaterQuality', label: t.riverWaterQuality }, { id: 'riverWaterPolicy', label: text(language, '河川監測證據查核', 'River Monitoring Evidence Review') }, { id: 'riverEcology', label: text(language, '底棲生物', 'Benthic Species') }, { id: 'amphibianEcology', label: text(language, '兩棲類調查', 'Amphibian Survey') }, { id: 'butterflyEcology', label: text(language, '蝴蝶分布', 'Butterfly Distribution') }, { id: 'dragonflyEcology', label: text(language, '蜻蜓分布', 'Dragonfly Distribution') }] },
-    { id: 'urbanWater', label: text(language, '都市水務與防汛', 'Urban Water & Preparedness'), tabs: [{ id: 'preparednessDecision', label: text(language, '防汛整備決策分析', 'Heavy-Rain Preparedness Decision Support') }, { id: 'pumpingStations', label: t.pumpingStations }, { id: 'stormMachinery', label: text(language, '防汛外租機械', 'Storm Machinery') }, { id: 'sedimentationBasins', label: t.sedimentationBasins }, { id: 'parkWaterSafety', label: t.waterSafetyEquipment }] },
-    { id: 'waterServices', label: text(language, '自來水服務', 'Water Services'), tabs: [{ id: 'twcSupport', label: t.twcSupport }, { id: 'clearWaterQuality', label: t.clearWaterQuality }, { id: 'tapWaterBusiness', label: t.waterBusinessKpis }] },
-  ];
+  const categories = getNavigationCategories(language);
   const current = categories.find((category) => category.tabs.some((tab) => tab.id === activeTab)) ?? categories[0];
   return (
     <nav className="module-navigation" aria-label={text(language, '資料模組導覽', 'Data module navigation')}>
@@ -214,6 +210,7 @@ function MonitoringTabs({
         </button>
       ))}
       </div>
+      {explorerAction}
       <details className="module-browser"><summary>{text(language, '瀏覽全部資料模組', 'Browse all data modules')}</summary><div>{categories.map((category) => <section key={category.id}><strong>{category.label}</strong>{category.tabs.map((tab) => <button key={tab.id} onClick={() => setActiveTab(tab.id)}>{tab.label}</button>)}</section>)}</div></details>
     </nav>
   );
@@ -1195,6 +1192,28 @@ function Footer({ language }: { language: Language }) {
 }
 
 export default function App() {
+  const [exploring, setExploring] = useState(false);
+  const exploreEntry = useRef<HTMLButtonElement>(null);
+  const pendingDestinationFocus = useRef(false);
+  // A cold evidence entry may need to load legacy data before its heading exists.
+  useEffect(() => {
+    if (exploring || !pendingDestinationFocus.current) return;
+    const heading = document.querySelector<HTMLElement>('[data-dashboard] h1');
+    if (heading) {
+      heading.tabIndex = -1;
+      heading.focus();
+      pendingDestinationFocus.current = false;
+    }
+  });
+  function returnToDashboard() {
+    setExploring(false);
+    requestAnimationFrame(() => exploreEntry.current?.focus());
+  }
+  function navigateFromExplorer(tab: MonitoringTab) {
+    pendingDestinationFocus.current = true;
+    setActiveTab(tab);
+    setExploring(false);
+  }
   const [language, setLanguageState] = useState<Language>(readSavedLanguage);
   const [records, setRecords] = useState<WaterQualityRecord[]>([]);
   const [summary, setSummary] = useState<WaterQualitySummary | null>(null);
@@ -1386,12 +1405,14 @@ export default function App() {
   });
   const t = translations[language];
 
+  const explorerAction = <button ref={exploreEntry} type="button" className="explorer-entry" onClick={() => setExploring(true)}><span aria-hidden="true">⬡</span> {text(language, '探索主題', 'Explore Topics')}</button>;
+  const dashboard = (() => {
   if (activeTab === 'riverWaterPolicy') {
-    return <main className="river-policy-shell"><header className="app-header"><div><p className="eyebrow">GovTech · Policy 13</p><h1>{text(language, '臺北市河川水質監測與長期趨勢證據查核', 'Taipei River Monitoring & Longitudinal Evidence Review')}</h1></div><LanguageToggle language={language} setLanguage={setLanguage} /></header><MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} /><Suspense fallback={<p role="status">{text(language, '載入模組…', 'Loading module…')}</p>}><RiverWaterPolicyDashboard language={language} /></Suspense><Footer language={language} /></main>;
+    return <main className="river-policy-shell"><header className="app-header"><div><p className="eyebrow">GovTech · Policy 13</p><h1>{text(language, '臺北市河川水質監測與長期趨勢證據查核', 'Taipei River Monitoring & Longitudinal Evidence Review')}</h1></div><LanguageToggle language={language} setLanguage={setLanguage} /></header><MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} explorerAction={explorerAction} /><Suspense fallback={<p role="status">{text(language, '載入模組…', 'Loading module…')}</p>}><RiverWaterPolicyDashboard language={language} /></Suspense><Footer language={language} /></main>;
   }
 
   if (activeTab === 'preparednessDecision') {
-    return <main className="preparedness-shell"><header className="app-header"><div><p className="eyebrow">GovTech · Issue 7</p><h1>{text(language, '臺北水環境與防汛整備', 'Taipei Water & Preparedness')}</h1></div><LanguageToggle language={language} setLanguage={setLanguage} /></header><MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} /><Suspense fallback={<p role="status">{text(language, '載入模組…', 'Loading module…')}</p>}><PreparednessDecisionPanel language={language} /></Suspense><Footer language={language} /></main>;
+    return <main className="preparedness-shell"><header className="app-header"><div><p className="eyebrow">GovTech · Issue 7</p><h1>{text(language, '臺北水環境與防汛整備', 'Taipei Water & Preparedness')}</h1></div><LanguageToggle language={language} setLanguage={setLanguage} /></header><MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} explorerAction={explorerAction} /><Suspense fallback={<p role="status">{text(language, '載入模組…', 'Loading module…')}</p>}><PreparednessDecisionPanel language={language} /></Suspense><Footer language={language} /></main>;
   }
 
   if (loadError) {
@@ -1417,7 +1438,7 @@ export default function App() {
         <LanguageToggle language={language} setLanguage={setLanguage} />
       </header>
 
-      <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} />
+      <MonitoringTabs activeTab={activeTab} setActiveTab={setActiveTab} language={language} explorerAction={explorerAction} />
 
       {activeTab !== 'riverWaterQuality' && activeTab !== 'riverEcology' && activeTab !== 'amphibianEcology' && activeTab !== 'butterflyEcology' && activeTab !== 'dragonflyEcology' && activeTab !== 'pumpingStations' && activeTab !== 'stormMachinery' && activeTab !== 'sedimentationBasins' && activeTab !== 'reservoirSedimentationSurveys' && activeTab !== 'twcSupport' && activeTab !== 'parkWaterSafety' && activeTab !== 'clearWaterQuality' && activeTab !== 'tapWaterBusiness' && activeTab !== 'carlsonTrophicStateIndex' && (
         <FilterPanel
@@ -1625,4 +1646,32 @@ export default function App() {
       <Footer language={language} />
     </main>
   );
+  })();
+  return <>
+    {exploring && <ExplorerBoundary language={language} onBack={returnToDashboard} onNavigate={navigateFromExplorer}>
+      <Suspense fallback={<main><p role="status">{text(language, '載入模組…', 'Loading module…')}</p><button onClick={returnToDashboard}>{text(language, '返回儀表板', 'Return to Dashboard')}</button></main>}>
+        <CivicExplorer language={language} onNavigate={navigateFromExplorer} onBack={returnToDashboard} />
+      </Suspense>
+    </ExplorerBoundary>}
+    <div data-dashboard hidden={exploring}>{dashboard}</div>
+  </>;
+
+}
+
+/** Keep navigation available even if the optional chunk cannot load. */
+class ExplorerBoundary extends Component<{ language: Language; onBack: () => void; onNavigate: (tab: MonitoringTab) => void; children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+  private heading = { current: null as HTMLHeadingElement | null };
+  static getDerivedStateFromError() { return { failed: true }; }
+  componentDidMount() {
+    this.heading.current?.focus();
+  }
+  componentDidUpdate() {
+    if (this.state.failed) this.heading.current?.focus();
+  }
+  render() {
+    if (!this.state.failed) return this.props.children;
+    const { language, onBack, onNavigate } = this.props;
+    return <main className="explore-fallback"><h1 ref={this.heading} tabIndex={-1}>{text(language, '主題清單', 'Topic list')}</h1><p role="alert">{text(language, '無法載入主題圖，請使用下方清單。', 'The topic scene could not load. Use the complete list below.')}</p><button onClick={onBack}>{text(language, '返回儀表板', 'Return to Dashboard')}</button>{getNavigationCategories(language).map(group => <section key={group.id}><h2>{group.label}</h2><ul>{group.tabs.map(tab => <li key={tab.id}><button onClick={() => onNavigate(tab.id)}>{tab.label}</button></li>)}</ul></section>)}</main>;
+  }
 }

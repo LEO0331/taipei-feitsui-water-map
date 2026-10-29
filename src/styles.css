@@ -548,3 +548,9 @@ footer {
     text-align: left;
   }
 }
+
+/* Optional Civic Explorer entry shares the existing navigation toolbar. */
+.explorer-entry { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; margin: .65rem 0; padding: .65rem 1rem; border-radius: .5rem; background: var(--ink); color: var(--surface); font-weight: 700; }
+.explorer-entry:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+[hidden] { display: none !important; }
+.explore-fallback button { min-height: 44px; padding: .6rem .9rem; margin: .25rem 0; }
