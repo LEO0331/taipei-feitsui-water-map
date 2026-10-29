@@ -1,0 +1,454 @@
+{
+  "date": "2026-10-29",
+  "scope": "Local Edge production Pages build; service workers blocked; external map tiles stubbed; no official data fetched.",
+  "checks": [
+    {
+      "name": "cold default lazy loading",
+      "pass": true
+    },
+    {
+      "name": "Explorer default adds zero JSON requests",
+      "pass": true
+    },
+    {
+      "name": "return default preserves state and focus",
+      "pass": true
+    },
+    {
+      "name": "cold #preparedness lazy loading",
+      "pass": true
+    },
+    {
+      "name": "Explorer #preparedness adds zero JSON requests",
+      "pass": true
+    },
+    {
+      "name": "return #preparedness preserves state and focus",
+      "pass": true
+    },
+    {
+      "name": "cold #preparedness to legacy destination focus",
+      "pass": true
+    },
+    {
+      "name": "cold #river-policy lazy loading",
+      "pass": true
+    },
+    {
+      "name": "Explorer #river-policy adds zero JSON requests",
+      "pass": true
+    },
+    {
+      "name": "return #river-policy preserves state and focus",
+      "pass": true
+    },
+    {
+      "name": "cold #river-policy to legacy destination focus",
+      "pass": true
+    },
+    {
+      "name": "en/320 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "en/320 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "en/320 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "en/320 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "en/320 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "en/320 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "en/390 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "en/390 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "en/390 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "en/390 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "en/390 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "en/390 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "en/768 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "en/768 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "en/768 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "en/768 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "en/768 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "en/768 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "en/1440 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "en/1440 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "en/1440 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "en/1440 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "en/1440 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "en/1440 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "zh/320 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "zh/320 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "zh/320 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "zh/320 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "zh/320 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "zh/320 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "zh/390 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "zh/390 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "zh/390 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "zh/390 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "zh/390 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "zh/390 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "zh/768 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "zh/768 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "zh/768 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "zh/768 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "zh/768 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "zh/768 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "zh/1440 responsive complete catalogue and touch targets",
+      "pass": true
+    },
+    {
+      "name": "zh/1440 keyboard category selection reduced motion",
+      "pass": true
+    },
+    {
+      "name": "zh/1440 Escape restores hub focus",
+      "pass": true
+    },
+    {
+      "name": "zh/1440 bilingual keyword search",
+      "pass": true
+    },
+    {
+      "name": "zh/1440 empty reset restores search focus",
+      "pass": true
+    },
+    {
+      "name": "zh/1440 HTML list fallback",
+      "pass": true
+    },
+    {
+      "name": "host target overview/waterQuality",
+      "pass": true
+    },
+    {
+      "name": "host target overview/combinedDashboard",
+      "pass": true
+    },
+    {
+      "name": "host target overview/dataTable",
+      "pass": true
+    },
+    {
+      "name": "host target reservoir/hydromet",
+      "pass": true
+    },
+    {
+      "name": "host target reservoir/operation",
+      "pass": true
+    },
+    {
+      "name": "host target reservoir/reservoirSedimentationSurveys",
+      "pass": true
+    },
+    {
+      "name": "host target reservoir/carlsonTrophicStateIndex",
+      "pass": true
+    },
+    {
+      "name": "host target rivers/riverWaterQuality",
+      "pass": true
+    },
+    {
+      "name": "host target rivers/riverWaterPolicy",
+      "pass": true
+    },
+    {
+      "name": "host target rivers/riverEcology",
+      "pass": true
+    },
+    {
+      "name": "host target rivers/amphibianEcology",
+      "pass": true
+    },
+    {
+      "name": "host target rivers/butterflyEcology",
+      "pass": true
+    },
+    {
+      "name": "host target rivers/dragonflyEcology",
+      "pass": true
+    },
+    {
+      "name": "host target urbanWater/preparednessDecision",
+      "pass": true
+    },
+    {
+      "name": "host target urbanWater/pumpingStations",
+      "pass": true
+    },
+    {
+      "name": "host target urbanWater/stormMachinery",
+      "pass": true
+    },
+    {
+      "name": "host target urbanWater/sedimentationBasins",
+      "pass": true
+    },
+    {
+      "name": "host target urbanWater/parkWaterSafety",
+      "pass": true
+    },
+    {
+      "name": "host target waterServices/twcSupport",
+      "pass": true
+    },
+    {
+      "name": "host target waterServices/clearWaterQuality",
+      "pass": true
+    },
+    {
+      "name": "host target waterServices/tapWaterBusiness",
+      "pass": true
+    },
+    {
+      "name": "optional chunk failure retains all 21 native module buttons and return",
+      "pass": true
+    },
+    {
+      "name": "reopening cached chunk failure restores fallback focus",
+      "pass": true
+    },
+    {
+      "name": "no unexpected browser errors",
+      "pass": true
+    }
+  ],
+  "loading": [
+    {
+      "hash": "",
+      "elapsedMs": 983,
+      "initialDataRequests": [
+        "water-quality-records.json",
+        "water-quality-summary.json",
+        "station-locations.json",
+        "hydromet-daily-records.json",
+        "hydromet-monthly-summary.json",
+        "operation-daily-records.json",
+        "operation-monthly-summary.json",
+        "river-water-quality-records.json",
+        "river-water-quality-summary.json",
+        "river-station-locations.json",
+        "pumping-stations.json",
+        "pumping-station-summary.json",
+        "sedimentation-basin-facilities.json",
+        "sedimentation-basin-facility-summary.json",
+        "taipei-water-support-twc-monthly-records.json",
+        "taipei-water-support-twc-summary.json",
+        "park-water-safety-equipment-records.json",
+        "park-water-safety-equipment-summary.json",
+        "tap-water-treatment-plant-clear-water-quality-records.json",
+        "tap-water-treatment-plant-clear-water-quality-summary.json",
+        "tap-water-business-key-metrics.json",
+        "tap-water-business-key-metric-summary.json",
+        "carlson-trophic-state-index.json",
+        "carlson-trophic-state-index-summary.json",
+        "reservoir-sedimentation-surveys/records.json",
+        "reservoir-sedimentation-surveys/summary.json",
+        "storm-rainfall-rented-machinery-sites/records.json",
+        "storm-rainfall-rented-machinery-sites/metadata.json",
+        "river-ecology/records.json",
+        "river-ecology/summary.json",
+        "amphibian-ecology/records.json",
+        "amphibian-ecology/summary.json",
+        "butterfly-ecology/records.json",
+        "butterfly-ecology/summary.json",
+        "dragonfly-ecology/records.json",
+        "dragonfly-ecology/summary.json"
+      ],
+      "initialJs": [
+        "index-bVfPS3nz.js"
+      ],
+      "explorerAdditionalDataRequests": 0
+    },
+    {
+      "hash": "#preparedness",
+      "elapsedMs": 942,
+      "initialDataRequests": [
+        "preparedness-decision/snapshot.json"
+      ],
+      "initialJs": [
+        "index-bVfPS3nz.js",
+        "PreparednessDecisionPanel-BlSFh2PI.js"
+      ],
+      "explorerAdditionalDataRequests": 0
+    },
+    {
+      "hash": "#river-policy",
+      "elapsedMs": 1319,
+      "initialDataRequests": [
+        "river-water-policy/current.json",
+        "river-water-policy/snapshots/212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81.json"
+      ],
+      "initialJs": [
+        "index-bVfPS3nz.js",
+        "RiverWaterPolicyDashboard-BjXyG3jO.js"
+      ],
+      "explorerAdditionalDataRequests": 0
+    }
+  ],
+  "errors": [],
+  "bundles": [
+    {
+      "file": "CivicExplorer-B8P8K3Gm.js",
+      "bytes": 5623,
+      "gzipBytes": 2612
+    },
+    {
+      "file": "CivicExplorer-DmAhW0j-.css",
+      "bytes": 5605,
+      "gzipBytes": 1651
+    },
+    {
+      "file": "index-Bd5WQKOd.css",
+      "bytes": 22609,
+      "gzipBytes": 8477
+    },
+    {
+      "file": "index-bVfPS3nz.js",
+      "bytes": 1062151,
+      "gzipBytes": 312687
+    },
+    {
+      "file": "PreparednessDecisionPanel-BlSFh2PI.js",
+      "bytes": 36795,
+      "gzipBytes": 13572
+    },
+    {
+      "file": "PreparednessDecisionPanel-CYp595Qj.css",
+      "bytes": 1811,
+      "gzipBytes": 694
+    },
+    {
+      "file": "RiverWaterPolicyDashboard-BjXyG3jO.js",
+      "bytes": 57635,
+      "gzipBytes": 19682
+    },
+    {
+      "file": "RiverWaterPolicyDashboard-lHhjvjv-.css",
+      "bytes": 2208,
+      "gzipBytes": 789
+    }
+  ]
+}

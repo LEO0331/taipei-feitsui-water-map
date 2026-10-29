@@ -1,0 +1,24 @@
+
+> taipei-feitsui-water-map@0.1.0 build
+> tsc && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 793 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                         0.88 kB │ gzip:   0.49 kB
+dist/assets/PreparednessDecisionPanel-CYp595Qj.css      1.81 kB │ gzip:   0.69 kB
+dist/assets/RiverWaterPolicyDashboard-lHhjvjv-.css      2.21 kB │ gzip:   0.79 kB
+dist/assets/CivicExplorer-DmAhW0j-.css                  5.61 kB │ gzip:   1.65 kB
+dist/assets/index-Bd5WQKOd.css                         22.61 kB │ gzip:   8.48 kB
+dist/assets/CivicExplorer-B8P8K3Gm.js                   5.62 kB │ gzip:   2.61 kB
+dist/assets/PreparednessDecisionPanel-BlSFh2PI.js      36.80 kB │ gzip:  13.57 kB
+dist/assets/RiverWaterPolicyDashboard-BjXyG3jO.js      57.64 kB │ gzip:  19.68 kB
+dist/assets/index-bVfPS3nz.js                       1,062.15 kB │ gzip: 312.69 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 8.79s

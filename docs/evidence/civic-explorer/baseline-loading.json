@@ -1,0 +1,73 @@
+[
+  {
+    "hash": "",
+    "elapsedMs": 2898,
+    "dataRequests": [
+      "water-quality-records.json",
+      "water-quality-summary.json",
+      "station-locations.json",
+      "hydromet-daily-records.json",
+      "hydromet-monthly-summary.json",
+      "operation-daily-records.json",
+      "operation-monthly-summary.json",
+      "river-water-quality-records.json",
+      "river-water-quality-summary.json",
+      "river-station-locations.json",
+      "pumping-stations.json",
+      "pumping-station-summary.json",
+      "sedimentation-basin-facilities.json",
+      "sedimentation-basin-facility-summary.json",
+      "taipei-water-support-twc-monthly-records.json",
+      "taipei-water-support-twc-summary.json",
+      "park-water-safety-equipment-records.json",
+      "park-water-safety-equipment-summary.json",
+      "tap-water-treatment-plant-clear-water-quality-records.json",
+      "tap-water-treatment-plant-clear-water-quality-summary.json",
+      "tap-water-business-key-metrics.json",
+      "tap-water-business-key-metric-summary.json",
+      "carlson-trophic-state-index.json",
+      "carlson-trophic-state-index-summary.json",
+      "reservoir-sedimentation-surveys/records.json",
+      "reservoir-sedimentation-surveys/summary.json",
+      "storm-rainfall-rented-machinery-sites/records.json",
+      "storm-rainfall-rented-machinery-sites/metadata.json",
+      "river-ecology/records.json",
+      "river-ecology/summary.json",
+      "amphibian-ecology/records.json",
+      "amphibian-ecology/summary.json",
+      "butterfly-ecology/records.json",
+      "butterfly-ecology/summary.json",
+      "dragonfly-ecology/records.json",
+      "dragonfly-ecology/summary.json"
+    ],
+    "jsRequests": [
+      "index-DLQkzA91.js"
+    ],
+    "errors": []
+  },
+  {
+    "hash": "#preparedness",
+    "elapsedMs": 928,
+    "dataRequests": [
+      "preparedness-decision/snapshot.json"
+    ],
+    "jsRequests": [
+      "index-DLQkzA91.js",
+      "PreparednessDecisionPanel-wPnz5Y-X.js"
+    ],
+    "errors": []
+  },
+  {
+    "hash": "#river-policy",
+    "elapsedMs": 994,
+    "dataRequests": [
+      "river-water-policy/current.json",
+      "river-water-policy/snapshots/212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81.json"
+    ],
+    "jsRequests": [
+      "index-DLQkzA91.js",
+      "RiverWaterPolicyDashboard-DKfhzsrH.js"
+    ],
+    "errors": []
+  }
+]
