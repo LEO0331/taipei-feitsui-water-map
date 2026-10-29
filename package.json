@@ -52,7 +52,8 @@
     "data:audit:river-water-policy": "tsx scripts/auditRiverWaterPolicySources.ts",
     "data:build:river-water-policy": "tsx scripts/buildRiverWaterPolicySnapshot.ts",
     "data:verify:river-water-policy": "tsx scripts/verifyRiverWaterPolicy.ts",
-    "data:report:river-water-policy": "tsx scripts/buildRiverWaterPolicyReport.ts"
+    "data:report:river-water-policy": "tsx scripts/buildRiverWaterPolicyReport.ts",
+    "test:browser": "node --import tsx scripts/verifyCivicExplorer.mjs"
   },
   "dependencies": {
     "@types/proj4": "^2.5.6",
