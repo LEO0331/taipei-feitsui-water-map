@@ -100,7 +100,12 @@ self.addEventListener('fetch', (event) => {
     }));
     return;
   }
+  const requestUrl = new URL(event.request.url);
+  const assetBase = new URL('assets/', scope);
+  // CORS module requests can carry Origin where install-time requests do not.
+  // Hashed same-origin build assets are identical across Origin headers.
+  const builtAsset = requestUrl.origin === assetBase.origin && requestUrl.pathname.startsWith(assetBase.pathname) && /\.(js|css)$/.test(requestUrl.pathname);
   event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
+    caches.match(event.request, builtAsset ? { ignoreVary: true } : undefined).then((cached) => cached || fetch(event.request))
   );
 });

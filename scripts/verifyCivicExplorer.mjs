@@ -34,6 +34,7 @@ try {
   const initialData=requests.filter(u=>u.includes('/data/'));const initialJs=requests.filter(u=>u.endsWith('.js'));
   await check(`cold ${hash || 'default'} lazy loading`,async()=>{
    assert.ok(!initialJs.some(u=>u.includes('CivicExplorer')));
+   assert.ok(!initialJs.some(u=>/\/(?:RiverEcology|ClearWaterQuality|PumpingStations)Panel-/.test(u)), 'inactive panels stay deferred');
    assert.equal(await page.locator('.data-explorer').count(),0);
    if(hash)assert.ok(initialData.every(u=>u.includes(hash==='#preparedness'?'/preparedness-decision/':'/river-water-policy/')));
   });
@@ -95,8 +96,9 @@ try {
   await check(`host target ${category.id}/${tab.id}`,async()=>{
    assert.equal(await page.locator('.data-explorer').count(),0);
    assert.equal(await page.locator('.module-tabs button.active').textContent(),tab.label);
+   if(['hydromet','operation','combinedDashboard','riverWaterQuality'].includes(tab.id)) await page.locator('.recharts-wrapper').first().waitFor({state:'visible'});
    if(['hydromet','operation','combinedDashboard'].includes(tab.id)) assert.ok(await page.locator('.recharts-wrapper').count(),tab.id+' charts');
-   if(['waterQuality','pumpingStations','sedimentationBasins'].includes(tab.id)) assert.ok(await page.locator('.leaflet-container').isVisible(),tab.id+' map');
+   if(['waterQuality','pumpingStations','sedimentationBasins'].includes(tab.id)) {await page.locator('.leaflet-container').waitFor({state:'visible'});assert.ok(await page.locator('.leaflet-container').isVisible(),tab.id+' map');}
    if(tab.id==='riverWaterQuality') {const locations=JSON.parse(await readFile('public/data/river-station-locations.json','utf8'));assert.equal(await page.locator('.leaflet-container').count(),locations.length?1:0);assert.ok(await page.locator('.recharts-wrapper').count());}
    if(tab.id==='dataTable') assert.ok(await page.locator('.table-wrap tbody tr').count(), 'table rows');
    await page.waitForLoadState('networkidle');assert.ok(await page.locator('[data-dashboard] h1').isVisible());
@@ -112,10 +114,40 @@ try {
  await entry(failurePage).click();
  await check('reopening cached chunk failure restores fallback focus',async()=>{await failurePage.waitForFunction(()=>document.activeElement?.textContent==='Topic list');await back(failurePage).click();});
  await failureContext.close();
+ for (const [language,width] of [['en',1440],['zh',390]]) {
+  const offlineContext=await browser.newContext({viewport:{width,height:1000},serviceWorkers:'allow'});
+  await offlineContext.addInitScript(lang=>localStorage.setItem('language',lang),language);
+  const offlinePage=await offlineContext.newPage();offlinePage.on('pageerror',e=>errors.push(e.message));
+  await offlinePage.goto(url,{waitUntil:'networkidle'});
+  await offlinePage.evaluate(()=>navigator.serviceWorker.ready);
+  await offlinePage.waitForFunction(async()=>{
+   for(const name of await caches.keys()) {
+    const keys=(await(await caches.open(name)).keys()).map(request=>request.url);
+    if(keys.some(key=>key.includes('RiverEcologyPanel-'))&&keys.some(key=>key.includes('ClearWaterQualityPanel-')))return true;
+   }
+   return false;
+  });
+  await offlinePage.reload({waitUntil:'networkidle'});
+  await offlinePage.waitForFunction(()=>Boolean(navigator.serviceWorker.controller));
+  await offlineContext.setOffline(true);
+  await check(`${language}/${width} previously unvisited map and chart remain available offline`,async()=>{
+   await offlinePage.locator('.category-tabs button').nth(2).click();await offlinePage.locator('.module-tabs button').nth(2).click();
+   await offlinePage.locator('.river-module').waitFor({state:'visible'});
+   assert.ok(await offlinePage.locator('.leaflet-container').isVisible());
+   await offlinePage.locator('.category-tabs button').nth(4).click();await offlinePage.locator('.module-tabs button').nth(1).click();
+   await offlinePage.locator('.recharts-wrapper').first().waitFor({state:'visible'});
+   assert.ok(await offlinePage.locator('.recharts-wrapper').count());
+  });
+  await offlineContext.close();
+ }
  await check('no unexpected browser errors',async()=>assert.deepEqual(errors,[]));
 } finally {
  if(browser)await browser.close();server.kill();
  const bundles=[];for(const file of await readdir('dist/assets'))if(/\.(js|css)$/.test(file)){const data=await readFile('dist/assets/'+file);bundles.push({file,bytes:data.length,gzipBytes:gzipSync(data).length});}
- await writeFile(`${output}/browser-results.json`,JSON.stringify({date:'2026-10-29',scope:'Local Edge production Pages build; service workers blocked; external map tiles stubbed; no official data fetched.',checks,loading,errors,bundles},null,2)+'\n');
+ for(const entry of loading) {
+  entry.initialJsBytes=entry.initialJs.reduce((sum,file)=>sum+(bundles.find(bundle=>bundle.file===file)?.bytes??0),0);
+  entry.initialJsGzipBytes=entry.initialJs.reduce((sum,file)=>sum+(bundles.find(bundle=>bundle.file===file)?.gzipBytes??0),0);
+ }
+ await writeFile(`${output}/browser-results.json`,JSON.stringify({date:new Date().toISOString().slice(0,10),scope:'Local Edge production Pages build; online checks block service workers and stub map tiles; offline checks allow the installed worker and visit previously unvisited panels; no official data fetched.',checks,loading,errors,bundles},null,2)+'\n');
  console.log(JSON.stringify({passed:checks.filter(c=>c.pass).length,failed:checks.filter(c=>!c.pass),errors}));
 }

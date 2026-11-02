@@ -129,6 +129,8 @@ npm run data:convert:preparedness
 
 此專案可建置為靜態網站。GitHub Pages 會以 `GITHUB_PAGES=true` 建置，並保留 `/taipei-feitsui-water-map/` 基底路徑。
 
+非目前選用的分析面板會按需載入。正式建置會在 PWA 安裝時預先快取產生的程式與樣式，安裝完成後，尚未開啟過的面板也可離線使用。預設地圖／圖表共用程式仍有已記錄的大小警告；詳見[載入量測與驗證](docs/publication-loading-followup.md)。
+
 ## 文件
 
 - [客戶儀表板洞察](doc/customer-dashboard-insights.md)

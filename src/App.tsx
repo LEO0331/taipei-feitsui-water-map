@@ -49,33 +49,33 @@ import {
   joinMonitoringDataByPeriod,
   operationParameterKeys,
 } from './utils/operation';
-import RiverWaterQualityPanel from './RiverWaterQualityPanel';
+const RiverWaterQualityPanel = lazy(() => import('./RiverWaterQualityPanel'));
 import type { RiverStationLocation, RiverWaterQualityRecord, RiverWaterQualitySummary } from './types/riverWaterQuality';
-import PumpingStationsPanel from './PumpingStationsPanel';
+const PumpingStationsPanel = lazy(() => import('./PumpingStationsPanel'));
 import type { PumpingStation, PumpingStationSummary } from './types/pumpingStations';
-import SedimentationBasinsPanel from './SedimentationBasinsPanel';
+const SedimentationBasinsPanel = lazy(() => import('./SedimentationBasinsPanel'));
 import type { SedimentationBasinFacilityRecord, SedimentationBasinFacilitySummary } from './types/sedimentationBasins';
-import TwcSupportPanel from './TwcSupportPanel';
+const TwcSupportPanel = lazy(() => import('./TwcSupportPanel'));
 import type { TaipeiWaterSupportTwcMonthlyRecord, TaipeiWaterSupportTwcSummary } from './types/twcSupport';
-import ParkWaterSafetyPanel from './ParkWaterSafetyPanel';
+const ParkWaterSafetyPanel = lazy(() => import('./ParkWaterSafetyPanel'));
 import type { ParkWaterSafetyEquipmentRecord, ParkWaterSafetyEquipmentSummary } from './types/parkWaterSafety';
-import ClearWaterQualityPanel from './ClearWaterQualityPanel';
+const ClearWaterQualityPanel = lazy(() => import('./ClearWaterQualityPanel'));
 import type { TreatmentPlantClearWaterQualityRecord, TreatmentPlantClearWaterQualitySummary } from './types/clearWaterQuality';
-import TapWaterBusinessPanel from './TapWaterBusinessPanel';
+const TapWaterBusinessPanel = lazy(() => import('./TapWaterBusinessPanel'));
 import type { TapWaterBusinessKeyMetricRecord, TapWaterBusinessKeyMetricSummary } from './types/tapWaterBusiness';
-import CarlsonTrophicStateIndexPanel from './CarlsonTrophicStateIndexPanel';
+const CarlsonTrophicStateIndexPanel = lazy(() => import('./CarlsonTrophicStateIndexPanel'));
 import type { CarlsonTrophicStateIndexRecord, CarlsonTrophicStateIndexSummary } from './types/carlsonTrophicStateIndex';
-import ReservoirSedimentationSurveysPanel from './ReservoirSedimentationSurveysPanel';
+const ReservoirSedimentationSurveysPanel = lazy(() => import('./ReservoirSedimentationSurveysPanel'));
 import type { ReservoirSedimentationSurveyRecord, ReservoirSedimentationSurveySummary } from './types/reservoirSedimentationSurvey';
-import StormMachineryPanel from './StormMachineryPanel';
+const StormMachineryPanel = lazy(() => import('./StormMachineryPanel'));
 import type { StormMachineryDeploymentSite, StormMachinerySummary } from './types/stormMachinery';
-import RiverEcologyPanel from './RiverEcologyPanel';
+const RiverEcologyPanel = lazy(() => import('./RiverEcologyPanel'));
 import type { RiverEcologyRecord, RiverEcologySummary } from './types/riverEcology';
-import AmphibianEcologyPanel from './AmphibianEcologyPanel';
+const AmphibianEcologyPanel = lazy(() => import('./AmphibianEcologyPanel'));
 import type { AmphibianObservation, AmphibianSummary } from './types/amphibianEcology';
-import ButterflyEcologyPanel from './ButterflyEcologyPanel';
+const ButterflyEcologyPanel = lazy(() => import('./ButterflyEcologyPanel'));
 import type { ButterflyObservation, ButterflySummary } from './types/butterflyEcology';
-import DragonflyEcologyPanel from './DragonflyEcologyPanel';
+const DragonflyEcologyPanel = lazy(() => import('./DragonflyEcologyPanel'));
 import type { DragonflyObservation, DragonflySummary } from './types/dragonflyEcology';
 
 const CivicExplorer = lazy(() => import('./CivicExplorer'));
@@ -1516,6 +1516,7 @@ export default function App() {
         </>
       )}
 
+      <Suspense fallback={<p role="status">{text(language, '載入模組…', 'Loading module…')}</p>}>
       {activeTab === 'riverWaterQuality' && (
         <RiverWaterQualityPanel records={riverRecords} summary={riverSummary} locations={riverLocations} language={language} />
       )}
@@ -1556,6 +1557,8 @@ export default function App() {
       {activeTab === 'twcSupport' && (
         <TwcSupportPanel records={twcSupportRecords} summary={twcSupportSummary} language={language} />
       )}
+
+      </Suspense>
 
       {activeTab === 'operation' && (
         <>

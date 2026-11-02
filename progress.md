@@ -2,9 +2,20 @@
 
 ## Current State
 
-**Last Updated:** 2026-10-19
-**Session ID:** heavy-rain-preparedness-review-v1
+**Last Updated:** 2026-11-03
+**Session ID:** publish-water-loading-readiness
 **Active Feature:** none
+
+Current release baseline is remote main `e88e811` (merged audit PR #9). Follow-up branch `codex/publish-water-loading-readiness` defers fourteen inactive panels, preserves their offline availability through build-generated precaching, and replaces browser timing assumptions with locator readiness. Sources, data, scientific boundaries and dependencies are unchanged. Current verification and measured loading results appear in the dated entry below. The older status inventory is retained as history.
+
+### 2026-11-02 — Publication loading follow-up
+
+- Dedicated current-main branch; original user checkout preserved. Prior audit PR #9 is merged; this follow-up remains Draft-only.
+- Fourteen existing inactive panels lazy-loaded behind a content Suspense boundary; navigation and original data/analysis remain unchanged. Build-time hashed precache retains offline modules, including unvisited map/chart panels; only same-origin build assets ignore Origin header variance.
+- Cold default JS 1,062,202 → 788,207 bytes (25.8% lower); gzip estimate312,689 →235,238 (24.8% lower). Preparedness and river-policy entry bytes also decrease. Background PWA precaching downloads all assets for offline support. Remaining788kB shared map/chart warning deferred without suppressing it.
+- npm ci, offline conversion,98 tests+TypeScript, root/Pages builds pass; full/production audits0. Regression verifies strict cache matching stays intact for data/external origins. Exact browser gate passes85/85 with zero errors, retains chart/map assertions with locator readiness and tests bilingual responsive navigation plus offline modules.
+- Identical before/after offline native-tab checks on archived main and final build passed English1440/Chinese390, previously unvisited river-ecology map and clear-water chart. No source fetch, raw/generated data change, dependency change or analytical inference.
+- See docs/publication-loading-followup.md and external audit logs for measurements, actual checks and remaining limitation. Next: review the new Draft PR without automatic merge/deployment.
 
 ## Status
 
@@ -33,14 +44,14 @@
 
 ### What's Next
 
-1. Pick the next unfinished feature from `feature_list.json`.
-2. Recommended next options: `feat-004` verified station coordinates or `feat-005` performance split.
+1. Review the publication-follow-up Draft PR; do not merge or deploy automatically.
+2. Further map/chart bundle partitioning is deferred; station coordinates require authoritative verification before any change.
 
 ## Blockers / Risks
 
 - [ ] Station coordinates are intentionally missing until verified sources are added; map markers will not appear yet.
 - [ ] Production build succeeds but Vite reports a large JS chunk from map/chart libraries.
-- [ ] `npm ci` reports dev-tooling audit advisories; `npm audit --omit=dev` reports 0 production vulnerabilities.
+- [x] Current full and production npm audits report zero vulnerabilities; older advisory counts below are historical.
 
 ## Decisions Made
 

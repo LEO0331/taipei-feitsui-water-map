@@ -136,6 +136,8 @@ The application caches key static assets through `public/sw.js`. Major outputs i
 
 The project builds as a static site. GitHub Pages builds with `GITHUB_PAGES=true`, preserving the `/taipei-feitsui-water-map/` base path.
 
+Inactive analytical panels load on demand. Production builds precache their emitted scripts and styles during PWA installation so previously unvisited panels remain available offline after installation. The default map/chart bundle still carries a documented size warning; see [loading measurements and readiness verification](docs/publication-loading-followup.md).
+
 ## Documentation
 
 - [Customer dashboard insights](doc/customer-dashboard-insights.md)
