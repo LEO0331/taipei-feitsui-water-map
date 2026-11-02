@@ -164,3 +164,10 @@
 - #river-policy independent lazy localstatic module; bothlanguages,5widths,selectors,scenarios,downloads,error/retry,focus andlegacy navigation verified. Exactsourcebytes andsnapshot integrity tests included. Performance evidence clearly separates build bytes from localNode timings.
 - Remaining evidence to seek: historical stationlocation/commissioning/method history, authoritative alias mapping, laboratory precision/rounding and same-sampling contract, independently matched officialRPI, applicable regulatory/causal/publichealth evidence for any conclusion. Preserve limitations rather than forcing trends/classes.
 - PR remains uncreated: connector403 and automatic-review rejection of fallback authentication/browser paths. No credential access occurred. Branch pushed at a939dc3; explicit browser-path authorization or user-created PR required. Ready title/body and comparison link recorded in delivery report. Do not retry rejected approaches without new specific authorization.
+# 2026-11-02 — Audit correction handoff
+
+- Branch `codex/audit-preserve-operation-integer-zeros` starts at current remote main `8c9ea75` in an isolated audit worktree.
+- Corrected P1 significant-zero loss in operation cards/tables/CSV; 97 tests + tsc and root/Pages builds pass, with regression fail-before/pass-after.
+- Both-language mobile/desktop cards, tables and actual CSV downloads pass; npm audits report zero vulnerabilities. Sources/generated data unchanged.
+- Existing test:browser immediate operation-chart assertion fails on baseline and correction; see progress.md and external audit evidence. An external copy with chart-render waits passes all 83 checks; keep the exact supported-command limitation explicit.
+- Review Draft PR without merging automatically. Original checkout remains untouched.

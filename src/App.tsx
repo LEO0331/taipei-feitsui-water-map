@@ -84,6 +84,7 @@ const PreparednessDecisionPanel = lazy(() => import('./PreparednessDecisionPanel
 const RiverWaterPolicyDashboard = lazy(() => import('./RiverWaterPolicyDashboard'));
 
 import { getNavigationCategories, type MonitoringTab } from './navigation';
+import { formatNumber } from './utils/presentation';
 type TableMode = 'waterRecords' | 'hydrometDaily' | 'operationDaily' | 'waterSummary' | 'hydrometSummary' | 'operationSummary';
 type DayTypeFilter = 'all' | 'weekday' | 'weekend';
 
@@ -144,12 +145,6 @@ function formatValue(value: WaterQualityValue, unit = '') {
   if (value.qualifier === 'missing') return '-';
   if (value.qualifier === 'less_than') return `<${value.value}${unit ? ` ${unit}` : ''}`;
   return value.value === null ? '-' : `${value.value}${unit ? ` ${unit}` : ''}`;
-}
-
-function formatNumber(value: number | null | undefined, unit = '', digits = 1) {
-  if (value === null || value === undefined || !Number.isFinite(value)) return '-';
-  const formatted = value.toFixed(digits).replace(/\.?0+$/, '');
-  return `${formatted}${unit ? ` ${unit}` : ''}`;
 }
 
 function buildMonthlyAverageSeries(
