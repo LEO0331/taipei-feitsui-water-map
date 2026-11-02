@@ -37,8 +37,8 @@
       "name": "Performance Split",
       "description": "Reduce the current Vite chunk-size warning by code-splitting heavy map/chart code without changing data behavior.",
       "dependencies": ["feat-001"],
-      "status": "not-started",
-      "evidence": "Current build succeeds but warns that the main JS chunk exceeds 500 kB after minification."
+      "status": "done",
+      "evidence": "2026-11-03 publication follow-up: fourteen inactive panels lazy-loaded; cold default JS1062202 to788207 bytes (-25.8%), gzip312689 to235238 (-24.8%). Offline availability preserved;98 tests plus tsc and root/Pages builds pass. See docs/publication-loading-followup.md; shared788kB warning remains deferred."
     },
     {
       "id": "feat-006",
