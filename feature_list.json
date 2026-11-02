@@ -193,6 +193,14 @@
       ],
       "status": "done",
       "evidence": "2026-10-29: exact ./init.sh passed npm ci (0 vulnerabilities), offline conversion, 95 tests + TypeScript and root/Pages builds. Production browser verification passed 83 checks at 320/390/768/1440px in ZH/EN, all 21 targets, direct entries, retained state, keyboard/reduced motion, maps/charts/table and repeated chunk failure. Zero extra data requests on Explorer entry; optional JS 5.62 kB. See docs/civic-explorer-delivery.md. Data/scientific files unchanged. Draft-only delivery; no merge."
+    },
+    {
+      "id": "audit-2026-11-integer-format",
+      "name": "Preserve significant zeros in operation values",
+      "description": "Correct zero-decimal presentation in reservoir operation cards, tables and CSV exports without changing source values or calculations.",
+      "dependencies": ["feat-010"],
+      "status": "done",
+      "evidence": "2026-11-02 audit: February 2026 inflow 31625100 incorrectly rendered 316251. Regression failed before correction and passed after; 97 tests + tsc, root/Pages builds passed. English/Chinese at 390/1440px verified cards, monthly table and actual CSV downloads. npm audit full/production both zero. Raw/generated data unchanged. Existing test:browser immediate operation-chart assertion fails; external rerun with chart-render waits passes all83 checks; see progress.md."
     }
   ]
 }
