@@ -1140,7 +1140,7 @@ function MonitoringDataTable({
         <h2>{t.dataTable}</h2>
         <button className="text-button" onClick={() => downloadCsv(`${mode}.csv`, rows)}>{t.exportCsv}</button>
       </div>
-      <div className="segmented table-modes">
+      <div className="segmented table-modes" tabIndex={0} role="group" aria-label={text(language, '表格模式', 'Table modes')}>
         {[
           ['waterRecords', t.waterQualityRecords],
           ['hydrometDaily', t.hydrometDailyRecords],
@@ -1152,7 +1152,7 @@ function MonitoringDataTable({
           <button key={id} className={mode === id ? 'active' : ''} onClick={() => setMode(id as TableMode)}>{label}</button>
         ))}
       </div>
-      <div className="table-wrap">
+      <div className="table-wrap" tabIndex={0} role="region" aria-label={t.dataTable}>
         <table>
           <thead>
             <tr>
@@ -1183,7 +1183,7 @@ function DataQualityNotice({ language }: { language: Language }) {
 }
 
 function Footer({ language }: { language: Language }) {
-  return <footer>{translations[language].footer}</footer>;
+  return <footer>{translations[language].footer} <a href={`${import.meta.env.BASE_URL}THIRD_PARTY_NOTICES.txt`}>{text(language, '授權與第三方聲明', 'Licenses and third-party notices')}</a></footer>;
 }
 
 export default function App() {

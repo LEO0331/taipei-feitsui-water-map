@@ -59,7 +59,8 @@ main {
   font-size: clamp(1.75rem, 6.6vw, 5.6rem);
   line-height: 0.95;
   letter-spacing: 0;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .app-header p {
@@ -93,6 +94,16 @@ main {
 .segmented .active {
   background: var(--ink);
   color: white;
+}
+
+.table-modes {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-modes button {
+  flex: 0 0 auto;
 }
 
 .module-navigation {

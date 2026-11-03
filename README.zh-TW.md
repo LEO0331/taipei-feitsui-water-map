@@ -131,6 +131,8 @@ npm run data:convert:preparedness
 
 非目前選用的分析面板會按需載入。正式建置會在 PWA 安裝時預先快取產生的程式與樣式，安裝完成後，尚未開啟過的面板也可離線使用。預設地圖／圖表共用程式仍有已記錄的大小警告；詳見[載入量測與驗證](docs/publication-loading-followup.md)。
 
+頁尾可開啟建置產生的 `THIRD_PARTY_NOTICES.txt`；`runtime-license-inventory.json` 記錄已安裝非開發相依套件的版本、聲明授權及原文雜湊。兩者皆可離線存取，僅保存實際聲明，並非授權相容性或用途認證。快取歸屬、版面與聲明驗證見[結案修正紀錄](docs/closure-fixes.md)。
+
 ## 文件
 
 - [客戶儀表板洞察](doc/customer-dashboard-insights.md)

@@ -3,10 +3,10 @@
 ## Current State
 
 **Last Updated:** 2026-11-03
-**Session ID:** publish-water-loading-readiness
+**Session ID:** closure-water-cache-layout-notices
 **Active Feature:** none
 
-Current release baseline is remote main `e88e811` (merged audit PR #9). Follow-up branch `codex/publish-water-loading-readiness` defers fourteen inactive panels, preserves their offline availability through build-generated precaching, and replaces browser timing assumptions with locator readiness. Sources, data, scientific boundaries and dependencies are unchanged. Current verification and measured loading results appear in the dated entry below. The older status inventory is retained as history.
+Current baseline is published main `9b8c409` with PR9/10 merged. Branch `codex/closure-water-cache-layout-notices` corrects water-owned cache cleanup, English shell/table overflow and runtime notice distribution.100 tests+TypeScript, root/Pages builds and85 browser checks pass; actual sibling-cache preservation, offline52-package notices and bilingual390/1440 keyboard/table/CSV checks pass. Audits0; data/dependencies/scientific boundaries unchanged. See docs/closure-fixes.md. Commit/push only; production remains unchanged until separately published. Older entries below are historical.
 
 ### 2026-11-02 — Publication loading follow-up
 
@@ -44,7 +44,7 @@ Current release baseline is remote main `e88e811` (merged audit PR #9). Follow-u
 
 ### What's Next
 
-1. Review the publication-follow-up Draft PR; do not merge or deploy automatically.
+1. Review the pushed closure-fix branch; this scope does not create a PR, merge or deploy.
 2. Further map/chart bundle partitioning is deferred; station coordinates require authoritative verification before any change.
 
 ## Blockers / Risks

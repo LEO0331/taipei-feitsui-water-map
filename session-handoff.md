@@ -2,11 +2,11 @@
 
 ## Current Objective
 
-- Goal: Complete the authorized publication follow-up from current main after audit PR #9 merged.
-- Current status: Fourteen inactive panels load on demand; build-time PWA precaching preserves previously unvisited offline panels. Browser checks wait for rendered charts/maps while retaining all assertions.
-- Branch / base: `codex/publish-water-loading-readiness` / `e88e8114ae13e2534e8b6229960a1d0b926d3334`.
-- Verification: see the 2026-11-02 publication follow-up entry in progress.md. Raw/generated data, analytical boundaries and dependencies remain unchanged. Remaining large shared map/chart bundle is documented.
-- Next action: review the new Draft PR; no automatic merge or deployment. The following completed-session inventory and older evidence are historical.
+- Goal: Complete the authorized cache ownership, English overflow and runtime-notice closure corrections after PR9/10 merged.
+- Current status: Worker cleanup preserves sibling caches; English shell wraps and tables retain keyboard scrolling; build emits discoverable offline runtime notices and inventory.
+- Branch / base: `codex/closure-water-cache-layout-notices` / `9b8c40996b217891c48c9e108a6730c2560d91c0`.
+- Verification:100 tests+TypeScript, root/Pages builds, exact85 browser checks, real worker sibling-cache/offline notices and bilingual390/1440 layout/table/CSV checks pass. Audits0; data/dependencies unchanged. See docs/closure-fixes.md.
+- Next action: review the pushed branch. This scope requests commit/push only; no PR, merge or deployment is performed. The following older inventory/evidence is historical.
 
 ## Completed This Session
 
