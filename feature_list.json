@@ -201,6 +201,14 @@
       "dependencies": ["feat-010"],
       "status": "done",
       "evidence": "2026-11-02 audit: February 2026 inflow 31625100 incorrectly rendered 316251. Regression failed before correction and passed after; 97 tests + tsc, root/Pages builds passed. English/Chinese at 390/1440px verified cards, monthly table and actual CSV downloads. npm audit full/production both zero. Raw/generated data unchanged. Existing test:browser immediate operation-chart assertion fails; external rerun with chart-render waits passes all83 checks; see progress.md."
+    },
+    {
+      "id": "audit-2026-11-closure-fixes",
+      "name": "Owned cache cleanup, English containment and runtime notice distribution",
+      "description": "Preserve sibling Pages caches; contain English title/table modes with keyboard scrolling; distribute actual installed runtime notices without dependency or analytical changes.",
+      "dependencies": ["feat-001", "feat-005", "audit-2026-11-integer-format"],
+      "status": "done",
+      "evidence": "2026-11-03: worker regression fails before/passes after; actual activation preserves sibling caches. English/Chinese390/1440 shell/table containment, keyboard scrolling and integer CSV pass. Exact52-runtime-package notice inventory includes Hippocratic2.1, own/copied MIT and Victory wrapper+13vendored licenses; artifacts discoverable/offline.100 tests+tsc, root/Pages builds, exact85browserchecks and audits0 pass. Data/dependencies unchanged. See docs/closure-fixes.md. Commit/push only; no production change."
     }
   ]
 }

@@ -138,6 +138,8 @@ The project builds as a static site. GitHub Pages builds with `GITHUB_PAGES=true
 
 Inactive analytical panels load on demand. Production builds precache their emitted scripts and styles during PWA installation so previously unvisited panels remain available offline after installation. The default map/chart bundle still carries a documented size warning; see [loading measurements and readiness verification](docs/publication-loading-followup.md).
 
+The footer links to build-generated `THIRD_PARTY_NOTICES.txt`; `runtime-license-inventory.json` records the installed non-development package versions and included license-source hashes. Both files are cached offline. See [closure corrections](docs/closure-fixes.md) for cache ownership, responsive-layout and notice-preservation verification.
+
 ## Documentation
 
 - [Customer dashboard insights](doc/customer-dashboard-insights.md)

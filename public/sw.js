@@ -1,8 +1,11 @@
 const CACHE_NAME = 'feitsui-water-map-v9';
+const CACHE_PREFIX = 'feitsui-water-map-';
 const scope = self.registration.scope;
 const STATIC_ASSETS = [
   '',
   'manifest.webmanifest',
+  'THIRD_PARTY_NOTICES.txt',
+  'runtime-license-inventory.json',
   'data/water-quality-records.json',
   'data/water-quality-summary.json',
   'data/water-quality-station-series.json',
@@ -77,7 +80,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
+      Promise.all(keys.filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME).map((key) => caches.delete(key)))
     )
   );
 });
