@@ -1,6 +1,10 @@
 const CACHE_NAME = 'feitsui-water-map-v9';
 const CACHE_PREFIX = 'feitsui-water-map-';
 const scope = self.registration.scope;
+const MACHINERY_DATA = [
+  'data/storm-rainfall-rented-machinery-sites/records.json',
+  'data/storm-rainfall-rented-machinery-sites/sites.geojson',
+];
 const STATIC_ASSETS = [
   '',
   'manifest.webmanifest',
@@ -47,9 +51,7 @@ const STATIC_ASSETS = [
   'data/sedimentation-basin-facilities.json',
   'data/sedimentation-basin-facility-summary.json',
   'data/sedimentation-basin-facility-conversion-report.json',
-  'data/storm-rainfall-rented-machinery-sites/records.json',
   'data/storm-rainfall-rented-machinery-sites/metadata.json',
-  'data/storm-rainfall-rented-machinery-sites/sites.geojson',
   'data/reservoir-sedimentation-surveys/records.json',
   'data/reservoir-sedimentation-surveys/summary.json',
   'data/reservoir-sedimentation-surveys/conversion-report.json',
@@ -73,7 +75,11 @@ const STATIC_ASSETS = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(STATIC_ASSETS.map((asset) => new URL(asset, scope))).catch(() => undefined))
+    caches.open(CACHE_NAME).then((cache) => Promise.all([
+      cache.addAll(STATIC_ASSETS.map((asset) => new URL(asset, scope))).catch(() => undefined),
+      // Replace the two legacy copies even when the browser HTTP cache is still fresh.
+      cache.addAll(MACHINERY_DATA.map((asset) => new Request(new URL(asset, scope), { cache: 'reload' }))),
+    ]))
   );
 });
 
