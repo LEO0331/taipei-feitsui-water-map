@@ -8,9 +8,6 @@
     "locationDescription": "八仙圳致遠三路閘門口(致遠三路47號前)",
     "equipmentNameRaw": "挖土機1輛(PC-120) 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -23,22 +20,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "1",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投2",
-      "ENGLOC（位置敘述）": "八仙圳致遠三路閘門口(致遠三路47號前)",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-120) 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5135298",
-      "Latitude": "25.12281079"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "2",
@@ -49,9 +31,6 @@
     "locationDescription": "立農街1段187巷與西安街交叉口(八仙圳欄污柵清除堵塞物)",
     "equipmentNameRaw": "挖土機1輛(PC-45) 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -64,22 +43,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "2",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投3",
-      "ENGLOC（位置敘述）": "立農街1段187巷與西安街交叉口(八仙圳欄污柵清除堵塞物)",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-45) 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5047928",
-      "Latitude": "25.12086362"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "3",
@@ -90,9 +54,6 @@
     "locationDescription": "北投中和街455巷1弄口",
     "equipmentNameRaw": "引擎式抽水機3台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -105,22 +66,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "3",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投4",
-      "ENGLOC（位置敘述）": "北投中和街455巷1弄口",
-      "ENGNAME（設備名稱）": "引擎式抽水機3台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4865394",
-      "Latitude": "25.13833809"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "4",
@@ -131,9 +77,6 @@
     "locationDescription": "貴子坑溪左岸與八仙圳倒虹吸工入口處(八仙圳抽排至貴子坑溪)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -146,22 +89,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "4",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投5",
-      "ENGLOC（位置敘述）": "貴子坑溪左岸與八仙圳倒虹吸工入口處(八仙圳抽排至貴子坑溪)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.485843",
-      "Latitude": "25.11807778"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "5",
@@ -172,9 +100,6 @@
     "locationDescription": "文林北路60巷8弄與水利溝交接處",
     "equipmentNameRaw": "引擎式抽水機4台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -187,22 +112,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "5",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投6",
-      "ENGLOC（位置敘述）": "文林北路60巷8弄與水利溝交接處",
-      "ENGNAME（設備名稱）": "引擎式抽水機4台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5197372",
-      "Latitude": "25.10447259"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "6",
@@ -213,9 +123,6 @@
     "locationDescription": "文林北路與明德路口(明德路口)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -228,22 +135,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "6",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投7",
-      "ENGLOC（位置敘述）": "文林北路與明德路口(明德路口)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.516724",
-      "Latitude": "25.10629808"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "7",
@@ -254,9 +146,6 @@
     "locationDescription": "明德路3巷口及明德路口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -269,22 +158,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "7",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投8",
-      "ENGLOC（位置敘述）": "明德路3巷口及明德路口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5169106",
-      "Latitude": "25.10654197"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "8",
@@ -295,9 +169,6 @@
     "locationDescription": "承德路7段401巷173號",
     "equipmentNameRaw": "引擎式抽水機3台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -310,22 +181,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "8",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投9",
-      "ENGLOC（位置敘述）": "承德路7段401巷173號",
-      "ENGNAME（設備名稱）": "引擎式抽水機3台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5002926",
-      "Latitude": "25.11535471"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "9",
@@ -336,9 +192,6 @@
     "locationDescription": "公館路231巷口攔污柵",
     "equipmentNameRaw": "挖土機(PC-120)1輛 傾卸貨車(總重15~15.9噸)1輛",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -351,22 +204,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "9",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投10",
-      "ENGLOC（位置敘述）": "公館路231巷口攔污柵",
-      "ENGNAME（設備名稱）": "挖土機(PC-120)1輛 傾卸貨車(總重15~15.9噸)1輛",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.508",
-      "Latitude": "25.1265"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "10",
@@ -377,9 +215,6 @@
     "locationDescription": "北憲抽水站(北投區承德路七段393巷)",
     "equipmentNameRaw": "貨車(總重6T)1輛 輪型鏟裝機1輛",
     "equipmentType": "貨車",
-    "responsibleOfficerName": "抽管科北憲抽水站董衍威",
-    "officePhone": "(02)28278720",
-    "mobilePhone": "975707223",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -392,22 +227,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "10",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投12",
-      "ENGLOC（位置敘述）": "北憲抽水站(北投區承德路七段393巷)",
-      "ENGNAME（設備名稱）": "貨車(總重6T)1輛 輪型鏟裝機1輛",
-      "EMAN（責任承辦人）": "抽管科北憲抽水站董衍威",
-      "市話": "(02)28278720",
-      "行動電話": "975707223",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5006416",
-      "Latitude": "25.11818839"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "11",
@@ -418,9 +238,6 @@
     "locationDescription": "貴子坑溪右岸與八仙圳倒虹吸工口(放置於圳溝抽排至貴子坑溪)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -433,22 +250,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "11",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投13",
-      "ENGLOC（位置敘述）": "貴子坑溪右岸與八仙圳倒虹吸工口(放置於圳溝抽排至貴子坑溪)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4850606",
-      "Latitude": "25.11580242"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "12",
@@ -459,9 +261,6 @@
     "locationDescription": "承德路7段401巷88弄6號",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -474,22 +273,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "12",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投14",
-      "ENGLOC（位置敘述）": "承德路7段401巷88弄6號",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4995858",
-      "Latitude": "25.11793031"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "13",
@@ -500,9 +284,6 @@
     "locationDescription": "大業路65巷1弄",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -515,22 +296,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "13",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投15",
-      "ENGLOC（位置敘述）": "大業路65巷1弄",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4963777",
-      "Latitude": "25.12257308"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "14",
@@ -541,9 +307,6 @@
     "locationDescription": "石牌路1段39巷131弄口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -556,22 +319,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "14",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投16",
-      "ENGLOC（位置敘述）": "石牌路1段39巷131弄口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5099897",
-      "Latitude": "25.11777756"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "15",
@@ -582,9 +330,6 @@
     "locationDescription": "石牌路1段39巷82號",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -597,22 +342,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "15",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投17",
-      "ENGLOC（位置敘述）": "石牌路1段39巷82號",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5096814",
-      "Latitude": "25.11580769"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "16",
@@ -623,9 +353,6 @@
     "locationDescription": "八仙抽水站旁",
     "equipmentNameRaw": "輪型鏟裝車1輛 貨車(總重6T)1輛",
     "equipmentType": "輪型鏟裝車",
-    "responsibleOfficerName": "抽管科八仙抽水站董衍威",
-    "officePhone": "(02)28278720",
-    "mobilePhone": "975707223",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -638,22 +365,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "16",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投22",
-      "ENGLOC（位置敘述）": "八仙抽水站旁",
-      "ENGNAME（設備名稱）": "輪型鏟裝車1輛 貨車(總重6T)1輛",
-      "EMAN（責任承辦人）": "抽管科八仙抽水站董衍威",
-      "市話": "(02)28278720",
-      "行動電話": "975707223",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4904995",
-      "Latitude": "25.1159499"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "17",
@@ -664,9 +376,6 @@
     "locationDescription": "北投區承德路7段223之2號(石牌高爾夫練習場停車場)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -679,22 +388,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "17",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投25",
-      "ENGLOC（位置敘述）": "北投區承德路7段223之2號(石牌高爾夫練習場停車場)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5041973",
-      "Latitude": "25.11514419"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "18",
@@ -705,9 +399,6 @@
     "locationDescription": "北投區承德路7段393巷99號(洲美3號閘門)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -720,22 +411,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "18",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投26",
-      "ENGLOC（位置敘述）": "北投區承德路7段393巷99號(洲美3號閘門)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5007767",
-      "Latitude": "25.11719295"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "19",
@@ -746,9 +422,6 @@
     "locationDescription": "北投區承德路7段393巷(洲美5號閘門)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -761,22 +434,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "19",
-      "DISTRICT（行政區）": "北投區",
-      "ENGINEID（外租機械編號）": "北投27",
-      "ENGLOC（位置敘述）": "北投區承德路7段393巷(洲美5號閘門)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5007307",
-      "Latitude": "25.11445806"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "20",
@@ -787,9 +445,6 @@
     "locationDescription": "士林區福國路101號旁(文林橋下)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北投工務所主任",
-    "officePhone": "(02)28210356",
-    "mobilePhone": "978300189",
     "contractorName": "世煌工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -802,22 +457,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "20",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北投30",
-      "ENGLOC（位置敘述）": "士林區福國路101號旁(文林橋下)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北投工務所主任",
-      "市話": "(02)28210356",
-      "行動電話": "978300189",
-      "EFIRM（責任廠商）": "世煌工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.518667",
-      "Latitude": "25.101396"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "21",
@@ -828,9 +468,6 @@
     "locationDescription": "敦化北路155巷88號前",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -843,22 +480,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "21",
-      "DISTRICT（行政區）": "松山區",
-      "ENGINEID（外租機械編號）": "北區1",
-      "ENGLOC（位置敘述）": "敦化北路155巷88號前",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5521617",
-      "Latitude": "25.05434312"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "22",
@@ -869,9 +491,6 @@
     "locationDescription": "合江街(民生東路3段至錦州街口)",
     "equipmentNameRaw": "引擎式抽水機4台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -884,22 +503,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "22",
-      "DISTRICT（行政區）": "中山區",
-      "ENGINEID（外租機械編號）": "北區2",
-      "ENGLOC（位置敘述）": "合江街(民生東路3段至錦州街口)",
-      "ENGNAME（設備名稱）": "引擎式抽水機4台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5392268",
-      "Latitude": "25.05874444"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "23",
@@ -910,9 +514,6 @@
     "locationDescription": "中山北路錦西街口",
     "equipmentNameRaw": "引擎式抽水機4台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -925,22 +526,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "23",
-      "DISTRICT（行政區）": "中山區",
-      "ENGINEID（外租機械編號）": "北區5",
-      "ENGLOC（位置敘述）": "中山北路錦西街口",
-      "ENGNAME（設備名稱）": "引擎式抽水機4台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5228717",
-      "Latitude": "25.06022194"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "24",
@@ -951,9 +537,6 @@
     "locationDescription": "中山北路錦州街口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -966,22 +549,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "24",
-      "DISTRICT（行政區）": "中山區",
-      "ENGINEID（外租機械編號）": "北區6",
-      "ENGLOC（位置敘述）": "中山北路錦州街口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.523209",
-      "Latitude": "25.06019032"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "25",
@@ -992,9 +560,6 @@
     "locationDescription": "赤峰街77巷與南京西路25巷交叉口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1007,22 +572,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "25",
-      "DISTRICT（行政區）": "大同區",
-      "ENGINEID（外租機械編號）": "北區8",
-      "ENGLOC（位置敘述）": "赤峰街77巷與南京西路25巷交叉口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.520504",
-      "Latitude": "25.057049"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "26",
@@ -1033,9 +583,6 @@
     "locationDescription": "赤峰街53巷與南京西路25巷交叉口",
     "equipmentNameRaw": "引擎式抽水機4台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1048,22 +595,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "26",
-      "DISTRICT（行政區）": "大同區",
-      "ENGINEID（外租機械編號）": "北區9",
-      "ENGLOC（位置敘述）": "赤峰街53巷與南京西路25巷交叉口",
-      "ENGNAME（設備名稱）": "引擎式抽水機4台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.520456",
-      "Latitude": "25.056148"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "27",
@@ -1074,9 +606,6 @@
     "locationDescription": "德行東路378巷底壓力箱涵(沉砂池)",
     "equipmentNameRaw": "挖土機1輛(PC-120) 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1089,22 +618,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "27",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區10",
-      "ENGLOC（位置敘述）": "德行東路378巷底壓力箱涵(沉砂池)",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-120) 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5403243",
-      "Latitude": "25.10910408"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "28",
@@ -1115,9 +629,6 @@
     "locationDescription": "中山北路7段190巷玉潮坑溪上游明溝段",
     "equipmentNameRaw": "挖土機1輛(PC-120) 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1130,22 +641,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "28",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區11",
-      "ENGLOC（位置敘述）": "中山北路7段190巷玉潮坑溪上游明溝段",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-120) 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5335538",
-      "Latitude": "25.12524421"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "29",
@@ -1156,9 +652,6 @@
     "locationDescription": "故宮路48巷底(放置於側溝內)",
     "equipmentNameRaw": "引擎式抽水機1台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1171,22 +664,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "29",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區12",
-      "ENGLOC（位置敘述）": "故宮路48巷底(放置於側溝內)",
-      "ENGNAME（設備名稱）": "引擎式抽水機1台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5467213",
-      "Latitude": "25.09611947"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "30",
@@ -1197,9 +675,6 @@
     "locationDescription": "通北街65巷67號",
     "equipmentNameRaw": "挖土機1輛（PC-120） 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1212,22 +687,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "30",
-      "DISTRICT（行政區）": "中山區",
-      "ENGINEID（外租機械編號）": "北區14",
-      "ENGLOC（位置敘述）": "通北街65巷67號",
-      "ENGNAME（設備名稱）": "挖土機1輛（PC-120） 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5389385",
-      "Latitude": "25.08398766"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "31",
@@ -1238,9 +698,6 @@
     "locationDescription": "延平北路7段106巷94弄(與防汛道路交會處)(固定式抽水機組旁)",
     "equipmentNameRaw": "柴油式引擎發電機(100kw、220V)1台 貨車(總重6T)1輛",
     "equipmentType": "柴油式引擎發電機",
-    "responsibleOfficerName": "下工科抽水機暨機電管理站長",
-    "officePhone": "(02)28280035",
-    "mobilePhone": "975808703",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1253,22 +710,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "31",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區15",
-      "ENGLOC（位置敘述）": "延平北路7段106巷94弄(與防汛道路交會處)(固定式抽水機組旁)",
-      "ENGNAME（設備名稱）": "柴油式引擎發電機(100kw、220V)1台 貨車(總重6T)1輛",
-      "EMAN（責任承辦人）": "下工科抽水機暨機電管理站長",
-      "市話": "(02)28280035",
-      "行動電話": "975808703",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4954964",
-      "Latitude": "25.09914409"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "32",
@@ -1279,9 +721,6 @@
     "locationDescription": "延平北路7段107巷(與防汛道路交會處)(固定式抽水機組旁)",
     "equipmentNameRaw": "柴油式引擎發電機(100kw、220V)1台 貨車1輛(總重3.5T)",
     "equipmentType": "柴油式引擎發電機",
-    "responsibleOfficerName": "下工科抽水機暨機電管理站長",
-    "officePhone": "(02)28280035",
-    "mobilePhone": "975808703",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1294,22 +733,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "32",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區16",
-      "ENGLOC（位置敘述）": "延平北路7段107巷(與防汛道路交會處)(固定式抽水機組旁)",
-      "ENGNAME（設備名稱）": "柴油式引擎發電機(100kw、220V)1台 貨車1輛(總重3.5T)",
-      "EMAN（責任承辦人）": "下工科抽水機暨機電管理站長",
-      "市話": "(02)28280035",
-      "行動電話": "975808703",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4942399",
-      "Latitude": "25.09603078"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "33",
@@ -1320,9 +744,6 @@
     "locationDescription": "洲美橋下消防局後",
     "equipmentNameRaw": "柴油式引擎發電機(100KW、220V)1台 貨車(總重6T)1輛",
     "equipmentType": "柴油式引擎發電機",
-    "responsibleOfficerName": "下工科抽水機暨機電管理站長",
-    "officePhone": "(02)28280035",
-    "mobilePhone": "975808703",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1335,22 +756,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "33",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區18",
-      "ENGLOC（位置敘述）": "洲美橋下消防局後",
-      "ENGNAME（設備名稱）": "柴油式引擎發電機(100KW、220V)1台 貨車(總重6T)1輛",
-      "EMAN（責任承辦人）": "下工科抽水機暨機電管理站長",
-      "市話": "(02)28280035",
-      "行動電話": "975808703",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4973957",
-      "Latitude": "25.09685257"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "34",
@@ -1361,9 +767,6 @@
     "locationDescription": "延平北路8段2巷200弄57號旁",
     "equipmentNameRaw": "柴油式引擎發電機(400KW、380V)1台 吊卡車(15米-噸)1輛",
     "equipmentType": "柴油式引擎發電機",
-    "responsibleOfficerName": "抽管科社子島管制站站長",
-    "officePhone": "(02)28109525",
-    "mobilePhone": "978727959",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1376,22 +779,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "34",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區19",
-      "ENGLOC（位置敘述）": "延平北路8段2巷200弄57號旁",
-      "ENGNAME（設備名稱）": "柴油式引擎發電機(400KW、380V)1台 吊卡車(15米-噸)1輛",
-      "EMAN（責任承辦人）": "抽管科社子島管制站站長",
-      "市話": "(02)28109525",
-      "行動電話": "978727959",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4906357",
-      "Latitude": "25.11276094"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "35",
@@ -1402,9 +790,6 @@
     "locationDescription": "天母東路103號旁",
     "equipmentNameRaw": "引擎式抽水機1台(4\"口徑) 貨車(總重6T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1417,22 +802,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "35",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區20",
-      "ENGLOC（位置敘述）": "天母東路103號旁",
-      "ENGNAME（設備名稱）": "引擎式抽水機1台(4\"口徑) 貨車(總重6T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5363",
-      "Latitude": "25.11827663"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "36",
@@ -1443,9 +813,6 @@
     "locationDescription": "福林路與中山北路5段470巷口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車3.5頓1台",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1458,22 +825,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "36",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區23",
-      "ENGLOC（位置敘述）": "福林路與中山北路5段470巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車3.5頓1台",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5291826",
-      "Latitude": "25.0944142"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "37",
@@ -1484,9 +836,6 @@
     "locationDescription": "中正路187、201、213、223、235巷口",
     "equipmentNameRaw": "引擎式抽水機5台(4\"口徑) 貨車6噸1台",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1499,22 +848,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "37",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區24",
-      "ENGLOC（位置敘述）": "中正路187、201、213、223、235巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機5台(4\"口徑) 貨車6噸1台",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5268739",
-      "Latitude": "25.09552053"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "38",
@@ -1525,9 +859,6 @@
     "locationDescription": "赤峰街71巷與南京西路25巷交叉口",
     "equipmentNameRaw": "引擎式抽水機3台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1540,22 +871,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "38",
-      "DISTRICT（行政區）": "大同區",
-      "ENGINEID（外租機械編號）": "北區26",
-      "ENGLOC（位置敘述）": "赤峰街71巷與南京西路25巷交叉口",
-      "ENGNAME（設備名稱）": "引擎式抽水機3台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5204614",
-      "Latitude": "25.05661869"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "39",
@@ -1566,9 +882,6 @@
     "locationDescription": "文林路404巷巷口",
     "equipmentNameRaw": "引擎式抽水機5台(4\"口徑) 貨車3.5噸1台",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1581,22 +894,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "39",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區27",
-      "ENGLOC（位置敘述）": "文林路404巷巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機5台(4\"口徑) 貨車3.5噸1台",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5254557",
-      "Latitude": "25.09400696"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "40",
@@ -1607,9 +905,6 @@
     "locationDescription": "延平北路8段157巷口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1622,22 +917,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "40",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區30",
-      "ENGLOC（位置敘述）": "延平北路8段157巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.481988",
-      "Latitude": "25.105885"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "41",
@@ -1648,9 +928,6 @@
     "locationDescription": "松山區南京東路3段256巷",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1663,22 +940,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "41",
-      "DISTRICT（行政區）": "松山區",
-      "ENGINEID（外租機械編號）": "北區34",
-      "ENGLOC（位置敘述）": "松山區南京東路3段256巷",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.544693",
-      "Latitude": "25.050209"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "42",
@@ -1689,9 +951,6 @@
     "locationDescription": "松山區興安街174巷3弄13號",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1704,22 +963,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "42",
-      "DISTRICT（行政區）": "松山區",
-      "ENGINEID（外租機械編號）": "北區35",
-      "ENGLOC（位置敘述）": "松山區興安街174巷3弄13號",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.545195",
-      "Latitude": "25.05577"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "43",
@@ -1730,9 +974,6 @@
     "locationDescription": "松山區民生東路4段75巷",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科北區工務所主任",
-    "officePhone": "(02)25424675",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1745,22 +986,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "43",
-      "DISTRICT（行政區）": "松山區",
-      "ENGINEID（外租機械編號）": "北區36",
-      "ENGLOC（位置敘述）": "松山區民生東路4段75巷",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科北區工務所主任",
-      "市話": "(02)25424675",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.550761",
-      "Latitude": "25.058307"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "44",
@@ -1771,9 +997,6 @@
     "locationDescription": "延平北路8段157巷巷口",
     "equipmentNameRaw": "柴油式引擎發電(400KW、380V)1台 吊卡車(15 米-噸)1 輛",
     "equipmentType": "柴油式引擎發電",
-    "responsibleOfficerName": "抽管科社子島管制站站長",
-    "officePhone": "(02)28109525",
-    "mobilePhone": "978300185",
     "contractorName": "鑫工匠工程有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1786,22 +1009,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "44",
-      "DISTRICT（行政區）": "士林區",
-      "ENGINEID（外租機械編號）": "北區37",
-      "ENGLOC（位置敘述）": "延平北路8段157巷巷口",
-      "ENGNAME（設備名稱）": "柴油式引擎發電(400KW、380V)1台 吊卡車(15 米-噸)1 輛",
-      "EMAN（責任承辦人）": "抽管科社子島管制站站長",
-      "市話": "(02)28109525",
-      "行動電話": "978300185",
-      "EFIRM（責任廠商）": "鑫工匠工程有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.482",
-      "Latitude": "25.1034"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "45",
@@ -1812,9 +1020,6 @@
     "locationDescription": "文湖街沉砂池攔污柵(文湖街21巷68弄25-6號旁)",
     "equipmentNameRaw": "挖土機1輛(PC-200) 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1827,22 +1032,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "45",
-      "DISTRICT（行政區）": "內湖區",
-      "ENGINEID（外租機械編號）": "南內1",
-      "ENGLOC（位置敘述）": "文湖街沉砂池攔污柵(文湖街21巷68弄25-6號旁)",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-200) 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5611264",
-      "Latitude": "25.08850557"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "46",
@@ -1853,9 +1043,6 @@
     "locationDescription": "環山路1段136巷底大排入口攔污柵(環山路1段136巷20弄16號旁)",
     "equipmentNameRaw": "挖土機1輛(PC-45) 貨車1輛(總重3.5T)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1868,22 +1055,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "46",
-      "DISTRICT（行政區）": "內湖區",
-      "ENGINEID（外租機械編號）": "南內2",
-      "ENGLOC（位置敘述）": "環山路1段136巷底大排入口攔污柵(環山路1段136巷20弄16號旁)",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-45) 貨車1輛(總重3.5T)",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5676603",
-      "Latitude": "25.08861855"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "47",
@@ -1894,9 +1066,6 @@
     "locationDescription": "大湖公園之大湖排水口",
     "equipmentNameRaw": "挖土機1輛(PC-200) 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1909,22 +1078,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "47",
-      "DISTRICT（行政區）": "內湖區",
-      "ENGINEID（外租機械編號）": "南內3",
-      "ENGLOC（位置敘述）": "大湖公園之大湖排水口",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-200) 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.6070072",
-      "Latitude": "25.07887714"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "48",
@@ -1935,9 +1089,6 @@
     "locationDescription": "五分街2號前",
     "equipmentNameRaw": "柴油式引擎發電機(100kw/220V)1台 貨車(總重6.0T)1輛",
     "equipmentType": "柴油式引擎發電機",
-    "responsibleOfficerName": "下工科抽水機暨機電管理站長",
-    "officePhone": "(02)28280035",
-    "mobilePhone": "975808703",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1950,22 +1101,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "48",
-      "DISTRICT（行政區）": "內湖區",
-      "ENGINEID（外租機械編號）": "南內5",
-      "ENGLOC（位置敘述）": "五分街2號前",
-      "ENGNAME（設備名稱）": "柴油式引擎發電機(100kw/220V)1台 貨車(總重6.0T)1輛",
-      "EMAN（責任承辦人）": "下工科抽水機暨機電管理站長",
-      "市話": "(02)28280035",
-      "行動電話": "975808703",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.6126206",
-      "Latitude": "25.06763852"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "49",
@@ -1976,9 +1112,6 @@
     "locationDescription": "吳興街600巷與祥雲街口",
     "equipmentNameRaw": "挖土機1輛(PC-120)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -1991,22 +1124,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "49",
-      "DISTRICT（行政區）": "信義區",
-      "ENGINEID（外租機械編號）": "南內6",
-      "ENGLOC（位置敘述）": "吳興街600巷與祥雲街口",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-120)",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.57125",
-      "Latitude": "25.01748094"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "50",
@@ -2017,9 +1135,6 @@
     "locationDescription": "信義路5段150巷445弄與信義路5段150巷口",
     "equipmentNameRaw": "挖土機1輛(PC-200) 傾卸貨車1輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2032,22 +1147,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "50",
-      "DISTRICT（行政區）": "信義區",
-      "ENGINEID（外租機械編號）": "南內7",
-      "ENGLOC（位置敘述）": "信義路5段150巷445弄與信義路5段150巷口",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-200) 傾卸貨車1輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5723082",
-      "Latitude": "25.02223094"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "51",
@@ -2058,9 +1158,6 @@
     "locationDescription": "虎林街232巷及松德路133巷口、信義路6段15巷及信義路6段15巷22弄口、信義路6段33巷及虎林街242巷交叉口",
     "equipmentNameRaw": "引擎式抽水機6台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2073,22 +1170,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "51",
-      "DISTRICT（行政區）": "信義區",
-      "ENGINEID（外租機械編號）": "南內11",
-      "ENGLOC（位置敘述）": "虎林街232巷及松德路133巷口、信義路6段15巷及信義路6段15巷22弄口、信義路6段33巷及虎林街242巷交叉口",
-      "ENGNAME（設備名稱）": "引擎式抽水機6台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5762",
-      "Latitude": "25.03599863"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "52",
@@ -2099,9 +1181,6 @@
     "locationDescription": "信義區信義路6段76巷8弄2號前",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2114,22 +1193,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "52",
-      "DISTRICT（行政區）": "信義區",
-      "ENGINEID（外租機械編號）": "南內14",
-      "ENGLOC（位置敘述）": "信義區信義路6段76巷8弄2號前",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5773898",
-      "Latitude": "25.03460301"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "53",
@@ -2140,9 +1204,6 @@
     "locationDescription": "康寧路3段(南湖大橋下橋端)",
     "equipmentNameRaw": "引擎式抽水機3台(4\"口徑) 貨車(6T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2155,22 +1216,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "53",
-      "DISTRICT（行政區）": "內湖區",
-      "ENGINEID（外租機械編號）": "南內16",
-      "ENGLOC（位置敘述）": "康寧路3段(南湖大橋下橋端)",
-      "ENGNAME（設備名稱）": "引擎式抽水機3台(4\"口徑) 貨車(6T)1輛",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.6110791",
-      "Latitude": "25.06499809"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "54",
@@ -2181,9 +1227,6 @@
     "locationDescription": "成功路5段180號前",
     "equipmentNameRaw": "引擎式抽水機3台(4\"口徑) 貨車(3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2196,22 +1239,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "54",
-      "DISTRICT（行政區）": "內湖區",
-      "ENGINEID（外租機械編號）": "南內17",
-      "ENGLOC（位置敘述）": "成功路5段180號前",
-      "ENGNAME（設備名稱）": "引擎式抽水機3台(4\"口徑) 貨車(3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.6066",
-      "Latitude": "25.0821"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "55",
@@ -2222,9 +1250,6 @@
     "locationDescription": "信義區吳興街524巷51號前",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)、貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南內工務所主任",
-    "officePhone": "(02)27832741",
-    "mobilePhone": "978300188",
     "contractorName": "宏易開發有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2237,22 +1262,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "55",
-      "DISTRICT（行政區）": "信義區",
-      "ENGINEID（外租機械編號）": "南內18",
-      "ENGLOC（位置敘述）": "信義區吳興街524巷51號前",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)、貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南內工務所主任",
-      "市話": "(02)27832741",
-      "行動電話": "978300188",
-      "EFIRM（責任廠商）": "宏易開發有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5675",
-      "Latitude": "25.0225"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "56",
@@ -2263,9 +1273,6 @@
     "locationDescription": "文山區無名溪混元宮旁沉砂池(自恆光橋下老泉街45巷進入)",
     "equipmentNameRaw": "挖土機1輛(PC-200) 傾卸貨車2輛(總重15~15.9噸)",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2278,22 +1285,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "56",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區2",
-      "ENGLOC（位置敘述）": "文山區無名溪混元宮旁沉砂池(自恆光橋下老泉街45巷進入)",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-200) 傾卸貨車2輛(總重15~15.9噸)",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5754076",
-      "Latitude": "24.97327332"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "57",
@@ -2304,9 +1296,6 @@
     "locationDescription": "文山興隆路3段308號至興隆路4段再興中學",
     "equipmentNameRaw": "引擎式抽水機1台(4\"口徑) 貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2319,22 +1308,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "57",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區3",
-      "ENGLOC（位置敘述）": "文山興隆路3段308號至興隆路4段再興中學",
-      "ENGNAME（設備名稱）": "引擎式抽水機1台(4\"口徑) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5592517",
-      "Latitude": "24.9903128"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "58",
@@ -2345,9 +1319,6 @@
     "locationDescription": "興德路興隆路口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2360,22 +1331,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "58",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區4",
-      "ENGLOC（位置敘述）": "興德路興隆路口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5550751",
-      "Latitude": "25.00079406"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "59",
@@ -2386,9 +1342,6 @@
     "locationDescription": "興隆路2段301巷口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2401,22 +1354,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "59",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區5",
-      "ENGLOC（位置敘述）": "興隆路2段301巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5532078",
-      "Latitude": "25.00136344"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "60",
@@ -2427,9 +1365,6 @@
     "locationDescription": "興隆路3段304巷30號(再興春天大廈旁)",
     "equipmentNameRaw": "挖土機1輛(PC-45) 貨車(總重3.5噸)1輛",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2442,22 +1377,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "60",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區6",
-      "ENGLOC（位置敘述）": "興隆路3段304巷30號(再興春天大廈旁)",
-      "ENGNAME（設備名稱）": "挖土機1輛(PC-45) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5559535",
-      "Latitude": "24.99593314"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "61",
@@ -2468,9 +1388,6 @@
     "locationDescription": "萬大路237巷10弄與萬大路277巷口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2483,22 +1400,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "61",
-      "DISTRICT（行政區）": "萬華區",
-      "ENGINEID（外租機械編號）": "南區7",
-      "ENGLOC（位置敘述）": "萬大路237巷10弄與萬大路277巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5010634",
-      "Latitude": "25.02543311"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "62",
@@ -2509,9 +1411,6 @@
     "locationDescription": "西園路2段52巷(巷口近1號前)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2524,22 +1423,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "62",
-      "DISTRICT（行政區）": "萬華區",
-      "ENGINEID（外租機械編號）": "南區8",
-      "ENGLOC（位置敘述）": "西園路2段52巷(巷口近1號前)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.4966889",
-      "Latitude": "25.0318161"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "63",
@@ -2550,9 +1434,6 @@
     "locationDescription": "力行國小旁防汛道路(木新路三段95巷52弄口)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2565,22 +1446,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "63",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區9",
-      "ENGLOC（位置敘述）": "力行國小旁防汛道路(木新路三段95巷52弄口)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5625649",
-      "Latitude": "24.9806989"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "64",
@@ -2591,9 +1457,6 @@
     "locationDescription": "北政國中臨時抽水站(指南路3段2巷14號)",
     "equipmentNameRaw": "柴油式引擎發電機(100KW/380V)1台 貨車(總重3.5T)1輛",
     "equipmentType": "柴油式引擎發電機",
-    "responsibleOfficerName": "下工科抽水機暨機電管理站長",
-    "officePhone": "(02)28280035",
-    "mobilePhone": "975808703",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2606,22 +1469,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "64",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區11",
-      "ENGLOC（位置敘述）": "北政國中臨時抽水站(指南路3段2巷14號)",
-      "ENGNAME（設備名稱）": "柴油式引擎發電機(100KW/380V)1台 貨車(總重3.5T)1輛",
-      "EMAN（責任承辦人）": "下工科抽水機暨機電管理站長",
-      "市話": "(02)28280035",
-      "行動電話": "975808703",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5768254",
-      "Latitude": "24.98492251"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "65",
@@ -2632,9 +1480,6 @@
     "locationDescription": "興隆路3段36巷底與辛亥路5段25巷口",
     "equipmentNameRaw": "引擎式抽水機1台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2647,22 +1492,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "65",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區13",
-      "ENGLOC（位置敘述）": "興隆路3段36巷底與辛亥路5段25巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機1台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5550154",
-      "Latitude": "24.99955712"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "66",
@@ -2673,9 +1503,6 @@
     "locationDescription": "基隆路3段155巷107弄(台大教職員宿舍門口)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2688,22 +1515,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "66",
-      "DISTRICT（行政區）": "大安區",
-      "ENGINEID（外租機械編號）": "南區14",
-      "ENGLOC（位置敘述）": "基隆路3段155巷107弄(台大教職員宿舍門口)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5456754",
-      "Latitude": "25.01327773"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "67",
@@ -2714,9 +1526,6 @@
     "locationDescription": "基隆路3段155巷128號(義芳居前)",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2729,22 +1538,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "67",
-      "DISTRICT（行政區）": "大安區",
-      "ENGINEID（外租機械編號）": "南區15",
-      "ENGLOC（位置敘述）": "基隆路3段155巷128號(義芳居前)",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5473341",
-      "Latitude": "25.01183828"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "68",
@@ -2755,9 +1549,6 @@
     "locationDescription": "泰順街50巷口前",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2770,22 +1561,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "68",
-      "DISTRICT（行政區）": "大安區",
-      "ENGINEID（外租機械編號）": "南區19",
-      "ENGLOC（位置敘述）": "泰順街50巷口前",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.531192",
-      "Latitude": "25.023013"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "69",
@@ -2796,9 +1572,6 @@
     "locationDescription": "大安區和平東路2段265巷36號前及和平東路2段265巷與復興南路271巷交叉口、和平東路2段265巷37弄",
     "equipmentNameRaw": "引擎式抽水機7台(4\"口徑) 貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2811,22 +1584,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "69",
-      "DISTRICT（行政區）": "大安區",
-      "ENGINEID（外租機械編號）": "南區20",
-      "ENGLOC（位置敘述）": "大安區和平東路2段265巷36號前及和平東路2段265巷與復興南路271巷交叉口、和平東路2段265巷37弄",
-      "ENGNAME（設備名稱）": "引擎式抽水機7台(4\"口徑) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5440346",
-      "Latitude": "25.02654144"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "70",
@@ -2837,9 +1595,6 @@
     "locationDescription": "文山區木柵路4段159巷194號前",
     "equipmentNameRaw": "挖土機(PC-45)1輛 傾卸貨車(總重8~8.9噸)1輛",
     "equipmentType": "挖土機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2852,22 +1607,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "70",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區21",
-      "ENGLOC（位置敘述）": "文山區木柵路4段159巷194號前",
-      "ENGNAME（設備名稱）": "挖土機(PC-45)1輛 傾卸貨車(總重8~8.9噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5772033",
-      "Latitude": "25.00501499"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "71",
@@ -2878,9 +1618,6 @@
     "locationDescription": "大安區和平東路3段1弄；大安區四維路216巷及四維路交叉口",
     "equipmentNameRaw": "引擎式抽水機5台(4\"口徑) 貨車(總重3.5噸)1輛",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2893,22 +1630,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "71",
-      "DISTRICT（行政區）": "大安區",
-      "ENGINEID（外租機械編號）": "南區22",
-      "ENGLOC（位置敘述）": "大安區和平東路3段1弄；大安區四維路216巷及四維路交叉口",
-      "ENGNAME（設備名稱）": "引擎式抽水機5台(4\"口徑) 貨車(總重3.5噸)1輛",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5467659",
-      "Latitude": "25.0259388"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "72",
@@ -2919,9 +1641,6 @@
     "locationDescription": "文山區景華街與景興路口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2934,22 +1653,7 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "72",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區23",
-      "ENGLOC（位置敘述）": "文山區景華街與景興路口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5445501",
-      "Latitude": "24.99507463"
-    }
+    "hasUsageDirection": false
   },
   {
     "id": "73",
@@ -2960,9 +1664,6 @@
     "locationDescription": "文山區木柵路2段7巷口",
     "equipmentNameRaw": "引擎式抽水機2台(4\"口徑)",
     "equipmentType": "引擎式抽水機",
-    "responsibleOfficerName": "工務科南區工務所主任",
-    "officePhone": "(02)86632970",
-    "mobilePhone": "978300184",
     "contractorName": "嘉邑營造有限公司",
     "recordDateRaw": "",
     "recordDate": null,
@@ -2975,21 +1676,6 @@
     "hasValidCoordinates": true,
     "hasEquipmentId": true,
     "hasContractor": true,
-    "hasUsageDirection": false,
-    "sourceValues": {
-      "OBJECTID（編號）": "73",
-      "DISTRICT（行政區）": "文山區",
-      "ENGINEID（外租機械編號）": "南區24",
-      "ENGLOC（位置敘述）": "文山區木柵路2段7巷口",
-      "ENGNAME（設備名稱）": "引擎式抽水機2台(4\"口徑)",
-      "EMAN（責任承辦人）": "工務科南區工務所主任",
-      "市話": "(02)86632970",
-      "行動電話": "978300184",
-      "EFIRM（責任廠商）": "嘉邑營造有限公司",
-      "SPRECDATE": "",
-      "SPUSEDIR": "",
-      "Longitude": "121.5590582",
-      "Latitude": "24.98884048"
-    }
+    "hasUsageDirection": false
   }
 ]

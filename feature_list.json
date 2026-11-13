@@ -209,6 +209,14 @@
       "dependencies": ["feat-001", "feat-005", "audit-2026-11-integer-format"],
       "status": "done",
       "evidence": "2026-11-03: worker regression fails before/passes after; actual activation preserves sibling caches. English/Chinese390/1440 shell/table containment, keyboard scrolling and integer CSV pass. Exact52-runtime-package notice inventory includes Hippocratic2.1, own/copied MIT and Victory wrapper+13vendored licenses; artifacts discoverable/offline.100 tests+tsc, root/Pages builds, exact85browserchecks and audits0 pass. Data/dependencies unchanged. See docs/closure-fixes.md. Commit/push only; no production change."
+    },
+    {
+      "id": "audit-2026-11-security-fixes",
+      "name": "Security audit remediation",
+      "description": "Minimize published machinery data, isolate Pages deploy permissions, protect legacy spreadsheet exports, and validate manual CSV refreshes before replacing source files.",
+      "dependencies": ["feat-002", "audit-2026-11-closure-fixes"],
+      "status": "done",
+      "evidence": "2026-11-13: isolated npm ci, offline data conversion, machinery regeneration, 105 tests and TypeScript, root and Pages builds passed. All 73 machinery records and coordinates preserved with unused contact fields removed. Mocked invalid refreshes preserve existing CSV and metadata."
     }
   ]
 }

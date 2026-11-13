@@ -2,11 +2,11 @@
 
 ## Current State
 
-**Last Updated:** 2026-11-03
-**Session ID:** closure-water-cache-layout-notices
+**Last Updated:** 2026-11-13
+**Session ID:** security-audit-fixes
 **Active Feature:** none
 
-Current baseline is published main `9b8c409` with PR9/10 merged. Branch `codex/closure-water-cache-layout-notices` corrects water-owned cache cleanup, English shell/table overflow and runtime notice distribution.100 tests+TypeScript, root/Pages builds and85 browser checks pass; actual sibling-cache preservation, offline52-package notices and bilingual390/1440 keyboard/table/CSV checks pass. Audits0; data/dependencies/scientific boundaries unchanged. See docs/closure-fixes.md. Commit/push only; production remains unchanged until separately published. Older entries below are historical.
+Branch `codex/security-audit-fixes` is based on published main `b672435` and contains the four security audit fixes described in the November 13 entry below. Production deployment remains pending until the branch is merged into main.
 
 ### 2026-11-02 — Publication loading follow-up
 
@@ -248,3 +248,10 @@ Start with `AGENTS.md`, then `feature_list.json`, then this file. Do not call `n
 - Actual Edge production checks: English/Chinese at 390/1440px, corrected February cards, table values and downloaded monthly CSV all passed with zero page errors. Evidence is outside the repository under `D:/Practice/audit-results/taipei-feitsui-water-map/`.
 - Existing npm run test:browser fails both before/after at its immediate operation-chart count assertion after 63 passing checks. The formatter does not affect chart rendering. An external audit copy with only chart-render waits passes all 83 navigation checks with zero browser errors, confirming the assertion timing issue. The exact supported-command failure remains a verification limitation; repository browser harness unchanged.
 - Remaining P3: existing 1.06 MB JS chunk warning; coordinate/source/scientific limitations remain intentional. Draft PR only; no merge or deployment requested.
+## 2026-11-13 — Security audit remediation
+
+- Based the repair on current `origin/main` (`b672435`) to retain its deferred map loading and cache ownership fixes. The remote audit branch had already been deleted.
+- Removed the four unused contact/source fields from both public machinery files. All 73 records and points, their ordering, and remaining fields match the baseline. Kept exact official raw files for source verification. Existing Git history still contains earlier copies.
+- The worker refreshes the two machinery files through existing post-load precache requests, with HTTP cache reload for those two URLs. Legacy CSV text protection runs when a user downloads an export. Pages deploy permissions are job-scoped and the remaining Actions use pinned commit SHAs.
+- The three manual refresh commands reject invalid or oversized responses and validate CSV before replacing the local file. Fixture tests verified that failed refreshes leave prior CSV and metadata bytes intact.
+- Isolated `npm ci` reported zero known vulnerabilities. Both conversions, 105 tests and TypeScript, root/Pages builds, and the 85-check production browser suite passed. The suite uses stubbed map tiles and does not establish production map latency.
